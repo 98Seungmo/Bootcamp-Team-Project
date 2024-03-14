@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/KJ/Scenes/LogInScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/KJ/Scenes/LoadingScene.unity
+    guid: 6b4354f2ee928474dbe51c1e2c33f3bf
+  - enabled: 1
+    path: Assets/KJ/Scenes/TestScene.unity
+    guid: 2e9d2b69b63342d4eab8f6314d056b59
+  - enabled: 1
+    path: Assets/KJ/Scenes/TestGameQuit.unity
+    guid: 847c2fe733ac2d74d9b6073c4b86c7bb
+  m_configObjects: {}

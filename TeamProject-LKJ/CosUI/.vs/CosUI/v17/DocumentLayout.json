@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|c:\\users\\lkj\\documents\\github\\bootcamp-team-project\\teamproject-lkj\\cosui\\assets\\kj\\scripts\\loginscripts\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\scripts\\loginscripts\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|c:\\users\\lkj\\documents\\github\\bootcamp-team-project\\teamproject-lkj\\cosui\\assets\\kj\\scripts\\tests\\testgamequitmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\scripts\\tests\\testgamequitmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\assets\\kj\\scripts\\loadingscripts\\loadingscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\scripts\\loadingscripts\\loadingscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\assets\\kj\\scripts\\loadingscripts\\loadingtextanimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\scripts\\loadingscripts\\loadingtextanimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LogInManager.cs",
+              "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LogInScripts\\LogInManager.cs",
+              "RelativeDocumentMoniker": "Assets\\KJ\\Scripts\\LogInScripts\\LogInManager.cs",
+              "ToolTip": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LogInScripts\\LogInManager.cs",
+              "RelativeToolTip": "Assets\\KJ\\Scripts\\LogInScripts\\LogInManager.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACcAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T15:37:16.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestGameQuitManager.cs",
+              "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\Tests\\TestGameQuitManager.cs",
+              "RelativeDocumentMoniker": "Assets\\KJ\\Scripts\\Tests\\TestGameQuitManager.cs",
+              "ToolTip": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\Tests\\TestGameQuitManager.cs",
+              "RelativeToolTip": "Assets\\KJ\\Scripts\\Tests\\TestGameQuitManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T15:32:05.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoadingTextAnimation.cs",
+              "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LoadingScripts\\LoadingTextAnimation.cs",
+              "RelativeDocumentMoniker": "Assets\\KJ\\Scripts\\LoadingScripts\\LoadingTextAnimation.cs",
+              "ToolTip": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LoadingScripts\\LoadingTextAnimation.cs",
+              "RelativeToolTip": "Assets\\KJ\\Scripts\\LoadingScripts\\LoadingTextAnimation.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T11:02:57.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoadingSceneManager.cs",
+              "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LoadingScripts\\LoadingSceneManager.cs",
+              "RelativeDocumentMoniker": "Assets\\KJ\\Scripts\\LoadingScripts\\LoadingSceneManager.cs",
+              "ToolTip": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LoadingScripts\\LoadingSceneManager.cs",
+              "RelativeToolTip": "Assets\\KJ\\Scripts\\LoadingScripts\\LoadingSceneManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvxoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T10:50:28.527Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
