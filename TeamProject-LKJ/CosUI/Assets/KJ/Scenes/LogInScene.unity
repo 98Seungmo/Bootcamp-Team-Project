@@ -1178,6 +1178,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1303,6 +1304,20 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &330585548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8256c416a85debf4786f678b33906a04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorImage: {fileID: 2800000, guid: c5a2d2cfe38ce8b468f7d93e9416094e, type: 3}
+  cursorClickImage: {fileID: 2800000, guid: c645a46fbe584234bafe669f67beb7f4, type: 3}
 --- !u!1 &371348249
 GameObject:
   m_ObjectHideFlags: 0
@@ -1930,6 +1945,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Text_Password Area
       objectReference: {fileID: 0}
+    - target: {fileID: 5438914191887467362, guid: cc1e84b009e8e46eba840fd4e3825f4c,
+        type: 3}
+      propertyPath: m_InputType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5438914191887467362, guid: cc1e84b009e8e46eba840fd4e3825f4c,
+        type: 3}
+      propertyPath: m_ContentType
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5438914191887467363, guid: cc1e84b009e8e46eba840fd4e3825f4c,
         type: 3}
       propertyPath: m_Pivot.x
@@ -2546,7 +2571,7 @@ PrefabInstance:
     - target: {fileID: 55818840058691698, guid: 3cfb88ec7a4f94124982bd608d98ad26,
         type: 3}
       propertyPath: m_Name
-      value: Button_Sound
+      value: Button_Audio
       objectReference: {fileID: 0}
     - target: {fileID: 55818840058691699, guid: 3cfb88ec7a4f94124982bd608d98ad26,
         type: 3}
@@ -2657,7 +2682,7 @@ PrefabInstance:
     - target: {fileID: 1226652270276165479, guid: 3cfb88ec7a4f94124982bd608d98ad26,
         type: 3}
       propertyPath: m_Name
-      value: Image_Sound
+      value: Image_Audio
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4454,7 +4479,7 @@ PrefabInstance:
     - target: {fileID: 1496579841917811362, guid: 6e363f85d1bde4284bbe9f4ba494a808,
         type: 3}
       propertyPath: m_Name
-      value: Background_Sound
+      value: Background_Audio
       objectReference: {fileID: 0}
     - target: {fileID: 4859693826278707230, guid: 6e363f85d1bde4284bbe9f4ba494a808,
         type: 3}
@@ -4489,7 +4514,7 @@ PrefabInstance:
     - target: {fileID: 4859693827465149924, guid: 6e363f85d1bde4284bbe9f4ba494a808,
         type: 3}
       propertyPath: m_Name
-      value: Slider_Sound
+      value: Slider_Audio
       objectReference: {fileID: 0}
     - target: {fileID: 4859693827465149926, guid: 6e363f85d1bde4284bbe9f4ba494a808,
         type: 3}
@@ -4878,7 +4903,7 @@ PrefabInstance:
     - target: {fileID: 6320224447002516432, guid: 0cf7aaa432a96477da342a126e922b6a,
         type: 3}
       propertyPath: m_Name
-      value: Panel_Sound
+      value: Panel_Audio
       objectReference: {fileID: 0}
     - target: {fileID: 6320224447002516432, guid: 0cf7aaa432a96477da342a126e922b6a,
         type: 3}
