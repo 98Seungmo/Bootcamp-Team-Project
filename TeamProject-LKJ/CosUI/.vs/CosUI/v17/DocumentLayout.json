@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|c:\\users\\lkj\\documents\\github\\bootcamp-team-project\\teamproject-lkj\\cosui\\assets\\kj\\scripts\\villagescripts\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\scripts\\villagescripts\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\assets\\kj\\scripts\\villagescripts\\itemdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\scripts\\villagescripts\\itemdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\assets\\kj\\resources\\itemdatabase.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\resources\\itemdatabase.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|c:\\users\\lkj\\documents\\github\\bootcamp-team-project\\teamproject-lkj\\cosui\\assets\\kj\\scripts\\villagescripts\\villageuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\scripts\\villagescripts\\villageuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\assets\\kj\\uiassets\\common\\scripts\\modularpopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\uiassets\\common\\scripts\\modularpopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\assets\\kj\\scripts\\villagescripts\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\scripts\\villagescripts\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,6 +31,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ItemDBManager.cs",
+              "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\VillageScripts\\ItemDBManager.cs",
+              "RelativeDocumentMoniker": "Assets\\KJ\\Scripts\\VillageScripts\\ItemDBManager.cs",
+              "ToolTip": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\VillageScripts\\ItemDBManager.cs",
+              "RelativeToolTip": "Assets\\KJ\\Scripts\\VillageScripts\\ItemDBManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T14:28:03.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ItemDatabase.txt",
+              "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Resources\\ItemDatabase.txt",
+              "RelativeDocumentMoniker": "Assets\\KJ\\Resources\\ItemDatabase.txt",
+              "ToolTip": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Resources\\ItemDatabase.txt",
+              "RelativeToolTip": "Assets\\KJ\\Resources\\ItemDatabase.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-03-16T14:14:18.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "InventoryUI.cs",
               "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\VillageScripts\\InventoryUI.cs",
               "RelativeDocumentMoniker": "Assets\\KJ\\Scripts\\VillageScripts\\InventoryUI.cs",
@@ -39,28 +69,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "VillageUIManager.cs",
               "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\VillageScripts\\VillageUIManager.cs",
               "RelativeDocumentMoniker": "Assets\\KJ\\Scripts\\VillageScripts\\VillageUIManager.cs",
               "ToolTip": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\VillageScripts\\VillageUIManager.cs",
               "RelativeToolTip": "Assets\\KJ\\Scripts\\VillageScripts\\VillageUIManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAAfAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-16T05:14:16.109Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ModularPopup.cs",
-              "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\UIAssets\\Common\\Scripts\\ModularPopup.cs",
-              "RelativeDocumentMoniker": "Assets\\KJ\\UIAssets\\Common\\Scripts\\ModularPopup.cs",
-              "ToolTip": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\UIAssets\\Common\\Scripts\\ModularPopup.cs",
-              "RelativeToolTip": "Assets\\KJ\\UIAssets\\Common\\Scripts\\ModularPopup.cs",
-              "ViewState": "AQIAAGoAAAAAAAAAAAAUwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T03:04:44.967Z"
             }
           ]
         }

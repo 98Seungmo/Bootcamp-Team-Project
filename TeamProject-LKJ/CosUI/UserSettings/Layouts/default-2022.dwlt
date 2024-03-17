@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1280
     height: 710
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 123
+  controlID: 49
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -297,8 +297,8 @@ MonoBehaviour:
     y: 0
     width: 326.5
     height: 660
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -864,7 +864,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 27608
+  m_LastSelectedObjectID: 28212
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1030,7 +1030,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 9a6b0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 1afbffff
+      m_ExpandedIDs: 26fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1114,10 +1114,10 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 105.5}
-    m_SelectedIDs: 0c760000
-    m_LastClickedID: 30220
-    m_ExpandedIDs: 00000000cc750000ce750000d0750000d2750000d4750000d6750000d8750000da750000dc750000de750000e0750000
+    scrollPos: {x: 0, y: 153.5}
+    m_SelectedIDs: 14760000
+    m_LastClickedID: 30228
+    m_ExpandedIDs: 00000000d4750000d6750000d8750000da750000dc750000de750000e0750000e2750000e4750000e6750000e8750000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1145,7 +1145,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000cc750000ce750000d0750000d2750000d4750000d6750000d8750000da750000dc750000de750000e0750000
+    m_ExpandedIDs: 00000000d4750000d6750000d8750000da750000dc750000de750000e0750000e2750000e4750000e6750000e8750000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1243,7 +1243,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 270
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
