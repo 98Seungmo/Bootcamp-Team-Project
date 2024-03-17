@@ -5,10 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public class Item
 {
-    public Item(string _type, string _name, string _description, string _quantity, string _imagePath, bool _enhanceable, string _enhanceLevel) 
-    {Type = _type; Name = _name; Description = _description; Quantity = _quantity; ImagePath = _imagePath; Enhanceable = _enhanceable; EnhanceLevel = _enhanceLevel;}
+    public Item(string _type, string _id, string _name, string _description, string _quantity, string _imagePath, bool _enhanceable, string _enhanceLevel) 
+    {Type = _type; ID = _id;  Name = _name; Description = _description; Quantity = _quantity; ImagePath = _imagePath; Enhanceable = _enhanceable; EnhanceLevel = _enhanceLevel;}
 
-    public string Type, Name, Description, Quantity, ImagePath, EnhanceLevel;
+    public string Type, ID, Name, Description, Quantity, ImagePath, EnhanceLevel;
     public bool Enhanceable;
 }
 
@@ -26,7 +26,7 @@ public class ItemDBManager : MonoBehaviour
         {
             string[] row = line[i].Split('\t');
 
-            allItemList.Add(new Item(row[0], row[1], row[2], row[3], row[4], row[5] == "True", row[6]));
+            allItemList.Add(new Item(row[0], row[1], row[2], row[3], row[4], row[5], row[6] == "true", row[7]));
         }
     }
 }
