@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\assets\\kj\\scripts\\villagescripts\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\scripts\\villagescripts\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|c:\\users\\lkj\\documents\\github\\bootcamp-team-project\\teamproject-lkj\\cosui\\assets\\kj\\scripts\\loginscripts\\firebaseauthmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\scripts\\loginscripts\\firebaseauthmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\assets\\kj\\scripts\\villagescripts\\villageuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\scripts\\villagescripts\\villageuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|c:\\users\\lkj\\documents\\github\\bootcamp-team-project\\teamproject-lkj\\cosui\\assets\\kj\\scripts\\loadingscripts\\loadingscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\scripts\\loadingscripts\\loadingscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\assets\\kj\\resources\\itemdatabase.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\resources\\itemdatabase.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|c:\\users\\lkj\\documents\\github\\bootcamp-team-project\\teamproject-lkj\\cosui\\assets\\kj\\scripts\\villagescripts\\itemdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\scripts\\villagescripts\\itemdbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|c:\\users\\lkj\\documents\\github\\bootcamp-team-project\\teamproject-lkj\\cosui\\assets\\kj\\scripts\\loginscripts\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\scripts\\loginscripts\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,54 +26,41 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ItemDBManager.cs",
-              "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\VillageScripts\\ItemDBManager.cs",
-              "RelativeDocumentMoniker": "Assets\\KJ\\Scripts\\VillageScripts\\ItemDBManager.cs",
-              "ToolTip": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\VillageScripts\\ItemDBManager.cs",
-              "RelativeToolTip": "Assets\\KJ\\Scripts\\VillageScripts\\ItemDBManager.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAwBwAAABhAAAA",
+              "DocumentIndex": 1,
+              "Title": "LoadingSceneManager.cs",
+              "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LoadingScripts\\LoadingSceneManager.cs",
+              "RelativeDocumentMoniker": "Assets\\KJ\\Scripts\\LoadingScripts\\LoadingSceneManager.cs",
+              "ToolTip": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LoadingScripts\\LoadingSceneManager.cs",
+              "RelativeToolTip": "Assets\\KJ\\Scripts\\LoadingScripts\\LoadingSceneManager.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T14:28:03.903Z",
+              "WhenOpened": "2024-03-18T08:49:18.959Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ItemDatabase.txt",
-              "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Resources\\ItemDatabase.txt",
-              "RelativeDocumentMoniker": "Assets\\KJ\\Resources\\ItemDatabase.txt",
-              "ToolTip": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Resources\\ItemDatabase.txt",
-              "RelativeToolTip": "Assets\\KJ\\Resources\\ItemDatabase.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-03-16T14:14:18.185Z",
+              "Title": "LogInManager.cs",
+              "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LogInScripts\\LogInManager.cs",
+              "RelativeDocumentMoniker": "Assets\\KJ\\Scripts\\LogInScripts\\LogInManager.cs",
+              "ToolTip": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LogInScripts\\LogInManager.cs",
+              "RelativeToolTip": "Assets\\KJ\\Scripts\\LogInScripts\\LogInManager.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAswG4AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T05:00:40.871Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "InventoryUI.cs",
-              "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\VillageScripts\\InventoryUI.cs",
-              "RelativeDocumentMoniker": "Assets\\KJ\\Scripts\\VillageScripts\\InventoryUI.cs",
-              "ToolTip": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\VillageScripts\\InventoryUI.cs",
-              "RelativeToolTip": "Assets\\KJ\\Scripts\\VillageScripts\\InventoryUI.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Title": "FirebaseAuthManager.cs",
+              "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LogInScripts\\FirebaseAuthManager.cs",
+              "RelativeDocumentMoniker": "Assets\\KJ\\Scripts\\LogInScripts\\FirebaseAuthManager.cs",
+              "ToolTip": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LogInScripts\\FirebaseAuthManager.cs",
+              "RelativeToolTip": "Assets\\KJ\\Scripts\\LogInScripts\\FirebaseAuthManager.cs",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAhwH4AAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T06:53:39.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VillageUIManager.cs",
-              "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\VillageScripts\\VillageUIManager.cs",
-              "RelativeDocumentMoniker": "Assets\\KJ\\Scripts\\VillageScripts\\VillageUIManager.cs",
-              "ToolTip": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\VillageScripts\\VillageUIManager.cs",
-              "RelativeToolTip": "Assets\\KJ\\Scripts\\VillageScripts\\VillageUIManager.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T05:14:16.109Z",
+              "WhenOpened": "2024-03-17T12:57:42.348Z",
               "EditorCaption": ""
             }
           ]
