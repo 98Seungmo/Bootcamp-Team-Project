@@ -1370,11 +1370,16 @@ PrefabInstance:
     - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
@@ -1384,7 +1389,17 @@ PrefabInstance:
       objectReference: {fileID: 1618888950}
     - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1618888950}
+    - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
@@ -1394,12 +1409,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActivePanelToRegister
+      objectReference: {fileID: 0}
+    - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: LogInManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: LoginManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3097999713454416822, guid: 3aa336fffa0ce46518e6567654edc3ea,
@@ -4365,6 +4395,11 @@ PrefabInstance:
     - target: {fileID: 5300399473567727936, guid: a8730246c1d844a81a4c5aad550f271d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300399473567727936, guid: a8730246c1d844a81a4c5aad550f271d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5300399473567727936, guid: a8730246c1d844a81a4c5aad550f271d,
@@ -4374,8 +4409,23 @@ PrefabInstance:
       objectReference: {fileID: 1618888950}
     - target: {fileID: 5300399473567727936, guid: a8730246c1d844a81a4c5aad550f271d,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1618888950}
+    - target: {fileID: 5300399473567727936, guid: a8730246c1d844a81a4c5aad550f271d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300399473567727936, guid: a8730246c1d844a81a4c5aad550f271d,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CloseRegister
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300399473567727936, guid: a8730246c1d844a81a4c5aad550f271d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActivePanelToLogin
       objectReference: {fileID: 0}
     - target: {fileID: 5300399473567727936, guid: a8730246c1d844a81a4c5aad550f271d,
         type: 3}
@@ -4384,7 +4434,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5300399473567727936, guid: a8730246c1d844a81a4c5aad550f271d,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: LoginManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300399473567727936, guid: a8730246c1d844a81a4c5aad550f271d,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300399473567727936, guid: a8730246c1d844a81a4c5aad550f271d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5300399473567727938, guid: a8730246c1d844a81a4c5aad550f271d,
@@ -4868,6 +4928,41 @@ PrefabInstance:
       propertyPath: toggleTransition
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3629589346954473089, guid: 0bc58f8a7b3b44917939305270eafed1,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629589346954473089, guid: 0bc58f8a7b3b44917939305270eafed1,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629589346954473089, guid: 0bc58f8a7b3b44917939305270eafed1,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1618888950}
+    - target: {fileID: 3629589346954473089, guid: 0bc58f8a7b3b44917939305270eafed1,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629589346954473089, guid: 0bc58f8a7b3b44917939305270eafed1,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnToggleChanged
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629589346954473089, guid: 0bc58f8a7b3b44917939305270eafed1,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LoginManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629589346954473089, guid: 0bc58f8a7b3b44917939305270eafed1,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3629589346954473092, guid: 0bc58f8a7b3b44917939305270eafed1,
         type: 3}
       propertyPath: m_Pivot.x
@@ -5061,6 +5156,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1293666277 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3629589346954473089, guid: 0bc58f8a7b3b44917939305270eafed1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1251217616}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1298387621
 GameObject:
   m_ObjectHideFlags: 0
@@ -5824,7 +5931,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1618888951}
+      objectReference: {fileID: 1618888950}
     - target: {fileID: 55818840058691696, guid: ce52e4e143f84481cb9933aaec1ba6c0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -5833,12 +5940,12 @@ PrefabInstance:
     - target: {fileID: 55818840058691696, guid: ce52e4e143f84481cb9933aaec1ba6c0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoginButton
+      value: AttemptLogin
       objectReference: {fileID: 0}
     - target: {fileID: 55818840058691696, guid: ce52e4e143f84481cb9933aaec1ba6c0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: FirebaseAuthManager, Assembly-CSharp
+      value: LoginManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 55818840058691696, guid: ce52e4e143f84481cb9933aaec1ba6c0,
         type: 3}
@@ -6047,6 +6154,17 @@ MonoBehaviour:
   emailRegisterImage: {fileID: 621804861}
   passwordRegisterImage: {fileID: 65445047}
   passwordCheckImage: {fileID: 783046703}
+  activePanel: 0
+  inputFieldsLogin:
+  - {fileID: 97981535}
+  - {fileID: 577205219}
+  inputFieldsRegister:
+  - {fileID: 676199971}
+  - {fileID: 1104039784}
+  - {fileID: 1104039783}
+  - {fileID: 769704693}
+  emailInputField: {fileID: 97981535}
+  saveEmailToggle: {fileID: 1293666277}
 --- !u!114 &1618888951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7508,11 +7626,16 @@ PrefabInstance:
     - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
@@ -7522,7 +7645,17 @@ PrefabInstance:
       objectReference: {fileID: 1618888950}
     - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1618888950}
+    - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
@@ -7532,12 +7665,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActivePanelToLogin
+      objectReference: {fileID: 0}
+    - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: LogInManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: LoginManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 995776295133563823, guid: 3aa336fffa0ce46518e6567654edc3ea,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3097999713454416822, guid: 3aa336fffa0ce46518e6567654edc3ea,

@@ -515,7 +515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 1917270489}
-  sceneName: TestScene
+  sceneName: VillageScene
   randomStory: {fileID: 0}
   gameStory: {fileID: 1061953007}
   gameStory2: {fileID: 1784505163}

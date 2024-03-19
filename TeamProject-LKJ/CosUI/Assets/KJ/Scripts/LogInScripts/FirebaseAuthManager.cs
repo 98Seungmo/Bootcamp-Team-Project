@@ -6,6 +6,7 @@ using Firebase;
 using UnityEngine.UI;
 using TMPro;
 using System.Threading.Tasks;
+using System;
 
 
 public class FirebaseAuthManager : MonoBehaviour
@@ -42,9 +43,34 @@ public class FirebaseAuthManager : MonoBehaviour
     // 성공시 나타나는 메시지
     public TMP_Text ConfrimRegisterText;
 
+    // 싱글톤 패턴
+    private static FirebaseAuthManager _instance;
+    public static FirebaseAuthManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+
+            }
+            return _instance;
+        }
+    }
 
     void Awake()
     {
+        // 싱글톤 패턴
+        if (_instance == null)
+        {
+            _instance = this;
+            // 씬 전환시에도 파괴되지 않게 함
+            DontDestroyOnLoad(gameObject);
+        }
+        else if(_instance != this)
+        {
+            // 중복 인스턴스 파괴
+            Destroy(gameObject);
+        }
         // Firebase DependencyStatus 확인함
         FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
         {
@@ -69,11 +95,12 @@ public class FirebaseAuthManager : MonoBehaviour
         // 초기화
         _auth = FirebaseAuth.DefaultInstance;
     }
+    
 
-    public void LoginButton()
+    public void LoginButton(Action<bool> onLoginCompleted)
     {
         // 이메일과 비밀번호를 전달하는 로그인 호출.
-        StartCoroutine(Login(email.text, password.text));
+        StartCoroutine(Login(email.text, password.text, onLoginCompleted));
     }
 
     public void RegisterButton()
@@ -82,13 +109,13 @@ public class FirebaseAuthManager : MonoBehaviour
         StartCoroutine(Register(emailRegister.text, passwordRegister.text, usernameRegister.text));
     }
 
-    IEnumerator Login(string _email, string _password)
+    IEnumerator Login(string _email, string _password, Action<bool> onLoginCompleted)
     {
         // email 과 password 를 전달하여 firebase 인증 함수를 호출.
         var LoginTask = _auth.SignInWithEmailAndPasswordAsync(_email, _password);
         // LoginTask.IsCompleted 가 참이 될 때 까지 기다림.
         yield return new WaitUntil(predicate: () => LoginTask.IsCompleted);
-
+        _user = LoginTask.Result.User;
         if (LoginTask.Exception != null)
         {
             // 만약 예외가 발생하여 오류가 나타나면
@@ -120,13 +147,17 @@ public class FirebaseAuthManager : MonoBehaviour
                     break;
             }
             warningLoginText.text = message;
+            onLoginCompleted?.Invoke(false);
+            
         }
         // 제대로 작동 한다면.
         else
         {
-            Debug.LogFormat("로그인 성공 : {0}", _user.Email);
+            Debug.LogFormat("로그인 성공 : {0} {1}", _user.Email, _user.DisplayName);
             warningLoginText.text = "";
             confirmLoginText.text = "로그인 성공!!";
+            onLoginCompleted?.Invoke(true);
+            
         }
     }
 
@@ -176,7 +207,6 @@ public class FirebaseAuthManager : MonoBehaviour
             // 회원가입 성공.
             else
             {
-
                 _user = RegisterTask.Result.User;
 
                 if (_user != null)

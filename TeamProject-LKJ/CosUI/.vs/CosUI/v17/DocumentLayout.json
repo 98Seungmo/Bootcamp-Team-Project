@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\assets\\kj\\scripts\\loginscripts\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\scripts\\loginscripts\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|c:\\users\\lkj\\documents\\github\\bootcamp-team-project\\teamproject-lkj\\cosui\\assets\\kj\\scripts\\loginscripts\\firebaseauthmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\scripts\\loginscripts\\firebaseauthmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|c:\\users\\lkj\\documents\\github\\bootcamp-team-project\\teamproject-lkj\\cosui\\assets\\kj\\scripts\\loadingscripts\\loadingscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\assets\\kj\\scripts\\loadingscripts\\loadingscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\scripts\\loadingscripts\\loadingscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|c:\\users\\lkj\\documents\\github\\bootcamp-team-project\\teamproject-lkj\\cosui\\assets\\kj\\scripts\\loginscripts\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FB8ACDA-0CDD-3DF4-FFF3-F4E00E9F81B7}|Assembly-CSharp.csproj|solutionrelative:assets\\kj\\scripts\\loginscripts\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LoadingSceneManager.cs",
               "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LoadingScripts\\LoadingSceneManager.cs",
               "RelativeDocumentMoniker": "Assets\\KJ\\Scripts\\LoadingScripts\\LoadingSceneManager.cs",
               "ToolTip": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LoadingScripts\\LoadingSceneManager.cs",
               "RelativeToolTip": "Assets\\KJ\\Scripts\\LoadingScripts\\LoadingSceneManager.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T08:49:18.959Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LogInManager.cs",
-              "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LogInScripts\\LogInManager.cs",
-              "RelativeDocumentMoniker": "Assets\\KJ\\Scripts\\LogInScripts\\LogInManager.cs",
-              "ToolTip": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LogInScripts\\LogInManager.cs",
-              "RelativeToolTip": "Assets\\KJ\\Scripts\\LogInScripts\\LogInManager.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAswG4AAAA/AAAA",
+              "DocumentIndex": 0,
+              "Title": "LoginManager.cs",
+              "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LogInScripts\\LoginManager.cs",
+              "RelativeDocumentMoniker": "Assets\\KJ\\Scripts\\LogInScripts\\LoginManager.cs",
+              "ToolTip": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LogInScripts\\LoginManager.cs",
+              "RelativeToolTip": "Assets\\KJ\\Scripts\\LogInScripts\\LoginManager.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAwwDwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T05:00:40.871Z",
+              "WhenOpened": "2024-03-19T00:46:33.563Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FirebaseAuthManager.cs",
               "DocumentMoniker": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LogInScripts\\FirebaseAuthManager.cs",
               "RelativeDocumentMoniker": "Assets\\KJ\\Scripts\\LogInScripts\\FirebaseAuthManager.cs",
               "ToolTip": "C:\\Users\\LKJ\\Documents\\GitHub\\Bootcamp-Team-Project\\TeamProject-LKJ\\CosUI\\Assets\\KJ\\Scripts\\LogInScripts\\FirebaseAuthManager.cs",
               "RelativeToolTip": "Assets\\KJ\\Scripts\\LogInScripts\\FirebaseAuthManager.cs",
-              "ViewState": "AQIAAH4AAAAAAAAAAAAhwH4AAAA5AAAA",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAIwGMAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-17T12:57:42.348Z",
               "EditorCaption": ""

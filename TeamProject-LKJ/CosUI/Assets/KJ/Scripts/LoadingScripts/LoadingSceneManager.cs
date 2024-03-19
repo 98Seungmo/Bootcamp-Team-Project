@@ -35,6 +35,7 @@ public class LoadingSceneManager : MonoBehaviour
         #endregion
     }
     #region 슬라이더를 이용해 로딩창에서 다음 씬으로 넘어가기. 
+    [Header("Slider")]
     public Slider slider;
     public string sceneName;
 
@@ -69,6 +70,7 @@ public class LoadingSceneManager : MonoBehaviour
     }
     #endregion
     #region 로딩 동안 게임 스토리 텍스트 랜덤으로 생성
+    [Header("RandomText")]
     public TMP_Text randomStory;
     public TMP_Text gameStory;
     public TMP_Text gameStory2;
@@ -77,6 +79,5 @@ public class LoadingSceneManager : MonoBehaviour
     private int _randomNum;
 
     List<TMP_Text> gameStoryList = new List<TMP_Text>();
-
     #endregion
 }

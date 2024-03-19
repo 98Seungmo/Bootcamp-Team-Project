@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MouseCursorManager : MonoBehaviour
 {
+    [Header("MosueCursor")]
     // 메인카메라의 마우스 커서 이미지를 원하는 이미지로 바꿈.
     [SerializeField] Texture2D cursorImage;
     [SerializeField] Texture2D cursorClickImage;

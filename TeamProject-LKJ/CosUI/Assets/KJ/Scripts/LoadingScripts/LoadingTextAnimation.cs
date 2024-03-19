@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class LoadingTextAnimation : MonoBehaviour
 {
+    [Header("LoadingText")]
     // text 컴포넌트
     public TextMeshProUGUI loadingText;
     // '.' 텍스트 속도
