@@ -34,7 +34,7 @@ public class SingletonLazy<T> : MonoBehaviour where T : class
         }
     }
 }
-
+// 싱글톤 상속
 public class SFX_Manager : SingletonLazy<SFX_Manager>
 {
     //카메라 변수 선언
@@ -51,7 +51,7 @@ public class SFX_Manager : SingletonLazy<SFX_Manager>
     [SerializeField]
     private List<AudioClip> _audioBGM;
 
-    //브금 오디오소스 변수가 널일때 카메라에 있는 오디오소스를 열고 브금플레이( 브금 확정 시 변경 )함수를 실행
+    //브금 오디오소스 변수가 널일때 카메라에 있는 오디오소스를 열고 브금플레이( 브금 확정 시 변경 )함수를 실행 / 실험용
     public void Start()
     {
         if (BGM == null)
