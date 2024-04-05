@@ -2,6 +2,7 @@ using KJ;
 using Scene_Teleportation_Kit.Scripts.player;
 using System;
 using UnityEngine;
+using Attribute = KJ.Attribute;
 
 namespace HJ
 {
@@ -13,9 +14,43 @@ namespace HJ
         }
         protected virtual void Start()
         {
+            
+            ItemDBManager itemDBManager = ItemDBManager.Instance;
             GameData gameData = NetData.Instance.gameData;
-            Class classKnight = gameData.classes[ClassType.knight];
+            Class classKnight = GetClass(ClassType.knight);
+            Class classbabarian = GetClass(ClassType.barbarian);
+            Class GetClass(ClassType classType)
+            {
+                return gameData.classes[classType];
+            }
             _hpMax = classKnight.baseHp;
+            for (int i = 0; i < itemDBManager._itemData.items.Count; i++)
+            {
+                if (itemDBManager._itemData.items[i].type == "weapon")
+                {
+                    attackItem = itemDBManager._itemData.items[i].attributes.attack;
+                }
+                if (itemDBManager._itemData.items[i].type == "armor")
+                {
+                    armorItem = itemDBManager._itemData.items[i].attributes.defense;
+                }
+            }
+            for (int i = 0; i < itemDBManager._itemData.items.Count; i++)
+            {
+                if (itemDBManager._itemData.items[i].name == "귀걸이")
+                {
+                    attackSkill = 0.3f;
+                }
+                else if (itemDBManager._itemData.items[i].name == "목걸이")
+                {
+                    attackSkill = 0.2f;
+                }
+                else if (itemDBManager._itemData.items[i].name == "반지")
+                {
+                    attackSkill = 0.1f;
+                }
+            }
+
             HealthStart();
             onHpMin += () => Death();
 

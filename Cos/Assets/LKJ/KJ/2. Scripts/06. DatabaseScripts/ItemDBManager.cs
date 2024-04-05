@@ -1,3 +1,7 @@
+using Firebase;
+using Firebase.Auth;
+using Firebase.Database;
+using Firebase.Extensions;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -52,7 +56,7 @@ namespace KJ
     /* SingletonLazy<T> 를 상속받아서 싱글톤 구현하는 클래스 */
     public class ItemDBManager : SingletonLazy<ItemDBManager>
     {
-        public ItemData _itemData { get; private set; }
+        public ItemData _itemData { get; set; }
 
         public Item GetItem(string id) 
         {
@@ -79,5 +83,39 @@ namespace KJ
             if (s == null) Debug.Log("LoadItemSprite == null : " + imagePath);
             return s;
         }
+
+
+        //private DatabaseReference _databaseReference;
+        //private void Start()
+        //{
+        //    FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task =>
+        //    {
+        //        if (task.IsFaulted)
+        //        {
+        //            Debug.LogError($"failed to initialize firebase with {task.Exception}");
+        //            return;
+        //        }
+
+        //        var dependencyStatus = task.Result;
+        //        if (dependencyStatus == Firebase.DependencyStatus.Available)
+        //        {
+        //            FirebaseApp app = FirebaseApp.DefaultInstance;
+
+        //            _databaseReference = FirebaseDatabase.DefaultInstance.RootReference;
+        //            //_auth = FirebaseAuth.DefaultInstance;
+        //            //_auth.StateChanged += OnAuthStateChanged;
+
+        //            /*초기화 결과 확인*/
+        //            Debug.Log("firebase initalized successfull");
+
+        //        }
+        //        else
+        //        {
+        //            // 실패
+        //            Debug.LogError($"Firebase dependencies : {dependencyStatus}");
+        //        }
+
+        //    });
+        //}
     }
 }
