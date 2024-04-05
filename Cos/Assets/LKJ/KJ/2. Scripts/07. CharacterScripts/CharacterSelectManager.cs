@@ -11,30 +11,31 @@ using UnityEngine.UI;
 
 namespace KJ
 {
+    /**
+     * @brief 캐릭터 선택창에서 해당 클래스 고르면 해당 클래스의 기본 정보가 플레이어에게 들어감
+     */
     public class CharacterSelectManager : MonoBehaviour
     {
         [Header("DynamicButton")]
         /* 팝업 창 버튼 (동적) */
-        public Button yesButton;
+        public Button yesButton; ///< 동적 버튼
         [Header("Popup")]
         /* 팝업 창 활성화 */
         [SerializeField]
-        private GameObject _checkPopupUI;
-        public TMP_Text selectText;
+        private GameObject _checkPopupUI; ///< 확인창 UI
+        public TMP_Text selectText; ///< 확인창 텍스트
         [Header("Loading")]
-        public GameObject loadingUI;
+        public GameObject loadingUI; ///< 로딩 팝업창
 
         /**/
         private string _class;
 
-        void Awake()
-        {
-            //_gameData = NetData.Instance._gameData;
-        }
-
         public GameObject characterInstance { get; private set; }
 
-
+        /**
+         * @brief CurrentShortUID 값 비교해서 캐릭터 생성 
+         * @param[in] className 클래스 이름
+         */
         public void CreateCharacter(string className)
         {
             Debug.Log("호출1");
@@ -118,6 +119,10 @@ namespace KJ
                 }
             }
         }
+
+        /**
+         * @brief 생성 후에 마을 씬으로 이동
+         */
         public void LoadToVillage()
         {
             SceneManager.LoadScene("VillageScene");
@@ -125,6 +130,10 @@ namespace KJ
 
         #region 팝업 UI
         /* 동적 할당 */
+        /**
+         * @brief 버튼 동적 할당 해당 클래스 클릭시 텍스트 와 생성 버튼이 각 클래스마다 다르게 설정
+         * @param[in] className 클래스 이름
+         */
         public void OpenCheckPopupText(string className)
         {
             _class = className;
@@ -146,13 +155,19 @@ namespace KJ
             }
             _checkPopupUI.SetActive(true);
         }
-        
+
+        /**
+         * @brief 선택된 클래스 생성 버튼
+         */
         public void ConfigureYesButton()
         {
             Debug.Log("새로운 리스너 할당됨.");
             CreateCharacter(_class);
         }
 
+        /**
+         * brief 확인창 비활성화
+         */
         public void CloseCheckPopup()
         {
             _checkPopupUI.SetActive(false);

@@ -6,20 +6,22 @@ using UnityEngine;
 namespace KJ
 {
     /*************************************************************************************/
-    /// <summary>
-    /// PlayerDB 와 ItemDB Json 파일을 정리한 것.
-    /// PlayerDB 에는 ClassDB 가 ClassDB 안에는 SkillDB가 들어가 있음.
-    /// </summary>
+    /* Json 파일 구조 C#으로 표기 */
     /************************************************************************************/
     
-    /* ItemDB.Json 종합적으로 관리 */
+    /**
+     * @brief ItemDB.Json 종합적으로 관리 
+     */
+
     [System.Serializable]
     public class ItemData
     {
         public List<Item> items = new List<Item> ();
     }   
 
-    /* 아이템 데이터 */
+    /** 
+     * @brief 아이템 데이터 
+     */
     [System.Serializable]
     public class Item
     {
@@ -34,7 +36,9 @@ namespace KJ
         public Attribute attributes;
     }
 
-    /* 아이템 데이터의 Atrribute 데이터 */
+    /** 
+     * @brief 아이템 데이터의 Atrribute 데이터 
+     */
     [System.Serializable]
     public class Attribute
     {
@@ -51,6 +55,9 @@ namespace KJ
         public float skillDamage = 0;
     }
 
+    /**
+     * @biref 아이템 제작시 필요 수량 
+     */
     [System.Serializable]
     public class ItemRequirement
     {
@@ -58,7 +65,9 @@ namespace KJ
         public int quantity;
     }
 
-    /* PlayerDB.Json 종합적으로 관리 */
+    /** 
+     * @brief PlayerDB.Json 종합적으로 관리 
+     */
     [System.Serializable]
     public class GameData 
     {
@@ -69,8 +78,10 @@ namespace KJ
 
     }
 
+    /** 
+     * @brief Player 데이터 
+     */
     [System.Serializable]
-    /* Player 데이터 */
     public class Player
     {
         public string uid;
@@ -89,7 +100,9 @@ namespace KJ
         }
     }
 
-    /* 인벤토리 관리 */
+    /** 
+     * @brief 인벤토리 관리 
+     */
     [System.Serializable]
     public class Inventory
     {
@@ -101,7 +114,9 @@ namespace KJ
         }
     }
 
-    /* 인벤토리 데이터 */
+    /** 
+     * @brief 인벤토리 데이터 
+     */
     [System.Serializable]
     public class InventoryData
     {
@@ -109,7 +124,9 @@ namespace KJ
         public int quantity;
     }
 
-    /* 클래스 enum 타입으로 분류 */
+    /**
+     * @brief 클래스 enum 타입으로 분류 
+     */
     public enum ClassType
     {
         knight,
@@ -118,7 +135,9 @@ namespace KJ
         mage
     }
 
-    /* Class 데이터 */
+    /** 
+     * @brief Class 데이터 
+     */
     [System.Serializable]
     public class Class
     {
@@ -138,7 +157,9 @@ namespace KJ
 
     }
 
-    /* Skill 데이터 */
+    /** 
+     * @brief Skill 데이터 
+     */
     [System.Serializable]
     public class Skill
     {

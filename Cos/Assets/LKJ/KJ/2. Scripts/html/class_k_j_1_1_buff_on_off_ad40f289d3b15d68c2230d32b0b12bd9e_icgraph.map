@@ -1,0 +1,5 @@
+<map id="KJ.BuffOnOff.HealthBuff" name="KJ.BuffOnOff.HealthBuff">
+<area shape="rect" id="Node000001" title="방어력 버프 활성화시 해당 색으로 바뀜, 플레이어의 방어력 = 0.2f" alt="" coords="207,5,365,32"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_buff_on_off.html#accb3530d624432f6c59bfaebd48f4caa" title="방어력 버프 활성화" alt="" coords="5,5,159,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,21,159,21,159,16,191,16"/>
+</map>

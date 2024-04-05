@@ -1,0 +1,7 @@
+<map id="KJ.EnemyBarsManager.UpdateTargetUI" name="KJ.EnemyBarsManager.UpdateTargetUI">
+<area shape="rect" id="Node000001" title="체력바 UI 업데이트" alt="" coords="257,23,460,65"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_enemy_bars_manager.html#a946832f78216faa3af4fe8c0c8c4d7c4" title="보스 및 적들 초기 체력 설정" alt="" coords="12,5,202,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,35,203,31,203,26,241,30"/>
+<area shape="rect" id="Node000003" href="$class_k_j_1_1_enemy_bars_manager.html#a41d96bf0d26be629779e19d4f7fab133" title="보스 및 적들 체력 UI 업데이트" alt="" coords="5,56,209,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="241,58,210,62,209,56,241,53"/>
+</map>

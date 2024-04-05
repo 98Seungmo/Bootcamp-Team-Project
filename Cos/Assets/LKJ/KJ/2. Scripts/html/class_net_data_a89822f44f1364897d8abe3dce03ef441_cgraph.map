@@ -1,0 +1,7 @@
+<map id="NetData.SavePlayerDB" name="NetData.SavePlayerDB">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,161,57"/>
+<area shape="rect" id="Node000002" href="$class_net_data.html#aadb581acf72d2edc0895f55b496feebc" title=" " alt="" coords="215,5,370,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,32,199,27,199,33,162,37"/>
+<area shape="rect" id="Node000003" href="$class_net_data.html#a8f4040c80cc8824c95b31af3fa827761" title=" " alt="" coords="209,56,376,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,51,193,55,193,60,161,56"/>
+</map>

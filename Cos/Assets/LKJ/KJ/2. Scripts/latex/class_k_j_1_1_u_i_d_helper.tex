@@ -1,0 +1,66 @@
+\doxysection{KJ.\+UIDHelper 클래스 참조}
+\hypertarget{class_k_j_1_1_u_i_d_helper}{}\label{class_k_j_1_1_u_i_d_helper}\index{KJ.UIDHelper@{KJ.UIDHelper}}
+
+
+UID 를 해시함수(\+SHA256) 이용해서 Short\+UID 로 변환  
+
+
+\doxysubsubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_k_j_1_1_u_i_d_helper_a3ef91f886a34678596c3fdbc1ed2b2a9}{Generate\+Short\+UID}} (string long\+UID)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+UID 를 해시함수(\+SHA256) 이용해서 Short\+UID 로 변환 
+
+\mbox{\hyperlink{_player_d_b_manager_8cs_source}{Player\+DBManager.\+cs}} 파일의 \mbox{\hyperlink{_player_d_b_manager_8cs_source_l00017}{17}} 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\Hypertarget{class_k_j_1_1_u_i_d_helper_a3ef91f886a34678596c3fdbc1ed2b2a9}\label{class_k_j_1_1_u_i_d_helper_a3ef91f886a34678596c3fdbc1ed2b2a9} 
+\index{KJ.UIDHelper@{KJ.UIDHelper}!GenerateShortUID@{GenerateShortUID}}
+\index{GenerateShortUID@{GenerateShortUID}!KJ.UIDHelper@{KJ.UIDHelper}}
+\doxysubsubsection{\texorpdfstring{GenerateShortUID()}{GenerateShortUID()}}
+{\footnotesize\ttfamily static string KJ.\+UIDHelper.\+Generate\+Short\+UID (\begin{DoxyParamCaption}\item[{string}]{long\+UID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{_player_d_b_manager_8cs_source}{Player\+DBManager.\+cs}} 파일의 \mbox{\hyperlink{_player_d_b_manager_8cs_source_l00019}{19}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using}\ (SHA256\ sha256Hash\ =\ SHA256.Create())}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ SHA256\ 해시\ 값을\ 계산.\ */}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{byte}[]\ bytes\ =\ sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(longUID));}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 바이트\ 배열을\ String\ 으로\ 변환.\ */}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ StringBuilder\ builder\ =\ \textcolor{keyword}{new}\ StringBuilder();}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ bytes.Length;\ i++)}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ builder.Append(bytes[i].ToString(\textcolor{stringliteral}{"{}x2"{}}));}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 해시값의\ 앞부분만\ 사용하여\ ShortUID\ 생성.\ */}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ builder.ToString().Substring(0,\ 8);\ \ \textcolor{comment}{//\ 앞의\ 8자리만\ 사용}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_j_1_1_u_i_d_helper_a3ef91f886a34678596c3fdbc1ed2b2a9_icgraph}
+\end{center}
+\end{figure}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+LKJ/\+Documents/\+Git\+Hub/\+Bootcamp-\/\+Team-\/\+Project/\+Cos/\+Assets/\+LKJ/\+KJ/2. Scripts/06. Database\+Scripts/\mbox{\hyperlink{_player_d_b_manager_8cs}{Player\+DBManager.\+cs}}\end{DoxyCompactItemize}

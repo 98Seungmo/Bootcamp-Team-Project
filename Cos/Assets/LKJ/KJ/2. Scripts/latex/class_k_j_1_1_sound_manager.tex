@@ -1,0 +1,300 @@
+\doxysection{KJ.\+Sound\+Manager 클래스 참조}
+\hypertarget{class_k_j_1_1_sound_manager}{}\label{class_k_j_1_1_sound_manager}\index{KJ.SoundManager@{KJ.SoundManager}}
+
+
+사운드 매니저 @detail 소리 볼륨 크기에 따라 이미지 변화, 배경음과 효과음 조절(토글형식, Mute \texorpdfstring{$<$}{<}-\/\texorpdfstring{$>$}{>} All)  
+
+
+
+
+KJ.\+Sound\+Manager에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_k_j_1_1_sound_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+KJ.\+Sound\+Manager에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_k_j_1_1_sound_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_k_j_1_1_sound_manager_a49a6b4fa48f4e314f6faca25dd08ac5b}{Handle\+Volume\+Changed}} (float value)
+\begin{DoxyCompactList}\small\item\em 소리에 따라 이미지 변경 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_k_j_1_1_sound_manager_a7e4c2e299d28c8d69d5e426c58bd2a6a}{Background\+Music\+Switch}} (float value)
+\begin{DoxyCompactList}\small\item\em 배경음악 음소거 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Slider \mbox{\hyperlink{class_k_j_1_1_sound_manager_adc0833ac1514f889489054dda4816692}{volume\+Slider}}
+\begin{DoxyCompactList}\small\item\em 전체 소리 볼륨 슬라이더 \end{DoxyCompactList}\item 
+Image \mbox{\hyperlink{class_k_j_1_1_sound_manager_a23d78fe427765f468e5be2ab32ea9f87}{volume\+Image}}
+\begin{DoxyCompactList}\small\item\em 볼륨 이미지 ~\newline
+ \end{DoxyCompactList}\item 
+Sprite \mbox{\hyperlink{class_k_j_1_1_sound_manager_afabfe7c47295f8ea6795672a9444950c}{mute\+Sprite}}
+\begin{DoxyCompactList}\small\item\em 음소거 이미지 \end{DoxyCompactList}\item 
+Sprite \mbox{\hyperlink{class_k_j_1_1_sound_manager_a493687e7fba0f060c7a4fe7cf79a4c3c}{low\+Volume\+Sprite}}
+\begin{DoxyCompactList}\small\item\em 볼륨 높을 때 이미지 \end{DoxyCompactList}\item 
+Sprite \mbox{\hyperlink{class_k_j_1_1_sound_manager_a0175406fafef1dea84f40913a8507bfc}{high\+Volume\+Sprite}}
+\begin{DoxyCompactList}\small\item\em 볼륨 낮을 때 이미지 \end{DoxyCompactList}\item 
+Audio\+Source \mbox{\hyperlink{class_k_j_1_1_sound_manager_a130c440650409f80a33d037d2477ec95}{audio\+Source}}
+\begin{DoxyCompactList}\small\item\em 오디오소스 \end{DoxyCompactList}\item 
+Slider \mbox{\hyperlink{class_k_j_1_1_sound_manager_af0dbb4dc29794127a93c0164ae7bf198}{background\+Music\+Slider}}
+\begin{DoxyCompactList}\small\item\em 배경음악 음소거 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_k_j_1_1_sound_manager_a8147d430abf43e5b6869964bf7bd612b}{Start}} ()
+\begin{DoxyCompactList}\small\item\em 사운드 설정 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+사운드 매니저 @detail 소리 볼륨 크기에 따라 이미지 변화, 배경음과 효과음 조절(토글형식, Mute \texorpdfstring{$<$}{<}-\/\texorpdfstring{$>$}{>} All) 
+
+\mbox{\hyperlink{_sound_manager_8cs_source}{Sound\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_sound_manager_8cs_source_l00013}{13}} 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\Hypertarget{class_k_j_1_1_sound_manager_a7e4c2e299d28c8d69d5e426c58bd2a6a}\label{class_k_j_1_1_sound_manager_a7e4c2e299d28c8d69d5e426c58bd2a6a} 
+\index{KJ.SoundManager@{KJ.SoundManager}!BackgroundMusicSwitch@{BackgroundMusicSwitch}}
+\index{BackgroundMusicSwitch@{BackgroundMusicSwitch}!KJ.SoundManager@{KJ.SoundManager}}
+\doxysubsubsection{\texorpdfstring{BackgroundMusicSwitch()}{BackgroundMusicSwitch()}}
+{\footnotesize\ttfamily void KJ.\+Sound\+Manager.\+Background\+Music\+Switch (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+배경음악 음소거 
+
+
+\begin{DoxyParams}[1]{매개변수}
+\mbox{\texttt{ in}}  & {\em 슬라이더} & 값 \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{_sound_manager_8cs_source}{Sound\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_sound_manager_8cs_source_l00082}{82}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ audioSource.volume\ =\ Mathf.Round(value);}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_j_1_1_sound_manager_a7e4c2e299d28c8d69d5e426c58bd2a6a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_k_j_1_1_sound_manager_a49a6b4fa48f4e314f6faca25dd08ac5b}\label{class_k_j_1_1_sound_manager_a49a6b4fa48f4e314f6faca25dd08ac5b} 
+\index{KJ.SoundManager@{KJ.SoundManager}!HandleVolumeChanged@{HandleVolumeChanged}}
+\index{HandleVolumeChanged@{HandleVolumeChanged}!KJ.SoundManager@{KJ.SoundManager}}
+\doxysubsubsection{\texorpdfstring{HandleVolumeChanged()}{HandleVolumeChanged()}}
+{\footnotesize\ttfamily void KJ.\+Sound\+Manager.\+Handle\+Volume\+Changed (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+소리에 따라 이미지 변경 
+
+
+\begin{DoxyParams}[1]{매개변수}
+\mbox{\texttt{ in}}  & {\em value} & 슬라이더 값 \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{_sound_manager_8cs_source}{Sound\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_sound_manager_8cs_source_l00058}{58}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 오디오\ 소스\ 볼륨\ 슬라이더의\ 값에\ 맞춤\ */}}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ audioSource.volume\ =\ value\ *\ 0.1f;}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 음량에\ 따라\ 이미지\ 변경\ */}}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value\ <=\ 0)}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ volumeImage.sprite\ =\ \mbox{\hyperlink{class_k_j_1_1_sound_manager_afabfe7c47295f8ea6795672a9444950c}{muteSprite}};}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (value\ <=\ 5)}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ volumeImage.sprite\ =\ \mbox{\hyperlink{class_k_j_1_1_sound_manager_a493687e7fba0f060c7a4fe7cf79a4c3c}{lowVolumeSprite}};}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ volumeImage.sprite\ =\ \mbox{\hyperlink{class_k_j_1_1_sound_manager_a0175406fafef1dea84f40913a8507bfc}{highVolumeSprite}};}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_j_1_1_sound_manager_a49a6b4fa48f4e314f6faca25dd08ac5b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_k_j_1_1_sound_manager_a8147d430abf43e5b6869964bf7bd612b}\label{class_k_j_1_1_sound_manager_a8147d430abf43e5b6869964bf7bd612b} 
+\index{KJ.SoundManager@{KJ.SoundManager}!Start@{Start}}
+\index{Start@{Start}!KJ.SoundManager@{KJ.SoundManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void KJ.\+Sound\+Manager.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+사운드 설정 
+
+
+
+\mbox{\hyperlink{_sound_manager_8cs_source}{Sound\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_sound_manager_8cs_source_l00030}{30}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#region\ 사운드\ 설정 }}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 슬라이더\ 최대값\ 최소값\ 설정\ */}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ volumeSlider.minValue\ =\ 0;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ volumeSlider.maxValue\ =\ 10;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 슬라이더의\ 값을\ 최대값으로\ 설정\ */}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ initialVolumeValue\ =\ audioSource.volume\ *\ 10;}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ volumeSlider.value\ =\ initialVolumeValue;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 음량에\ 따라\ 이미지\ 변하는\ HandleVolumeChanged\ 메서드\ 호출}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_sound_manager_adc0833ac1514f889489054dda4816692}{volumeSlider}}.onValueChanged.AddListener(\mbox{\hyperlink{class_k_j_1_1_sound_manager_a49a6b4fa48f4e314f6faca25dd08ac5b}{HandleVolumeChanged}});}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#endregion }}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#region\ 배경음악\ 음소거 }}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 음소거}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ backgroundMusicSlider.minValue\ =\ 0;}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 소리\ 나옴}}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ backgroundMusicSlider.maxValue\ =\ 1;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 토글\ 변경에\ 따라\ 음소거\ 가능한\ BackgrundMusicSwitch메서드\ 호출}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_sound_manager_af0dbb4dc29794127a93c0164ae7bf198}{backgroundMusicSlider}}.onValueChanged.AddListener(\mbox{\hyperlink{class_k_j_1_1_sound_manager_a7e4c2e299d28c8d69d5e426c58bd2a6a}{BackgroundMusicSwitch}});}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#endregion }}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_j_1_1_sound_manager_a8147d430abf43e5b6869964bf7bd612b_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\Hypertarget{class_k_j_1_1_sound_manager_a130c440650409f80a33d037d2477ec95}\label{class_k_j_1_1_sound_manager_a130c440650409f80a33d037d2477ec95} 
+\index{KJ.SoundManager@{KJ.SoundManager}!audioSource@{audioSource}}
+\index{audioSource@{audioSource}!KJ.SoundManager@{KJ.SoundManager}}
+\doxysubsubsection{\texorpdfstring{audioSource}{audioSource}}
+{\footnotesize\ttfamily Audio\+Source KJ.\+Sound\+Manager.\+audio\+Source}
+
+
+
+오디오소스 
+
+
+
+\mbox{\hyperlink{_sound_manager_8cs_source}{Sound\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_sound_manager_8cs_source_l00023}{23}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_sound_manager_af0dbb4dc29794127a93c0164ae7bf198}\label{class_k_j_1_1_sound_manager_af0dbb4dc29794127a93c0164ae7bf198} 
+\index{KJ.SoundManager@{KJ.SoundManager}!backgroundMusicSlider@{backgroundMusicSlider}}
+\index{backgroundMusicSlider@{backgroundMusicSlider}!KJ.SoundManager@{KJ.SoundManager}}
+\doxysubsubsection{\texorpdfstring{backgroundMusicSlider}{backgroundMusicSlider}}
+{\footnotesize\ttfamily Slider KJ.\+Sound\+Manager.\+background\+Music\+Slider}
+
+
+
+배경음악 음소거 
+
+
+
+\mbox{\hyperlink{_sound_manager_8cs_source}{Sound\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_sound_manager_8cs_source_l00025}{25}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_sound_manager_a0175406fafef1dea84f40913a8507bfc}\label{class_k_j_1_1_sound_manager_a0175406fafef1dea84f40913a8507bfc} 
+\index{KJ.SoundManager@{KJ.SoundManager}!highVolumeSprite@{highVolumeSprite}}
+\index{highVolumeSprite@{highVolumeSprite}!KJ.SoundManager@{KJ.SoundManager}}
+\doxysubsubsection{\texorpdfstring{highVolumeSprite}{highVolumeSprite}}
+{\footnotesize\ttfamily Sprite KJ.\+Sound\+Manager.\+high\+Volume\+Sprite}
+
+
+
+볼륨 낮을 때 이미지 
+
+
+
+\mbox{\hyperlink{_sound_manager_8cs_source}{Sound\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_sound_manager_8cs_source_l00021}{21}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_sound_manager_a493687e7fba0f060c7a4fe7cf79a4c3c}\label{class_k_j_1_1_sound_manager_a493687e7fba0f060c7a4fe7cf79a4c3c} 
+\index{KJ.SoundManager@{KJ.SoundManager}!lowVolumeSprite@{lowVolumeSprite}}
+\index{lowVolumeSprite@{lowVolumeSprite}!KJ.SoundManager@{KJ.SoundManager}}
+\doxysubsubsection{\texorpdfstring{lowVolumeSprite}{lowVolumeSprite}}
+{\footnotesize\ttfamily Sprite KJ.\+Sound\+Manager.\+low\+Volume\+Sprite}
+
+
+
+볼륨 높을 때 이미지 
+
+
+
+\mbox{\hyperlink{_sound_manager_8cs_source}{Sound\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_sound_manager_8cs_source_l00020}{20}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_sound_manager_afabfe7c47295f8ea6795672a9444950c}\label{class_k_j_1_1_sound_manager_afabfe7c47295f8ea6795672a9444950c} 
+\index{KJ.SoundManager@{KJ.SoundManager}!muteSprite@{muteSprite}}
+\index{muteSprite@{muteSprite}!KJ.SoundManager@{KJ.SoundManager}}
+\doxysubsubsection{\texorpdfstring{muteSprite}{muteSprite}}
+{\footnotesize\ttfamily Sprite KJ.\+Sound\+Manager.\+mute\+Sprite}
+
+
+
+음소거 이미지 
+
+
+
+\mbox{\hyperlink{_sound_manager_8cs_source}{Sound\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_sound_manager_8cs_source_l00019}{19}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_sound_manager_a23d78fe427765f468e5be2ab32ea9f87}\label{class_k_j_1_1_sound_manager_a23d78fe427765f468e5be2ab32ea9f87} 
+\index{KJ.SoundManager@{KJ.SoundManager}!volumeImage@{volumeImage}}
+\index{volumeImage@{volumeImage}!KJ.SoundManager@{KJ.SoundManager}}
+\doxysubsubsection{\texorpdfstring{volumeImage}{volumeImage}}
+{\footnotesize\ttfamily Image KJ.\+Sound\+Manager.\+volume\+Image}
+
+
+
+볼륨 이미지 ~\newline
+ 
+
+
+
+\mbox{\hyperlink{_sound_manager_8cs_source}{Sound\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_sound_manager_8cs_source_l00018}{18}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_sound_manager_adc0833ac1514f889489054dda4816692}\label{class_k_j_1_1_sound_manager_adc0833ac1514f889489054dda4816692} 
+\index{KJ.SoundManager@{KJ.SoundManager}!volumeSlider@{volumeSlider}}
+\index{volumeSlider@{volumeSlider}!KJ.SoundManager@{KJ.SoundManager}}
+\doxysubsubsection{\texorpdfstring{volumeSlider}{volumeSlider}}
+{\footnotesize\ttfamily Slider KJ.\+Sound\+Manager.\+volume\+Slider}
+
+
+
+전체 소리 볼륨 슬라이더 
+
+
+
+\mbox{\hyperlink{_sound_manager_8cs_source}{Sound\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_sound_manager_8cs_source_l00016}{16}} 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+LKJ/\+Documents/\+Git\+Hub/\+Bootcamp-\/\+Team-\/\+Project/\+Cos/\+Assets/\+LKJ/\+KJ/2. Scripts/01. Etc/\+Settings/\mbox{\hyperlink{_sound_manager_8cs}{Sound\+Manager.\+cs}}\end{DoxyCompactItemize}

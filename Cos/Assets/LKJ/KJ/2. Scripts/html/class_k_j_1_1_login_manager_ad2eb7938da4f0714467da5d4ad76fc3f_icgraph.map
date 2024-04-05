@@ -1,0 +1,7 @@
+<map id="KJ.LoginManager.SaveEmail" name="KJ.LoginManager.SaveEmail">
+<area shape="rect" id="Node000001" title="이메일 저장" alt="" coords="435,13,621,40"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_login_manager.html#ac1ffa433d01affe3ecd10dc7372b8e7d" title="이메일 저장" alt="" coords="207,5,387,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="419,29,388,29,388,24,419,24"/>
+<area shape="rect" id="Node000003" href="$class_k_j_1_1_login_manager.html#a49963dcdc4fd772f3bfd927931f60304" title="인풋 필드 이미지 숨기기 및 이메일 저장" alt="" coords="5,13,159,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="191,29,159,29,159,24,191,24"/>
+</map>

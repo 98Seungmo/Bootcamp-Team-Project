@@ -1,0 +1,5 @@
+<map id="KJ.Player" name="KJ.Player">
+<area shape="rect" id="Node000001" title="Player 데이터" alt="" coords="12,96,90,123"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_inventory.html" title="인벤토리 관리" alt="" coords="5,5,97,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,48,54,95,48,95,48,48"/>
+</map>

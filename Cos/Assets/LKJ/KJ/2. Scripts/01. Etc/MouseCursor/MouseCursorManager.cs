@@ -2,32 +2,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouseCursorManager : MonoBehaviour
+namespace KJ
 {
-    [Header("MosueCursor")]
-    // ¸ŞÀÎÄ«¸Ş¶óÀÇ ¸¶¿ì½º Ä¿¼­ ÀÌ¹ÌÁö¸¦ ¿øÇÏ´Â ÀÌ¹ÌÁö·Î ¹Ù²Ş.
-    [SerializeField] Texture2D cursorImage;
-    [SerializeField] Texture2D cursorClickImage;
-
-
-    void Start()
+    /**
+     * @brief ë§ˆìš°ìŠ¤ ì»¤ì„œì˜ ì´ë¯¸ì§€ë¥¼ ë°”ê¿ˆ
+     */
+    public class MouseCursorManager : MonoBehaviour
     {
-        // Ã³À½ ¸¶¿ì½º ÀÌ¹ÌÁö ¼³Á¤.
-        Cursor.SetCursor(cursorImage, Vector2.zero, CursorMode.Auto);
-    }
+        [Header("MosueCursor")]
+        [SerializeField] Texture2D cursorImage; ///< ë©”ì¸ì¹´ë©”ë¼ì˜ ë§ˆìš°ìŠ¤ ì»¤ì„œ ì´ë¯¸ì§€
+        [SerializeField] Texture2D cursorClickImage; ///< ë©”ì¸ì¹´ë©”ë¼ì˜ ë§ˆìš°ìŠ¤ í´ë¦­ ì´ë¯¸ì§€
 
-    
-    void Update()
-    {
-        // ¸¶¿ì½º¸¦ ´­·¶À» ¶§.
-        if (Input.GetMouseButtonDown(0))
-        {
-            Cursor.SetCursor(cursorClickImage, Vector2.zero, CursorMode.Auto);
-        }
-        // ¸¶¿ì½º¸¦ ´©¸£Áö ¾Ê¾ÒÀ» ¶§.
-        else if(!Input.GetMouseButton(0))
+        /**
+         * @brief ì²˜ìŒ ë§ˆìš°ìŠ¤ ì´ë¯¸ì§€ ì„¤ì •
+         */
+        void Start()
         {
             Cursor.SetCursor(cursorImage, Vector2.zero, CursorMode.Auto);
         }
+
+        /**
+         * @brief ë§ˆìš°ìŠ¤ í´ë¦­ì— ë”°ë¼ ì´ë¯¸ì§€ ë‹¤ë¥´ê²Œ ì¶œë ¥
+         */
+        void Update()
+        {
+            /* ë§ˆìš°ìŠ¤ë¥¼ ëˆŒë €ì„ ë•Œ */
+            if (Input.GetMouseButtonDown(0))
+            {
+                Cursor.SetCursor(cursorClickImage, Vector2.zero, CursorMode.Auto);
+            }
+            /* ë§ˆìš°ìŠ¤ë¥¼ ëˆ„ë¥´ì§€ ì•Šì•˜ì„ ë•Œ */
+            else if (!Input.GetMouseButton(0))
+            {
+                Cursor.SetCursor(cursorImage, Vector2.zero, CursorMode.Auto);
+            }
+        }
     }
 }
+

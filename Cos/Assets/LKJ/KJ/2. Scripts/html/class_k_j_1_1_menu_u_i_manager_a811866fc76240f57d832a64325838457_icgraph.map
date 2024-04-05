@@ -1,0 +1,5 @@
+<map id="KJ.MenuUIManager.PauseGame" name="KJ.MenuUIManager.PauseGame">
+<area shape="rect" id="Node000001" title=" " alt="" coords="233,5,443,32"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_menu_u_i_manager.html#a2154e6a62ccb4d219441f39f9df86c58" title="esc 눌렀을 때 메뉴 호출 해당 클래스에 맞게 이미지 로고 호출" alt="" coords="5,5,185,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,21,185,21,185,16,217,16"/>
+</map>

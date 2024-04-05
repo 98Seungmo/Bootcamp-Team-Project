@@ -1,0 +1,5 @@
+<map id="BarsManager.Heal" name="BarsManager.Heal">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,134,32"/>
+<area shape="rect" id="Node000002" href="$class_bars_manager.html#a6f378c2c3487d23d244fbc91b7de24a6" title=" " alt="" coords="182,5,374,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,16,166,16,166,21,134,21"/>
+</map>

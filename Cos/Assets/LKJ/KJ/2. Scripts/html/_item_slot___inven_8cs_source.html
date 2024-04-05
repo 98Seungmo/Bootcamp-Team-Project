@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TeamProject Cos: C:/Users/LKJ/Documents/GitHub/Bootcamp-Team-Project/Cos/Assets/LKJ/KJ/2. Scripts/05. VillageScripts/ItemSlot_Inven.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TeamProject Cos<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">UI</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_item_slot___inven_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">로딩중...</div>
+<div class="SRStatus" id="Searching">검색중...</div>
+<div class="SRStatus" id="NoMatches">일치하는것 없음</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ItemSlot_Inven.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_item_slot___inven_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span><a class="code hl_namespace" href="namespace_k_j.html">KJ</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Collections;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>UnityEngine;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using </span>UnityEngine.UI;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_k_j.html">KJ</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_k_j_1_1_item_slot___inven.html">   12</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_k_j_1_1_item_slot___inven.html">ItemSlot_Inven</a> : MonoBehaviour</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_k_j_1_1_item_slot___inven.html#a207a6b1934c1f3757ff3867109053429">   14</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_k_j_1_1_item_slot___inven.html#a207a6b1934c1f3757ff3867109053429">_itemidx</a> = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_k_j_1_1_item_slot___inven.html#ae090358841ea6d8ecc42165cd241e4f7">   19</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_k_j_1_1_item_slot___inven.html#ae090358841ea6d8ecc42165cd241e4f7">OnButtonClick</a>()</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <a class="code hl_class" href="class_k_j_1_1_menu_u_i_manager.html">MenuUIManager</a> mag = <a class="code hl_class" href="class_k_j_1_1_menu_u_i_manager.html">MenuUIManager</a>.<a class="code hl_variable" href="class_k_j_1_1_menu_u_i_manager.html#abb91eabe400f19f0f4aaa1b2d2bf5cf7">Instance</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <a class="code hl_class" href="class_k_j_1_1_inventory_u_i.html">InventoryUI</a> invUI = mag.GetComponent&lt;<a class="code hl_class" href="class_k_j_1_1_inventory_u_i.html">InventoryUI</a>&gt;();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_class" href="class_k_j_1_1_item.html">KJ.Item</a> item = invUI.<a class="code hl_property" href="class_k_j_1_1_inventory_u_i.html#a9fd9f5478618e7e9eef7d28d8500502a">_inventory</a>.<a class="code hl_variable" href="class_k_j_1_1_inventory.html#aa4587d78d535425a8ddc6006f289699e">items</a>.Find(item =&gt; item.id == <a class="code hl_variable" href="class_k_j_1_1_item_slot___inven.html#a207a6b1934c1f3757ff3867109053429">_itemidx</a>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            Debug.Log(<span class="stringliteral">&quot;OnButtonClick: &quot;</span> + item.imagePath);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            Debug.Log(<span class="stringliteral">&quot;OnButtonClick: &quot;</span> + item.type);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            Sprite s = <a class="code hl_class" href="class_k_j_1_1_item_d_b_manager.html">ItemDBManager</a>.<a class="code hl_property" href="class_k_j_1_1_singleton_lazy.html#a327123e39a51072e962d8b4129661d93">Instance</a>.LoadItemSprite(item.imagePath);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">switch</span> (item.type)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;weapon&quot;</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                    mag._img_weapon.sprite = s;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;armor&quot;</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                    mag._img_armor.sprite = s;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;accessory&quot;</span>:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    mag._img_accessory.sprite = s;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        }</div>
+</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+<div class="ttc" id="aclass_k_j_1_1_inventory_html_aa4587d78d535425a8ddc6006f289699e"><div class="ttname"><a href="class_k_j_1_1_inventory.html#aa4587d78d535425a8ddc6006f289699e">KJ.Inventory.items</a></div><div class="ttdeci">List&lt; Item &gt; items</div><div class="ttdef"><b>Definition</b> <a href="_data_model_8cs_source.html#l00109">DataModel.cs:109</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_inventory_u_i_html"><div class="ttname"><a href="class_k_j_1_1_inventory_u_i.html">KJ.InventoryUI</a></div><div class="ttdoc">인벤토리 UI</div><div class="ttdef"><b>Definition</b> <a href="_inventory_u_i_8cs_source.html#l00017">InventoryUI.cs:18</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_inventory_u_i_html_a9fd9f5478618e7e9eef7d28d8500502a"><div class="ttname"><a href="class_k_j_1_1_inventory_u_i.html#a9fd9f5478618e7e9eef7d28d8500502a">KJ.InventoryUI._inventory</a></div><div class="ttdeci">Inventory _inventory</div><div class="ttdoc">클래스 인벤토리 불러옴</div><div class="ttdef"><b>Definition</b> <a href="_inventory_u_i_8cs_source.html#l00068">InventoryUI.cs:69</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_d_b_manager_html"><div class="ttname"><a href="class_k_j_1_1_item_d_b_manager.html">KJ.ItemDBManager</a></div><div class="ttdoc">SingletonLazy&lt;T&gt; 를 상속받아서 싱글톤 구현하는 클래스</div><div class="ttdef"><b>Definition</b> <a href="_item_d_b_manager_8cs_source.html#l00063">ItemDBManager.cs:64</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_html"><div class="ttname"><a href="class_k_j_1_1_item.html">KJ.Item</a></div><div class="ttdoc">아이템 데이터</div><div class="ttdef"><b>Definition</b> <a href="_data_model_8cs_source.html#l00026">DataModel.cs:27</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_slot___inven_html"><div class="ttname"><a href="class_k_j_1_1_item_slot___inven.html">KJ.ItemSlot_Inven</a></div><div class="ttdoc">인벤안에 있는 슬롯 클릭시 장비창에 해당 아이템 (무기, 방어구, 장신구) 표시</div><div class="ttdef"><b>Definition</b> <a href="#l00012">ItemSlot_Inven.cs:13</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_slot___inven_html_a207a6b1934c1f3757ff3867109053429"><div class="ttname"><a href="class_k_j_1_1_item_slot___inven.html#a207a6b1934c1f3757ff3867109053429">KJ.ItemSlot_Inven._itemidx</a></div><div class="ttdeci">string _itemidx</div><div class="ttdef"><b>Definition</b> <a href="#l00014">ItemSlot_Inven.cs:14</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_slot___inven_html_ae090358841ea6d8ecc42165cd241e4f7"><div class="ttname"><a href="class_k_j_1_1_item_slot___inven.html#ae090358841ea6d8ecc42165cd241e4f7">KJ.ItemSlot_Inven.OnButtonClick</a></div><div class="ttdeci">void OnButtonClick()</div><div class="ttdoc">버튼 클릭시 해당 장비창에 아이템 이미지 표시</div><div class="ttdef"><b>Definition</b> <a href="#l00019">ItemSlot_Inven.cs:19</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_menu_u_i_manager_html"><div class="ttname"><a href="class_k_j_1_1_menu_u_i_manager.html">KJ.MenuUIManager</a></div><div class="ttdoc">MenuUI 에 관한 관리</div><div class="ttdef"><b>Definition</b> <a href="_menu_u_i_manager_8cs_source.html#l00017">MenuUIManager.cs:18</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_menu_u_i_manager_html_abb91eabe400f19f0f4aaa1b2d2bf5cf7"><div class="ttname"><a href="class_k_j_1_1_menu_u_i_manager.html#abb91eabe400f19f0f4aaa1b2d2bf5cf7">KJ.MenuUIManager.Instance</a></div><div class="ttdeci">static MenuUIManager Instance</div><div class="ttdef"><b>Definition</b> <a href="_menu_u_i_manager_8cs_source.html#l00020">MenuUIManager.cs:20</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_singleton_lazy_html_a327123e39a51072e962d8b4129661d93"><div class="ttname"><a href="class_k_j_1_1_singleton_lazy.html#a327123e39a51072e962d8b4129661d93">KJ.SingletonLazy.Instance</a></div><div class="ttdeci">static T Instance</div><div class="ttdoc">싱글톤 인스턴스에 접근하기 위한 정적 속성</div><div class="ttdef"><b>Definition</b> <a href="_item_d_b_manager_8cs_source.html#l00048">ItemDBManager.cs:49</a></div></div>
+<div class="ttc" id="anamespace_k_j_html"><div class="ttname"><a href="namespace_k_j.html">KJ</a></div><div class="ttdef"><b>Definition</b> <a href="_minimap_camera_8cs_source.html#l00005">MinimapCamera.cs:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_7e17ac9cf8fba2cb04bc248c85b0ceb7.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_d708be37ffd207a4818d7ac39c51f1a9.html">Bootcamp-Team-Project</a></li><li class="navelem"><a class="el" href="dir_a8f7bed46e4166a330dd9eeb47d2b6b6.html">Cos</a></li><li class="navelem"><a class="el" href="dir_fa9e069fdb86bc2b40adb248b9c63099.html">Assets</a></li><li class="navelem"><a class="el" href="dir_91b7d5b2a59a9e70dc734a50261581b7.html">LKJ</a></li><li class="navelem"><a class="el" href="dir_8b402d8951c5d418d0ddc2a8c48e6129.html">KJ</a></li><li class="navelem"><a class="el" href="dir_c442853e6bf9677cb6845bf051865e0c.html">2. Scripts</a></li><li class="navelem"><a class="el" href="dir_3793db388934626e48d0a093b180ea0c.html">05. VillageScripts</a></li><li class="navelem"><a class="el" href="_item_slot___inven_8cs.html">ItemSlot_Inven.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 :  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

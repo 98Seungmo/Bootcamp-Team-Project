@@ -1,0 +1,5 @@
+<map id="KJ.BuffOnOff.SpecialBuff" name="KJ.BuffOnOff.SpecialBuff">
+<area shape="rect" id="Node000001" title="스테미나 회복량 활성화, 해당 버프 이미지의 색이 바뀜, 버프 = 0.4f" alt="" coords="213,5,377,32"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_buff_on_off.html#a9c2ef6987e0117ed70f9de31fe709a63" title="스테미나 회복량 버프 활성화" alt="" coords="5,5,165,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,21,165,21,165,16,197,16"/>
+</map>

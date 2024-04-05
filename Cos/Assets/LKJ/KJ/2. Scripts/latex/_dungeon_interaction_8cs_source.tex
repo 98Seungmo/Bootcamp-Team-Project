@@ -1,0 +1,81 @@
+\doxysection{Dungeon\+Interaction.\+cs}
+\hypertarget{_dungeon_interaction_8cs_source}{}\label{_dungeon_interaction_8cs_source}\index{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/02. DungeonScripts/DungeonInteraction.cs@{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/02. DungeonScripts/DungeonInteraction.cs}}
+\mbox{\hyperlink{_dungeon_interaction_8cs}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }JetBrains.Annotations;}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00006}00006\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_k_j}{KJ}}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00011}\mbox{\hyperlink{class_k_j_1_1_dungeon_interaction}{00011}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_dungeon_interaction}{DungeonInteraction}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00012}00012\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00013}00013\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}InteractionUI"{}})]}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00014}\mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_abcc2225333987c53e3f99ce11096fd91}{00014}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ Transform\ \mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_abcc2225333987c53e3f99ce11096fd91}{player}};\ }
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00015}\mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_a13d0a90eb2a282c10a771c192b9d50cc}{00015}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ GameObject\ \mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_a13d0a90eb2a282c10a771c192b9d50cc}{interactUI}};\ }
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00016}\mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_a43fa3a02895473ac8ce8d052ffd5b97c}{00016}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_a43fa3a02895473ac8ce8d052ffd5b97c}{moveUI}}\ =\ 5.0f;\ }
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00017}\mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_abb9fb0ab6f9ef8af83e6666df5e95234}{00017}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_abb9fb0ab6f9ef8af83e6666df5e95234}{interactRange}}\ =\ 3.0f;\ }
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00018}\mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_a1764c5e63cb106f0977bb6165d0094dd}{00018}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ List<GameObject>\ \mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_a1764c5e63cb106f0977bb6165d0094dd}{interactionObjects}};\ }
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00023}\mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_a9fb35a76ce13e488910369a0a3ca60dc}{00023}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_a9fb35a76ce13e488910369a0a3ca60dc}{Start}}()}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}비활성화"{}});}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_a13d0a90eb2a282c10a771c192b9d50cc}{interactUI}}.SetActive(\textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ player\ =\ GameObject.FindWithTag(\textcolor{stringliteral}{"{}Player"{}}).transform;}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00033}\mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_adf39e92744a16a1ac3f86f83a1e248f6}{00033}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_adf39e92744a16a1ac3f86f83a1e248f6}{Update}}()}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 가장\ 가까운\ 상호작용\ 가능\ 오브젝트\ 찾기\ */}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 가장\ 가까운\ 오브젝트와의\ 거리를\ 저장할\ 변수를\ 최대값으로\ 초기화\ */}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ closestDistance\ =\ \textcolor{keywordtype}{float}.MaxValue;}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 상호작용\ 가능\ 오브젝트\ 순회\ */}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (var\ interactionObject\ \textcolor{keywordflow}{in}\ \mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_a1764c5e63cb106f0977bb6165d0094dd}{interactionObjects}})}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 플레이어와\ 오브젝트\ 사이의\ 거리를\ 변수로\ 저장\ */}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ distance\ =\ Vector3.Distance(player.position,\ interactionObject.transform.position);}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 현재\ 오브젝트가\ 지금까지\ 찾은\ 가장\ 가까운\ 오브젝트보다\ 가깝다면\ */}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (distance\ <\ closestDistance)}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}업데이트"{}});}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 가장\ 가까운\ 거리를\ 현재\ 거리로\ 업데이트\ */}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ closestDistance\ =\ distance;}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 플레이어와\ 가장\ 가까운\ 오브젝트가\ 상호작용\ 범위에\ 있으면\ */}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (closestDistance\ <=\ \mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_abb9fb0ab6f9ef8af83e6666df5e95234}{interactRange}})}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}UI\ 활성화"{}});}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 플레이어가\ collider\ 에\ 진입하면\ 활성화.\ */}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_acf2f8bb11ff32d3774e3d3b47504a619}{ShowInteractionUI}}();}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \ \ \textcolor{comment}{//\ 없으면}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}UI\ 비활성화"{}});}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 플레이어가\ collider\ 에\ 벗어나면\ 비활성화.\ */}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_a1c9b4c74b0180d3364b0e44efa27de7a}{HideInteractionUI}}();}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00069}\mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_acf2f8bb11ff32d3774e3d3b47504a619}{00069}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_acf2f8bb11ff32d3774e3d3b47504a619}{ShowInteractionUI}}()}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ UI\ 활성화\ */}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_a13d0a90eb2a282c10a771c192b9d50cc}{interactUI}}.SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ UI\ 위치\ */}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ interactUI.transform.position\ =\ player.position\ +\ Vector3.up\ *\ \mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_a43fa3a02895473ac8ce8d052ffd5b97c}{moveUI}};}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ UI\ 를\ 카메라로부터\ 항상\ 정면으로\ 보이게\ 설정.\ */}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ Vector3\ direction\ =\ Camera.main.transform.position\ -\/\ \mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_a13d0a90eb2a282c10a771c192b9d50cc}{interactUI}}.transform.position;}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ direction.y\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ Quaternion\ rotation\ =\ Quaternion.LookRotation(direction);}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ interactUI.transform.rotation\ =\ Quaternion.Slerp(\mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_a13d0a90eb2a282c10a771c192b9d50cc}{interactUI}}.transform.rotation,\ rotation,\ Time.deltaTime\ *\ 10);}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00085}\mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_a1c9b4c74b0180d3364b0e44efa27de7a}{00085}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_a1c9b4c74b0180d3364b0e44efa27de7a}{HideInteractionUI}}()}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_dungeon_interaction_a13d0a90eb2a282c10a771c192b9d50cc}{interactUI}}.SetActive(\textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00088}00088\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00089}00089\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_dungeon_interaction_8cs_source_l00090}00090\ \}}
+
+\end{DoxyCode}

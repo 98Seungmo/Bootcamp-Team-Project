@@ -1,0 +1,9 @@
+<map id="BarsManager.UpdateHealthUI" name="BarsManager.UpdateHealthUI">
+<area shape="rect" id="Node000001" title=" " alt="" coords="232,56,424,83"/>
+<area shape="rect" id="Node000002" href="$class_bars_manager.html#a7fa214811a5976ec86f9d6dd743ebad7" title=" " alt="" coords="30,5,159,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,55,159,35,160,30,249,50"/>
+<area shape="rect" id="Node000003" href="$class_bars_manager.html#a4522c1631a3f417db5ed5edb45693ea5" title=" " alt="" coords="29,56,160,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,72,160,72,160,67,216,67"/>
+<area shape="rect" id="Node000004" href="$class_bars_manager.html#a4c95a7fc9f32b67112fd60c53410d9e7" title=" " alt="" coords="5,107,184,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="249,89,160,109,159,103,248,84"/>
+</map>

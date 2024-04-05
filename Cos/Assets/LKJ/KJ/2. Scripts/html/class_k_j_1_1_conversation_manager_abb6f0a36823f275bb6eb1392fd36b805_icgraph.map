@@ -1,0 +1,5 @@
+<map id="KJ.ConversationManager.StartNewDialogue" name="KJ.ConversationManager.StartNewDialogue">
+<area shape="rect" id="Node000001" title="대화 상태" alt="" coords="263,5,459,48"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_conversation_manager.html#a6ee18dd0bc0249b705b390d7ac97bcb7" title="Raycast 를 이용하여 해당 키(F)를 누르면 상호작용 활성화" alt="" coords="5,13,215,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="247,29,215,29,215,24,247,24"/>
+</map>

@@ -1,0 +1,185 @@
+\doxysection{KJ.\+Loading\+Text\+Animation 클래스 참조}
+\hypertarget{class_k_j_1_1_loading_text_animation}{}\label{class_k_j_1_1_loading_text_animation}\index{KJ.LoadingTextAnimation@{KJ.LoadingTextAnimation}}
+
+
+로딩시 나오는 텍스트  
+
+
+
+
+KJ.\+Loading\+Text\+Animation에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_k_j_1_1_loading_text_animation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+KJ.\+Loading\+Text\+Animation에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_k_j_1_1_loading_text_animation__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_k_j_1_1_loading_text_animation_ad56b187acb5f79d34df14de281404671}{loading\+Text}}
+\begin{DoxyCompactList}\small\item\em 로딩 text \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_k_j_1_1_loading_text_animation_ab0c65c079a973655ab8835677fb81a68}{dot\+Speed}} = 0.\+5f
+\begin{DoxyCompactList}\small\item\em \textquotesingle{}.\textquotesingle{} 텍스트 속도 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_k_j_1_1_loading_text_animation_a726df421f9a72155236c8533deaba3da}{base\+Text}} = "{}로딩 중"{}
+\begin{DoxyCompactList}\small\item\em 기본 문장 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_k_j_1_1_loading_text_animation_a91e1a87a53471a5adfd4cc81dd844ba0}{dot\+Count}} = 0
+\begin{DoxyCompactList}\small\item\em 현재 \textquotesingle{}.\textquotesingle{} 텍스트 개수 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_k_j_1_1_loading_text_animation_ae34d0e07b98d3e10f3bd35eda2e1fc5c}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Animate\+Dots 실행 \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{class_k_j_1_1_loading_text_animation_a1ef866ab44b80c8aeb61dfe59dba9f51}{Animate\+Dots}} ()
+\begin{DoxyCompactList}\small\item\em Animate\+Dots, 로딩에서 텍스트 뒤에 ... 개수 설정 및 반복 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+로딩시 나오는 텍스트 
+
+\mbox{\hyperlink{_loading_text_animation_8cs_source}{Loading\+Text\+Animation.\+cs}} 파일의 \mbox{\hyperlink{_loading_text_animation_8cs_source_l00011}{11}} 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\Hypertarget{class_k_j_1_1_loading_text_animation_a1ef866ab44b80c8aeb61dfe59dba9f51}\label{class_k_j_1_1_loading_text_animation_a1ef866ab44b80c8aeb61dfe59dba9f51} 
+\index{KJ.LoadingTextAnimation@{KJ.LoadingTextAnimation}!AnimateDots@{AnimateDots}}
+\index{AnimateDots@{AnimateDots}!KJ.LoadingTextAnimation@{KJ.LoadingTextAnimation}}
+\doxysubsubsection{\texorpdfstring{AnimateDots()}{AnimateDots()}}
+{\footnotesize\ttfamily IEnumerator KJ.\+Loading\+Text\+Animation.\+Animate\+Dots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animate\+Dots, 로딩에서 텍스트 뒤에 ... 개수 설정 및 반복 
+
+
+
+\mbox{\hyperlink{_loading_text_animation_8cs_source}{Loading\+Text\+Animation.\+cs}} 파일의 \mbox{\hyperlink{_loading_text_animation_8cs_source_l00030}{30}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ '.'\ 의\ 개수를\ 0\ \string~\ 4까지\ 반복\ */}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_text_animation_a91e1a87a53471a5adfd4cc81dd844ba0}{dotCount}}\ =\ (\mbox{\hyperlink{class_k_j_1_1_loading_text_animation_a91e1a87a53471a5adfd4cc81dd844ba0}{dotCount}}\ +\ 1)\ \%\ 5;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 기본\ 텍스트에\ '.'\ 추가\ */}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ loadingText.text\ =\ \mbox{\hyperlink{class_k_j_1_1_loading_text_animation_a726df421f9a72155236c8533deaba3da}{baseText}}\ +\ \textcolor{keyword}{new}\ string(\textcolor{charliteral}{'.'},\ \mbox{\hyperlink{class_k_j_1_1_loading_text_animation_a91e1a87a53471a5adfd4cc81dd844ba0}{dotCount}});}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 지정된\ 시간\ 동안\ 대기\ */}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ yield\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ WaitForSeconds(\mbox{\hyperlink{class_k_j_1_1_loading_text_animation_ab0c65c079a973655ab8835677fb81a68}{dotSpeed}});}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_j_1_1_loading_text_animation_a1ef866ab44b80c8aeb61dfe59dba9f51_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_k_j_1_1_loading_text_animation_ae34d0e07b98d3e10f3bd35eda2e1fc5c}\label{class_k_j_1_1_loading_text_animation_ae34d0e07b98d3e10f3bd35eda2e1fc5c} 
+\index{KJ.LoadingTextAnimation@{KJ.LoadingTextAnimation}!Start@{Start}}
+\index{Start@{Start}!KJ.LoadingTextAnimation@{KJ.LoadingTextAnimation}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void KJ.\+Loading\+Text\+Animation.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animate\+Dots 실행 
+
+
+
+\mbox{\hyperlink{_loading_text_animation_8cs_source}{Loading\+Text\+Animation.\+cs}} 파일의 \mbox{\hyperlink{_loading_text_animation_8cs_source_l00022}{22}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ StartCoroutine(\mbox{\hyperlink{class_k_j_1_1_loading_text_animation_a1ef866ab44b80c8aeb61dfe59dba9f51}{AnimateDots}}());}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_j_1_1_loading_text_animation_ae34d0e07b98d3e10f3bd35eda2e1fc5c_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\Hypertarget{class_k_j_1_1_loading_text_animation_a726df421f9a72155236c8533deaba3da}\label{class_k_j_1_1_loading_text_animation_a726df421f9a72155236c8533deaba3da} 
+\index{KJ.LoadingTextAnimation@{KJ.LoadingTextAnimation}!baseText@{baseText}}
+\index{baseText@{baseText}!KJ.LoadingTextAnimation@{KJ.LoadingTextAnimation}}
+\doxysubsubsection{\texorpdfstring{baseText}{baseText}}
+{\footnotesize\ttfamily string KJ.\+Loading\+Text\+Animation.\+base\+Text = "{}로딩 중"{}}
+
+
+
+기본 문장 
+
+
+
+\mbox{\hyperlink{_loading_text_animation_8cs_source}{Loading\+Text\+Animation.\+cs}} 파일의 \mbox{\hyperlink{_loading_text_animation_8cs_source_l00016}{16}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_loading_text_animation_a91e1a87a53471a5adfd4cc81dd844ba0}\label{class_k_j_1_1_loading_text_animation_a91e1a87a53471a5adfd4cc81dd844ba0} 
+\index{KJ.LoadingTextAnimation@{KJ.LoadingTextAnimation}!dotCount@{dotCount}}
+\index{dotCount@{dotCount}!KJ.LoadingTextAnimation@{KJ.LoadingTextAnimation}}
+\doxysubsubsection{\texorpdfstring{dotCount}{dotCount}}
+{\footnotesize\ttfamily int KJ.\+Loading\+Text\+Animation.\+dot\+Count = 0}
+
+
+
+현재 \textquotesingle{}.\textquotesingle{} 텍스트 개수 
+
+
+
+\mbox{\hyperlink{_loading_text_animation_8cs_source}{Loading\+Text\+Animation.\+cs}} 파일의 \mbox{\hyperlink{_loading_text_animation_8cs_source_l00017}{17}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_loading_text_animation_ab0c65c079a973655ab8835677fb81a68}\label{class_k_j_1_1_loading_text_animation_ab0c65c079a973655ab8835677fb81a68} 
+\index{KJ.LoadingTextAnimation@{KJ.LoadingTextAnimation}!dotSpeed@{dotSpeed}}
+\index{dotSpeed@{dotSpeed}!KJ.LoadingTextAnimation@{KJ.LoadingTextAnimation}}
+\doxysubsubsection{\texorpdfstring{dotSpeed}{dotSpeed}}
+{\footnotesize\ttfamily float KJ.\+Loading\+Text\+Animation.\+dot\+Speed = 0.\+5f}
+
+
+
+\textquotesingle{}.\textquotesingle{} 텍스트 속도 
+
+
+
+\mbox{\hyperlink{_loading_text_animation_8cs_source}{Loading\+Text\+Animation.\+cs}} 파일의 \mbox{\hyperlink{_loading_text_animation_8cs_source_l00015}{15}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_loading_text_animation_ad56b187acb5f79d34df14de281404671}\label{class_k_j_1_1_loading_text_animation_ad56b187acb5f79d34df14de281404671} 
+\index{KJ.LoadingTextAnimation@{KJ.LoadingTextAnimation}!loadingText@{loadingText}}
+\index{loadingText@{loadingText}!KJ.LoadingTextAnimation@{KJ.LoadingTextAnimation}}
+\doxysubsubsection{\texorpdfstring{loadingText}{loadingText}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI KJ.\+Loading\+Text\+Animation.\+loading\+Text}
+
+
+
+로딩 text 
+
+
+
+\mbox{\hyperlink{_loading_text_animation_8cs_source}{Loading\+Text\+Animation.\+cs}} 파일의 \mbox{\hyperlink{_loading_text_animation_8cs_source_l00014}{14}} 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+LKJ/\+Documents/\+Git\+Hub/\+Bootcamp-\/\+Team-\/\+Project/\+Cos/\+Assets/\+LKJ/\+KJ/2. Scripts/03. Loading\+Scripts/\mbox{\hyperlink{_loading_text_animation_8cs}{Loading\+Text\+Animation.\+cs}}\end{DoxyCompactItemize}

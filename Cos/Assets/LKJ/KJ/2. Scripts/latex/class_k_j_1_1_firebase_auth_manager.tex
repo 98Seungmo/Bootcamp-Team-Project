@@ -1,0 +1,612 @@
+\doxysection{KJ.\+Firebase\+Auth\+Manager 클래스 참조}
+\hypertarget{class_k_j_1_1_firebase_auth_manager}{}\label{class_k_j_1_1_firebase_auth_manager}\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+
+
+KJ.\+Firebase\+Auth\+Manager에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_k_j_1_1_firebase_auth_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+KJ.\+Firebase\+Auth\+Manager에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_k_j_1_1_firebase_auth_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_af1178837e45b4c1e357e2ecb213a6712}{Write\+Data\+\_\+\+Data}} (string userkey)
+\item 
+void \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a63166b0473879efb176225ca765e4cde}{Initialize\+Firebase}} ()
+\item 
+void \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a7647653b11f42d6514fd2ae6f873a2be}{Login\+Button}} (Action$<$ bool $>$ on\+Login\+Completed)
+\item 
+void \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_aae24fb8f269f039f55b5776c6bb0c900}{Register\+Button}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Dependency\+Status \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a276d4d35edf53ef8d8afea9f0913bfc3}{dependency\+Status}}
+\item 
+TMP\+\_\+\+Input\+Field \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a66b2538223454d3570841404d7588a34}{email}}
+\item 
+TMP\+\_\+\+Input\+Field \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a8e1db2bd6e9a03d2a445cafb28b24f42}{password}}
+\item 
+TMP\+\_\+\+Text \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a9ff428c2b4cf340c7298bb806daa9260}{warning\+Login\+Text}}
+\item 
+TMP\+\_\+\+Text \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_ac106975de61aaf30e6ff48ffa6ff19f0}{confirm\+Login\+Text}}
+\item 
+TMP\+\_\+\+Input\+Field \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_aefe8d81498c7f9347a6efbf6b6289c24}{username\+Register}}
+\item 
+TMP\+\_\+\+Input\+Field \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_ae8c3b945df926cedf56e27eb210db11f}{email\+Register}}
+\item 
+TMP\+\_\+\+Input\+Field \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a530c16773b874e55d92272f1c1a610fc}{password\+Register}}
+\item 
+TMP\+\_\+\+Input\+Field \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a5c0f18b75a52f6e5e15ec197bbe5cd88}{password\+Check}}
+\item 
+TMP\+\_\+\+Text \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a7391d518d9dd4fb7453d969c98505afc}{warning\+Register\+Text}}
+\item 
+TMP\+\_\+\+Text \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a3e6352d0b40b36c34fbd8a4c74e68987}{Confrim\+Register\+Text}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+Firebase\+User \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a00134248ee21283c0208e9080f2b655b}{\+\_\+user}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+static \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager}{Firebase\+Auth\+Manager}} \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_aa7b3a0e9165c6e72cf3e8cec2a426471}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_ad45a349ae080198f3a529f8b0e67dfff}{Awake}} ()
+\item 
+IEnumerator \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a2c0a624396283c6ac3febe57ee0197ab}{Login}} (string \+\_\+email, string \+\_\+password, Action$<$ bool $>$ on\+Login\+Completed)
+\item 
+IEnumerator \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_adc6d762b0d9dbe2360f5e119f8f1230d}{Register}} (string \+\_\+email, string \+\_\+password, string \+\_\+username)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Firebase\+Auth \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a421b74b4d92d6913ed0d9954ceea3909}{\+\_\+auth}}
+\item 
+Database\+Reference \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a98d91d6403496f6578f13faa46fc9708}{\+\_\+database\+Reference}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager}{Firebase\+Auth\+Manager}} \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_acc81ed29c3ab7c68f1ac74b76f04dfd7}{\+\_\+instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00015}{15}} 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_ad45a349ae080198f3a529f8b0e67dfff}\label{class_k_j_1_1_firebase_auth_manager_ad45a349ae080198f3a529f8b0e67dfff} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!Awake@{Awake}}
+\index{Awake@{Awake}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void KJ.\+Firebase\+Auth\+Manager.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00064}{64}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 싱글톤\ 패턴}}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_acc81ed29c3ab7c68f1ac74b76f04dfd7}{\_instance}}\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_acc81ed29c3ab7c68f1ac74b76f04dfd7}{\_instance}}\ =\ \textcolor{keyword}{this};}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 씬\ 전환시에도\ 파괴되지\ 않게\ 함}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DontDestroyOnLoad(gameObject);}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_acc81ed29c3ab7c68f1ac74b76f04dfd7}{\_instance}}\ !=\ \textcolor{keyword}{this})}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 중복\ 인스턴스\ 파괴}}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Destroy(gameObject);}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Firebase\ DependencyStatus\ 확인함}}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task\ =>}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ dependencyStatus\ 에\ 변수\ 저장}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a276d4d35edf53ef8d8afea9f0913bfc3}{dependencyStatus}}\ =\ task.Result;}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ dependencyStatus\ 사용\ 가능한지\ 확인.}}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a276d4d35edf53ef8d8afea9f0913bfc3}{dependencyStatus}}\ ==\ DependencyStatus.Available)}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Firebase\ 초기화}}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ InitializeFirebase();}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_databaseReference\ =\ FirebaseDatabase.DefaultInstance.RootReference;}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}firebase\ initalized\ successfull"{}});}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 오류\ 메시지\ 출력.}}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.LogError(\textcolor{stringliteral}{"{}Firebase\ 초기화\ 실패\ :\ "{}}\ +\ dependencyStatus);}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_a63166b0473879efb176225ca765e4cde}\label{class_k_j_1_1_firebase_auth_manager_a63166b0473879efb176225ca765e4cde} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!InitializeFirebase@{InitializeFirebase}}
+\index{InitializeFirebase@{InitializeFirebase}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{InitializeFirebase()}{InitializeFirebase()}}
+{\footnotesize\ttfamily void KJ.\+Firebase\+Auth\+Manager.\+Initialize\+Firebase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00123}{123}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 초기화}}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a421b74b4d92d6913ed0d9954ceea3909}{\_auth}}\ =\ FirebaseAuth.DefaultInstance;}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_a2c0a624396283c6ac3febe57ee0197ab}\label{class_k_j_1_1_firebase_auth_manager_a2c0a624396283c6ac3febe57ee0197ab} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!Login@{Login}}
+\index{Login@{Login}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}}
+{\footnotesize\ttfamily IEnumerator KJ.\+Firebase\+Auth\+Manager.\+Login (\begin{DoxyParamCaption}\item[{string}]{\+\_\+email,  }\item[{string}]{\+\_\+password,  }\item[{Action$<$ bool $>$}]{on\+Login\+Completed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00142}{142}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ email\ 과\ password\ 를\ 전달하여\ firebase\ 인증\ 함수를\ 호출.}}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ var\ LoginTask\ =\ \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a421b74b4d92d6913ed0d9954ceea3909}{\_auth}}.SignInWithEmailAndPasswordAsync(\_email,\ \_password);}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ LoginTask.IsCompleted\ 가\ 참이\ 될\ 때\ 까지\ 기다림.}}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ yield\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ WaitUntil(predicate:\ ()\ =>\ LoginTask.IsCompleted);}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a00134248ee21283c0208e9080f2b655b}{\_user}}\ =\ LoginTask.Result.User;}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (LoginTask.Exception\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 만약\ 예외가\ 발생하여\ 오류가\ 나타나면}}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.LogWarning(message:\ \$\textcolor{stringliteral}{"{}로그인\ 하는데\ 예외가\ 발생하여\ 실패\ \{LoginTask.Exception\}"{}});}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ FirebaseException\ firebaseEx\ =\ LoginTask.Exception.GetBaseException()\ as\ FirebaseException;}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ AuthError\ errorCode\ =\ (AuthError)firebaseEx.ErrorCode;}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ message\ =\ \textcolor{stringliteral}{"{}로그인\ 실패"{}};}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (errorCode)}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ AuthError.MissingEmail:}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ message\ =\ \textcolor{stringliteral}{"{}이메일을\ 적으세요."{}};}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ AuthError.MissingPassword:}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ message\ =\ \textcolor{stringliteral}{"{}비밀번호를\ 적으세요."{}};}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ AuthError.WrongPassword:}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ message\ =\ \textcolor{stringliteral}{"{}잘못된\ 비밀번호."{}};}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ AuthError.InvalidEmail:}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ message\ =\ \textcolor{stringliteral}{"{}잘못된\ 이메일"{}};}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ AuthError.UserNotFound:}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ message\ =\ \textcolor{stringliteral}{"{}계정이\ 존재하지\ 않습니다."{}};}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ warningLoginText.text\ =\ message;}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ onLoginCompleted?.Invoke(\textcolor{keyword}{false});}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 제대로\ 작동\ 한다면.}}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.LogFormat(\textcolor{stringliteral}{"{}로그인\ 성공\ :\ \{0\}\ \{1\}"{}},\ \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a00134248ee21283c0208e9080f2b655b}{\_user}}.Email,\ \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a00134248ee21283c0208e9080f2b655b}{\_user}}.DisplayName);}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ warningLoginText.text\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ confirmLoginText.text\ =\ \textcolor{stringliteral}{"{}로그인\ 성공!!"{}};}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ yield\ \textcolor{keywordflow}{return}\ NetData.Instance.LoadPlayerDB(\mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a00134248ee21283c0208e9080f2b655b}{\_user}},\ \textcolor{keywordtype}{string}.Empty);}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ onLoginCompleted?.Invoke(\textcolor{keyword}{true});}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_j_1_1_firebase_auth_manager_a2c0a624396283c6ac3febe57ee0197ab_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_a7647653b11f42d6514fd2ae6f873a2be}\label{class_k_j_1_1_firebase_auth_manager_a7647653b11f42d6514fd2ae6f873a2be} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!LoginButton@{LoginButton}}
+\index{LoginButton@{LoginButton}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{LoginButton()}{LoginButton()}}
+{\footnotesize\ttfamily void KJ.\+Firebase\+Auth\+Manager.\+Login\+Button (\begin{DoxyParamCaption}\item[{Action$<$ bool $>$}]{on\+Login\+Completed }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00130}{130}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 이메일과\ 비밀번호를\ 전달하는\ 로그인\ 호출.}}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ StartCoroutine(\mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a2c0a624396283c6ac3febe57ee0197ab}{Login}}(\mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a66b2538223454d3570841404d7588a34}{email}}.text,\ \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a8e1db2bd6e9a03d2a445cafb28b24f42}{password}}.text,\ onLoginCompleted));}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_j_1_1_firebase_auth_manager_a7647653b11f42d6514fd2ae6f873a2be_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_j_1_1_firebase_auth_manager_a7647653b11f42d6514fd2ae6f873a2be_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_adc6d762b0d9dbe2360f5e119f8f1230d}\label{class_k_j_1_1_firebase_auth_manager_adc6d762b0d9dbe2360f5e119f8f1230d} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!Register@{Register}}
+\index{Register@{Register}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily IEnumerator KJ.\+Firebase\+Auth\+Manager.\+Register (\begin{DoxyParamCaption}\item[{string}]{\+\_\+email,  }\item[{string}]{\+\_\+password,  }\item[{string}]{\+\_\+username }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00196}{196}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_username\ ==\ \textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ warningRegisterText.text\ =\ \textcolor{stringliteral}{"{}닉네임을\ 정해주세요."{}};}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a530c16773b874e55d92272f1c1a610fc}{passwordRegister}}.text\ !=\ \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a5c0f18b75a52f6e5e15ec197bbe5cd88}{passwordCheck}}.text)}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ warningRegisterText.text\ =\ \textcolor{stringliteral}{"{}\ 비밀번호가\ 일치하지\ 않습니다.\ 다시\ 시도하세요."{}};}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ var\ RegisterTask\ =\ \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a421b74b4d92d6913ed0d9954ceea3909}{\_auth}}.CreateUserWithEmailAndPasswordAsync(\_email,\ \_password);}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ yield\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ WaitUntil(predicate:\ ()\ =>\ RegisterTask.IsCompleted);}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 계정을\ 만들\ 때\ 오류가\ 발생하면}}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (RegisterTask.Exception\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.LogWarning(message:\ \$\textcolor{stringliteral}{"{}등록하는데\ 예외가\ 발생하여\ 실패\ \{RegisterTask.Exception\}"{}});}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ FirebaseException\ firebaseEx\ =\ RegisterTask.Exception.GetBaseException()\ as\ FirebaseException;}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ AuthError\ errorCode\ =\ (AuthError)firebaseEx.ErrorCode;}
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ message\ =\ \textcolor{stringliteral}{"{}회원가입\ 실패!"{}};}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (errorCode)}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ AuthError.MissingEmail:}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ message\ =\ \textcolor{stringliteral}{"{}이메일을\ 적으세요."{}};}
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00224\ }
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ AuthError.MissingPassword:}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ message\ =\ \textcolor{stringliteral}{"{}비밀번호를\ 적으세요."{}};}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00228\ }
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ AuthError.WeakPassword:}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ message\ =\ \textcolor{stringliteral}{"{}비밀번호의\ 보안이\ 취약합니다."{}};}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00232\ }
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ AuthError.EmailAlreadyInUse:}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ message\ =\ \textcolor{stringliteral}{"{}중복된\ 이메일입니다."{}};}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ warningRegisterText.text\ =\ message;}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 회원가입\ 성공.}}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a00134248ee21283c0208e9080f2b655b}{\_user}}\ =\ RegisterTask.Result.User;}
+\DoxyCodeLine{00243\ }
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a00134248ee21283c0208e9080f2b655b}{\_user}}\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ UserProfile\ profile\ =\ \textcolor{keyword}{new}\ UserProfile\ \{\ DisplayName\ =\ \_username\ \};}
+\DoxyCodeLine{00247\ }
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ var\ ProfileTask\ =\ \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a00134248ee21283c0208e9080f2b655b}{\_user}}.UpdateUserProfileAsync(profile);}
+\DoxyCodeLine{00249\ }
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ yield\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ WaitUntil(predicate:\ ()\ =>\ ProfileTask.IsCompleted);}
+\DoxyCodeLine{00251\ }
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ProfileTask.Exception\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 사용자\ 정보\ (username)\ 을\ 불러오는데\ 예외가\ 발생하면}}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.LogWarning(message:\ \$\textcolor{stringliteral}{"{}사용자\ 프로필\ 정보를\ 업데이트\ 하는데\ 예외가\ 발생했습니다.\ \{ProfileTask.Exception\}"{}});}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ FirebaseException\ firebaseEx\ =\ ProfileTask.Exception.GetBaseException()\ as\ FirebaseException;}
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ AuthError\ errorCode\ =\ (AuthError)firebaseEx.ErrorCode;}
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ warningRegisterText.text\ =\ \textcolor{stringliteral}{"{}유저\ 네임을\ 불러오는데\ 실패했습니다!"{}};}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 성공한다면}}
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}회원가입이\ 성공적으로\ 이루어졌습니다."{}}\ +\ \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a00134248ee21283c0208e9080f2b655b}{\_user}}.DisplayName);}
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ConfrimRegisterText.text\ =\ \textcolor{stringliteral}{"{}회원가입\ 성공!!"{}};}
+\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ warningRegisterText.text\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00270\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_j_1_1_firebase_auth_manager_adc6d762b0d9dbe2360f5e119f8f1230d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_aae24fb8f269f039f55b5776c6bb0c900}\label{class_k_j_1_1_firebase_auth_manager_aae24fb8f269f039f55b5776c6bb0c900} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!RegisterButton@{RegisterButton}}
+\index{RegisterButton@{RegisterButton}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{RegisterButton()}{RegisterButton()}}
+{\footnotesize\ttfamily void KJ.\+Firebase\+Auth\+Manager.\+Register\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00136}{136}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 계정\ 생성할\ 때\ 이메일과\ 비밀번호를\ 전달하는\ Register\ 호출.}}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ StartCoroutine(\mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_adc6d762b0d9dbe2360f5e119f8f1230d}{Register}}(\mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_ae8c3b945df926cedf56e27eb210db11f}{emailRegister}}.text,\ \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a530c16773b874e55d92272f1c1a610fc}{passwordRegister}}.text,\ \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_aefe8d81498c7f9347a6efbf6b6289c24}{usernameRegister}}.text));}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_j_1_1_firebase_auth_manager_aae24fb8f269f039f55b5776c6bb0c900_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_af1178837e45b4c1e357e2ecb213a6712}\label{class_k_j_1_1_firebase_auth_manager_af1178837e45b4c1e357e2ecb213a6712} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!WriteData\_Data@{WriteData\_Data}}
+\index{WriteData\_Data@{WriteData\_Data}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{WriteData\_Data()}{WriteData\_Data()}}
+{\footnotesize\ttfamily void KJ.\+Firebase\+Auth\+Manager.\+Write\+Data\+\_\+\+Data (\begin{DoxyParamCaption}\item[{string}]{userkey }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00101}{101}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ DatabaseReference\ db\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ db\ =\ FirebaseDatabase.DefaultInstance.GetReference(\textcolor{stringliteral}{"{}userinfo"{}});}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*데이터를\ json\ 으로\ 변환한다.*/}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ Dictionary<string,\ object>\ dic\ =\ \textcolor{keyword}{new}\ Dictionary<string,\ object>();}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ dic.Add(\textcolor{stringliteral}{"{}userkey"{}},\ \textcolor{stringliteral}{"{}bbbbbbbb"{}});}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ dic.Add(\textcolor{stringliteral}{"{}authdata"{}},\ \textcolor{stringliteral}{"{}aaaaa"{}});}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ Dictionary<string,\ object>\ data\ =\ \textcolor{keyword}{new}\ Dictionary<string,\ object>();}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ data.Add(userkey,\ dic);}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ db.UpdateChildrenAsync(data).ContinueWithOnMainThread(task\ =>}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (task.IsCompleted)}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}dataupdate\ complete"{}});}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_a421b74b4d92d6913ed0d9954ceea3909}\label{class_k_j_1_1_firebase_auth_manager_a421b74b4d92d6913ed0d9954ceea3909} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!\_auth@{\_auth}}
+\index{\_auth@{\_auth}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{\_auth}{\_auth}}
+{\footnotesize\ttfamily Firebase\+Auth KJ.\+Firebase\+Auth\+Manager.\+\_\+auth\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00021}{21}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_a98d91d6403496f6578f13faa46fc9708}\label{class_k_j_1_1_firebase_auth_manager_a98d91d6403496f6578f13faa46fc9708} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!\_databaseReference@{\_databaseReference}}
+\index{\_databaseReference@{\_databaseReference}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{\_databaseReference}{\_databaseReference}}
+{\footnotesize\ttfamily Database\+Reference KJ.\+Firebase\+Auth\+Manager.\+\_\+database\+Reference\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00063}{63}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_acc81ed29c3ab7c68f1ac74b76f04dfd7}\label{class_k_j_1_1_firebase_auth_manager_acc81ed29c3ab7c68f1ac74b76f04dfd7} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager}{Firebase\+Auth\+Manager}} KJ.\+Firebase\+Auth\+Manager.\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00050}{50}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_ac106975de61aaf30e6ff48ffa6ff19f0}\label{class_k_j_1_1_firebase_auth_manager_ac106975de61aaf30e6ff48ffa6ff19f0} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!confirmLoginText@{confirmLoginText}}
+\index{confirmLoginText@{confirmLoginText}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{confirmLoginText}{confirmLoginText}}
+{\footnotesize\ttfamily TMP\+\_\+\+Text KJ.\+Firebase\+Auth\+Manager.\+confirm\+Login\+Text}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00033}{33}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_a3e6352d0b40b36c34fbd8a4c74e68987}\label{class_k_j_1_1_firebase_auth_manager_a3e6352d0b40b36c34fbd8a4c74e68987} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!ConfrimRegisterText@{ConfrimRegisterText}}
+\index{ConfrimRegisterText@{ConfrimRegisterText}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{ConfrimRegisterText}{ConfrimRegisterText}}
+{\footnotesize\ttfamily TMP\+\_\+\+Text KJ.\+Firebase\+Auth\+Manager.\+Confrim\+Register\+Text}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00047}{47}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_a276d4d35edf53ef8d8afea9f0913bfc3}\label{class_k_j_1_1_firebase_auth_manager_a276d4d35edf53ef8d8afea9f0913bfc3} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!dependencyStatus@{dependencyStatus}}
+\index{dependencyStatus@{dependencyStatus}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{dependencyStatus}{dependencyStatus}}
+{\footnotesize\ttfamily Dependency\+Status KJ.\+Firebase\+Auth\+Manager.\+dependency\+Status}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00019}{19}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_a66b2538223454d3570841404d7588a34}\label{class_k_j_1_1_firebase_auth_manager_a66b2538223454d3570841404d7588a34} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!email@{email}}
+\index{email@{email}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{email}{email}}
+{\footnotesize\ttfamily TMP\+\_\+\+Input\+Field KJ.\+Firebase\+Auth\+Manager.\+email}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00027}{27}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_ae8c3b945df926cedf56e27eb210db11f}\label{class_k_j_1_1_firebase_auth_manager_ae8c3b945df926cedf56e27eb210db11f} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!emailRegister@{emailRegister}}
+\index{emailRegister@{emailRegister}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{emailRegister}{emailRegister}}
+{\footnotesize\ttfamily TMP\+\_\+\+Input\+Field KJ.\+Firebase\+Auth\+Manager.\+email\+Register}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00039}{39}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_a8e1db2bd6e9a03d2a445cafb28b24f42}\label{class_k_j_1_1_firebase_auth_manager_a8e1db2bd6e9a03d2a445cafb28b24f42} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!password@{password}}
+\index{password@{password}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{password}{password}}
+{\footnotesize\ttfamily TMP\+\_\+\+Input\+Field KJ.\+Firebase\+Auth\+Manager.\+password}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00029}{29}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_a5c0f18b75a52f6e5e15ec197bbe5cd88}\label{class_k_j_1_1_firebase_auth_manager_a5c0f18b75a52f6e5e15ec197bbe5cd88} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!passwordCheck@{passwordCheck}}
+\index{passwordCheck@{passwordCheck}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{passwordCheck}{passwordCheck}}
+{\footnotesize\ttfamily TMP\+\_\+\+Input\+Field KJ.\+Firebase\+Auth\+Manager.\+password\+Check}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00043}{43}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_a530c16773b874e55d92272f1c1a610fc}\label{class_k_j_1_1_firebase_auth_manager_a530c16773b874e55d92272f1c1a610fc} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!passwordRegister@{passwordRegister}}
+\index{passwordRegister@{passwordRegister}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{passwordRegister}{passwordRegister}}
+{\footnotesize\ttfamily TMP\+\_\+\+Input\+Field KJ.\+Firebase\+Auth\+Manager.\+password\+Register}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00041}{41}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_aefe8d81498c7f9347a6efbf6b6289c24}\label{class_k_j_1_1_firebase_auth_manager_aefe8d81498c7f9347a6efbf6b6289c24} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!usernameRegister@{usernameRegister}}
+\index{usernameRegister@{usernameRegister}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{usernameRegister}{usernameRegister}}
+{\footnotesize\ttfamily TMP\+\_\+\+Input\+Field KJ.\+Firebase\+Auth\+Manager.\+username\+Register}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00037}{37}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_a9ff428c2b4cf340c7298bb806daa9260}\label{class_k_j_1_1_firebase_auth_manager_a9ff428c2b4cf340c7298bb806daa9260} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!warningLoginText@{warningLoginText}}
+\index{warningLoginText@{warningLoginText}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{warningLoginText}{warningLoginText}}
+{\footnotesize\ttfamily TMP\+\_\+\+Text KJ.\+Firebase\+Auth\+Manager.\+warning\+Login\+Text}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00031}{31}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_a7391d518d9dd4fb7453d969c98505afc}\label{class_k_j_1_1_firebase_auth_manager_a7391d518d9dd4fb7453d969c98505afc} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!warningRegisterText@{warningRegisterText}}
+\index{warningRegisterText@{warningRegisterText}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{warningRegisterText}{warningRegisterText}}
+{\footnotesize\ttfamily TMP\+\_\+\+Text KJ.\+Firebase\+Auth\+Manager.\+warning\+Register\+Text}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00045}{45}} 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_a00134248ee21283c0208e9080f2b655b}\label{class_k_j_1_1_firebase_auth_manager_a00134248ee21283c0208e9080f2b655b} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!\_user@{\_user}}
+\index{\_user@{\_user}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{\_user}{\_user}}
+{\footnotesize\ttfamily Firebase\+User KJ.\+Firebase\+Auth\+Manager.\+\_\+user\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00023}{23}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00023\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{private}\ \textcolor{keyword}{set};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_k_j_1_1_firebase_auth_manager_aa7b3a0e9165c6e72cf3e8cec2a426471}\label{class_k_j_1_1_firebase_auth_manager_aa7b3a0e9165c6e72cf3e8cec2a426471} 
+\index{KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}!Instance@{Instance}}
+\index{Instance@{Instance}!KJ.FirebaseAuthManager@{KJ.FirebaseAuthManager}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager}{Firebase\+Auth\+Manager}} KJ.\+Firebase\+Auth\+Manager.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+\mbox{\hyperlink{_firebase_auth_manager_8cs_source}{Firebase\+Auth\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_firebase_auth_manager_8cs_source_l00051}{51}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_acc81ed29c3ab7c68f1ac74b76f04dfd7}{\_instance}}\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_acc81ed29c3ab7c68f1ac74b76f04dfd7}{\_instance}};}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+LKJ/\+Documents/\+Git\+Hub/\+Bootcamp-\/\+Team-\/\+Project/\+Cos/\+Assets/\+LKJ/\+KJ/2. Scripts/04. Log\+In\+Scripts/\mbox{\hyperlink{_firebase_auth_manager_8cs}{Firebase\+Auth\+Manager.\+cs}}\end{DoxyCompactItemize}

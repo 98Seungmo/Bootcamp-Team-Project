@@ -5,32 +5,43 @@ using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
-public class BrightnessManager : MonoBehaviour
+namespace KJ
 {
-    [Header("Slider")]
-    /* 슬라이더 참조 */
-    public Slider brightnessSlider;
-    [Header("PostProcessing")]
-    /* 볼륨 참조 */
-    public Volume volume;
-    /* Volume 의 ColorAdjustments 참조 */
-    private ColorAdjustments _colorAdjustments;
-
-    void Start()
+    /**
+     * @brief 게임의 밝기 조절
+     */
+    public class BrightnessManager : MonoBehaviour
     {
-        // 볼룸의 프로필에서 colorGrading 찾아옴.
-        if (volume.profile.TryGet<ColorAdjustments>(out _colorAdjustments))
-        {
-            // 슬라이더 값이 변경되면, colorGrading 값이 변경되는 메서드를 호출.
-            brightnessSlider.onValueChanged.AddListener(HandleSliderChanged);
-        }
-        
-    }
+        [Header("Slider")]
+        public Slider brightnessSlider; ///< 밝기 조절을 위한 슬라이더
+        [Header("PostProcessing")]
+        public Volume volume; ///< Volume 컴포넌트 할당
+        private ColorAdjustments _colorAdjustments; ///< Volume 의 ColorAdjustments 할당
 
-    public void HandleSliderChanged(float value)
-    {      
-        _colorAdjustments.postExposure.value = value;
-        Debug.Log(_colorAdjustments.postExposure.value);
-        
+        /**
+         * @brief 슬라이더 조절에 따라 밝기 조절
+         */
+        void Start()
+        {
+            /* 볼룸의 프로필에서 colorGrading 찾아옴 */
+            if (volume.profile.TryGet<ColorAdjustments>(out _colorAdjustments))
+            {
+                /* 슬라이더 값에 따라 HandleSliderChanged 메서드를 호출 */
+                brightnessSlider.onValueChanged.AddListener(HandleSliderChanged);
+            }
+
+        }
+
+        /**
+         * @brief Post Exposure 값 조절
+         * @param[in] value 슬라이더 값
+         */
+        public void HandleSliderChanged(float value)
+        {
+            _colorAdjustments.postExposure.value = value;
+            // Debug.Log(_colorAdjustments.postExposure.value);
+
+        }
     }
 }
+

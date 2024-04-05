@@ -1,0 +1,45 @@
+\doxysection{Item\+Slot\+\_\+\+Inven.\+cs}
+\hypertarget{_item_slot___inven_8cs_source}{}\label{_item_slot___inven_8cs_source}\index{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/05. VillageScripts/ItemSlot\_Inven.cs@{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/05. VillageScripts/ItemSlot\_Inven.cs}}
+\mbox{\hyperlink{_item_slot___inven_8cs}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_k_j}{KJ}};}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }UnityEngine.UI;}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00007}00007\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_k_j}{KJ}}}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00008}00008\ \{}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00012}\mbox{\hyperlink{class_k_j_1_1_item_slot___inven}{00012}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_item_slot___inven}{ItemSlot\_Inven}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00013}00013\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00014}\mbox{\hyperlink{class_k_j_1_1_item_slot___inven_a207a6b1934c1f3757ff3867109053429}{00014}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_item_slot___inven_a207a6b1934c1f3757ff3867109053429}{\_itemidx}}\ =\ \textcolor{keywordtype}{string}.Empty;}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00019}\mbox{\hyperlink{class_k_j_1_1_item_slot___inven_ae090358841ea6d8ecc42165cd241e4f7}{00019}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_item_slot___inven_ae090358841ea6d8ecc42165cd241e4f7}{OnButtonClick}}()}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager}{MenuUIManager}}\ mag\ =\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager}{MenuUIManager}}.\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_abb91eabe400f19f0f4aaa1b2d2bf5cf7}{Instance}};}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_inventory_u_i}{InventoryUI}}\ invUI\ =\ mag.GetComponent<\mbox{\hyperlink{class_k_j_1_1_inventory_u_i}{InventoryUI}}>();}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_item}{KJ.Item}}\ item\ =\ invUI.\mbox{\hyperlink{class_k_j_1_1_inventory_u_i_a9fd9f5478618e7e9eef7d28d8500502a}{\_inventory}}.\mbox{\hyperlink{class_k_j_1_1_inventory_aa4587d78d535425a8ddc6006f289699e}{items}}.Find(item\ =>\ item.id\ ==\ \mbox{\hyperlink{class_k_j_1_1_item_slot___inven_a207a6b1934c1f3757ff3867109053429}{\_itemidx}});}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}OnButtonClick:\ "{}}\ +\ item.imagePath);}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}OnButtonClick:\ "{}}\ +\ item.type);}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ Sprite\ s\ =\ \mbox{\hyperlink{class_k_j_1_1_item_d_b_manager}{ItemDBManager}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}.LoadItemSprite(item.imagePath);}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (item.type)}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}weapon"{}}:}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ mag.\_img\_weapon.sprite\ =\ s;}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}armor"{}}:}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ mag.\_img\_armor.sprite\ =\ s;}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}accessory"{}}:}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ mag.\_img\_accessory.sprite\ =\ s;}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00044}00044\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_item_slot___inven_8cs_source_l00045}00045\ \}}
+
+\end{DoxyCode}

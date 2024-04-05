@@ -1,0 +1,5 @@
+<map id="MenuUIManager.PauseGame" name="MenuUIManager.PauseGame">
+<area shape="rect" id="Node000001" title=" " alt="" coords="214,5,405,32"/>
+<area shape="rect" id="Node000002" href="$class_menu_u_i_manager.html#afecae75734a42dfe3af840203a21faa5" title=" " alt="" coords="5,5,166,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,21,166,21,166,16,198,16"/>
+</map>

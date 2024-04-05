@@ -1,0 +1,101 @@
+\doxysection{Buff\+On\+Off.\+cs}
+\hypertarget{_buff_on_off_8cs_source}{}\label{_buff_on_off_8cs_source}\index{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/05. VillageScripts/BuffOnOff.cs@{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/05. VillageScripts/BuffOnOff.cs}}
+\mbox{\hyperlink{_buff_on_off_8cs}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Linq;}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }HJ;}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_k_j}{KJ}};}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }UnityEngine.UI;}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00007}00007\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_k_j}{KJ}}}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00008}00008\ \{}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00012}\mbox{\hyperlink{class_k_j_1_1_buff_on_off}{00012}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_buff_on_off}{BuffOnOff}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00013}00013\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00014}00014\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}Buff\ Images"{}})]}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00015}\mbox{\hyperlink{class_k_j_1_1_buff_on_off_a0b7f48b4793ecf8158558af7f241b94b}{00015}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Image\ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_a0b7f48b4793ecf8158558af7f241b94b}{powerBuffImage}};\ }
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00016}\mbox{\hyperlink{class_k_j_1_1_buff_on_off_aa49b73aaaa6886f76be9c288d9da794f}{00016}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Image\ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_aa49b73aaaa6886f76be9c288d9da794f}{healthBuffImage}};\ }
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00017}\mbox{\hyperlink{class_k_j_1_1_buff_on_off_ac93933a7946831f98edb6d596900c625}{00017}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Image\ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_ac93933a7946831f98edb6d596900c625}{specialBuffImage}};\ }
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}Bool\ Buffs"{}})]}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00020}\mbox{\hyperlink{class_k_j_1_1_buff_on_off_a941d77e937440b298058ce1353e382c0}{00020}}\ \ \ \ \ \ \ \ \ [SerializeField]\ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_a941d77e937440b298058ce1353e382c0}{\_powerBuff}}\ =\ \textcolor{keyword}{false};\ }
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00021}\mbox{\hyperlink{class_k_j_1_1_buff_on_off_abce7268880161d99506a8754ed6db9c0}{00021}}\ \ \ \ \ \ \ \ \ [SerializeField]\ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_abce7268880161d99506a8754ed6db9c0}{\_healthBuff}}\ =\ \textcolor{keyword}{false};\ }
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00022}\mbox{\hyperlink{class_k_j_1_1_buff_on_off_a01f580d962d3238b02f76c1fad477160}{00022}}\ \ \ \ \ \ \ \ \ [SerializeField]\ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_a01f580d962d3238b02f76c1fad477160}{\_specialBuff}}\ =\ \textcolor{keyword}{false};\ }
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00024}\mbox{\hyperlink{class_k_j_1_1_buff_on_off_a715ba47dccab2fe84d5b3720e7801109}{00024}}\ \ \ \ \ \ \ \ \ PlayerController\ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_a715ba47dccab2fe84d5b3720e7801109}{playerController}};\ }
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00029}\mbox{\hyperlink{class_k_j_1_1_buff_on_off_acd19a5b6e4fdeb2e8213fe9276048995}{00029}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_acd19a5b6e4fdeb2e8213fe9276048995}{Start}}()}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ powerBuffImage.color\ =\ Color.gray;}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ healthBuffImage.color\ =\ Color.gray;}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ specialBuffImage.color\ =\ Color.gray;}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_a715ba47dccab2fe84d5b3720e7801109}{playerController}}\ =\ GameObject.FindWithTag(\textcolor{stringliteral}{"{}Player"{}}).GetComponent<PlayerController>();}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00040}\mbox{\hyperlink{class_k_j_1_1_buff_on_off_ab6d6ca7537ed61a08c53b6ecdd85dca8}{00040}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_ab6d6ca7537ed61a08c53b6ecdd85dca8}{PowerBuff}}()}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_k_j_1_1_buff_on_off_a941d77e937440b298058ce1353e382c0}{\_powerBuff}}\ ==\ \textcolor{keyword}{true})}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ powerBuffImage.color\ =\ \textcolor{keyword}{new}\ Color(214\ /\ 255f,\ 150\ /\ 255f,\ 150\ /\ 255f,\ 1f);}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ playerController.attackFood\ =\ 0.2f;}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ powerBuffImage.color\ =\ Color.gray;}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ playerController.attackFood\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00058}\mbox{\hyperlink{class_k_j_1_1_buff_on_off_ad40f289d3b15d68c2230d32b0b12bd9e}{00058}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_ad40f289d3b15d68c2230d32b0b12bd9e}{HealthBuff}}()}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_k_j_1_1_buff_on_off_abce7268880161d99506a8754ed6db9c0}{\_healthBuff}}\ ==\ \textcolor{keyword}{true})}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ healthBuffImage.color\ =\ \textcolor{keyword}{new}\ Color(1f,\ 0f,\ 0f,\ 1f);}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ playerController.armorFood\ =\ 0.2f;}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ healthBuffImage.color\ =\ Color.gray;}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ playerController.armorFood\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00075}\mbox{\hyperlink{class_k_j_1_1_buff_on_off_aa01ac2cfd51d6f3b3378ca1b43ed5061}{00075}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_aa01ac2cfd51d6f3b3378ca1b43ed5061}{SpecialBuff}}()}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_k_j_1_1_buff_on_off_a01f580d962d3238b02f76c1fad477160}{\_specialBuff}}\ ==\ \textcolor{keyword}{true})}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ specialBuffImage.color\ =\ \textcolor{keyword}{new}\ Color(1f,\ 1f,\ 0f,\ 1f);}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ playerController.spRecoveryFood\ =\ 0.4f;}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ specialBuffImage.color\ =\ Color.gray;}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ playerController.spRecoveryFood\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00087}00087\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00089}00089\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ 버프\ }}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00090}00090\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00094}\mbox{\hyperlink{class_k_j_1_1_buff_on_off_a252f75413e6fd57cf12b8dff81733683}{00094}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_a252f75413e6fd57cf12b8dff81733683}{PowerOn}}()}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00095}00095\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_a941d77e937440b298058ce1353e382c0}{\_powerBuff}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_ab6d6ca7537ed61a08c53b6ecdd85dca8}{PowerBuff}}();}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00098}00098\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00103}\mbox{\hyperlink{class_k_j_1_1_buff_on_off_accb3530d624432f6c59bfaebd48f4caa}{00103}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_accb3530d624432f6c59bfaebd48f4caa}{HealthOn}}()}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00104}00104\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00105}00105\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_abce7268880161d99506a8754ed6db9c0}{\_healthBuff}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_ad40f289d3b15d68c2230d32b0b12bd9e}{HealthBuff}}();}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00107}00107\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00112}\mbox{\hyperlink{class_k_j_1_1_buff_on_off_a9c2ef6987e0117ed70f9de31fe709a63}{00112}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_a9c2ef6987e0117ed70f9de31fe709a63}{SpecialOn}}()}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00113}00113\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00114}00114\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_a01f580d962d3238b02f76c1fad477160}{\_specialBuff}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00115}00115\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_buff_on_off_aa01ac2cfd51d6f3b3378ca1b43ed5061}{SpecialBuff}}();}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00116}00116\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00117}00117\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00118}00118\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_buff_on_off_8cs_source_l00119}00119\ \}}
+
+\end{DoxyCode}

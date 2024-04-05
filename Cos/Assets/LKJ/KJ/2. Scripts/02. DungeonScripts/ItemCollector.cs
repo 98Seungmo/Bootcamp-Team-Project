@@ -4,41 +4,45 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ItemCollector : MonoBehaviour
+namespace KJ
 {
-    /* 수집 버튼 (Test) */
-    [Header("Collect Test")]
-    public Button collectButton;
-    /* 알림 메시지 */
-    [Header("Notification")]
-    public GameObject notification;
-    public TMP_Text notificationText;
-    // 현재 아이템 
-    // 아이템 수집 로직 -> switch Type 별로 나누어도 됨.
-
-    void Start()
+    public class ItemCollector : MonoBehaviour
     {
-        /* 버튼 클릭 리스너 추가 */
-        collectButton.onClick.AddListener(CollectItem);
-        /* 처음에만 알림 메시지 숨김 */
-        notification.SetActive(false);
-    }
-    
-    void CollectItem()
-    {
-        // 아이템을 인벤토리에 추가하는 로직 넣기.
+        /* 알림 메시지 */
+        [Header("Notification")]
+        public GameObject notification; ///< 알림 메시지 UI
+        public TMP_Text notificationText; ///< 알림 메시지 텍스트
 
-        /* 알림메시지 표시 */
-        notification.SetActive(true);
-        notificationText.text = "아이템을 얻음."; // $"{getItem}을 얻었습니다."
+        /**
+         * @brief 처음에 알림 메시지 숨김
+         */
+        void Start()
+        {
+            /* 처음에만 알림 메시지 숨김 */
+            notification.SetActive(false);
+        }
 
-        StartCoroutine(HideNotification(3));
-    }
+        /**
+         * @brief 아이템 얻을 시 알림 메시지 표시
+         */
+        void CollectItem()
+        {
+            // 아이템을 인벤토리에 추가하는 로직 넣기.
 
-    /* 알림 메시지 자동 숨김. */
-    IEnumerator HideNotification(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        notification.SetActive(false);
+            /* 알림메시지 표시 */
+            notification.SetActive(true);
+            notificationText.text = "아이템을 얻음."; // $"{getItem}을 얻었습니다."
+
+            StartCoroutine(HideNotification(3));
+        }
+
+        /**
+         * @brief 알림 메시지 자동 숨김
+         */
+        IEnumerator HideNotification(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            notification.SetActive(false);
+        }
     }
 }

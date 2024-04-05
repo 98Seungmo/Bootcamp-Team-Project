@@ -1,0 +1,39 @@
+\doxysection{Mouse\+Cursor\+Manager.\+cs}
+\hypertarget{_mouse_cursor_manager_8cs_source}{}\label{_mouse_cursor_manager_8cs_source}\index{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/01. Etc/MouseCursor/MouseCursorManager.cs@{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/01. Etc/MouseCursor/MouseCursorManager.cs}}
+\mbox{\hyperlink{_mouse_cursor_manager_8cs}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00005}00005\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_k_j}{KJ}}}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00006}00006\ \{}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00010}\mbox{\hyperlink{class_k_j_1_1_mouse_cursor_manager}{00010}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_mouse_cursor_manager}{MouseCursorManager}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00011}00011\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00012}00012\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}MosueCursor"{}})]}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00013}\mbox{\hyperlink{class_k_j_1_1_mouse_cursor_manager_a1ece4c78b4eba44a65cbf73288f64f33}{00013}}\ \ \ \ \ \ \ \ \ [SerializeField]\ Texture2D\ \mbox{\hyperlink{class_k_j_1_1_mouse_cursor_manager_a1ece4c78b4eba44a65cbf73288f64f33}{cursorImage}};\ }
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00014}\mbox{\hyperlink{class_k_j_1_1_mouse_cursor_manager_a2dbcfe8a2e8df1615daea5c82fca6039}{00014}}\ \ \ \ \ \ \ \ \ [SerializeField]\ Texture2D\ \mbox{\hyperlink{class_k_j_1_1_mouse_cursor_manager_a2dbcfe8a2e8df1615daea5c82fca6039}{cursorClickImage}};\ }
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00019}\mbox{\hyperlink{class_k_j_1_1_mouse_cursor_manager_aa5dac500732d48a00b36e1c372bcab6c}{00019}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_mouse_cursor_manager_aa5dac500732d48a00b36e1c372bcab6c}{Start}}()}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ Cursor.SetCursor(\mbox{\hyperlink{class_k_j_1_1_mouse_cursor_manager_a1ece4c78b4eba44a65cbf73288f64f33}{cursorImage}},\ Vector2.zero,\ CursorMode.Auto);}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00027}\mbox{\hyperlink{class_k_j_1_1_mouse_cursor_manager_a3dadb819881561a2740667386f196406}{00027}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_mouse_cursor_manager_a3dadb819881561a2740667386f196406}{Update}}()}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 마우스를\ 눌렀을\ 때\ */}}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (Input.GetMouseButtonDown(0))}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Cursor.SetCursor(\mbox{\hyperlink{class_k_j_1_1_mouse_cursor_manager_a2dbcfe8a2e8df1615daea5c82fca6039}{cursorClickImage}},\ Vector2.zero,\ CursorMode.Auto);}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 마우스를\ 누르지\ 않았을\ 때\ */}}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (!Input.GetMouseButton(0))}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Cursor.SetCursor(\mbox{\hyperlink{class_k_j_1_1_mouse_cursor_manager_a1ece4c78b4eba44a65cbf73288f64f33}{cursorImage}},\ Vector2.zero,\ CursorMode.Auto);}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00040}00040\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00041}00041\ \}}
+\DoxyCodeLine{\Hypertarget{_mouse_cursor_manager_8cs_source_l00042}00042\ }
+
+\end{DoxyCode}

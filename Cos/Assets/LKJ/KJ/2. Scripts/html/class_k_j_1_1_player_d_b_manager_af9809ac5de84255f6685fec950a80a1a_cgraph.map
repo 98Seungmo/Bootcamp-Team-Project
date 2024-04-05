@@ -1,0 +1,5 @@
+<map id="KJ.PlayerDBManager.SaveOrUpdatePlayerData" name="KJ.PlayerDBManager.SaveOrUpdatePlayerData">
+<area shape="rect" id="Node000001" title="해시함수로 변환된 ShortUID 로 플레이어 데이터를 구분" alt="" coords="5,5,197,48"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_u_i_d_helper.html#a3ef91f886a34678596c3fdbc1ed2b2a9" title=" " alt="" coords="245,13,452,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,24,229,24,229,29,197,29"/>
+</map>

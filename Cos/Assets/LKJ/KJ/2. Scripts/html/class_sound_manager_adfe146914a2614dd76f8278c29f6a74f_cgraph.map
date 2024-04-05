@@ -1,0 +1,7 @@
+<map id="SoundManager.Start" name="SoundManager.Start">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,146,73"/>
+<area shape="rect" id="Node000002" href="$class_sound_manager.html#a29f98c61639e8f0e2fa018c26bd827ad" title=" " alt="" coords="194,5,410,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,47,178,42,178,48,146,52"/>
+<area shape="rect" id="Node000003" href="$class_sound_manager.html#a21244516bbf82ebfe9f58e8f066049fa" title=" " alt="" coords="204,72,400,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,68,188,74,188,79,145,73"/>
+</map>

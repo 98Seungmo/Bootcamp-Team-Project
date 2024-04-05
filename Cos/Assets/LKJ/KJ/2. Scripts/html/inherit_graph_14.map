@@ -1,0 +1,53 @@
+<map id="그래픽컬한 클래스 계통도" name="그래픽컬한 클래스 계통도">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,613,115,640"/>
+<area shape="rect" id="Node000001" href="$class_k_j_1_1_bars_manager.html" title="플레이어 체력바 관리" alt="" coords="205,5,322,32"/>
+<area shape="poly" id="edge4_Node000000_Node000001" title=" " alt="" coords="60,598,66,478,83,312,96,227,113,150,134,86,147,61,161,42,180,28,203,20,205,25,183,32,165,46,151,64,139,88,118,151,101,228,88,312,72,478,65,598"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_brightness_manager.html" title="게임의 밝기 조절" alt="" coords="187,56,340,83"/>
+<area shape="poly" id="edge5_Node000000_Node000002" title=" " alt="" coords="60,598,68,487,86,336,99,260,116,190,136,132,161,93,185,76,188,81,165,97,141,135,121,191,105,261,91,337,74,488,66,598"/>
+<area shape="rect" id="Node000003" href="$class_k_j_1_1_buff_on_off.html" title="버프 온오프 활성화" alt="" coords="216,107,311,133"/>
+<area shape="poly" id="edge6_Node000000_Node000003" title=" " alt="" coords="61,597,71,496,90,361,103,292,119,230,138,179,161,143,186,127,214,119,216,124,188,132,165,147,143,181,124,231,108,293,95,361,76,497,66,598"/>
+<area shape="rect" id="Node000004" href="$class_k_j_1_1_camera_zoom_manager.html" title="게임 옵션 중 카메라 줌 조절 기능" alt="" coords="180,157,347,184"/>
+<area shape="poly" id="edge7_Node000000_Node000004" title=" " alt="" coords="62,598,73,506,93,386,122,270,140,225,161,194,178,182,181,186,165,198,145,228,127,272,98,387,78,507,67,598"/>
+<area shape="rect" id="Node000005" href="$class_k_j_1_1_character_select_manager.html" title="캐릭터 선택창에서 해당 클래스 고르면 해당 클래스의 기본 정보가 플레이어에게 들어감" alt="" coords="172,208,355,235"/>
+<area shape="poly" id="edge8_Node000000_Node000005" title=" " alt="" coords="63,597,76,516,97,410,125,311,142,272,161,245,177,233,180,237,165,249,147,274,130,312,102,412,81,517,68,598"/>
+<area shape="rect" id="Node000006" href="$class_k_j_1_1_conversation_manager.html" title="npc 와 대화 매니저" alt="" coords="181,259,346,285"/>
+<area shape="poly" id="edge9_Node000000_Node000006" title=" " alt="" coords="59,598,63,535,78,454,91,411,108,369,131,330,161,295,179,283,182,287,164,299,136,333,113,371,96,413,83,455,68,536,64,598"/>
+<area shape="rect" id="Node000007" href="$class_k_j_1_1_dungeon_interaction.html" title="던전내 상호작용 UI" alt="" coords="188,309,339,336"/>
+<area shape="poly" id="edge10_Node000000_Node000007" title=" " alt="" coords="61,598,68,544,84,476,97,441,114,406,135,374,161,346,186,331,189,335,164,350,139,377,119,409,102,443,90,478,73,545,66,598"/>
+<area shape="rect" id="Node000008" href="$class_k_j_1_1_enemy_bars_manager.html" title="보스 및 적들 체력바 설정" alt="" coords="184,360,343,387"/>
+<area shape="poly" id="edge11_Node000000_Node000008" title=" " alt="" coords="63,597,74,553,92,499,120,444,139,419,161,397,182,384,185,388,164,401,143,422,125,447,97,501,79,554,68,599"/>
+<area shape="rect" id="Node000009" href="$class_k_j_1_1_firebase_auth_manager.html" title=" " alt="" coords="180,411,347,437"/>
+<area shape="poly" id="edge12_Node000000_Node000009" title=" " alt="" coords="67,598,80,563,100,522,127,482,161,447,181,435,184,440,164,451,131,485,104,525,85,565,72,600"/>
+<area shape="rect" id="Node000010" href="$class_k_j_1_1_inventory_u_i.html" title="인벤토리 UI" alt="" coords="212,461,315,488"/>
+<area shape="poly" id="edge13_Node000000_Node000010" title=" " alt="" coords="74,598,109,547,133,520,161,498,185,486,211,478,212,484,187,491,164,502,137,524,113,550,78,601"/>
+<area shape="rect" id="Node000011" href="$class_k_j_1_1_item_collector.html" title=" " alt="" coords="205,512,322,539"/>
+<area shape="poly" id="edge14_Node000000_Node000011" title=" " alt="" coords="86,600,120,573,162,548,204,533,206,538,164,553,123,578,89,605"/>
+<area shape="rect" id="Node000012" href="$class_k_j_1_1_item_slot___inven.html" title="인벤안에 있는 슬롯 클릭시 장비창에 해당 아이템 (무기, 방어구, 장신구) 표시" alt="" coords="201,563,326,589"/>
+<area shape="poly" id="edge15_Node000000_Node000012" title=" " alt="" coords="129,607,206,587,207,593,131,612"/>
+<area shape="rect" id="Node000013" href="$class_k_j_1_1_loading_scene_goto_dungeon.html" title="던전으로 가는 로딩 씬" alt="" coords="163,613,364,640"/>
+<area shape="poly" id="edge16_Node000000_Node000013" title=" " alt="" coords="130,624,162,624,162,629,130,629"/>
+<area shape="rect" id="Node000014" href="$class_k_j_1_1_loading_scene_goto_village.html" title="마을로 가는 로딩 씬" alt="" coords="169,664,358,691"/>
+<area shape="poly" id="edge17_Node000000_Node000014" title=" " alt="" coords="131,641,207,661,206,666,129,647"/>
+<area shape="rect" id="Node000015" href="$class_k_j_1_1_loading_scene_manager.html" title=" " alt="" coords="177,715,350,741"/>
+<area shape="poly" id="edge18_Node000000_Node000015" title=" " alt="" coords="89,649,123,676,164,700,194,712,192,717,161,705,120,680,86,653"/>
+<area shape="rect" id="Node000016" href="$class_k_j_1_1_loading_spinner_animation.html" title="로딩 씬 에서 이미지 회전" alt="" coords="170,765,357,792"/>
+<area shape="poly" id="edge19_Node000000_Node000016" title=" " alt="" coords="78,652,113,703,137,729,164,751,187,762,185,767,161,756,133,733,109,707,74,655"/>
+<area shape="rect" id="Node000017" href="$class_k_j_1_1_loading_text_animation.html" title="로딩시 나오는 텍스트" alt="" coords="179,816,348,843"/>
+<area shape="poly" id="edge20_Node000000_Node000017" title=" " alt="" coords="72,654,85,688,104,728,131,768,164,802,184,813,181,818,161,806,127,772,100,731,80,690,67,655"/>
+<area shape="rect" id="Node000018" href="$class_k_j_1_1_login_manager.html" title="로그인 시 필요한 UI 및 기능 구현" alt="" coords="203,867,324,893"/>
+<area shape="poly" id="edge21_Node000000_Node000018" title=" " alt="" coords="68,655,79,699,97,753,125,807,143,831,164,853,182,864,203,871,201,876,180,869,161,857,139,835,120,810,92,755,74,700,63,656"/>
+<area shape="rect" id="Node000019" href="$class_k_j_1_1_menu_u_i_manager.html" title="MenuUI 에 관한 관리" alt="" coords="196,917,331,944"/>
+<area shape="poly" id="edge22_Node000000_Node000019" title=" " alt="" coords="66,655,73,708,90,775,102,810,119,844,139,876,164,903,179,914,197,921,194,926,177,918,161,907,135,879,114,847,97,813,84,777,68,709,61,656"/>
+<area shape="rect" id="Node000020" href="$class_k_j_1_1_minimap_camera.html" title="미니맵용 카메라, 카메라가 target(player)이 스폰될 때 target의 위치 추적" alt="" coords="196,968,331,995"/>
+<area shape="poly" id="edge23_Node000000_Node000020" title=" " alt="" coords="64,655,68,717,83,798,96,841,113,882,136,921,164,954,179,965,197,972,195,977,177,969,161,958,131,924,108,884,91,842,78,799,63,718,59,656"/>
+<area shape="rect" id="Node000021" href="$class_k_j_1_1_mouse_cursor_manager.html" title="마우스 커서의 이미지를 바꿈" alt="" coords="180,1019,347,1045"/>
+<area shape="poly" id="edge24_Node000000_Node000021" title=" " alt="" coords="68,655,81,737,102,842,130,941,147,979,165,1005,181,1016,177,1021,161,1009,142,982,125,943,97,843,76,738,63,656"/>
+<area shape="rect" id="Node000022" href="$class_k_j_1_1_resolution_manager.html" title="해상도 설정" alt="" coords="188,1069,339,1096"/>
+<area shape="poly" id="edge25_Node000000_Node000022" title=" " alt="" coords="67,655,78,746,98,867,127,981,145,1026,165,1055,189,1071,186,1075,161,1059,140,1028,122,983,93,868,73,747,62,656"/>
+<area shape="rect" id="Node000023" href="$class_k_j_1_1_singleton_lazy.html" title="MonoBehaviour 를 상속받고, 제네릭을 사용하여 싱글톤 인스턴스 생성 반드시 T 가 class 이여야 함" alt="" coords="187,1120,340,1147"/>
+<area shape="poly" id="edge26_Node000000_Node000023" title=" " alt="" coords="66,655,76,756,95,892,108,960,124,1022,143,1072,165,1106,188,1122,185,1126,161,1110,138,1075,119,1023,103,961,90,893,71,757,61,656"/>
+<area shape="rect" id="Node000024" href="$class_k_j_1_1_sound_manager.html" title="사운드 매니저 @detail 소리 볼륨 크기에 따라 이미지 변화, 배경음과 효과음 조절(토글형식, Mute &lt;&#45;&gt; All)" alt="" coords="200,1171,327,1197"/>
+<area shape="poly" id="edge27_Node000000_Node000024" title=" " alt="" coords="66,655,74,766,91,916,105,993,121,1062,141,1119,165,1157,181,1169,200,1177,198,1182,178,1174,161,1160,136,1121,116,1064,99,994,86,917,68,766,60,656"/>
+<area shape="rect" id="Node000025" href="$class_k_j_1_1_talking_head_system.html" title=" " alt="" coords="185,1221,342,1248"/>
+<area shape="poly" id="edge28_Node000000_Node000025" title=" " alt="" coords="65,655,72,775,88,941,101,1025,118,1102,139,1165,151,1189,165,1207,186,1223,183,1227,161,1211,147,1192,134,1167,113,1104,96,1026,83,942,66,775,60,656"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="KJ.LoginManager.SetActivePanel" name="KJ.LoginManager.SetActivePanel">
+<area shape="rect" id="Node000001" title="인풋 필드 이동 활성화 패널" alt="" coords="234,39,414,81"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_login_manager.html#a3af8c42765ade5ac3e351483cd008c59" title="인풋 필드 로그인창에서 포커스 활성화" alt="" coords="5,5,186,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,47,186,42,187,37,219,42"/>
+<area shape="rect" id="Node000003" href="$class_k_j_1_1_login_manager.html#aa5eb38e44bf0dd1348d33bde62598586" title="인풋 필드 회원가입창에서 포커스 활성화" alt="" coords="5,72,186,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,78,187,83,186,78,218,73"/>
+</map>

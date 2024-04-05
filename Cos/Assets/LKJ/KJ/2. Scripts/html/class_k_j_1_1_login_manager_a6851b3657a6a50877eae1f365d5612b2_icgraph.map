@@ -1,0 +1,5 @@
+<map id="KJ.LoginManager.LoadEmail" name="KJ.LoginManager.LoadEmail">
+<area shape="rect" id="Node000001" title="저장된 이메일 불러오기" alt="" coords="207,5,393,32"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_login_manager.html#a49963dcdc4fd772f3bfd927931f60304" title="인풋 필드 이미지 숨기기 및 이메일 저장" alt="" coords="5,5,159,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,21,159,21,159,16,191,16"/>
+</map>

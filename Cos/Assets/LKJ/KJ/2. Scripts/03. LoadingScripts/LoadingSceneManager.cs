@@ -8,35 +8,44 @@ using UnityEngine.UI;
 
 namespace KJ
 {
+    /**
+     * 로딩 씬에서 데이터 로드 및 다음 씬으로 이동
+     */
     public class LoadingSceneManager : MonoBehaviour
     {
+        /**
+         * @biref shortUID 체크 후 상황에 따라 씬 변경, 로딩 동안 나올 텍스트 랜덤 생성.
+         */
         void Start()
         {
             #region 로딩 씬 데이터 로드 및 shortUID 체크 후 상황에 따라 씬 변경. (슬라이더) 
-            // LoadAsyncSceneCoroutine() 을 코루틴으로 시작.
+            /* LoadAsyncSceneCoroutine() 을 코루틴으로 시작 */
             StartCoroutine(LoadAsyncSceneCoroutine());
             #endregion
             #region 로딩 동안 게임 스토리 텍스트 랜덤으로 생성
-            // 리스트에 gameStory 컴포넌트 추가
+            /* 리스트에 gameStory 컴포넌트 추가 */
             gameStoryList.Add(gameStory);
             gameStoryList.Add(gameStory2);
             gameStoryList.Add(gameStory3);
 
-            // 랜덤 범위는 리스트 길이
+            /* 랜덤 범위는 리스트 길이 */
             _randomNum = Random.Range(0, gameStoryList.Count);
             randomStory = gameStoryList[_randomNum];
 
-            // 랜덤으로 선택된 텍스트만 활성화 나머지는 비활성화.
+            /* 랜덤으로 선택된 텍스트만 활성화 나머지는 비활성화 */
             foreach (var story in gameStoryList)
             {
-                // 모든 스토리를 비활성화.
+                /* 모든 스토리를 비활성화 */
                 story.gameObject.SetActive(false);
             }
-            // 랜덤으로 선택된 스토리 활성화.
+            /* 랜덤으로 선택된 스토리 활성화 */
             randomStory.gameObject.SetActive(true);
             #endregion
         }
 
+        /**
+         * @brief 로딩 동안 하단의 슬라이더 바 채워짐
+         */
         void Update()
         {
             currentProgress = Mathf.Lerp(currentProgress, targetProgress, Time.deltaTime * 10);
@@ -46,13 +55,15 @@ namespace KJ
 
         #region 로딩 씬 데이터 로드 및 shortUID 체크 후 상황에 따라 씬 변경. (슬라이더) 
         [Header("Slider")]
-        public Slider slider;
-        public string sceneName;
-        /* 현재 진행 상태 */
-        float currentProgress = 0f;
-        /* 목표 진행 상태 */
-        float targetProgress = 0f;
+        public Slider slider; ///< 슬라이더
+        public string sceneName; ///< 씬 이름
 
+        float currentProgress = 0f; ///< 현재 진행 상태
+        float targetProgress = 0f; ///< 목표 진행 상태
+
+        /**
+         * @brief 플레이어 및 아이템 데이터 로드 후 해당 씬으로 이동
+         */
         IEnumerator LoadAsyncSceneCoroutine()
         {
             /* 플레이어 데이터 로드 */
@@ -77,6 +88,7 @@ namespace KJ
                 sceneName = "CharacterSelectScene";
             }
 
+            /* 목표 진행 완료 */
             targetProgress = 1f;
 
             // sceneName 으로 비동기 형식으로 넘어가게 하는 operation 생성.
@@ -99,14 +111,14 @@ namespace KJ
         #endregion
         #region 로딩 동안 게임 스토리 텍스트 랜덤으로 생성
         [Header("RandomText")]
-        public TMP_Text randomStory;
-        public TMP_Text gameStory;
-        public TMP_Text gameStory2;
-        public TMP_Text gameStory3;
+        public TMP_Text randomStory; ///< 랜덤으로 스토리 출력
+        public TMP_Text gameStory; ///< 스토리 내용 1
+        public TMP_Text gameStory2; ///< 스토리 내용 2
+        public TMP_Text gameStory3; ///< 스토리 내용 3
 
-        private int _randomNum;
+        private int _randomNum; ///< 랜덤 범위
 
-        List<TMP_Text> gameStoryList = new List<TMP_Text>();
+        List<TMP_Text> gameStoryList = new List<TMP_Text>(); ///< 게임스토리 리스트
         #endregion
     }
 

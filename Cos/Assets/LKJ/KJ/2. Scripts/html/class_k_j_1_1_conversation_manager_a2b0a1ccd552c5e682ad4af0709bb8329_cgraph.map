@@ -1,0 +1,5 @@
+<map id="KJ.ConversationManager.Start" name="KJ.ConversationManager.Start">
+<area shape="rect" id="Node000001" title="플레이어 스폰될 때 자동으로 할당 및 대화 관련 UI 비활성화" alt="" coords="5,13,202,40"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_conversation_manager.html#a7475b19ddac40c1b6d20e3b4180977ee" title="가장 가까운 npc가 있는지 확인 후 상호작용 UI 활성화" alt="" coords="250,5,455,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,24,234,24,234,29,202,29"/>
+</map>

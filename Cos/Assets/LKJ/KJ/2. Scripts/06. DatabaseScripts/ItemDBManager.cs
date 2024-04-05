@@ -9,8 +9,10 @@ using UnityEngine;
 
 namespace KJ
 {
-    /* MonoBehaviour 를 상속받고, 제네릭을 사용하여 싱글톤 인스턴스 생성.
-     반드시 T 가 class 이여야 함. */
+    /** 
+     * @brief MonoBehaviour 를 상속받고, 제네릭을 사용하여 싱글톤 인스턴스 생성 
+     * 반드시 T 가 class 이여야 함 
+     */
     public class SingletonLazy<T> : MonoBehaviour where T : class
     {
         /* Lazy<T> 를 사용하여 싱글톤 인스턴스를 저장.
@@ -40,7 +42,9 @@ namespace KJ
             return instance;
         });
 
-        /* 싱글톤 인스턴스에 접근하기 위한 정적 속성. */
+        /** 
+         * @brief 싱글톤 인스턴스에 접근하기 위한 정적 속성 
+         */
         public static T Instance
         {
             get 
@@ -53,16 +57,25 @@ namespace KJ
     }
 
 
-    /* SingletonLazy<T> 를 상속받아서 싱글톤 구현하는 클래스 */
+    /** 
+     * @brief SingletonLazy<T> 를 상속받아서 싱글톤 구현하는 클래스 
+     */
     public class ItemDBManager : SingletonLazy<ItemDBManager>
     {
-        public ItemData _itemData { get; set; }
+        public ItemData _itemData { get; set; } ///< 아이템 데이터 참조를 위한
 
+        /**
+         * @brief 전체 아이템에서 특정 아이디를 찾음
+         * @param[in] id 아이템 ID
+         */
         public Item GetItem(string id) 
         {
             return _itemData.items.Find(x => x.id == id);
         }
 
+        /**
+         * @brief 플레이어, 클래스 데이터 로드
+         */
         public IEnumerator LoadItemDB()
         {
             Debug.Log(" 로드 완료 " + _itemData);
@@ -70,52 +83,19 @@ namespace KJ
             Debug.Log(" 로드 완료 " + itemData.text);
             _itemData = JsonUtility.FromJson<ItemData>(itemData.text);
 
-            //yield return new WaitForSeconds(0.5f);
-            //_itemData = Newtonsoft.Json.JsonConvert.DeserializeObject<ItemData>(itemData.text);
-
             yield return null;
         }
 
         Dictionary<string, Sprite> _loadpool = new Dictionary<string, Sprite>();
+
+        /**
+         * @brief 아이템 이미지 경로 로드
+         */
         public Sprite LoadItemSprite(string imagePath)
         {
             Sprite s = Resources.Load<Sprite>(imagePath);
             if (s == null) Debug.Log("LoadItemSprite == null : " + imagePath);
             return s;
         }
-
-
-        //private DatabaseReference _databaseReference;
-        //private void Start()
-        //{
-        //    FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task =>
-        //    {
-        //        if (task.IsFaulted)
-        //        {
-        //            Debug.LogError($"failed to initialize firebase with {task.Exception}");
-        //            return;
-        //        }
-
-        //        var dependencyStatus = task.Result;
-        //        if (dependencyStatus == Firebase.DependencyStatus.Available)
-        //        {
-        //            FirebaseApp app = FirebaseApp.DefaultInstance;
-
-        //            _databaseReference = FirebaseDatabase.DefaultInstance.RootReference;
-        //            //_auth = FirebaseAuth.DefaultInstance;
-        //            //_auth.StateChanged += OnAuthStateChanged;
-
-        //            /*초기화 결과 확인*/
-        //            Debug.Log("firebase initalized successfull");
-
-        //        }
-        //        else
-        //        {
-        //            // 실패
-        //            Debug.LogError($"Firebase dependencies : {dependencyStatus}");
-        //        }
-
-        //    });
-        //}
     }
 }

@@ -1,0 +1,5 @@
+<map id="KJ.TalkingHeadSystem.ShowTalkingHeadUI" name="KJ.TalkingHeadSystem.ShowTalkingHeadUI">
+<area shape="rect" id="Node000001" title="UI 활성화" alt="" coords="270,5,462,48"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_talking_head_system.html#a9e734657ec1360129e3159071d409486" title="switch 문으로 구역 진입시 토킹헤드 나타나기 위한 구역들 나열" alt="" coords="5,5,222,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,29,222,29,222,24,254,24"/>
+</map>

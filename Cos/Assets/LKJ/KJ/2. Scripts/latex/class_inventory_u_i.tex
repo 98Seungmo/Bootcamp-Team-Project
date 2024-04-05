@@ -1,0 +1,619 @@
+\doxysection{Inventory\+UI 클래스 참조}
+\hypertarget{class_inventory_u_i}{}\label{class_inventory_u_i}\index{InventoryUI@{InventoryUI}}
+
+
+Inventory\+UI에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{class_inventory_u_i__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Inventory\+UI에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_u_i__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_k_j_1_1_item}{Item}} \mbox{\hyperlink{class_inventory_u_i_aa8883553e247e36deffe905ea6ed73d6}{Get\+Item}} (string id)
+\item 
+void \mbox{\hyperlink{class_inventory_u_i_a99b38b50627d6827a4a2ec36310c93be}{Update\+Inventory\+UI}} ()
+\item 
+void \mbox{\hyperlink{class_inventory_u_i_a208fe0f0dae6def3bd2a114bfc4a2e6f}{Add\+Item}} (string item\+Id)
+\item 
+void \mbox{\hyperlink{class_inventory_u_i_a4546d9376e062cd5efa48a8ff9ed6a7c}{Remove\+Item}} (string item\+Id)
+\item 
+\mbox{\hyperlink{class_k_j_1_1_item}{Item}} \mbox{\hyperlink{class_inventory_u_i_aa943337b5cd8f88a9b6e4600379c64f9}{Get\+It\+Item\+By\+Id}} (string id)
+\item 
+void \mbox{\hyperlink{class_inventory_u_i_a54f4236eb217ce047e44bbb795d8fbd3}{Click\+Description}} (\mbox{\hyperlink{class_k_j_1_1_item}{Item}} item)
+\item 
+void \mbox{\hyperlink{class_inventory_u_i_ae7abd2dc8bee059664cd47fdc46a00e8}{Click\+Slot}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_inventory_u_i_ad783572abcb04327120e8d2ba4c6f15f}{slot\+Prefab}}
+\item 
+Transform \mbox{\hyperlink{class_inventory_u_i_a7e32322fbdbfb685d5097edf7ec29b11}{slot\+Panel}}
+\item 
+TMP\+\_\+\+Text \mbox{\hyperlink{class_inventory_u_i_af95ca31c48aa1db626681f7bf2278c55}{item\+Name}}
+\item 
+TMP\+\_\+\+Text \mbox{\hyperlink{class_inventory_u_i_aa21abac55dc34fa84323c70c6b7980f8}{item\+Description}}
+\item 
+TMP\+\_\+\+Text \mbox{\hyperlink{class_inventory_u_i_a1d776666145a4ff8508259760f77fb41}{item\+Quantity}}
+\item 
+string \mbox{\hyperlink{class_inventory_u_i_aa848012752fdce120da6d853a142e5e9}{uid}} = Player\+DBManager.\+Instance.\+Current\+Short\+UID
+\end{DoxyCompactItemize}
+\doxysubsubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_k_j_1_1_class}{Class}} \mbox{\hyperlink{class_inventory_u_i_aab7ac84947b1d09e5378bbf77502f0e3}{\+\_\+class}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_k_j_1_1_inventory}{Inventory}} \mbox{\hyperlink{class_inventory_u_i_a06b12583a324d25d1db38f021078a228}{\+\_\+inventory}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_k_j_1_1_item_data}{Item\+Data}} \mbox{\hyperlink{class_inventory_u_i_ad62596e54a05b2948e61354b1db7e32c}{\+\_\+item\+Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_inventory_u_i_a3860766b4516c00d581323d0bb55bb63}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_inventory_u_i_acbdd4a5c09941a5be046934b6ecbd839}{Create\+Slot}} (\mbox{\hyperlink{class_k_j_1_1_item}{Item}} item)
+\item 
+void \mbox{\hyperlink{class_inventory_u_i_a4dce53dc949fee5f89e459d71024c876}{Remove\+Slot}} (\mbox{\hyperlink{class_k_j_1_1_item}{Item}} item)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_k_j_1_1_player_d_b_manager}{Player\+DBManager}} \mbox{\hyperlink{class_inventory_u_i_a687d87ce908516c9367705ccc202df00}{player\+DBManager}} = Player\+DBManager.\+Instance
+\item 
+\mbox{\hyperlink{class_k_j_1_1_game_data}{Game\+Data}} \mbox{\hyperlink{class_inventory_u_i_a6bc9a9f494c38793784248787738abad}{\+\_\+game\+Data}} = Net\+Data.\+Instance.\+game\+Data
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00012}{12}} 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\Hypertarget{class_inventory_u_i_a208fe0f0dae6def3bd2a114bfc4a2e6f}\label{class_inventory_u_i_a208fe0f0dae6def3bd2a114bfc4a2e6f} 
+\index{InventoryUI@{InventoryUI}!AddItem@{AddItem}}
+\index{AddItem@{AddItem}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{AddItem()}{AddItem()}}
+{\footnotesize\ttfamily void Inventory\+UI.\+Add\+Item (\begin{DoxyParamCaption}\item[{string}]{item\+Id }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00130}{130}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00131\ \ \ \ \ \{}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ Debug.Log(\$\textcolor{stringliteral}{"{}\{itemId\}\ 추가"{}});}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ \ 근데\ 해당\ 아이템이\ 뭔지\ 알아야함\  }}
+\DoxyCodeLine{00134\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ 플레이어\ 인벤토리에\ 해당\ 아이템이\ 있는지\ 체크해야\ 함\  }}
+\DoxyCodeLine{00135\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ 이미\ 있는\ 아이템이면\ 수량만\ +1,\ 없으면\ 플레이어\ 인벤토리에\ 아이템이\ 추가됨.\  }}
+\DoxyCodeLine{00136\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ 새로운\ 아이템(즉\ 없는\ 아이템을\ 얻을\ 경우\ 슬롯도\ 같이\ 생성)\ */}}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_item}{Item}}\ itemToAdd\ =\ \mbox{\hyperlink{class_inventory_u_i_aa943337b5cd8f88a9b6e4600379c64f9}{GetItItemById}}(itemId);}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (itemToAdd\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_item}{Item}}\ item\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (var\ i\ \textcolor{keywordflow}{in}\ \mbox{\hyperlink{class_inventory_u_i_a06b12583a324d25d1db38f021078a228}{\_inventory}}.\mbox{\hyperlink{class_k_j_1_1_inventory_aa4587d78d535425a8ddc6006f289699e}{items}})}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(i.id\ ==\ itemId)\ }
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ item\ =\ i;}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Item\ item\ =\ \_inventory.items.Find(item\ =>\ item.id\ ==\ itemId);}}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (item\ !=\ \textcolor{keyword}{null}\ \&\&\ item.\mbox{\hyperlink{class_k_j_1_1_item_ae26ecd4b28a4dcda60313a4fd54a4ff8}{id}}\ ==\ itemId)}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\$\textcolor{stringliteral}{"{}제발\ :\{item.id\}"{}});}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\$\textcolor{stringliteral}{"{}제발2\ :\{item.imagePath\}"{}});}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ item.\mbox{\hyperlink{class_k_j_1_1_item_aaa735019b93eac27712e7c7ed9e8fbba}{quantity}}++;}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ itemQuantity.text\ =\ item.\mbox{\hyperlink{class_k_j_1_1_item_aaa735019b93eac27712e7c7ed9e8fbba}{quantity}}.ToString();}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inventory_u_i_acbdd4a5c09941a5be046934b6ecbd839}{CreateSlot}}(item);}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inventory_u_i_a06b12583a324d25d1db38f021078a228}{\_inventory}}.\mbox{\hyperlink{class_k_j_1_1_inventory_aa4587d78d535425a8ddc6006f289699e}{items}}.Add(itemToAdd);}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\$\textcolor{stringliteral}{"{}이미지\ :\ \{itemToAdd.id\}"{}});}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inventory_u_i_acbdd4a5c09941a5be046934b6ecbd839}{CreateSlot}}(itemToAdd);}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00172\ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_inventory_u_i_a208fe0f0dae6def3bd2a114bfc4a2e6f_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_u_i_a208fe0f0dae6def3bd2a114bfc4a2e6f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_inventory_u_i_a54f4236eb217ce047e44bbb795d8fbd3}\label{class_inventory_u_i_a54f4236eb217ce047e44bbb795d8fbd3} 
+\index{InventoryUI@{InventoryUI}!ClickDescription@{ClickDescription}}
+\index{ClickDescription@{ClickDescription}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{ClickDescription()}{ClickDescription()}}
+{\footnotesize\ttfamily void Inventory\+UI.\+Click\+Description (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_k_j_1_1_item}{Item}}}]{item }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00248}{248}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00249\ \ \ \ \ \{}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ itemName.text\ =\ item.\mbox{\hyperlink{class_k_j_1_1_item_ae26ecd4b28a4dcda60313a4fd54a4ff8}{id}};}
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ itemDescription.text\ =\ item.\mbox{\hyperlink{class_k_j_1_1_item_ab52c3e381e436eccaefcb544effc0517}{description}};}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \textcolor{comment}{//bool\ \_type\ =\ item.type}}
+\DoxyCodeLine{00253\ }
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (item.\mbox{\hyperlink{class_k_j_1_1_item_aa681ce0e509f84932b0dd9946730d2e8}{type}})}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}weapon"{}}:}
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}armor"{}}:\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}accessory"{}}:\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00261\ }
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 특정\ 타입(Weapon,\ Armor,\ Acc)을\ 클릭할\ 때\ 장비창에\ 해당\ 이미지\ 전달.*/}}
+\DoxyCodeLine{00264\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_inventory_u_i_ae7abd2dc8bee059664cd47fdc46a00e8}\label{class_inventory_u_i_ae7abd2dc8bee059664cd47fdc46a00e8} 
+\index{InventoryUI@{InventoryUI}!ClickSlot@{ClickSlot}}
+\index{ClickSlot@{ClickSlot}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{ClickSlot()}{ClickSlot()}}
+{\footnotesize\ttfamily void Inventory\+UI.\+Click\+Slot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00266}{266}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00267\ \ \ \ \ \{}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ \textcolor{comment}{//ClickDescription();}}
+\DoxyCodeLine{00269\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_inventory_u_i_acbdd4a5c09941a5be046934b6ecbd839}\label{class_inventory_u_i_acbdd4a5c09941a5be046934b6ecbd839} 
+\index{InventoryUI@{InventoryUI}!CreateSlot@{CreateSlot}}
+\index{CreateSlot@{CreateSlot}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{CreateSlot()}{CreateSlot()}}
+{\footnotesize\ttfamily void Inventory\+UI.\+Create\+Slot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_k_j_1_1_item}{Item}}}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00202}{202}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00203\ \ \ \ \ \{}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ GameObject\ slot\ =\ Instantiate(\mbox{\hyperlink{class_inventory_u_i_ad783572abcb04327120e8d2ba4c6f15f}{slotPrefab}},\ \mbox{\hyperlink{class_inventory_u_i_a7e32322fbdbfb685d5097edf7ec29b11}{slotPanel}});}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}슬롯추가"{}});}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ slot.name\ =\ item.\mbox{\hyperlink{class_k_j_1_1_item_ae26ecd4b28a4dcda60313a4fd54a4ff8}{id}};}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_item_slot___inven}{ItemSlot\_Inven}}\ sSlot\ =\ slot.GetComponent<\mbox{\hyperlink{class_item_slot___inven}{ItemSlot\_Inven}}>();}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ sSlot.\_itemidx\ =\ item.\mbox{\hyperlink{class_k_j_1_1_item_ae26ecd4b28a4dcda60313a4fd54a4ff8}{id}};}
+\DoxyCodeLine{00209\ }
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ Image[]\ itemImageComponent\ =\ slot.GetComponentsInChildren<Image>();}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ Sprite\ itemImage\ =\ \mbox{\hyperlink{class_k_j_1_1_item_d_b_manager}{ItemDBManager}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}.LoadItemSprite(item.\mbox{\hyperlink{class_k_j_1_1_item_a1290b13fb1488c597cd5da381939011c}{imagePath}});}
+\DoxyCodeLine{00214\ }
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (itemImage\ ==\ \textcolor{keyword}{null})\ Debug.Log(\textcolor{stringliteral}{"{}itemImage\ ==\ null\ :\ "{}}\ +\ item.\mbox{\hyperlink{class_k_j_1_1_item_a1290b13fb1488c597cd5da381939011c}{imagePath}});}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (itemImageComponent\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}이미지\ 추가"{}});}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \ \ \ \ itemImageComponent[1].sprite\ =\ itemImage;}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \ \ \ \ itemImageComponent[1].enabled\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_u_i_acbdd4a5c09941a5be046934b6ecbd839_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_inventory_u_i_aa8883553e247e36deffe905ea6ed73d6}\label{class_inventory_u_i_aa8883553e247e36deffe905ea6ed73d6} 
+\index{InventoryUI@{InventoryUI}!GetItem@{GetItem}}
+\index{GetItem@{GetItem}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{GetItem()}{GetItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_j_1_1_item}{Item}} Inventory\+UI.\+Get\+Item (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00080}{80}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00081\ \ \ \ \ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_k_j_1_1_item_d_b_manager}{ItemDBManager}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}.GetItem(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{00083\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_inventory_u_i_aa943337b5cd8f88a9b6e4600379c64f9}\label{class_inventory_u_i_aa943337b5cd8f88a9b6e4600379c64f9} 
+\index{InventoryUI@{InventoryUI}!GetItItemById@{GetItItemById}}
+\index{GetItItemById@{GetItItemById}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{GetItItemById()}{GetItItemById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_j_1_1_item}{Item}} Inventory\+UI.\+Get\+It\+Item\+By\+Id (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00241}{241}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00242\ \ \ \ \ \{}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ Debug.Log(\$\textcolor{stringliteral}{"{}ID\ =\ \{id\}"{}});}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inventory_u_i_ad62596e54a05b2948e61354b1db7e32c}{\_itemData}}.\mbox{\hyperlink{class_k_j_1_1_item_data_a61df43a1c87487a61210c82455dba77e}{items}}.Find(item\ =>\ item.id\ ==\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00245\ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_u_i_aa943337b5cd8f88a9b6e4600379c64f9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_inventory_u_i_a4546d9376e062cd5efa48a8ff9ed6a7c}\label{class_inventory_u_i_a4546d9376e062cd5efa48a8ff9ed6a7c} 
+\index{InventoryUI@{InventoryUI}!RemoveItem@{RemoveItem}}
+\index{RemoveItem@{RemoveItem}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{RemoveItem()}{RemoveItem()}}
+{\footnotesize\ttfamily void Inventory\+UI.\+Remove\+Item (\begin{DoxyParamCaption}\item[{string}]{item\+Id }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00175}{175}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00176\ \ \ \ \ \{}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_item}{Item}}\ itemToRemove\ =\ \mbox{\hyperlink{class_inventory_u_i_aa943337b5cd8f88a9b6e4600379c64f9}{GetItItemById}}(itemId);}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (itemToRemove\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_item}{Item}}\ item\ =\ \mbox{\hyperlink{class_inventory_u_i_a06b12583a324d25d1db38f021078a228}{\_inventory}}.\mbox{\hyperlink{class_k_j_1_1_inventory_aa4587d78d535425a8ddc6006f289699e}{items}}.Find(item\ =>\ item.\mbox{\hyperlink{class_k_j_1_1_item_ae26ecd4b28a4dcda60313a4fd54a4ff8}{id}}\ ==\ itemId);}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (item\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ item.\mbox{\hyperlink{class_k_j_1_1_item_aaa735019b93eac27712e7c7ed9e8fbba}{quantity}}-\/-\/;}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ itemQuantity.text\ =\ item.\mbox{\hyperlink{class_k_j_1_1_item_aaa735019b93eac27712e7c7ed9e8fbba}{quantity}}.ToString();}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (itemToRemove.\mbox{\hyperlink{class_k_j_1_1_item_aaa735019b93eac27712e7c7ed9e8fbba}{quantity}}\ <=\ 0)}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inventory_u_i_a06b12583a324d25d1db38f021078a228}{\_inventory}}.\mbox{\hyperlink{class_k_j_1_1_inventory_aa4587d78d535425a8ddc6006f289699e}{items}}.Remove(itemToRemove);}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inventory_u_i_a4dce53dc949fee5f89e459d71024c876}{RemoveSlot}}(itemToRemove);}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}제거할\ 아이템\ 찾을\ 수\ 없음."{}}\ +\ itemId);}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00199\ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_u_i_a4546d9376e062cd5efa48a8ff9ed6a7c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_inventory_u_i_a4dce53dc949fee5f89e459d71024c876}\label{class_inventory_u_i_a4dce53dc949fee5f89e459d71024c876} 
+\index{InventoryUI@{InventoryUI}!RemoveSlot@{RemoveSlot}}
+\index{RemoveSlot@{RemoveSlot}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{RemoveSlot()}{RemoveSlot()}}
+{\footnotesize\ttfamily void Inventory\+UI.\+Remove\+Slot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_k_j_1_1_item}{Item}}}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00226}{226}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00227\ \ \ \ \ \{}
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 제거할\ 아이템\ id\ 찾기\  }}
+\DoxyCodeLine{00229\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ 아이템이\ 없는거\ 확인하면\ 해당\ 슬롯도\ 같이\ 삭제*/}}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (Transform\ slotTransform\ \textcolor{keywordflow}{in}\ \mbox{\hyperlink{class_inventory_u_i_a7e32322fbdbfb685d5097edf7ec29b11}{slotPanel}})}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (slotTransform.name\ ==\ item.\mbox{\hyperlink{class_k_j_1_1_item_ae26ecd4b28a4dcda60313a4fd54a4ff8}{id}})}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Destroy(slotTransform.gameObject);}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00238\ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_u_i_a4dce53dc949fee5f89e459d71024c876_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_inventory_u_i_a3860766b4516c00d581323d0bb55bb63}\label{class_inventory_u_i_a3860766b4516c00d581323d0bb55bb63} 
+\index{InventoryUI@{InventoryUI}!Start@{Start}}
+\index{Start@{Start}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Inventory\+UI.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00087}{87}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00088\ \ \ \ \ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inventory_u_i_a06b12583a324d25d1db38f021078a228}{\_inventory}}.\mbox{\hyperlink{class_k_j_1_1_inventory_aa4587d78d535425a8ddc6006f289699e}{items}}.Clear();}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (var\ c\ \textcolor{keywordflow}{in}\ \mbox{\hyperlink{class_inventory_u_i_a6bc9a9f494c38793784248787738abad}{\_gameData}}.\mbox{\hyperlink{class_k_j_1_1_game_data_ac45b670bcaa5891853158e8276f8ba83}{classes}}.Values)}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}start\ "{}}\ +\ c.classType.ToString());}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_inventory_u_i_aab7ac84947b1d09e5378bbf77502f0e3}{\_class}}.\mbox{\hyperlink{class_k_j_1_1_class_ab1632f23f916c754679d7c531aa70377}{classType}}\ ==\ \mbox{\hyperlink{namespace_k_j_ad645fce3d83ece74624080e6f4aeae9e}{ClassType}}.knight)}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}기사2"{}});}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inventory_u_i_a208fe0f0dae6def3bd2a114bfc4a2e6f}{AddItem}}(\textcolor{stringliteral}{"{}12"{}});}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inventory_u_i_a208fe0f0dae6def3bd2a114bfc4a2e6f}{AddItem}}(\textcolor{stringliteral}{"{}24"{}});}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_inventory_u_i_aab7ac84947b1d09e5378bbf77502f0e3}{\_class}}.\mbox{\hyperlink{class_k_j_1_1_class_ab1632f23f916c754679d7c531aa70377}{classType}}\ ==\ \mbox{\hyperlink{namespace_k_j_ad645fce3d83ece74624080e6f4aeae9e}{ClassType}}.barbarian)}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}바바리안2"{}});}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inventory_u_i_a208fe0f0dae6def3bd2a114bfc4a2e6f}{AddItem}}(\textcolor{stringliteral}{"{}15"{}});}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inventory_u_i_a208fe0f0dae6def3bd2a114bfc4a2e6f}{AddItem}}(\textcolor{stringliteral}{"{}24"{}});}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_inventory_u_i_aab7ac84947b1d09e5378bbf77502f0e3}{\_class}}.\mbox{\hyperlink{class_k_j_1_1_class_ab1632f23f916c754679d7c531aa70377}{classType}}\ ==\ \mbox{\hyperlink{namespace_k_j_ad645fce3d83ece74624080e6f4aeae9e}{ClassType}}.rogue)}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}로그2"{}});}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inventory_u_i_a208fe0f0dae6def3bd2a114bfc4a2e6f}{AddItem}}(\textcolor{stringliteral}{"{}18"{}});}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inventory_u_i_a208fe0f0dae6def3bd2a114bfc4a2e6f}{AddItem}}(\textcolor{stringliteral}{"{}24"{}});}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}메이지2"{}});}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inventory_u_i_a208fe0f0dae6def3bd2a114bfc4a2e6f}{AddItem}}(\textcolor{stringliteral}{"{}21"{}});}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inventory_u_i_a208fe0f0dae6def3bd2a114bfc4a2e6f}{AddItem}}(\textcolor{stringliteral}{"{}24"{}});}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00119\ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_u_i_a3860766b4516c00d581323d0bb55bb63_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_inventory_u_i_a99b38b50627d6827a4a2ec36310c93be}\label{class_inventory_u_i_a99b38b50627d6827a4a2ec36310c93be} 
+\index{InventoryUI@{InventoryUI}!UpdateInventoryUI@{UpdateInventoryUI}}
+\index{UpdateInventoryUI@{UpdateInventoryUI}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{UpdateInventoryUI()}{UpdateInventoryUI()}}
+{\footnotesize\ttfamily void Inventory\+UI.\+Update\+Inventory\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00121}{121}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00122\ \ \ \ \ \{}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (var\ item\ \textcolor{keywordflow}{in}\ \mbox{\hyperlink{class_inventory_u_i_a06b12583a324d25d1db38f021078a228}{\_inventory}}.\mbox{\hyperlink{class_k_j_1_1_inventory_aa4587d78d535425a8ddc6006f289699e}{items}})}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inventory_u_i_a208fe0f0dae6def3bd2a114bfc4a2e6f}{AddItem}}(item.id);}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00127\ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inventory_u_i_a99b38b50627d6827a4a2ec36310c93be_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\Hypertarget{class_inventory_u_i_a6bc9a9f494c38793784248787738abad}\label{class_inventory_u_i_a6bc9a9f494c38793784248787738abad} 
+\index{InventoryUI@{InventoryUI}!\_gameData@{\_gameData}}
+\index{\_gameData@{\_gameData}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{\_gameData}{\_gameData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_j_1_1_game_data}{Game\+Data}} Inventory\+UI.\+\_\+game\+Data = Net\+Data.\+Instance.\+game\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00028}{28}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_inventory_u_i_aa21abac55dc34fa84323c70c6b7980f8}\label{class_inventory_u_i_aa21abac55dc34fa84323c70c6b7980f8} 
+\index{InventoryUI@{InventoryUI}!itemDescription@{itemDescription}}
+\index{itemDescription@{itemDescription}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{itemDescription}{itemDescription}}
+{\footnotesize\ttfamily TMP\+\_\+\+Text Inventory\+UI.\+item\+Description}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00019}{19}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_inventory_u_i_af95ca31c48aa1db626681f7bf2278c55}\label{class_inventory_u_i_af95ca31c48aa1db626681f7bf2278c55} 
+\index{InventoryUI@{InventoryUI}!itemName@{itemName}}
+\index{itemName@{itemName}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{itemName}{itemName}}
+{\footnotesize\ttfamily TMP\+\_\+\+Text Inventory\+UI.\+item\+Name}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00018}{18}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_inventory_u_i_a1d776666145a4ff8508259760f77fb41}\label{class_inventory_u_i_a1d776666145a4ff8508259760f77fb41} 
+\index{InventoryUI@{InventoryUI}!itemQuantity@{itemQuantity}}
+\index{itemQuantity@{itemQuantity}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{itemQuantity}{itemQuantity}}
+{\footnotesize\ttfamily TMP\+\_\+\+Text Inventory\+UI.\+item\+Quantity}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00020}{20}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_inventory_u_i_a687d87ce908516c9367705ccc202df00}\label{class_inventory_u_i_a687d87ce908516c9367705ccc202df00} 
+\index{InventoryUI@{InventoryUI}!playerDBManager@{playerDBManager}}
+\index{playerDBManager@{playerDBManager}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{playerDBManager}{playerDBManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_j_1_1_player_d_b_manager}{Player\+DBManager}} Inventory\+UI.\+player\+DBManager = Player\+DBManager.\+Instance\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00024}{24}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_inventory_u_i_a7e32322fbdbfb685d5097edf7ec29b11}\label{class_inventory_u_i_a7e32322fbdbfb685d5097edf7ec29b11} 
+\index{InventoryUI@{InventoryUI}!slotPanel@{slotPanel}}
+\index{slotPanel@{slotPanel}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{slotPanel}{slotPanel}}
+{\footnotesize\ttfamily Transform Inventory\+UI.\+slot\+Panel}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00016}{16}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_inventory_u_i_ad783572abcb04327120e8d2ba4c6f15f}\label{class_inventory_u_i_ad783572abcb04327120e8d2ba4c6f15f} 
+\index{InventoryUI@{InventoryUI}!slotPrefab@{slotPrefab}}
+\index{slotPrefab@{slotPrefab}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{slotPrefab}{slotPrefab}}
+{\footnotesize\ttfamily Game\+Object Inventory\+UI.\+slot\+Prefab}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00015}{15}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_inventory_u_i_aa848012752fdce120da6d853a142e5e9}\label{class_inventory_u_i_aa848012752fdce120da6d853a142e5e9} 
+\index{InventoryUI@{InventoryUI}!uid@{uid}}
+\index{uid@{uid}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{uid}{uid}}
+{\footnotesize\ttfamily string Inventory\+UI.\+uid = Player\+DBManager.\+Instance.\+Current\+Short\+UID}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00022}{22}} 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\Hypertarget{class_inventory_u_i_aab7ac84947b1d09e5378bbf77502f0e3}\label{class_inventory_u_i_aab7ac84947b1d09e5378bbf77502f0e3} 
+\index{InventoryUI@{InventoryUI}!\_class@{\_class}}
+\index{\_class@{\_class}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{\_class}{\_class}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_j_1_1_class}{Class}} Inventory\+UI.\+\_\+class\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00030}{30}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00031\ \ \ \ \ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}type:\ "{}}\ +\ \mbox{\hyperlink{class_inventory_u_i_a687d87ce908516c9367705ccc202df00}{playerDBManager}}.\mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_a154ceb86d2419739db43cdcdebf014d4}{LoadGameData}}(\mbox{\hyperlink{class_inventory_u_i_a687d87ce908516c9367705ccc202df00}{playerDBManager}}.\mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_aede8e621c31ede12f985727fb1fe8e65}{CurrentShortUID}}).\mbox{\hyperlink{class_k_j_1_1_player_aca9ccbb5ebe0c9faa306b29856808ca9}{classType}});}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{class_inventory_u_i_a687d87ce908516c9367705ccc202df00}{playerDBManager}}.\mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_a154ceb86d2419739db43cdcdebf014d4}{LoadGameData}}(\mbox{\hyperlink{class_inventory_u_i_a687d87ce908516c9367705ccc202df00}{playerDBManager}}.\mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_aede8e621c31ede12f985727fb1fe8e65}{CurrentShortUID}}).\mbox{\hyperlink{class_k_j_1_1_player_aca9ccbb5ebe0c9faa306b29856808ca9}{classType}})}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}Knight"{}}:}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}기사"{}});}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inventory_u_i_a6bc9a9f494c38793784248787738abad}{\_gameData}}.\mbox{\hyperlink{class_k_j_1_1_game_data_ac45b670bcaa5891853158e8276f8ba83}{classes}}[\mbox{\hyperlink{namespace_k_j_ad645fce3d83ece74624080e6f4aeae9e}{ClassType}}.knight];}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}Barbarian"{}}:}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}바바리안"{}});}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inventory_u_i_a6bc9a9f494c38793784248787738abad}{\_gameData}}.\mbox{\hyperlink{class_k_j_1_1_game_data_ac45b670bcaa5891853158e8276f8ba83}{classes}}[\mbox{\hyperlink{namespace_k_j_ad645fce3d83ece74624080e6f4aeae9e}{ClassType}}.barbarian];}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}Rogue"{}}:}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}로그"{}});}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inventory_u_i_a6bc9a9f494c38793784248787738abad}{\_gameData}}.\mbox{\hyperlink{class_k_j_1_1_game_data_ac45b670bcaa5891853158e8276f8ba83}{classes}}[\mbox{\hyperlink{namespace_k_j_ad645fce3d83ece74624080e6f4aeae9e}{ClassType}}.rogue];}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}Mage"{}}:}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}메이지"{}});}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inventory_u_i_a6bc9a9f494c38793784248787738abad}{\_gameData}}.\mbox{\hyperlink{class_k_j_1_1_game_data_ac45b670bcaa5891853158e8276f8ba83}{classes}}[\mbox{\hyperlink{namespace_k_j_ad645fce3d83ece74624080e6f4aeae9e}{ClassType}}.mage];}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}안불러와짐"{}});}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00058\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_inventory_u_i_a06b12583a324d25d1db38f021078a228}\label{class_inventory_u_i_a06b12583a324d25d1db38f021078a228} 
+\index{InventoryUI@{InventoryUI}!\_inventory@{\_inventory}}
+\index{\_inventory@{\_inventory}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{\_inventory}{\_inventory}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_j_1_1_inventory}{Inventory}} Inventory\+UI.\+\_\+inventory\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00064}{64}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00065\ \ \ \ \ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inventory_u_i_aab7ac84947b1d09e5378bbf77502f0e3}{\_class}}.\mbox{\hyperlink{class_k_j_1_1_class_afd1615f11074b4cbce546322c13a4a2f}{inventory}};}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00070\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_inventory_u_i_ad62596e54a05b2948e61354b1db7e32c}\label{class_inventory_u_i_ad62596e54a05b2948e61354b1db7e32c} 
+\index{InventoryUI@{InventoryUI}!\_itemData@{\_itemData}}
+\index{\_itemData@{\_itemData}!InventoryUI@{InventoryUI}}
+\doxysubsubsection{\texorpdfstring{\_itemData}{\_itemData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_j_1_1_item_data}{Item\+Data}} Inventory\+UI.\+\_\+item\+Data\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{_inventory_u_i_8cs_source}{Inventory\+UI.\+cs}} 파일의 \mbox{\hyperlink{_inventory_u_i_8cs_source_l00072}{72}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00073\ \ \ \ \ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_k_j_1_1_item_d_b_manager}{ItemDBManager}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}.\_itemData;}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00078\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+LKJ/\+Documents/\+Git\+Hub/\+Bootcamp-\/\+Team-\/\+Project/\+Cos/\+Assets/\+LKJ/\+KJ/2. Scripts/05. Village\+Scripts/\mbox{\hyperlink{_inventory_u_i_8cs}{Inventory\+UI.\+cs}}\end{DoxyCompactItemize}

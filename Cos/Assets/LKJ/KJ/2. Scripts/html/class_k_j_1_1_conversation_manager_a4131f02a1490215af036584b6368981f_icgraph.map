@@ -1,0 +1,15 @@
+<map id="KJ.ConversationManager.TypeSentence" name="KJ.ConversationManager.TypeSentence">
+<area shape="rect" id="Node000001" title="타이핑 상태 결정" alt="" coords="1287,85,1483,128"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_conversation_manager.html#af16e6f8696fb03bb13f1fbe96fddf4ff" title="다음 대화 표시" alt="" coords="1028,85,1239,128"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1271,109,1239,109,1239,104,1271,104"/>
+<area shape="rect" id="Node000003" href="$class_k_j_1_1_conversation_manager.html#a40c3cbc8aba8591a574f5142f0c800aa" title="대화 내용을 화면에 표시" alt="" coords="783,56,980,99"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1012,95,980,91,980,86,1012,90"/>
+<area shape="rect" id="Node000006" href="$class_k_j_1_1_conversation_manager.html#a6ee18dd0bc0249b705b390d7ac97bcb7" title="Raycast 를 이용하여 해당 키(F)를 누르면 상호작용 활성화" alt="" coords="5,72,215,99"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="1012,113,980,113,743,117,507,113,215,96,215,91,507,108,743,112,980,108,1012,107"/>
+<area shape="rect" id="Node000004" href="$class_k_j_1_1_conversation_manager.html#a411313b5a8e9f2607034bb12efed27d0" title="상호작용 NPC" alt="" coords="507,56,735,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="767,80,736,80,736,75,767,75"/>
+<area shape="rect" id="Node000005" href="$class_k_j_1_1_conversation_manager.html#abb6f0a36823f275bb6eb1392fd36b805" title="대화 상태" alt="" coords="263,5,459,48"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="493,55,459,48,460,43,494,50"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="491,82,215,86,215,81,491,77"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="252,55,171,74,170,69,251,50"/>
+</map>

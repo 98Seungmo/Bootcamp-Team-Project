@@ -1,0 +1,5 @@
+<map id="그래픽컬한 클래스 계통도" name="그래픽컬한 클래스 계통도">
+<area shape="rect" id="Node000000" href="$class_k_j_1_1_singleton_lazy.html" title=" " alt="" coords="5,5,245,32"/>
+<area shape="rect" id="Node000001" href="$class_k_j_1_1_item_d_b_manager.html" title="SingletonLazy&lt;T&gt; 를 상속받아서 싱글톤 구현하는 클래스" alt="" coords="293,5,426,32"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="260,16,292,16,292,21,260,21"/>
+</map>

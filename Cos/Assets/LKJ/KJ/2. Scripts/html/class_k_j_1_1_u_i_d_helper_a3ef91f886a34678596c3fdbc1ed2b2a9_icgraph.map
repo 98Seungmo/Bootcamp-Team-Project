@@ -1,0 +1,7 @@
+<map id="KJ.UIDHelper.GenerateShortUID" name="KJ.UIDHelper.GenerateShortUID">
+<area shape="rect" id="Node000001" title=" " alt="" coords="245,35,452,61"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_net_data.html#a65f0cbffb351afa165fa3cc7f7c5531b" title="플레이어 및 클래스 데이터 불러옴" alt="" coords="14,5,188,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,37,188,32,189,26,230,31"/>
+<area shape="rect" id="Node000003" href="$class_k_j_1_1_player_d_b_manager.html#af9809ac5de84255f6685fec950a80a1a" title="해시함수로 변환된 ShortUID 로 플레이어 데이터를 구분" alt="" coords="5,56,197,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="229,65,197,69,197,63,229,59"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="KJ.ConversationManager.CloseCraftUI" name="KJ.ConversationManager.CloseCraftUI">
+<area shape="rect" id="Node000001" title="제작창 닫기" alt="" coords="5,5,207,48"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_conversation_manager.html#a7475b19ddac40c1b6d20e3b4180977ee" title="가장 가까운 npc가 있는지 확인 후 상호작용 UI 활성화" alt="" coords="255,5,460,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,24,239,24,239,29,207,29"/>
+</map>

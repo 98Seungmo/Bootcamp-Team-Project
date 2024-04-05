@@ -10,6 +10,9 @@ using UnityEngine.Playables;
 
 namespace KJ
 {
+    /**
+     * @brief UID 를 해시함수(SHA256) 이용해서 ShortUID 로 변환
+     */
     /* UID 를 해시함수를 이용해서 ShortUID 로 변환. */
     public static class UIDHelper
     {
@@ -33,8 +36,9 @@ namespace KJ
         }
     }
 
-
-
+    /**
+     * @brief 플레이어DB 관리
+     */
     public class PlayerDBManager : SingletonLazy<PlayerDBManager>
     {
 
@@ -43,28 +47,21 @@ namespace KJ
 
         }
 
+        /**
+         * @brief 플레이어DB 로드
+         */
         public IEnumerator LoadPlayerDB()
         {
-            //Debug.Log(" 로드 완료 " + _gameData);
-            //TextAsset playerData = Resources.Load<TextAsset>("PlayerDB");
-            //_gameData = JsonUtility.FromJson<GameData>(playerData.text);
-
-            //Debug.Log("aaa:0 :" + _gameData.players.Count);
-            //Debug.Log("aaa:1 :" + _gameData.classes.Count);
-
-            //TextAsset playerData = Resources.Load<TextAsset>("test");
-            //_gameData = Newtonsoft.Json.JsonConvert.DeserializeObject<GameData>(playerData.text);
-
-            //Debug.Log("aaa:0 :" + _gameData.players.Count);
-            //Debug.Log("aaa:1 :" + _gameData.classes.Count);
-
-
-
             yield return NetData.Instance.LoadPlayerDB();
         }
 
-        public string CurrentShortUID { get; private set; }
+        public string CurrentShortUID { get; private set; } ///< 현재 ShortUID 값
 
+        /**
+         * @brief 해시함수로 변환된 ShortUID 로 플레이어 데이터를 구분
+         * @param[in] UID Firebase Auth 인증된 값
+         * @param[in] playerData 플레이어 데이터
+         */
         public void SaveOrUpdatePlayerData(string UID, Player playerData)
         {
             string shortUID = UIDHelper.GenerateShortUID(UID);
@@ -83,6 +80,10 @@ namespace KJ
             }
         }
 
+        /**
+         * @brief ShortUID 값 이용해서 플레이어 데이터 체크
+         * @param[in] shortUID ShortUID
+         */
         public bool CheckPlayerData(string shortUID)
         {
             if (string.IsNullOrEmpty(shortUID)) return false;
@@ -91,6 +92,10 @@ namespace KJ
             return _gamedata.players.ContainsKey(shortUID);
         }
 
+        /**
+         * @brief ShortUID 값 이용해서 플레이어 데이터 불러옴
+         * @param[in] shortUID ShortUID
+         */
         public Player LoadGameData(string shortUID)
         {
             GameData _gamedata = NetData.Instance._gameData;

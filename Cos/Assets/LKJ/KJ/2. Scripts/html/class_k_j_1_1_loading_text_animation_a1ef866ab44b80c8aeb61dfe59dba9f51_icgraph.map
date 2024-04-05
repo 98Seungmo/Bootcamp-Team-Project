@@ -1,0 +1,5 @@
+<map id="KJ.LoadingTextAnimation.AnimateDots" name="KJ.LoadingTextAnimation.AnimateDots">
+<area shape="rect" id="Node000001" title="AnimateDots, 로딩에서 텍스트 뒤에 ... 개수 설정 및 반복" alt="" coords="226,5,398,48"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_loading_text_animation.html#ae34d0e07b98d3e10f3bd35eda2e1fc5c" title="AnimateDots 실행" alt="" coords="5,5,178,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,29,178,29,178,24,210,24"/>
+</map>

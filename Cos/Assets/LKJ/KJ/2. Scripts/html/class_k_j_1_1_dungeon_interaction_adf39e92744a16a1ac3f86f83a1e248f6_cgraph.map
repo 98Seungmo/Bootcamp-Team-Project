@@ -1,0 +1,7 @@
+<map id="KJ.DungeonInteraction.Update" name="KJ.DungeonInteraction.Update">
+<area shape="rect" id="Node000001" title="상호작용 가능한 오브젝트 찾고 오브젝트 근처에 있으면 UI 활성화" alt="" coords="5,47,202,73"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_dungeon_interaction.html#a1c9b4c74b0180d3364b0e44efa27de7a" title="상호작용 UI 비활성화" alt="" coords="253,5,434,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,44,237,39,237,44,203,49"/>
+<area shape="rect" id="Node000003" href="$class_k_j_1_1_dungeon_interaction.html#acf2f8bb11ff32d3774e3d3b47504a619" title="상호작용 UI 활성화" alt="" coords="250,72,437,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,71,235,76,234,81,202,76"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="ConversationManager.StartDialogue" name="ConversationManager.StartDialogue">
+<area shape="rect" id="Node000001" title=" " alt="" coords="726,35,904,77"/>
+<area shape="rect" id="Node000002" href="$class_conversation_manager.html#a61cd0357b45ebd7596099bd5171160cc" title=" " alt="" coords="469,35,678,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="711,59,679,59,679,53,711,53"/>
+<area shape="rect" id="Node000003" href="$class_conversation_manager.html#a2b109f772aa394ff5918fb3bdc5a642f" title=" " alt="" coords="244,5,421,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="453,44,421,40,422,35,454,39"/>
+<area shape="rect" id="Node000004" href="$class_conversation_manager.html#a4c3afc267ae3d5bbfc1de75e2c4cf83f" title=" " alt="" coords="5,43,196,69"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="454,62,421,63,244,63,196,62,196,56,244,57,421,57,454,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="228,42,196,47,196,41,228,37"/>
+</map>

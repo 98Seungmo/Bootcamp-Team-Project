@@ -1,0 +1,5 @@
+<map id="KJ.BuffOnOff.PowerBuff" name="KJ.BuffOnOff.PowerBuff">
+<area shape="rect" id="Node000001" title="공격력 버프 활성화시 해당 색으로 바뀜, 플레이어의 공격력 = 0.2f 향상" alt="" coords="206,5,363,32"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_buff_on_off.html#a252f75413e6fd57cf12b8dff81733683" title="공격력 버프 활성화" alt="" coords="5,5,158,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,21,158,21,158,16,190,16"/>
+</map>

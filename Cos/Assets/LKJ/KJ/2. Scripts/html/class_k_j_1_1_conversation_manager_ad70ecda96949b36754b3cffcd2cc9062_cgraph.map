@@ -1,0 +1,5 @@
+<map id="KJ.ConversationManager.EndDialogue" name="KJ.ConversationManager.EndDialogue">
+<area shape="rect" id="Node000001" title="대화 종료" alt="" coords="5,5,197,48"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_conversation_manager.html#a069c6b56c3efe3a087afe6f4d48a592b" title="NPC Tag 에 따라 버튼을 다르게 활성화" alt="" coords="245,5,447,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,24,229,24,229,29,197,29"/>
+</map>

@@ -1,0 +1,123 @@
+\doxysection{KJ.\+Singleton\+Lazy\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} 클래스 템플릿 참조}
+\hypertarget{class_k_j_1_1_singleton_lazy}{}\label{class_k_j_1_1_singleton_lazy}\index{KJ.SingletonLazy$<$ T $>$@{KJ.SingletonLazy$<$ T $>$}}
+
+
+Mono\+Behaviour 를 상속받고, 제네릭을 사용하여 싱글톤 인스턴스 생성 반드시 T 가 class 이여야 함  
+
+
+
+
+KJ.\+Singleton\+Lazy\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{class_k_j_1_1_singleton_lazy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+KJ.\+Singleton\+Lazy\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{class_k_j_1_1_singleton_lazy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+static T \mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 싱글톤 인스턴스에 접근하기 위한 정적 속성 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+static readonly Lazy$<$ T $>$ \mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a85fe962aa9d7a764b3b113151698e16c}{\+\_\+instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Mono\+Behaviour 를 상속받고, 제네릭을 사용하여 싱글톤 인스턴스 생성 반드시 T 가 class 이여야 함 \begin{Desc}
+\item[타입 한정자들]\begin{description}
+\item[{\em T} : {\em class}]\end{description}
+\end{Desc}
+
+
+\mbox{\hyperlink{_item_d_b_manager_8cs_source}{Item\+DBManager.\+cs}} 파일의 \mbox{\hyperlink{_item_d_b_manager_8cs_source_l00016}{16}} 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 데이터 문서화}
+\Hypertarget{class_k_j_1_1_singleton_lazy_a85fe962aa9d7a764b3b113151698e16c}\label{class_k_j_1_1_singleton_lazy_a85fe962aa9d7a764b3b113151698e16c} 
+\index{KJ.SingletonLazy$<$ T $>$@{KJ.SingletonLazy$<$ T $>$}!\_instance@{\_instance}}
+\index{\_instance@{\_instance}!KJ.SingletonLazy$<$ T $>$@{KJ.SingletonLazy$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\_instance}{\_instance}}
+{\footnotesize\ttfamily readonly Lazy$<$T$>$ \mbox{\hyperlink{class_k_j_1_1_singleton_lazy}{KJ.\+Singleton\+Lazy}}$<$ T $>$.\+\_\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries 초기값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ Lazy<T>(()\ =>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ T\ instance\ =\ FindObjectOfType(typeof(T))\ as\ T;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (instance\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GameObject\ obj\ =\ \textcolor{keyword}{new}\ GameObject(\textcolor{stringliteral}{"{}SingletonLazy"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ instance\ =\ obj.AddComponent(typeof(T))\ as\ T;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DontDestroyOnLoad(obj);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Destroy(instance\ as\ GameObject);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ instance;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \})}
+
+\end{DoxyCode}
+
+
+\mbox{\hyperlink{_item_d_b_manager_8cs_source}{Item\+DBManager.\+cs}} 파일의 \mbox{\hyperlink{_item_d_b_manager_8cs_source_l00020}{20}} 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\Hypertarget{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}\label{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93} 
+\index{KJ.SingletonLazy$<$ T $>$@{KJ.SingletonLazy$<$ T $>$}!Instance@{Instance}}
+\index{Instance@{Instance}!KJ.SingletonLazy$<$ T $>$@{KJ.SingletonLazy$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_k_j_1_1_singleton_lazy}{KJ.\+Singleton\+Lazy}}$<$ T $>$.Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+싱글톤 인스턴스에 접근하기 위한 정적 속성 
+
+
+
+\mbox{\hyperlink{_item_d_b_manager_8cs_source}{Item\+DBManager.\+cs}} 파일의 \mbox{\hyperlink{_item_d_b_manager_8cs_source_l00048}{48}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Lazy\ 인스턴스의\ Value\ 속성을\ 통해\ 싱글톤\ 인스턴스\ 반환 }}
+\DoxyCodeLine{00053\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 접근\ 하는\ 순간\ Lazy\ 객체가\ 실제\ 값을\ 생성.\ */}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a85fe962aa9d7a764b3b113151698e16c}{\_instance}}.Value;\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+LKJ/\+Documents/\+Git\+Hub/\+Bootcamp-\/\+Team-\/\+Project/\+Cos/\+Assets/\+LKJ/\+KJ/2. Scripts/06. Database\+Scripts/\mbox{\hyperlink{_item_d_b_manager_8cs}{Item\+DBManager.\+cs}}\end{DoxyCompactItemize}

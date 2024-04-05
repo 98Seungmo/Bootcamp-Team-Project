@@ -9,207 +9,164 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MenuUIManager : MonoBehaviour
+namespace KJ
 {
-    PlayerDBManager playerDBManager = PlayerDBManager.Instance;
-    public static MenuUIManager Instance = null;
-
-    /* 메뉴 UI */
-    [Header("Menu UI")]
-    public GameObject menuUI;
-    /* 장비 팝업창 UI */
-    [Header("Equip UI")]
-    public GameObject weaponUI;
-    public GameObject armorUI;
-    public GameObject accUI;
-    /* 인벤토리 UI */
-    [Header("Inventory UI")]
-    public GameObject inventoryUI;
-    /* 확인창 UI */
-    [Header("Check UI")]
-    public GameObject checkLogout;
-    public GameObject checkQuit;
-    /* UI 골드 표시 */
-    [Header("Gold")]
-    public TMP_Text goldText;
-    private int _currentGold;
-
-    [Header("Class")]
-    public TMP_Text classType;
-
-    [Header("ClassImage")]
-    public Image knghtImage;
-    public Image babarianImage;
-    public Image rogueImage;
-    public Image mageImage;
-
-
-    public Image _img_weapon;
-    public Image _img_armor;
-    public Image _img_accessory;
-
-
-    public void Awake()
+    /**
+     * @brief MenuUI 에 관한 관리
+     */
+    public class MenuUIManager : MonoBehaviour
     {
-        Instance = this;
+        PlayerDBManager playerDBManager = PlayerDBManager.Instance; ///< 플레이어 DB 불러옴
+        public static MenuUIManager Instance = null;
+
+        /* 메뉴 UI */
+        [Header("Menu UI")]
+        public GameObject menuUI; ///< 메뉴 UI
+        /* 장비 팝업창 UI */
+        [Header("Equip UI")]
+        public GameObject weaponUI; ///< 무기장비 UI
+        public GameObject armorUI; ///< 방어구 장비 UI
+        public GameObject accUI; ///< 장신구 장비 UI
+        /* 인벤토리 UI */
+        [Header("Inventory UI")]
+        public GameObject inventoryUI; ///< 인벤토리 UI
+        /* 확인창 UI */
+        [Header("Check UI")]
+        public GameObject checkQuit; ///< 종료 확인창 
+        [Header("Class")]
+        public TMP_Text classType; ///< 클래스 타입 텍스트
+
+        [Header("ClassImage")]
+        public Image knghtImage; ///< 기사 로고 이미지
+        public Image babarianImage; ///< 바바리안 로고 이미지
+        public Image rogueImage; ///< 로그 로고 이미지
+        public Image mageImage; ///< 메이지 로고 이미지
 
 
-    }
+        public Image _img_weapon; ///< 무기 이미지
+        public Image _img_armor; ///< 방어구 이미지
+        public Image _img_accessory; ///< 장신구 이미지
 
-    //public GameB
 
-    void Update()
-    {
-        /* esc 누르면 메뉴 호출 */
-        if (Input.GetKeyDown(KeyCode.Escape))
+        public void Awake()
         {
-            Debug.Log("ESC!!");
-            menuUI.SetActive(true);
-            classType.text = playerDBManager.LoadGameData(playerDBManager.CurrentShortUID).classType;
+            Instance = this;
 
-            switch(playerDBManager.LoadGameData(playerDBManager.CurrentShortUID).classType)
-            {
-                case "Knight":
-                    knghtImage.gameObject.SetActive(true);
-                    break;
-                case "Babarian":
-                    babarianImage.gameObject.SetActive(true);
-                    break;
-                case "Rogue":
-                    rogueImage.gameObject.SetActive(true);
-                    break;
-                case "Mage":
-                    mageImage.gameObject.SetActive(true);
-                    break;
-            }
-            Cursor.visible = true;
 
-            PauseGame();
         }
-    }
-    #region 메뉴 팝업
-    /* UI창 닫기 */
-    public void CloseMenuUI()
-    {
-        menuUI.SetActive(false);
 
-        //Cursor.visible = false;
+        /**
+         * @brief esc 눌렀을 때 메뉴 호출 해당 클래스에 맞게 이미지 로고 호출
+         */
+        void Update()
+        {
+            /* esc 누르면 메뉴 호출 */
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Debug.Log("ESC!!");
+                menuUI.SetActive(true);
+                classType.text = playerDBManager.LoadGameData(playerDBManager.CurrentShortUID).classType;
 
-        ResumeGame();
-    }
-    #endregion
-    #region 메뉴 팝업시 일시정지
-    public void PauseGame()
-    {
-        Debug.Log("멈춤");
-        Time.timeScale = 0;
-    }
-    public void ResumeGame()
-    {
-        Debug.Log("재생");
-        Time.timeScale = 1;
-    }
-    #endregion
-    #region 장비 팝업
-    /* 팝업창 닫기 */
-    // 무기 UI 창
-    public void OpenWeaponUI()
-    {
-        weaponUI.SetActive(true);
-    }
+                switch (playerDBManager.LoadGameData(playerDBManager.CurrentShortUID).classType)
+                {
+                    case "Knight":
+                        knghtImage.gameObject.SetActive(true);
+                        break;
+                    case "Babarian":
+                        babarianImage.gameObject.SetActive(true);
+                        break;
+                    case "Rogue":
+                        rogueImage.gameObject.SetActive(true);
+                        break;
+                    case "Mage":
+                        mageImage.gameObject.SetActive(true);
+                        break;
+                }
+                Cursor.visible = true;
+                /* 메뉴 호출시 인게임 멈춤 */
+                PauseGame();
+            }
+        }
+        #region 메뉴 팝업
+        /**
+         * brief 메뉴창 닫기
+         */
+        public void CloseMenuUI()
+        {
+            menuUI.SetActive(false);
 
-    public void CloseWeaponUI()
-    {
-        weaponUI.SetActive(false);
-    }
-    // 방어구 UI 창
-    public void OpenArmorUI()
-    {
-        armorUI.SetActive(true);
-    }
+            //Cursor.visible = false;
 
-    public void CloseArmorUI()
-    {
-        armorUI.SetActive(false);
-    }
-    // 악세서리 UI 창
-    public void OpenAccUI()
-    {
-        accUI.SetActive(true);
-    }
+            ResumeGame();
+        }
+        #endregion
+        #region 메뉴 팝업시 일시정지
 
-    public void CloseAccUI()
-    {
-        accUI.SetActive(false);
-    }
-    #endregion
-    #region 인벤토리 팝업
-    public void OpenInventoryUI()
-    {
-        inventoryUI.SetActive(true);
-    }
+        /**
+         * brief 게임 일시정지
+         */
+        public void PauseGame()
+        {
+            Debug.Log("멈춤");
+            Time.timeScale = 0;
+        }
+        /**
+         * @brief 게임 재개
+         */
+        public void ResumeGame()
+        {
+            Debug.Log("재생");
+            Time.timeScale = 1;
+        }
+        #endregion
+        #region 인벤토리 팝업
+        /**
+         * @brief 인벤토리 활성화
+         */
+        public void OpenInventoryUI()
+        {
+            inventoryUI.SetActive(true);
+        }
 
-    public void CloseInventoryUI()
-    {
-        inventoryUI.SetActive(false);
-    }
-    #endregion
-    #region 확인창 팝업
+        /**
+         * @brief 인벤토리 비활성화
+         */
+        public void CloseInventoryUI()
+        {
+            inventoryUI.SetActive(false);
+        }
+        #endregion
+        #region 확인창 팝업
 
-    /* 게임 종료 하는 확인창 */
-    public void OpenCheckQuit()
-    {
-        checkQuit.SetActive(true);
-    }
-
-    public void CloseCheckQuit()
-    {
-        checkQuit.SetActive(false);
-    }
-    #endregion
-    #region 골드 표시 (테스트)
-
-    public void PlusGold(int amount)
-    {
-        _currentGold += amount;
-        UpdateGoldText();
-    }
-
-    public void MinusGold(int amount)
-    {
-        _currentGold -= amount;
-        UpdateGoldText();
-    }
-
-    public void UpdateGoldText()
-    {
-        goldText.text = $"{_currentGold.ToString("N0")}G";
-    }
-
-    /* 스테미나 테스트 */
-    public void RandomPlusGold()
-    {
-        int random = UnityEngine.Random.Range(100, 999);
-        PlusGold(random);
-        Debug.Log($"현재 골드 : {_currentGold}, 얻은 골드 : {random}");
-    }
-
-    public void RandomMinusGold()
-    {
-        int random = UnityEngine.Random.Range(100, 999);
-        MinusGold(random);
-        Debug.Log($"현재 골드 : {_currentGold}, 잃은 골드 : {random}");
-    }
-    #endregion
-    #region Scene 이동
-    /* 게임 종료 */
-    public void Quit()
-    {
-        #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-        #else
+        /* 게임 종료 하는 확인창 */
+        /**
+         * @brief 확인창 활성화
+         */
+        public void OpenCheckQuit()
+        {
+            checkQuit.SetActive(true);
+        }
+        /**
+         * @brief 확인창 비활성화
+         */
+        public void CloseCheckQuit()
+        {
+            checkQuit.SetActive(false);
+        }
+        #endregion
+        #region Scene 이동
+        /* 게임 종료 */
+        /**
+         * @brief 게임 종료
+         */
+        public void Quit()
+        {
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#else
         Application.Quit();
-        #endif
+#endif
+        }
+        #endregion
     }
-    #endregion
 }

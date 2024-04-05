@@ -1,0 +1,78 @@
+\doxysection{Sound\+Manager.\+cs}
+\hypertarget{_sound_manager_8cs_source}{}\label{_sound_manager_8cs_source}\index{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/01. Etc/Settings/SoundManager.cs@{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/01. Etc/Settings/SoundManager.cs}}
+\mbox{\hyperlink{_sound_manager_8cs}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }TMPro;}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }UnityEngine.UI;}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00007}00007\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_k_j}{KJ}}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00008}00008\ \{}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00013}\mbox{\hyperlink{class_k_j_1_1_sound_manager}{00013}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_sound_manager}{SoundManager}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00014}00014\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00015}00015\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}Slider"{}})]}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00016}\mbox{\hyperlink{class_k_j_1_1_sound_manager_adc0833ac1514f889489054dda4816692}{00016}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Slider\ \mbox{\hyperlink{class_k_j_1_1_sound_manager_adc0833ac1514f889489054dda4816692}{volumeSlider}};\ }
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00017}00017\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}Volume\ Image"{}})]\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00018}\mbox{\hyperlink{class_k_j_1_1_sound_manager_a23d78fe427765f468e5be2ab32ea9f87}{00018}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Image\ \mbox{\hyperlink{class_k_j_1_1_sound_manager_a23d78fe427765f468e5be2ab32ea9f87}{volumeImage}};\ }
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00019}\mbox{\hyperlink{class_k_j_1_1_sound_manager_afabfe7c47295f8ea6795672a9444950c}{00019}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Sprite\ \mbox{\hyperlink{class_k_j_1_1_sound_manager_afabfe7c47295f8ea6795672a9444950c}{muteSprite}};\ }
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00020}\mbox{\hyperlink{class_k_j_1_1_sound_manager_a493687e7fba0f060c7a4fe7cf79a4c3c}{00020}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Sprite\ \mbox{\hyperlink{class_k_j_1_1_sound_manager_a493687e7fba0f060c7a4fe7cf79a4c3c}{lowVolumeSprite}};\ }
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00021}\mbox{\hyperlink{class_k_j_1_1_sound_manager_a0175406fafef1dea84f40913a8507bfc}{00021}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Sprite\ \mbox{\hyperlink{class_k_j_1_1_sound_manager_a0175406fafef1dea84f40913a8507bfc}{highVolumeSprite}};\ }
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}AudioSource"{}})]\ }
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00023}\mbox{\hyperlink{class_k_j_1_1_sound_manager_a130c440650409f80a33d037d2477ec95}{00023}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ AudioSource\ \mbox{\hyperlink{class_k_j_1_1_sound_manager_a130c440650409f80a33d037d2477ec95}{audioSource}};\ }
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}Mute\ Background\ Music"{}})]}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00025}\mbox{\hyperlink{class_k_j_1_1_sound_manager_af0dbb4dc29794127a93c0164ae7bf198}{00025}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Slider\ \mbox{\hyperlink{class_k_j_1_1_sound_manager_af0dbb4dc29794127a93c0164ae7bf198}{backgroundMusicSlider}};\ }
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00030}\mbox{\hyperlink{class_k_j_1_1_sound_manager_a8147d430abf43e5b6869964bf7bd612b}{00030}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_sound_manager_a8147d430abf43e5b6869964bf7bd612b}{Start}}()}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00032}00032\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#region\ 사운드\ 설정}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 슬라이더\ 최대값\ 최소값\ 설정\ */}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ volumeSlider.minValue\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ volumeSlider.maxValue\ =\ 10;}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 슬라이더의\ 값을\ 최대값으로\ 설정\ */}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ initialVolumeValue\ =\ audioSource.volume\ *\ 10;}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ volumeSlider.value\ =\ initialVolumeValue;}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 음량에\ 따라\ 이미지\ 변하는\ HandleVolumeChanged\ 메서드\ 호출}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_sound_manager_adc0833ac1514f889489054dda4816692}{volumeSlider}}.onValueChanged.AddListener(\mbox{\hyperlink{class_k_j_1_1_sound_manager_a49a6b4fa48f4e314f6faca25dd08ac5b}{HandleVolumeChanged}});}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00043}00043\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00044}00044\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#region\ 배경음악\ 음소거}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 음소거}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ backgroundMusicSlider.minValue\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 소리\ 나옴}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ backgroundMusicSlider.maxValue\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 토글\ 변경에\ 따라\ 음소거\ 가능한\ BackgrundMusicSwitch메서드\ 호출}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_sound_manager_af0dbb4dc29794127a93c0164ae7bf198}{backgroundMusicSlider}}.onValueChanged.AddListener(\mbox{\hyperlink{class_k_j_1_1_sound_manager_a7e4c2e299d28c8d69d5e426c58bd2a6a}{BackgroundMusicSwitch}});}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00051}00051\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00058}\mbox{\hyperlink{class_k_j_1_1_sound_manager_a49a6b4fa48f4e314f6faca25dd08ac5b}{00058}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_sound_manager_a49a6b4fa48f4e314f6faca25dd08ac5b}{HandleVolumeChanged}}(\textcolor{keywordtype}{float}\ value)}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 오디오\ 소스\ 볼륨\ 슬라이더의\ 값에\ 맞춤\ */}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ audioSource.volume\ =\ value\ *\ 0.1f;}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 음량에\ 따라\ 이미지\ 변경\ */}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value\ <=\ 0)}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ volumeImage.sprite\ =\ \mbox{\hyperlink{class_k_j_1_1_sound_manager_afabfe7c47295f8ea6795672a9444950c}{muteSprite}};}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (value\ <=\ 5)}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ volumeImage.sprite\ =\ \mbox{\hyperlink{class_k_j_1_1_sound_manager_a493687e7fba0f060c7a4fe7cf79a4c3c}{lowVolumeSprite}};}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ volumeImage.sprite\ =\ \mbox{\hyperlink{class_k_j_1_1_sound_manager_a0175406fafef1dea84f40913a8507bfc}{highVolumeSprite}};}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00082}\mbox{\hyperlink{class_k_j_1_1_sound_manager_a7e4c2e299d28c8d69d5e426c58bd2a6a}{00082}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_sound_manager_a7e4c2e299d28c8d69d5e426c58bd2a6a}{BackgroundMusicSwitch}}(\textcolor{keywordtype}{float}\ value)}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00083}00083\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ audioSource.volume\ =\ Mathf.Round(value);}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00086}00086\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sound_manager_8cs_source_l00087}00087\ \}}
+
+\end{DoxyCode}

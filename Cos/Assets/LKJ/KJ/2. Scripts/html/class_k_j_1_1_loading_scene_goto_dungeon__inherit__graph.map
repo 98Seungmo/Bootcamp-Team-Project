@@ -1,0 +1,5 @@
+<map id="KJ.LoadingSceneGotoDungeon" name="KJ.LoadingSceneGotoDungeon">
+<area shape="rect" id="Node000001" title="던전으로 가는 로딩 씬" alt="" coords="5,80,207,107"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="51,5,161,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,48,109,80,103,80,103,48"/>
+</map>

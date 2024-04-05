@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TeamProject Cos: C:/Users/LKJ/Documents/GitHub/Bootcamp-Team-Project/Cos/Assets/LKJ/KJ/2. Scripts/06. DatabaseScripts/DataModel.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TeamProject Cos<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">UI</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_data_model_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">로딩중...</div>
+<div class="SRStatus" id="Searching">검색중...</div>
+<div class="SRStatus" id="NoMatches">일치하는것 없음</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DataModel.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_data_model_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Collections;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>UnityEngine;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_k_j.html">KJ</a></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">    /*************************************************************************************/</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="comment">/* Json 파일 구조 C#으로 표기 */</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">    /************************************************************************************/</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    [System.Serializable]</div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_k_j_1_1_item_data.html">   17</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_k_j_1_1_item_data.html">ItemData</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_k_j_1_1_item_data.html#a61df43a1c87487a61210c82455dba77e">   19</a></span>        <span class="keyword">public</span> List&lt;Item&gt; <a class="code hl_variable" href="class_k_j_1_1_item_data.html#a61df43a1c87487a61210c82455dba77e">items</a> = <span class="keyword">new</span> List&lt;Item&gt; ();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }   </div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    [System.Serializable]</div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_k_j_1_1_item.html">   26</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_k_j_1_1_item.html">Item</a></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_k_j_1_1_item.html#aa681ce0e509f84932b0dd9946730d2e8">   28</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_k_j_1_1_item.html#aa681ce0e509f84932b0dd9946730d2e8">type</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_k_j_1_1_item.html#ae26ecd4b28a4dcda60313a4fd54a4ff8">   29</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_k_j_1_1_item.html#ae26ecd4b28a4dcda60313a4fd54a4ff8">id</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_k_j_1_1_item.html#a85f6036fa42f33d9f3a545876e3e676a">   30</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_k_j_1_1_item.html#a85f6036fa42f33d9f3a545876e3e676a">name</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_k_j_1_1_item.html#ab52c3e381e436eccaefcb544effc0517">   31</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_k_j_1_1_item.html#ab52c3e381e436eccaefcb544effc0517">description</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_k_j_1_1_item.html#aaa735019b93eac27712e7c7ed9e8fbba">   32</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_k_j_1_1_item.html#aaa735019b93eac27712e7c7ed9e8fbba">quantity</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_k_j_1_1_item.html#a1290b13fb1488c597cd5da381939011c">   33</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_k_j_1_1_item.html#a1290b13fb1488c597cd5da381939011c">imagePath</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_k_j_1_1_item.html#a9e550da684f73081e1d9912a2b6b7e12">   34</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_k_j_1_1_item.html#a9e550da684f73081e1d9912a2b6b7e12">enhanceable</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_k_j_1_1_item.html#ae6114c84f6b8ed85d15135e147eb98a6">   35</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_k_j_1_1_item.html#ae6114c84f6b8ed85d15135e147eb98a6">enhanceLevel</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_k_j_1_1_item.html#a7b5e31a165d885aaee23adfea9f99a63">   36</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_k_j_1_1_attribute.html">Attribute</a> <a class="code hl_variable" href="class_k_j_1_1_item.html#a7b5e31a165d885aaee23adfea9f99a63">attributes</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    [System.Serializable]</div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="};">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_k_j_1_1_attribute.html">   43</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_k_j_1_1_attribute.html">Attribute</a></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_k_j_1_1_attribute.html#ad3b90fca0acdf54263ebd29f5443e3a3">   45</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_k_j_1_1_attribute.html#ad3b90fca0acdf54263ebd29f5443e3a3">healthRestore</a> = 0;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_k_j_1_1_attribute.html#a0b5811019a901dd4079aa2862831383a">   46</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_k_j_1_1_attribute.html#a0b5811019a901dd4079aa2862831383a">attackPowerUp</a> = 0;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_k_j_1_1_attribute.html#a1ba9ba9ccb430ce3af4b4fc5f2eec0c5">   47</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_k_j_1_1_attribute.html#a1ba9ba9ccb430ce3af4b4fc5f2eec0c5">defensePowerUp</a> = 0;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_k_j_1_1_attribute.html#acc530861e9d88b2b03d6e52f1ca54239">   48</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_k_j_1_1_attribute.html#acc530861e9d88b2b03d6e52f1ca54239">staminaRecovery</a> = 0;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_k_j_1_1_attribute.html#ae1a95b2fea906d128b695119cbcadfbe">   49</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_k_j_1_1_attribute.html#ae1a95b2fea906d128b695119cbcadfbe">successRateIncrease</a> = 0;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_k_j_1_1_attribute.html#ad7e8948378697613c4d9137d104f1ff8">   50</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_k_j_1_1_attribute.html#ad7e8948378697613c4d9137d104f1ff8">maxUseLevel</a> = 0;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_k_j_1_1_attribute.html#ab21271c006c3bab476a6ff758ba6269e">   51</a></span>        <span class="keyword">public</span> List&lt;string&gt; <a class="code hl_variable" href="class_k_j_1_1_attribute.html#ab21271c006c3bab476a6ff758ba6269e">usedIn</a> = <span class="keyword">new</span> List&lt;string&gt;();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_k_j_1_1_attribute.html#ae465d0360351c098e359fb96a6d9425f">   52</a></span>        <span class="keyword">public</span> List&lt;ItemRequirement&gt; <a class="code hl_variable" href="class_k_j_1_1_attribute.html#ae465d0360351c098e359fb96a6d9425f">quantityRequired</a> = <span class="keyword">new</span> List&lt;ItemRequirement&gt;();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_k_j_1_1_attribute.html#ae5c1332e2029e4194fd6a433d2e51723">   53</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_k_j_1_1_attribute.html#ae5c1332e2029e4194fd6a433d2e51723">attack</a> = 0;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_k_j_1_1_attribute.html#a401c8a708b0dc85660d6dba76a6b215d">   54</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_k_j_1_1_attribute.html#a401c8a708b0dc85660d6dba76a6b215d">defense</a> = 0;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_k_j_1_1_attribute.html#a317d601626958e9f7b83acc8f476440e">   55</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_k_j_1_1_attribute.html#a317d601626958e9f7b83acc8f476440e">skillDamage</a> = 0;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    [System.Serializable]</div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="};">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_k_j_1_1_item_requirement.html">   62</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_k_j_1_1_item_requirement.html">ItemRequirement</a></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_k_j_1_1_item_requirement.html#a88cc8f06e61e6ada99e2ea8702798247">   64</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_k_j_1_1_item_requirement.html#a88cc8f06e61e6ada99e2ea8702798247">id</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_k_j_1_1_item_requirement.html#a31f753ff65b9c5422418993f94c3a38b">   65</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_k_j_1_1_item_requirement.html#a31f753ff65b9c5422418993f94c3a38b">quantity</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    [System.Serializable]</div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="};">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_k_j_1_1_game_data.html">   72</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_k_j_1_1_game_data.html">GameData</a> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="comment">/* 플레이어 데이터를 저장할 Dictionary. */</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_k_j_1_1_game_data.html#a5217f6bcdc8008030aaa16d07caba6db">   75</a></span>        <span class="keyword">public</span> Dictionary&lt;string, Player&gt; <a class="code hl_variable" href="class_k_j_1_1_game_data.html#a5217f6bcdc8008030aaa16d07caba6db">players</a> = <span class="keyword">new</span> Dictionary&lt;string, Player&gt;();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="comment">/* 클래스 데이터를 저장할 Dictionary. */</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_k_j_1_1_game_data.html#ac45b670bcaa5891853158e8276f8ba83">   77</a></span>        <span class="keyword">public</span> Dictionary&lt;ClassType, Class&gt; <a class="code hl_variable" href="class_k_j_1_1_game_data.html#ac45b670bcaa5891853158e8276f8ba83">classes</a> = <span class="keyword">new</span> Dictionary&lt;ClassType, Class&gt;();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    [System.Serializable]</div>
+<div class="foldopen" id="foldopen00085" data-start="{" data-end="};">
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_k_j_1_1_player.html">   85</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_k_j_1_1_player.html">Player</a></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="class_k_j_1_1_player.html#a326125a5b90aefb6e1c7f9cd4d277e59">   87</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_k_j_1_1_player.html#a326125a5b90aefb6e1c7f9cd4d277e59">uid</a>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_k_j_1_1_player.html#a5a260a29163abce7eabb79b6e4fb4469">   88</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_k_j_1_1_player.html#a5a260a29163abce7eabb79b6e4fb4469">shortUID</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_k_j_1_1_player.html#a0a62add1ce71aaf67c5aa0aebb2209bf">   89</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_k_j_1_1_player.html#a0a62add1ce71aaf67c5aa0aebb2209bf">userName</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="class_k_j_1_1_player.html#aca9ccbb5ebe0c9faa306b29856808ca9">   90</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_k_j_1_1_player.html#aca9ccbb5ebe0c9faa306b29856808ca9">classType</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="class_k_j_1_1_player.html#a259aef1d1a966a55f4c5e8d510f7ef56">   91</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_k_j_1_1_inventory.html">Inventory</a> <a class="code hl_variable" href="class_k_j_1_1_player.html#a259aef1d1a966a55f4c5e8d510f7ef56">inventory</a>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="class_k_j_1_1_player.html#a2c9a2742921476e5619861012d1e9cf2">   92</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_k_j_1_1_player.html#a2c9a2742921476e5619861012d1e9cf2">gold</a>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_k_j_1_1_player.html#adc548f1daf86d73d156a5924bf29269c">   93</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_k_j_1_1_player.html#adc548f1daf86d73d156a5924bf29269c">combatPower</a>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_k_j_1_1_player.html#a86d98daafe4ccc39cf108b13305bb22e">   94</a></span>        <span class="keyword">public</span> List&lt;string&gt; <a class="code hl_variable" href="class_k_j_1_1_player.html#a86d98daafe4ccc39cf108b13305bb22e">buffs</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="foldopen" id="foldopen00096" data-start="{" data-end="}">
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_k_j_1_1_player.html#a3b29735b4daf50c885d9f4d43d1c80fd">   96</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_k_j_1_1_player.html#a3b29735b4daf50c885d9f4d43d1c80fd">Player</a>()</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <a class="code hl_variable" href="class_k_j_1_1_player.html#a259aef1d1a966a55f4c5e8d510f7ef56">inventory</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_k_j_1_1_inventory.html">Inventory</a>();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <a class="code hl_variable" href="class_k_j_1_1_player.html#a86d98daafe4ccc39cf108b13305bb22e">buffs</a> = <span class="keyword">new</span> List&lt;string&gt;();</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
+</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    [System.Serializable]</div>
+<div class="foldopen" id="foldopen00107" data-start="{" data-end="};">
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="class_k_j_1_1_inventory.html">  107</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_k_j_1_1_inventory.html">Inventory</a></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="class_k_j_1_1_inventory.html#aa4587d78d535425a8ddc6006f289699e">  109</a></span>        <span class="keyword">public</span> List&lt;Item&gt; <a class="code hl_variable" href="class_k_j_1_1_inventory.html#aa4587d78d535425a8ddc6006f289699e">items</a>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_k_j_1_1_inventory.html#a116cbf1d79f5a27b14d03749dc989a97">  111</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_k_j_1_1_inventory.html#a116cbf1d79f5a27b14d03749dc989a97">Inventory</a>()</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <a class="code hl_variable" href="class_k_j_1_1_inventory.html#aa4587d78d535425a8ddc6006f289699e">items</a> = <span class="keyword">new</span> List&lt;Item&gt;();</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        }</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    }</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    [System.Serializable]</div>
+<div class="foldopen" id="foldopen00121" data-start="{" data-end="};">
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="class_k_j_1_1_inventory_data.html">  121</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_k_j_1_1_inventory_data.html">InventoryData</a></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="class_k_j_1_1_inventory_data.html#aaa1a8d93ccc719f29a7f9319a67c5c82">  123</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_k_j_1_1_inventory_data.html#aaa1a8d93ccc719f29a7f9319a67c5c82">id</a>;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="class_k_j_1_1_inventory_data.html#a75dce9cd4d8f5716dca7b2f46d366037">  124</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_k_j_1_1_inventory_data.html#a75dce9cd4d8f5716dca7b2f46d366037">quantity</a>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    }</div>
+</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="foldopen" id="foldopen00130" data-start="{" data-end="};">
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="namespace_k_j.html#ad645fce3d83ece74624080e6f4aeae9e">  130</a></span>    <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="namespace_k_j.html#ad645fce3d83ece74624080e6f4aeae9e">ClassType</a></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <a class="code hl_enumvalue" href="namespace_k_j.html#ad645fce3d83ece74624080e6f4aeae9eaefead51028a03db2d63f0e79ba032a82">knight</a>,</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <a class="code hl_enumvalue" href="namespace_k_j.html#ad645fce3d83ece74624080e6f4aeae9ea7ff5defb01eba61a2e1039a79805c2b6">barbarian</a>,</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <a class="code hl_enumvalue" href="namespace_k_j.html#ad645fce3d83ece74624080e6f4aeae9ea44ac6119a7a7a60e65a3e2b852ebd6c0">rogue</a>,</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <a class="code hl_enumvalue" href="namespace_k_j.html#ad645fce3d83ece74624080e6f4aeae9ea9a519a0f7d29f1ffa549fada8b667b02">mage</a></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    }</div>
+</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    [System.Serializable]</div>
+<div class="foldopen" id="foldopen00142" data-start="{" data-end="};">
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="class_k_j_1_1_class.html">  142</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_k_j_1_1_class.html">Class</a></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    {</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="class_k_j_1_1_class.html#ab1632f23f916c754679d7c531aa70377">  144</a></span>        <span class="keyword">public</span> <a class="code hl_enumeration" href="namespace_k_j.html#ad645fce3d83ece74624080e6f4aeae9e">ClassType</a> <a class="code hl_variable" href="class_k_j_1_1_class.html#ab1632f23f916c754679d7c531aa70377">classType</a>;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="class_k_j_1_1_class.html#a101d272ebe61816190ecf95c9c45d9df">  145</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_k_j_1_1_class.html#a101d272ebe61816190ecf95c9c45d9df">name</a>;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="class_k_j_1_1_class.html#a2bc13dc6a61a2319e23c5f292a6cce82">  146</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_k_j_1_1_class.html#a2bc13dc6a61a2319e23c5f292a6cce82">baseHp</a>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="class_k_j_1_1_class.html#a84348f753633d2cf0dcbb881ebe7b622">  147</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_k_j_1_1_class.html#a84348f753633d2cf0dcbb881ebe7b622">baseSp</a>;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="class_k_j_1_1_class.html#afd1615f11074b4cbce546322c13a4a2f">  148</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_k_j_1_1_inventory.html">Inventory</a> <a class="code hl_variable" href="class_k_j_1_1_class.html#afd1615f11074b4cbce546322c13a4a2f">inventory</a>;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="class_k_j_1_1_class.html#a76793959c7d947568f7454eeae5b9d1d">  149</a></span>        <span class="keyword">public</span> List&lt;Skill&gt; <a class="code hl_variable" href="class_k_j_1_1_class.html#a76793959c7d947568f7454eeae5b9d1d">skills</a>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="class_k_j_1_1_class.html#a1460e74acf715ef8495ac1945e1369b9">  150</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_k_j_1_1_class.html#a1460e74acf715ef8495ac1945e1369b9">gold</a>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="foldopen" id="foldopen00152" data-start="{" data-end="}">
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="class_k_j_1_1_class.html#a99e5b4b7a8961e93027ce22a9e96753d">  152</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_k_j_1_1_class.html#a99e5b4b7a8961e93027ce22a9e96753d">Class</a>()</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        {</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            <a class="code hl_variable" href="class_k_j_1_1_class.html#afd1615f11074b4cbce546322c13a4a2f">inventory</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_k_j_1_1_inventory.html">Inventory</a>();</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            <a class="code hl_variable" href="class_k_j_1_1_class.html#a76793959c7d947568f7454eeae5b9d1d">skills</a> = <span class="keyword">new</span> List&lt;Skill&gt;();</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        }</div>
+</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    }</div>
+</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    [System.Serializable]</div>
+<div class="foldopen" id="foldopen00164" data-start="{" data-end="};">
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="class_k_j_1_1_skill.html">  164</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_k_j_1_1_skill.html">Skill</a></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    {</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="class_k_j_1_1_skill.html#aed3222a6113c6334f8d95cad90632125">  166</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_k_j_1_1_skill.html#aed3222a6113c6334f8d95cad90632125">id</a>;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="class_k_j_1_1_skill.html#ad229fd7a5d95acdcab5918c6d01d3c3c">  167</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_k_j_1_1_skill.html#ad229fd7a5d95acdcab5918c6d01d3c3c">name</a>;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="class_k_j_1_1_skill.html#a3b9d17deeb89972a27c72c70d36ac408">  168</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_k_j_1_1_skill.html#a3b9d17deeb89972a27c72c70d36ac408">description</a>;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    }</div>
+</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>}</div>
+<div class="ttc" id="aclass_k_j_1_1_attribute_html"><div class="ttname"><a href="class_k_j_1_1_attribute.html">KJ.Attribute</a></div><div class="ttdoc">아이템 데이터의 Atrribute 데이터</div><div class="ttdef"><b>Definition</b> <a href="#l00043">DataModel.cs:44</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_attribute_html_a0b5811019a901dd4079aa2862831383a"><div class="ttname"><a href="class_k_j_1_1_attribute.html#a0b5811019a901dd4079aa2862831383a">KJ.Attribute.attackPowerUp</a></div><div class="ttdeci">float attackPowerUp</div><div class="ttdef"><b>Definition</b> <a href="#l00046">DataModel.cs:46</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_attribute_html_a1ba9ba9ccb430ce3af4b4fc5f2eec0c5"><div class="ttname"><a href="class_k_j_1_1_attribute.html#a1ba9ba9ccb430ce3af4b4fc5f2eec0c5">KJ.Attribute.defensePowerUp</a></div><div class="ttdeci">float defensePowerUp</div><div class="ttdef"><b>Definition</b> <a href="#l00047">DataModel.cs:47</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_attribute_html_a317d601626958e9f7b83acc8f476440e"><div class="ttname"><a href="class_k_j_1_1_attribute.html#a317d601626958e9f7b83acc8f476440e">KJ.Attribute.skillDamage</a></div><div class="ttdeci">float skillDamage</div><div class="ttdef"><b>Definition</b> <a href="#l00055">DataModel.cs:55</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_attribute_html_a401c8a708b0dc85660d6dba76a6b215d"><div class="ttname"><a href="class_k_j_1_1_attribute.html#a401c8a708b0dc85660d6dba76a6b215d">KJ.Attribute.defense</a></div><div class="ttdeci">float defense</div><div class="ttdef"><b>Definition</b> <a href="#l00054">DataModel.cs:54</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_attribute_html_ab21271c006c3bab476a6ff758ba6269e"><div class="ttname"><a href="class_k_j_1_1_attribute.html#ab21271c006c3bab476a6ff758ba6269e">KJ.Attribute.usedIn</a></div><div class="ttdeci">List&lt; string &gt; usedIn</div><div class="ttdef"><b>Definition</b> <a href="#l00051">DataModel.cs:51</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_attribute_html_acc530861e9d88b2b03d6e52f1ca54239"><div class="ttname"><a href="class_k_j_1_1_attribute.html#acc530861e9d88b2b03d6e52f1ca54239">KJ.Attribute.staminaRecovery</a></div><div class="ttdeci">float staminaRecovery</div><div class="ttdef"><b>Definition</b> <a href="#l00048">DataModel.cs:48</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_attribute_html_ad3b90fca0acdf54263ebd29f5443e3a3"><div class="ttname"><a href="class_k_j_1_1_attribute.html#ad3b90fca0acdf54263ebd29f5443e3a3">KJ.Attribute.healthRestore</a></div><div class="ttdeci">float healthRestore</div><div class="ttdef"><b>Definition</b> <a href="#l00045">DataModel.cs:45</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_attribute_html_ad7e8948378697613c4d9137d104f1ff8"><div class="ttname"><a href="class_k_j_1_1_attribute.html#ad7e8948378697613c4d9137d104f1ff8">KJ.Attribute.maxUseLevel</a></div><div class="ttdeci">int maxUseLevel</div><div class="ttdef"><b>Definition</b> <a href="#l00050">DataModel.cs:50</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_attribute_html_ae1a95b2fea906d128b695119cbcadfbe"><div class="ttname"><a href="class_k_j_1_1_attribute.html#ae1a95b2fea906d128b695119cbcadfbe">KJ.Attribute.successRateIncrease</a></div><div class="ttdeci">float successRateIncrease</div><div class="ttdef"><b>Definition</b> <a href="#l00049">DataModel.cs:49</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_attribute_html_ae465d0360351c098e359fb96a6d9425f"><div class="ttname"><a href="class_k_j_1_1_attribute.html#ae465d0360351c098e359fb96a6d9425f">KJ.Attribute.quantityRequired</a></div><div class="ttdeci">List&lt; ItemRequirement &gt; quantityRequired</div><div class="ttdef"><b>Definition</b> <a href="#l00052">DataModel.cs:52</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_attribute_html_ae5c1332e2029e4194fd6a433d2e51723"><div class="ttname"><a href="class_k_j_1_1_attribute.html#ae5c1332e2029e4194fd6a433d2e51723">KJ.Attribute.attack</a></div><div class="ttdeci">float attack</div><div class="ttdef"><b>Definition</b> <a href="#l00053">DataModel.cs:53</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_class_html"><div class="ttname"><a href="class_k_j_1_1_class.html">KJ.Class</a></div><div class="ttdoc">Class 데이터</div><div class="ttdef"><b>Definition</b> <a href="#l00142">DataModel.cs:143</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_class_html_a101d272ebe61816190ecf95c9c45d9df"><div class="ttname"><a href="class_k_j_1_1_class.html#a101d272ebe61816190ecf95c9c45d9df">KJ.Class.name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition</b> <a href="#l00145">DataModel.cs:145</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_class_html_a1460e74acf715ef8495ac1945e1369b9"><div class="ttname"><a href="class_k_j_1_1_class.html#a1460e74acf715ef8495ac1945e1369b9">KJ.Class.gold</a></div><div class="ttdeci">int gold</div><div class="ttdef"><b>Definition</b> <a href="#l00150">DataModel.cs:150</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_class_html_a2bc13dc6a61a2319e23c5f292a6cce82"><div class="ttname"><a href="class_k_j_1_1_class.html#a2bc13dc6a61a2319e23c5f292a6cce82">KJ.Class.baseHp</a></div><div class="ttdeci">float baseHp</div><div class="ttdef"><b>Definition</b> <a href="#l00146">DataModel.cs:146</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_class_html_a76793959c7d947568f7454eeae5b9d1d"><div class="ttname"><a href="class_k_j_1_1_class.html#a76793959c7d947568f7454eeae5b9d1d">KJ.Class.skills</a></div><div class="ttdeci">List&lt; Skill &gt; skills</div><div class="ttdef"><b>Definition</b> <a href="#l00149">DataModel.cs:149</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_class_html_a84348f753633d2cf0dcbb881ebe7b622"><div class="ttname"><a href="class_k_j_1_1_class.html#a84348f753633d2cf0dcbb881ebe7b622">KJ.Class.baseSp</a></div><div class="ttdeci">float baseSp</div><div class="ttdef"><b>Definition</b> <a href="#l00147">DataModel.cs:147</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_class_html_a99e5b4b7a8961e93027ce22a9e96753d"><div class="ttname"><a href="class_k_j_1_1_class.html#a99e5b4b7a8961e93027ce22a9e96753d">KJ.Class.Class</a></div><div class="ttdeci">Class()</div><div class="ttdef"><b>Definition</b> <a href="#l00152">DataModel.cs:152</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_class_html_ab1632f23f916c754679d7c531aa70377"><div class="ttname"><a href="class_k_j_1_1_class.html#ab1632f23f916c754679d7c531aa70377">KJ.Class.classType</a></div><div class="ttdeci">ClassType classType</div><div class="ttdef"><b>Definition</b> <a href="#l00144">DataModel.cs:144</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_class_html_afd1615f11074b4cbce546322c13a4a2f"><div class="ttname"><a href="class_k_j_1_1_class.html#afd1615f11074b4cbce546322c13a4a2f">KJ.Class.inventory</a></div><div class="ttdeci">Inventory inventory</div><div class="ttdef"><b>Definition</b> <a href="#l00148">DataModel.cs:148</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_game_data_html"><div class="ttname"><a href="class_k_j_1_1_game_data.html">KJ.GameData</a></div><div class="ttdoc">PlayerDB.Json 종합적으로 관리</div><div class="ttdef"><b>Definition</b> <a href="#l00072">DataModel.cs:73</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_game_data_html_a5217f6bcdc8008030aaa16d07caba6db"><div class="ttname"><a href="class_k_j_1_1_game_data.html#a5217f6bcdc8008030aaa16d07caba6db">KJ.GameData.players</a></div><div class="ttdeci">Dictionary&lt; string, Player &gt; players</div><div class="ttdef"><b>Definition</b> <a href="#l00075">DataModel.cs:75</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_game_data_html_ac45b670bcaa5891853158e8276f8ba83"><div class="ttname"><a href="class_k_j_1_1_game_data.html#ac45b670bcaa5891853158e8276f8ba83">KJ.GameData.classes</a></div><div class="ttdeci">Dictionary&lt; ClassType, Class &gt; classes</div><div class="ttdef"><b>Definition</b> <a href="#l00077">DataModel.cs:77</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_inventory_data_html"><div class="ttname"><a href="class_k_j_1_1_inventory_data.html">KJ.InventoryData</a></div><div class="ttdoc">인벤토리 데이터</div><div class="ttdef"><b>Definition</b> <a href="#l00121">DataModel.cs:122</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_inventory_data_html_a75dce9cd4d8f5716dca7b2f46d366037"><div class="ttname"><a href="class_k_j_1_1_inventory_data.html#a75dce9cd4d8f5716dca7b2f46d366037">KJ.InventoryData.quantity</a></div><div class="ttdeci">int quantity</div><div class="ttdef"><b>Definition</b> <a href="#l00124">DataModel.cs:124</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_inventory_data_html_aaa1a8d93ccc719f29a7f9319a67c5c82"><div class="ttname"><a href="class_k_j_1_1_inventory_data.html#aaa1a8d93ccc719f29a7f9319a67c5c82">KJ.InventoryData.id</a></div><div class="ttdeci">string id</div><div class="ttdef"><b>Definition</b> <a href="#l00123">DataModel.cs:123</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_inventory_html"><div class="ttname"><a href="class_k_j_1_1_inventory.html">KJ.Inventory</a></div><div class="ttdoc">인벤토리 관리</div><div class="ttdef"><b>Definition</b> <a href="#l00107">DataModel.cs:108</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_inventory_html_a116cbf1d79f5a27b14d03749dc989a97"><div class="ttname"><a href="class_k_j_1_1_inventory.html#a116cbf1d79f5a27b14d03749dc989a97">KJ.Inventory.Inventory</a></div><div class="ttdeci">Inventory()</div><div class="ttdef"><b>Definition</b> <a href="#l00111">DataModel.cs:111</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_inventory_html_aa4587d78d535425a8ddc6006f289699e"><div class="ttname"><a href="class_k_j_1_1_inventory.html#aa4587d78d535425a8ddc6006f289699e">KJ.Inventory.items</a></div><div class="ttdeci">List&lt; Item &gt; items</div><div class="ttdef"><b>Definition</b> <a href="#l00109">DataModel.cs:109</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_data_html"><div class="ttname"><a href="class_k_j_1_1_item_data.html">KJ.ItemData</a></div><div class="ttdoc">ItemDB.Json 종합적으로 관리</div><div class="ttdef"><b>Definition</b> <a href="#l00017">DataModel.cs:18</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_data_html_a61df43a1c87487a61210c82455dba77e"><div class="ttname"><a href="class_k_j_1_1_item_data.html#a61df43a1c87487a61210c82455dba77e">KJ.ItemData.items</a></div><div class="ttdeci">List&lt; Item &gt; items</div><div class="ttdef"><b>Definition</b> <a href="#l00019">DataModel.cs:19</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_html"><div class="ttname"><a href="class_k_j_1_1_item.html">KJ.Item</a></div><div class="ttdoc">아이템 데이터</div><div class="ttdef"><b>Definition</b> <a href="#l00026">DataModel.cs:27</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_html_a1290b13fb1488c597cd5da381939011c"><div class="ttname"><a href="class_k_j_1_1_item.html#a1290b13fb1488c597cd5da381939011c">KJ.Item.imagePath</a></div><div class="ttdeci">string imagePath</div><div class="ttdef"><b>Definition</b> <a href="#l00033">DataModel.cs:33</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_html_a7b5e31a165d885aaee23adfea9f99a63"><div class="ttname"><a href="class_k_j_1_1_item.html#a7b5e31a165d885aaee23adfea9f99a63">KJ.Item.attributes</a></div><div class="ttdeci">Attribute attributes</div><div class="ttdef"><b>Definition</b> <a href="#l00036">DataModel.cs:36</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_html_a85f6036fa42f33d9f3a545876e3e676a"><div class="ttname"><a href="class_k_j_1_1_item.html#a85f6036fa42f33d9f3a545876e3e676a">KJ.Item.name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition</b> <a href="#l00030">DataModel.cs:30</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_html_a9e550da684f73081e1d9912a2b6b7e12"><div class="ttname"><a href="class_k_j_1_1_item.html#a9e550da684f73081e1d9912a2b6b7e12">KJ.Item.enhanceable</a></div><div class="ttdeci">bool enhanceable</div><div class="ttdef"><b>Definition</b> <a href="#l00034">DataModel.cs:34</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_html_aa681ce0e509f84932b0dd9946730d2e8"><div class="ttname"><a href="class_k_j_1_1_item.html#aa681ce0e509f84932b0dd9946730d2e8">KJ.Item.type</a></div><div class="ttdeci">string type</div><div class="ttdef"><b>Definition</b> <a href="#l00028">DataModel.cs:28</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_html_aaa735019b93eac27712e7c7ed9e8fbba"><div class="ttname"><a href="class_k_j_1_1_item.html#aaa735019b93eac27712e7c7ed9e8fbba">KJ.Item.quantity</a></div><div class="ttdeci">int quantity</div><div class="ttdef"><b>Definition</b> <a href="#l00032">DataModel.cs:32</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_html_ab52c3e381e436eccaefcb544effc0517"><div class="ttname"><a href="class_k_j_1_1_item.html#ab52c3e381e436eccaefcb544effc0517">KJ.Item.description</a></div><div class="ttdeci">string description</div><div class="ttdef"><b>Definition</b> <a href="#l00031">DataModel.cs:31</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_html_ae26ecd4b28a4dcda60313a4fd54a4ff8"><div class="ttname"><a href="class_k_j_1_1_item.html#ae26ecd4b28a4dcda60313a4fd54a4ff8">KJ.Item.id</a></div><div class="ttdeci">string id</div><div class="ttdef"><b>Definition</b> <a href="#l00029">DataModel.cs:29</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_html_ae6114c84f6b8ed85d15135e147eb98a6"><div class="ttname"><a href="class_k_j_1_1_item.html#ae6114c84f6b8ed85d15135e147eb98a6">KJ.Item.enhanceLevel</a></div><div class="ttdeci">int enhanceLevel</div><div class="ttdef"><b>Definition</b> <a href="#l00035">DataModel.cs:35</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_requirement_html"><div class="ttname"><a href="class_k_j_1_1_item_requirement.html">KJ.ItemRequirement</a></div><div class="ttdef"><b>Definition</b> <a href="#l00062">DataModel.cs:63</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_requirement_html_a31f753ff65b9c5422418993f94c3a38b"><div class="ttname"><a href="class_k_j_1_1_item_requirement.html#a31f753ff65b9c5422418993f94c3a38b">KJ.ItemRequirement.quantity</a></div><div class="ttdeci">int quantity</div><div class="ttdef"><b>Definition</b> <a href="#l00065">DataModel.cs:65</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_item_requirement_html_a88cc8f06e61e6ada99e2ea8702798247"><div class="ttname"><a href="class_k_j_1_1_item_requirement.html#a88cc8f06e61e6ada99e2ea8702798247">KJ.ItemRequirement.id</a></div><div class="ttdeci">string id</div><div class="ttdef"><b>Definition</b> <a href="#l00064">DataModel.cs:64</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_player_html"><div class="ttname"><a href="class_k_j_1_1_player.html">KJ.Player</a></div><div class="ttdoc">Player 데이터</div><div class="ttdef"><b>Definition</b> <a href="#l00085">DataModel.cs:86</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_player_html_a0a62add1ce71aaf67c5aa0aebb2209bf"><div class="ttname"><a href="class_k_j_1_1_player.html#a0a62add1ce71aaf67c5aa0aebb2209bf">KJ.Player.userName</a></div><div class="ttdeci">string userName</div><div class="ttdef"><b>Definition</b> <a href="#l00089">DataModel.cs:89</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_player_html_a259aef1d1a966a55f4c5e8d510f7ef56"><div class="ttname"><a href="class_k_j_1_1_player.html#a259aef1d1a966a55f4c5e8d510f7ef56">KJ.Player.inventory</a></div><div class="ttdeci">Inventory inventory</div><div class="ttdef"><b>Definition</b> <a href="#l00091">DataModel.cs:91</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_player_html_a2c9a2742921476e5619861012d1e9cf2"><div class="ttname"><a href="class_k_j_1_1_player.html#a2c9a2742921476e5619861012d1e9cf2">KJ.Player.gold</a></div><div class="ttdeci">int gold</div><div class="ttdef"><b>Definition</b> <a href="#l00092">DataModel.cs:92</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_player_html_a326125a5b90aefb6e1c7f9cd4d277e59"><div class="ttname"><a href="class_k_j_1_1_player.html#a326125a5b90aefb6e1c7f9cd4d277e59">KJ.Player.uid</a></div><div class="ttdeci">string uid</div><div class="ttdef"><b>Definition</b> <a href="#l00087">DataModel.cs:87</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_player_html_a3b29735b4daf50c885d9f4d43d1c80fd"><div class="ttname"><a href="class_k_j_1_1_player.html#a3b29735b4daf50c885d9f4d43d1c80fd">KJ.Player.Player</a></div><div class="ttdeci">Player()</div><div class="ttdef"><b>Definition</b> <a href="#l00096">DataModel.cs:96</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_player_html_a5a260a29163abce7eabb79b6e4fb4469"><div class="ttname"><a href="class_k_j_1_1_player.html#a5a260a29163abce7eabb79b6e4fb4469">KJ.Player.shortUID</a></div><div class="ttdeci">string shortUID</div><div class="ttdef"><b>Definition</b> <a href="#l00088">DataModel.cs:88</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_player_html_a86d98daafe4ccc39cf108b13305bb22e"><div class="ttname"><a href="class_k_j_1_1_player.html#a86d98daafe4ccc39cf108b13305bb22e">KJ.Player.buffs</a></div><div class="ttdeci">List&lt; string &gt; buffs</div><div class="ttdef"><b>Definition</b> <a href="#l00094">DataModel.cs:94</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_player_html_aca9ccbb5ebe0c9faa306b29856808ca9"><div class="ttname"><a href="class_k_j_1_1_player.html#aca9ccbb5ebe0c9faa306b29856808ca9">KJ.Player.classType</a></div><div class="ttdeci">string classType</div><div class="ttdef"><b>Definition</b> <a href="#l00090">DataModel.cs:90</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_player_html_adc548f1daf86d73d156a5924bf29269c"><div class="ttname"><a href="class_k_j_1_1_player.html#adc548f1daf86d73d156a5924bf29269c">KJ.Player.combatPower</a></div><div class="ttdeci">float combatPower</div><div class="ttdef"><b>Definition</b> <a href="#l00093">DataModel.cs:93</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_skill_html"><div class="ttname"><a href="class_k_j_1_1_skill.html">KJ.Skill</a></div><div class="ttdoc">Skill 데이터</div><div class="ttdef"><b>Definition</b> <a href="#l00164">DataModel.cs:165</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_skill_html_a3b9d17deeb89972a27c72c70d36ac408"><div class="ttname"><a href="class_k_j_1_1_skill.html#a3b9d17deeb89972a27c72c70d36ac408">KJ.Skill.description</a></div><div class="ttdeci">string description</div><div class="ttdef"><b>Definition</b> <a href="#l00168">DataModel.cs:168</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_skill_html_ad229fd7a5d95acdcab5918c6d01d3c3c"><div class="ttname"><a href="class_k_j_1_1_skill.html#ad229fd7a5d95acdcab5918c6d01d3c3c">KJ.Skill.name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition</b> <a href="#l00167">DataModel.cs:167</a></div></div>
+<div class="ttc" id="aclass_k_j_1_1_skill_html_aed3222a6113c6334f8d95cad90632125"><div class="ttname"><a href="class_k_j_1_1_skill.html#aed3222a6113c6334f8d95cad90632125">KJ.Skill.id</a></div><div class="ttdeci">string id</div><div class="ttdef"><b>Definition</b> <a href="#l00166">DataModel.cs:166</a></div></div>
+<div class="ttc" id="anamespace_k_j_html"><div class="ttname"><a href="namespace_k_j.html">KJ</a></div><div class="ttdef"><b>Definition</b> <a href="_minimap_camera_8cs_source.html#l00005">MinimapCamera.cs:6</a></div></div>
+<div class="ttc" id="anamespace_k_j_html_ad645fce3d83ece74624080e6f4aeae9e"><div class="ttname"><a href="namespace_k_j.html#ad645fce3d83ece74624080e6f4aeae9e">KJ.ClassType</a></div><div class="ttdeci">ClassType</div><div class="ttdoc">클래스 enum 타입으로 분류</div><div class="ttdef"><b>Definition</b> <a href="#l00130">DataModel.cs:131</a></div></div>
+<div class="ttc" id="anamespace_k_j_html_ad645fce3d83ece74624080e6f4aeae9ea44ac6119a7a7a60e65a3e2b852ebd6c0"><div class="ttname"><a href="namespace_k_j.html#ad645fce3d83ece74624080e6f4aeae9ea44ac6119a7a7a60e65a3e2b852ebd6c0">KJ.ClassType.rogue</a></div><div class="ttdeci">@ rogue</div></div>
+<div class="ttc" id="anamespace_k_j_html_ad645fce3d83ece74624080e6f4aeae9ea7ff5defb01eba61a2e1039a79805c2b6"><div class="ttname"><a href="namespace_k_j.html#ad645fce3d83ece74624080e6f4aeae9ea7ff5defb01eba61a2e1039a79805c2b6">KJ.ClassType.barbarian</a></div><div class="ttdeci">@ barbarian</div></div>
+<div class="ttc" id="anamespace_k_j_html_ad645fce3d83ece74624080e6f4aeae9ea9a519a0f7d29f1ffa549fada8b667b02"><div class="ttname"><a href="namespace_k_j.html#ad645fce3d83ece74624080e6f4aeae9ea9a519a0f7d29f1ffa549fada8b667b02">KJ.ClassType.mage</a></div><div class="ttdeci">@ mage</div></div>
+<div class="ttc" id="anamespace_k_j_html_ad645fce3d83ece74624080e6f4aeae9eaefead51028a03db2d63f0e79ba032a82"><div class="ttname"><a href="namespace_k_j.html#ad645fce3d83ece74624080e6f4aeae9eaefead51028a03db2d63f0e79ba032a82">KJ.ClassType.knight</a></div><div class="ttdeci">@ knight</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_7e17ac9cf8fba2cb04bc248c85b0ceb7.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_d708be37ffd207a4818d7ac39c51f1a9.html">Bootcamp-Team-Project</a></li><li class="navelem"><a class="el" href="dir_a8f7bed46e4166a330dd9eeb47d2b6b6.html">Cos</a></li><li class="navelem"><a class="el" href="dir_fa9e069fdb86bc2b40adb248b9c63099.html">Assets</a></li><li class="navelem"><a class="el" href="dir_91b7d5b2a59a9e70dc734a50261581b7.html">LKJ</a></li><li class="navelem"><a class="el" href="dir_8b402d8951c5d418d0ddc2a8c48e6129.html">KJ</a></li><li class="navelem"><a class="el" href="dir_c442853e6bf9677cb6845bf051865e0c.html">2. Scripts</a></li><li class="navelem"><a class="el" href="dir_7744ab79923732c7fecd1bab99b283f1.html">06. DatabaseScripts</a></li><li class="navelem"><a class="el" href="_data_model_8cs.html">DataModel.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 :  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+\doxysection{Item\+DBManager.\+cs}
+\hypertarget{_item_d_b_manager_8cs_source}{}\label{_item_d_b_manager_8cs_source}\index{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/06. DatabaseScripts/ItemDBManager.cs@{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/06. DatabaseScripts/ItemDBManager.cs}}
+\mbox{\hyperlink{_item_d_b_manager_8cs}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }Firebase;}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }Firebase.Auth;}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }Firebase.Database;}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }Firebase.Extensions;}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00006}00006\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00007}00007\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00008}00008\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00010}00010\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_k_j}{KJ}}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00011}00011\ \{}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00016}\mbox{\hyperlink{class_k_j_1_1_singleton_lazy}{00016}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_singleton_lazy}{SingletonLazy}}<T>\ :\ MonoBehaviour\ where\ T\ :\ class}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00017}00017\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Lazy<T>\ 를\ 사용하여\ 싱글톤\ 인스턴스를\ 저장.}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00019}00019\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ Lazy\ 는\ 실제로\ 값이\ 필요할\ 때까지\ 생성을\ 지연시키는\ 객체\ */}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00020}\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a85fe962aa9d7a764b3b113151698e16c}{00020}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ readonly\ Lazy<T>\ \mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a85fe962aa9d7a764b3b113151698e16c}{\_instance}}\ =\ }
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ Lazy<T>(()\ =>}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 현재\ 씬에서\ T\ 타입의\ 객체를\ 찾음.\ */}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ T\ instance\ =\ FindObjectOfType(typeof(T))\ as\ T;}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 인스턴스가\ null\ 이면\ 새로운\ GameObject\ 를\ 생성하고\ T\ 컴포넌트\ 추가\ */}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (instance\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GameObject\ obj\ =\ \textcolor{keyword}{new}\ GameObject(\textcolor{stringliteral}{"{}SingletonLazy"{}});}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ instance\ =\ obj.AddComponent(typeof(T))\ as\ T;}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 씬\ 전환시\ Gameobject가\ 파괴되지\ 않도록\ 설정.\ */}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DontDestroyOnLoad(obj);}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 이미\ 인스턴스가\ 있을\ 경우\ 새로\ 생성된\ GameObject\ 파괴\ */}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Destroy(instance\ as\ GameObject);}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 생성된\ 인스턴스\ 반환.\ */}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ instance;}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00048}\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{00048}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ T\ \mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ }
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ }
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Lazy\ 인스턴스의\ Value\ 속성을\ 통해\ 싱글톤\ 인스턴스\ 반환}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00053}00053\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 접근\ 하는\ 순간\ Lazy\ 객체가\ 실제\ 값을\ 생성.\ */}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a85fe962aa9d7a764b3b113151698e16c}{\_instance}}.Value;\ }
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00057}00057\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00063}\mbox{\hyperlink{class_k_j_1_1_item_d_b_manager}{00063}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_item_d_b_manager}{ItemDBManager}}\ :\ \mbox{\hyperlink{class_k_j_1_1_singleton_lazy}{SingletonLazy}}<ItemDBManager>}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00064}00064\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00065}\mbox{\hyperlink{class_k_j_1_1_item_d_b_manager_afb874cd78ff48f616fab9346c8fe0171}{00065}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_k_j_1_1_item_data}{ItemData}}\ \mbox{\hyperlink{class_k_j_1_1_item_d_b_manager_afb874cd78ff48f616fab9346c8fe0171}{\_itemData}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}\ }
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00071}\mbox{\hyperlink{class_k_j_1_1_item_d_b_manager_a07f2cf57e3bd1fe8e2e70a9fe8a8b948}{00071}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_k_j_1_1_item}{Item}}\ \mbox{\hyperlink{class_k_j_1_1_item_d_b_manager_a07f2cf57e3bd1fe8e2e70a9fe8a8b948}{GetItem}}(\textcolor{keywordtype}{string}\ \textcolor{keywordtype}{id})\ }
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_k_j_1_1_item_d_b_manager_afb874cd78ff48f616fab9346c8fe0171}{\_itemData}}.\mbox{\hyperlink{class_k_j_1_1_item_data_a61df43a1c87487a61210c82455dba77e}{items}}.Find(x\ =>\ x.id\ ==\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00079}\mbox{\hyperlink{class_k_j_1_1_item_d_b_manager_a1dbc900e254ed6c78b7bc706ff04daa2}{00079}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ IEnumerator\ \mbox{\hyperlink{class_k_j_1_1_item_d_b_manager_a1dbc900e254ed6c78b7bc706ff04daa2}{LoadItemDB}}()}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}\ 로드\ 완료\ "{}}\ +\ \mbox{\hyperlink{class_k_j_1_1_item_d_b_manager_afb874cd78ff48f616fab9346c8fe0171}{\_itemData}});}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ TextAsset\ itemData\ =\ Resources.Load<TextAsset>(\textcolor{stringliteral}{"{}ItemDB"{}});}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}\ 로드\ 완료\ "{}}\ +\ itemData.text);}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_item_d_b_manager_afb874cd78ff48f616fab9346c8fe0171}{\_itemData}}\ =\ JsonUtility.FromJson<\mbox{\hyperlink{class_k_j_1_1_item_data}{ItemData}}>(itemData.text);}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ yield\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00087}00087\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00089}\mbox{\hyperlink{class_k_j_1_1_item_d_b_manager_a589767bb1ee7462a9f947469a06809ae}{00089}}\ \ \ \ \ \ \ \ \ Dictionary<string,\ Sprite>\ \mbox{\hyperlink{class_k_j_1_1_item_d_b_manager_a589767bb1ee7462a9f947469a06809ae}{\_loadpool}}\ =\ \textcolor{keyword}{new}\ Dictionary<string,\ Sprite>();}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00090}00090\ }
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00094}\mbox{\hyperlink{class_k_j_1_1_item_d_b_manager_a6448e472711253a28fb7c791b097fc21}{00094}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Sprite\ \mbox{\hyperlink{class_k_j_1_1_item_d_b_manager_a6448e472711253a28fb7c791b097fc21}{LoadItemSprite}}(\textcolor{keywordtype}{string}\ imagePath)}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00095}00095\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ Sprite\ s\ =\ Resources.Load<Sprite>(imagePath);}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (s\ ==\ \textcolor{keyword}{null})\ Debug.Log(\textcolor{stringliteral}{"{}LoadItemSprite\ ==\ null\ :\ "{}}\ +\ imagePath);}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00098}00098\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ s;}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00099}00099\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00100}00100\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_item_d_b_manager_8cs_source_l00101}00101\ \}}
+
+\end{DoxyCode}

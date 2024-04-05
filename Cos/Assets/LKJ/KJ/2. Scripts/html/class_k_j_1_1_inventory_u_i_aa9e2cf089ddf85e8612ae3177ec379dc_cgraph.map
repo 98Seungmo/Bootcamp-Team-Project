@@ -1,0 +1,7 @@
+<map id="KJ.InventoryUI.RemoveItem" name="KJ.InventoryUI.RemoveItem">
+<area shape="rect" id="Node000001" title="인벤토리에 아이템 제거" alt="" coords="5,31,184,57"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_inventory_u_i.html#aefe22e48614542676963d404c998c63d" title="아이템 DB 에서 주어진 ID 를 가진 아이템 찾음" alt="" coords="232,5,418,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,32,216,28,216,33,184,37"/>
+<area shape="rect" id="Node000003" href="$class_k_j_1_1_inventory_u_i.html#a497a9c9d6068f07b74b6ab090cbe7239" title="아이템 제거시 슬롯 삭제" alt="" coords="237,56,413,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,51,221,55,221,61,184,56"/>
+</map>

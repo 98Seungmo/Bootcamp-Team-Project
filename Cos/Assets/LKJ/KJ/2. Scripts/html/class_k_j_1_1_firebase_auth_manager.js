@@ -1,0 +1,26 @@
+var class_k_j_1_1_firebase_auth_manager =
+[
+    [ "Awake", "class_k_j_1_1_firebase_auth_manager.html#ad45a349ae080198f3a529f8b0e67dfff", null ],
+    [ "InitializeFirebase", "class_k_j_1_1_firebase_auth_manager.html#a63166b0473879efb176225ca765e4cde", null ],
+    [ "Login", "class_k_j_1_1_firebase_auth_manager.html#a2c0a624396283c6ac3febe57ee0197ab", null ],
+    [ "LoginButton", "class_k_j_1_1_firebase_auth_manager.html#a7647653b11f42d6514fd2ae6f873a2be", null ],
+    [ "Register", "class_k_j_1_1_firebase_auth_manager.html#adc6d762b0d9dbe2360f5e119f8f1230d", null ],
+    [ "RegisterButton", "class_k_j_1_1_firebase_auth_manager.html#aae24fb8f269f039f55b5776c6bb0c900", null ],
+    [ "WriteData_Data", "class_k_j_1_1_firebase_auth_manager.html#af1178837e45b4c1e357e2ecb213a6712", null ],
+    [ "_auth", "class_k_j_1_1_firebase_auth_manager.html#a421b74b4d92d6913ed0d9954ceea3909", null ],
+    [ "_databaseReference", "class_k_j_1_1_firebase_auth_manager.html#a98d91d6403496f6578f13faa46fc9708", null ],
+    [ "_instance", "class_k_j_1_1_firebase_auth_manager.html#acc81ed29c3ab7c68f1ac74b76f04dfd7", null ],
+    [ "confirmLoginText", "class_k_j_1_1_firebase_auth_manager.html#ac106975de61aaf30e6ff48ffa6ff19f0", null ],
+    [ "ConfrimRegisterText", "class_k_j_1_1_firebase_auth_manager.html#a3e6352d0b40b36c34fbd8a4c74e68987", null ],
+    [ "dependencyStatus", "class_k_j_1_1_firebase_auth_manager.html#a276d4d35edf53ef8d8afea9f0913bfc3", null ],
+    [ "email", "class_k_j_1_1_firebase_auth_manager.html#a66b2538223454d3570841404d7588a34", null ],
+    [ "emailRegister", "class_k_j_1_1_firebase_auth_manager.html#ae8c3b945df926cedf56e27eb210db11f", null ],
+    [ "password", "class_k_j_1_1_firebase_auth_manager.html#a8e1db2bd6e9a03d2a445cafb28b24f42", null ],
+    [ "passwordCheck", "class_k_j_1_1_firebase_auth_manager.html#a5c0f18b75a52f6e5e15ec197bbe5cd88", null ],
+    [ "passwordRegister", "class_k_j_1_1_firebase_auth_manager.html#a530c16773b874e55d92272f1c1a610fc", null ],
+    [ "usernameRegister", "class_k_j_1_1_firebase_auth_manager.html#aefe8d81498c7f9347a6efbf6b6289c24", null ],
+    [ "warningLoginText", "class_k_j_1_1_firebase_auth_manager.html#a9ff428c2b4cf340c7298bb806daa9260", null ],
+    [ "warningRegisterText", "class_k_j_1_1_firebase_auth_manager.html#a7391d518d9dd4fb7453d969c98505afc", null ],
+    [ "_user", "class_k_j_1_1_firebase_auth_manager.html#a00134248ee21283c0208e9080f2b655b", null ],
+    [ "Instance", "class_k_j_1_1_firebase_auth_manager.html#aa7b3a0e9165c6e72cf3e8cec2a426471", null ]
+];

@@ -1,0 +1,5 @@
+<map id="KJ.CharacterSelectManager" name="KJ.CharacterSelectManager">
+<area shape="rect" id="Node000001" title="캐릭터 선택창에서 해당 클래스 고르면 해당 클래스의 기본 정보가 플레이어에게 들어감" alt="" coords="5,80,189,107"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="42,5,152,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,48,100,80,94,80,94,48"/>
+</map>

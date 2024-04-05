@@ -1,0 +1,5 @@
+<map id="InventoryUI.RemoveSlot" name="InventoryUI.RemoveSlot">
+<area shape="rect" id="Node000001" title=" " alt="" coords="213,5,370,32"/>
+<area shape="rect" id="Node000002" href="$class_inventory_u_i.html#a4546d9376e062cd5efa48a8ff9ed6a7c" title=" " alt="" coords="5,5,165,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,21,165,21,165,16,197,16"/>
+</map>

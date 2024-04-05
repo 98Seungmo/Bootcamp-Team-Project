@@ -1,0 +1,9 @@
+<map id="InventoryUI.CreateSlot" name="InventoryUI.CreateSlot">
+<area shape="rect" id="Node000001" title=" " alt="" coords="430,31,579,57"/>
+<area shape="rect" id="Node000002" href="$class_inventory_u_i.html#a208fe0f0dae6def3bd2a114bfc4a2e6f" title=" " alt="" coords="246,31,382,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="414,47,383,47,383,41,414,41"/>
+<area shape="rect" id="Node000003" href="$class_inventory_u_i.html#a3860766b4516c00d581323d0bb55bb63" title=" " alt="" coords="43,5,160,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="230,37,160,28,160,23,230,31"/>
+<area shape="rect" id="Node000004" href="$class_inventory_u_i.html#a99b38b50627d6827a4a2ec36310c93be" title=" " alt="" coords="5,56,198,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="230,57,198,60,198,55,230,51"/>
+</map>

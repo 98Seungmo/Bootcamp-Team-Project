@@ -1,0 +1,7 @@
+<map id="KJ.SoundManager.Start" name="KJ.SoundManager.Start">
+<area shape="rect" id="Node000001" title="사운드 설정" alt="" coords="5,47,165,73"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_sound_manager.html#a7e4c2e299d28c8d69d5e426c58bd2a6a" title="배경음악 음소거" alt="" coords="220,5,421,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,46,204,40,205,46,165,51"/>
+<area shape="rect" id="Node000003" href="$class_k_j_1_1_sound_manager.html#a49a6b4fa48f4e314f6faca25dd08ac5b" title="소리에 따라 이미지 변경" alt="" coords="213,72,428,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,69,198,73,197,79,165,74"/>
+</map>

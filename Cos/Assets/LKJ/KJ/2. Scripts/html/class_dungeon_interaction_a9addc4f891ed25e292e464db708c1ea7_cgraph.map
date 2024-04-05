@@ -1,0 +1,7 @@
+<map id="DungeonInteraction.Update" name="DungeonInteraction.Update">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,183,57"/>
+<area shape="rect" id="Node000002" href="$class_dungeon_interaction.html#a56121ef29cbccd0f3fb16372ac8112ae" title=" " alt="" coords="234,5,468,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,33,218,29,219,34,183,38"/>
+<area shape="rect" id="Node000003" href="$class_dungeon_interaction.html#a0bb27d2aabca4ec5c723d5776eaa78c6" title=" " alt="" coords="231,56,471,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,50,215,53,215,59,183,55"/>
+</map>

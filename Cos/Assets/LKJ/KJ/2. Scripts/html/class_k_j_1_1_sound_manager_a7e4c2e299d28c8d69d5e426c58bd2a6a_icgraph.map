@@ -1,0 +1,5 @@
+<map id="KJ.SoundManager.BackgroundMusicSwitch" name="KJ.SoundManager.BackgroundMusicSwitch">
+<area shape="rect" id="Node000001" title="배경음악 음소거" alt="" coords="213,5,413,48"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_sound_manager.html#a8147d430abf43e5b6869964bf7bd612b" title="사운드 설정" alt="" coords="5,13,165,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,29,165,29,165,24,197,24"/>
+</map>

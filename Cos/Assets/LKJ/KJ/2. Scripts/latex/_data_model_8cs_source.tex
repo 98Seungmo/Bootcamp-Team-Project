@@ -1,0 +1,142 @@
+\doxysection{Data\+Model.\+cs}
+\hypertarget{_data_model_8cs_source}{}\label{_data_model_8cs_source}\index{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/06. DatabaseScripts/DataModel.cs@{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/06. DatabaseScripts/DataModel.cs}}
+\mbox{\hyperlink{_data_model_8cs}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00006}00006\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_k_j}{KJ}}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00008}00008\ \textcolor{comment}{\ \ \ \ /*************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00009}00009\ \ \ \ \ \textcolor{comment}{/*\ Json\ 파일\ 구조\ C\#으로\ 표기\ */}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00010}00010\ \textcolor{comment}{\ \ \ \ /************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00011}00011\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00016}00016\ \ \ \ \ [System.Serializable]}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00017}\mbox{\hyperlink{class_k_j_1_1_item_data}{00017}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_item_data}{ItemData}}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00018}00018\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00019}\mbox{\hyperlink{class_k_j_1_1_item_data_a61df43a1c87487a61210c82455dba77e}{00019}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ List<Item>\ \mbox{\hyperlink{class_k_j_1_1_item_data_a61df43a1c87487a61210c82455dba77e}{items}}\ =\ \textcolor{keyword}{new}\ List<Item>\ ();}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00020}00020\ \ \ \ \ \}\ \ \ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00025}00025\ \ \ \ \ [System.Serializable]}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00026}\mbox{\hyperlink{class_k_j_1_1_item}{00026}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_item}{Item}}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00027}00027\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00028}\mbox{\hyperlink{class_k_j_1_1_item_aa681ce0e509f84932b0dd9946730d2e8}{00028}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_item_aa681ce0e509f84932b0dd9946730d2e8}{type}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00029}\mbox{\hyperlink{class_k_j_1_1_item_ae26ecd4b28a4dcda60313a4fd54a4ff8}{00029}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_item_ae26ecd4b28a4dcda60313a4fd54a4ff8}{id}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00030}\mbox{\hyperlink{class_k_j_1_1_item_a85f6036fa42f33d9f3a545876e3e676a}{00030}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_item_a85f6036fa42f33d9f3a545876e3e676a}{name}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00031}\mbox{\hyperlink{class_k_j_1_1_item_ab52c3e381e436eccaefcb544effc0517}{00031}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_item_ab52c3e381e436eccaefcb544effc0517}{description}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00032}\mbox{\hyperlink{class_k_j_1_1_item_aaa735019b93eac27712e7c7ed9e8fbba}{00032}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_k_j_1_1_item_aaa735019b93eac27712e7c7ed9e8fbba}{quantity}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00033}\mbox{\hyperlink{class_k_j_1_1_item_a1290b13fb1488c597cd5da381939011c}{00033}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_item_a1290b13fb1488c597cd5da381939011c}{imagePath}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00034}\mbox{\hyperlink{class_k_j_1_1_item_a9e550da684f73081e1d9912a2b6b7e12}{00034}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_k_j_1_1_item_a9e550da684f73081e1d9912a2b6b7e12}{enhanceable}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00035}\mbox{\hyperlink{class_k_j_1_1_item_ae6114c84f6b8ed85d15135e147eb98a6}{00035}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_k_j_1_1_item_ae6114c84f6b8ed85d15135e147eb98a6}{enhanceLevel}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00036}\mbox{\hyperlink{class_k_j_1_1_item_a7b5e31a165d885aaee23adfea9f99a63}{00036}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_k_j_1_1_attribute}{Attribute}}\ \mbox{\hyperlink{class_k_j_1_1_item_a7b5e31a165d885aaee23adfea9f99a63}{attributes}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00037}00037\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00042}00042\ \ \ \ \ [System.Serializable]}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00043}\mbox{\hyperlink{class_k_j_1_1_attribute}{00043}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_attribute}{Attribute}}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00044}00044\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00045}\mbox{\hyperlink{class_k_j_1_1_attribute_ad3b90fca0acdf54263ebd29f5443e3a3}{00045}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_attribute_ad3b90fca0acdf54263ebd29f5443e3a3}{healthRestore}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00046}\mbox{\hyperlink{class_k_j_1_1_attribute_a0b5811019a901dd4079aa2862831383a}{00046}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_attribute_a0b5811019a901dd4079aa2862831383a}{attackPowerUp}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00047}\mbox{\hyperlink{class_k_j_1_1_attribute_a1ba9ba9ccb430ce3af4b4fc5f2eec0c5}{00047}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_attribute_a1ba9ba9ccb430ce3af4b4fc5f2eec0c5}{defensePowerUp}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00048}\mbox{\hyperlink{class_k_j_1_1_attribute_acc530861e9d88b2b03d6e52f1ca54239}{00048}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_attribute_acc530861e9d88b2b03d6e52f1ca54239}{staminaRecovery}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00049}\mbox{\hyperlink{class_k_j_1_1_attribute_ae1a95b2fea906d128b695119cbcadfbe}{00049}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_attribute_ae1a95b2fea906d128b695119cbcadfbe}{successRateIncrease}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00050}\mbox{\hyperlink{class_k_j_1_1_attribute_ad7e8948378697613c4d9137d104f1ff8}{00050}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_k_j_1_1_attribute_ad7e8948378697613c4d9137d104f1ff8}{maxUseLevel}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00051}\mbox{\hyperlink{class_k_j_1_1_attribute_ab21271c006c3bab476a6ff758ba6269e}{00051}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ List<string>\ \mbox{\hyperlink{class_k_j_1_1_attribute_ab21271c006c3bab476a6ff758ba6269e}{usedIn}}\ =\ \textcolor{keyword}{new}\ List<string>();}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00052}\mbox{\hyperlink{class_k_j_1_1_attribute_ae465d0360351c098e359fb96a6d9425f}{00052}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ List<ItemRequirement>\ \mbox{\hyperlink{class_k_j_1_1_attribute_ae465d0360351c098e359fb96a6d9425f}{quantityRequired}}\ =\ \textcolor{keyword}{new}\ List<ItemRequirement>();}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00053}\mbox{\hyperlink{class_k_j_1_1_attribute_ae5c1332e2029e4194fd6a433d2e51723}{00053}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_attribute_ae5c1332e2029e4194fd6a433d2e51723}{attack}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00054}\mbox{\hyperlink{class_k_j_1_1_attribute_a401c8a708b0dc85660d6dba76a6b215d}{00054}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_attribute_a401c8a708b0dc85660d6dba76a6b215d}{defense}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00055}\mbox{\hyperlink{class_k_j_1_1_attribute_a317d601626958e9f7b83acc8f476440e}{00055}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_attribute_a317d601626958e9f7b83acc8f476440e}{skillDamage}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00056}00056\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00061}00061\ \ \ \ \ [System.Serializable]}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00062}\mbox{\hyperlink{class_k_j_1_1_item_requirement}{00062}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_item_requirement}{ItemRequirement}}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00063}00063\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00064}\mbox{\hyperlink{class_k_j_1_1_item_requirement_a88cc8f06e61e6ada99e2ea8702798247}{00064}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_item_requirement_a88cc8f06e61e6ada99e2ea8702798247}{id}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00065}\mbox{\hyperlink{class_k_j_1_1_item_requirement_a31f753ff65b9c5422418993f94c3a38b}{00065}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_k_j_1_1_item_requirement_a31f753ff65b9c5422418993f94c3a38b}{quantity}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00066}00066\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00071}00071\ \ \ \ \ [System.Serializable]}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00072}\mbox{\hyperlink{class_k_j_1_1_game_data}{00072}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_game_data}{GameData}}\ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00073}00073\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 플레이어\ 데이터를\ 저장할\ Dictionary.\ */}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00075}\mbox{\hyperlink{class_k_j_1_1_game_data_a5217f6bcdc8008030aaa16d07caba6db}{00075}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Dictionary<string,\ Player>\ \mbox{\hyperlink{class_k_j_1_1_game_data_a5217f6bcdc8008030aaa16d07caba6db}{players}}\ =\ \textcolor{keyword}{new}\ Dictionary<string,\ Player>();}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 클래스\ 데이터를\ 저장할\ Dictionary.\ */}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00077}\mbox{\hyperlink{class_k_j_1_1_game_data_ac45b670bcaa5891853158e8276f8ba83}{00077}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Dictionary<ClassType,\ Class>\ \mbox{\hyperlink{class_k_j_1_1_game_data_ac45b670bcaa5891853158e8276f8ba83}{classes}}\ =\ \textcolor{keyword}{new}\ Dictionary<ClassType,\ Class>();}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00079}00079\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00084}00084\ \ \ \ \ [System.Serializable]}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00085}\mbox{\hyperlink{class_k_j_1_1_player}{00085}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_player}{Player}}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00086}00086\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00087}\mbox{\hyperlink{class_k_j_1_1_player_a326125a5b90aefb6e1c7f9cd4d277e59}{00087}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_player_a326125a5b90aefb6e1c7f9cd4d277e59}{uid}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00088}\mbox{\hyperlink{class_k_j_1_1_player_a5a260a29163abce7eabb79b6e4fb4469}{00088}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_player_a5a260a29163abce7eabb79b6e4fb4469}{shortUID}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00089}\mbox{\hyperlink{class_k_j_1_1_player_a0a62add1ce71aaf67c5aa0aebb2209bf}{00089}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_player_a0a62add1ce71aaf67c5aa0aebb2209bf}{userName}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00090}\mbox{\hyperlink{class_k_j_1_1_player_aca9ccbb5ebe0c9faa306b29856808ca9}{00090}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_player_aca9ccbb5ebe0c9faa306b29856808ca9}{classType}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00091}\mbox{\hyperlink{class_k_j_1_1_player_a259aef1d1a966a55f4c5e8d510f7ef56}{00091}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_k_j_1_1_inventory}{Inventory}}\ \mbox{\hyperlink{class_k_j_1_1_player_a259aef1d1a966a55f4c5e8d510f7ef56}{inventory}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00092}\mbox{\hyperlink{class_k_j_1_1_player_a2c9a2742921476e5619861012d1e9cf2}{00092}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_k_j_1_1_player_a2c9a2742921476e5619861012d1e9cf2}{gold}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00093}\mbox{\hyperlink{class_k_j_1_1_player_adc548f1daf86d73d156a5924bf29269c}{00093}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_player_adc548f1daf86d73d156a5924bf29269c}{combatPower}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00094}\mbox{\hyperlink{class_k_j_1_1_player_a86d98daafe4ccc39cf108b13305bb22e}{00094}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ List<string>\ \mbox{\hyperlink{class_k_j_1_1_player_a86d98daafe4ccc39cf108b13305bb22e}{buffs}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00096}\mbox{\hyperlink{class_k_j_1_1_player_a3b29735b4daf50c885d9f4d43d1c80fd}{00096}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_k_j_1_1_player_a3b29735b4daf50c885d9f4d43d1c80fd}{Player}}()}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00097}00097\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00098}00098\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_player_a259aef1d1a966a55f4c5e8d510f7ef56}{inventory}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_k_j_1_1_inventory}{Inventory}}();}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00099}00099\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_player_a86d98daafe4ccc39cf108b13305bb22e}{buffs}}\ =\ \textcolor{keyword}{new}\ List<string>();}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00100}00100\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00101}00101\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00102}00102\ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00106}00106\ \ \ \ \ [System.Serializable]}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00107}\mbox{\hyperlink{class_k_j_1_1_inventory}{00107}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_inventory}{Inventory}}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00108}00108\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00109}\mbox{\hyperlink{class_k_j_1_1_inventory_aa4587d78d535425a8ddc6006f289699e}{00109}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ List<Item>\ \mbox{\hyperlink{class_k_j_1_1_inventory_aa4587d78d535425a8ddc6006f289699e}{items}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00111}\mbox{\hyperlink{class_k_j_1_1_inventory_a116cbf1d79f5a27b14d03749dc989a97}{00111}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_k_j_1_1_inventory_a116cbf1d79f5a27b14d03749dc989a97}{Inventory}}()}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00112}00112\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00113}00113\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_inventory_aa4587d78d535425a8ddc6006f289699e}{items}}\ =\ \textcolor{keyword}{new}\ List<Item>();}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00114}00114\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00115}00115\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00116}00116\ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00120}00120\ \ \ \ \ [System.Serializable]}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00121}\mbox{\hyperlink{class_k_j_1_1_inventory_data}{00121}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_inventory_data}{InventoryData}}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00122}00122\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00123}\mbox{\hyperlink{class_k_j_1_1_inventory_data_aaa1a8d93ccc719f29a7f9319a67c5c82}{00123}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_inventory_data_aaa1a8d93ccc719f29a7f9319a67c5c82}{id}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00124}\mbox{\hyperlink{class_k_j_1_1_inventory_data_a75dce9cd4d8f5716dca7b2f46d366037}{00124}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_k_j_1_1_inventory_data_a75dce9cd4d8f5716dca7b2f46d366037}{quantity}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00125}00125\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00126}00126\ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00130}\mbox{\hyperlink{namespace_k_j_ad645fce3d83ece74624080e6f4aeae9e}{00130}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespace_k_j_ad645fce3d83ece74624080e6f4aeae9e}{ClassType}}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00131}00131\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00132}00132\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_k_j_ad645fce3d83ece74624080e6f4aeae9eaefead51028a03db2d63f0e79ba032a82}{knight}},}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00133}00133\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_k_j_ad645fce3d83ece74624080e6f4aeae9ea7ff5defb01eba61a2e1039a79805c2b6}{barbarian}},}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00134}00134\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_k_j_ad645fce3d83ece74624080e6f4aeae9ea44ac6119a7a7a60e65a3e2b852ebd6c0}{rogue}},}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00135}00135\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_k_j_ad645fce3d83ece74624080e6f4aeae9ea9a519a0f7d29f1ffa549fada8b667b02}{mage}}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00136}00136\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00137}00137\ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00141}00141\ \ \ \ \ [System.Serializable]}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00142}\mbox{\hyperlink{class_k_j_1_1_class}{00142}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_class}{Class}}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00143}00143\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00144}\mbox{\hyperlink{class_k_j_1_1_class_ab1632f23f916c754679d7c531aa70377}{00144}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{namespace_k_j_ad645fce3d83ece74624080e6f4aeae9e}{ClassType}}\ \mbox{\hyperlink{class_k_j_1_1_class_ab1632f23f916c754679d7c531aa70377}{classType}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00145}\mbox{\hyperlink{class_k_j_1_1_class_a101d272ebe61816190ecf95c9c45d9df}{00145}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_class_a101d272ebe61816190ecf95c9c45d9df}{name}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00146}\mbox{\hyperlink{class_k_j_1_1_class_a2bc13dc6a61a2319e23c5f292a6cce82}{00146}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_class_a2bc13dc6a61a2319e23c5f292a6cce82}{baseHp}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00147}\mbox{\hyperlink{class_k_j_1_1_class_a84348f753633d2cf0dcbb881ebe7b622}{00147}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_class_a84348f753633d2cf0dcbb881ebe7b622}{baseSp}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00148}\mbox{\hyperlink{class_k_j_1_1_class_afd1615f11074b4cbce546322c13a4a2f}{00148}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_k_j_1_1_inventory}{Inventory}}\ \mbox{\hyperlink{class_k_j_1_1_class_afd1615f11074b4cbce546322c13a4a2f}{inventory}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00149}\mbox{\hyperlink{class_k_j_1_1_class_a76793959c7d947568f7454eeae5b9d1d}{00149}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ List<Skill>\ \mbox{\hyperlink{class_k_j_1_1_class_a76793959c7d947568f7454eeae5b9d1d}{skills}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00150}\mbox{\hyperlink{class_k_j_1_1_class_a1460e74acf715ef8495ac1945e1369b9}{00150}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_k_j_1_1_class_a1460e74acf715ef8495ac1945e1369b9}{gold}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00151}00151\ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00152}\mbox{\hyperlink{class_k_j_1_1_class_a99e5b4b7a8961e93027ce22a9e96753d}{00152}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_k_j_1_1_class_a99e5b4b7a8961e93027ce22a9e96753d}{Class}}()}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00153}00153\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00154}00154\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_class_afd1615f11074b4cbce546322c13a4a2f}{inventory}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_k_j_1_1_inventory}{Inventory}}();}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00155}00155\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_class_a76793959c7d947568f7454eeae5b9d1d}{skills}}\ =\ \textcolor{keyword}{new}\ List<Skill>();}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00156}00156\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00157}00157\ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00158}00158\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00159}00159\ }
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00163}00163\ \ \ \ \ [System.Serializable]}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00164}\mbox{\hyperlink{class_k_j_1_1_skill}{00164}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_skill}{Skill}}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00165}00165\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00166}\mbox{\hyperlink{class_k_j_1_1_skill_aed3222a6113c6334f8d95cad90632125}{00166}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_skill_aed3222a6113c6334f8d95cad90632125}{id}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00167}\mbox{\hyperlink{class_k_j_1_1_skill_ad229fd7a5d95acdcab5918c6d01d3c3c}{00167}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_skill_ad229fd7a5d95acdcab5918c6d01d3c3c}{name}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00168}\mbox{\hyperlink{class_k_j_1_1_skill_a3b9d17deeb89972a27c72c70d36ac408}{00168}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_skill_a3b9d17deeb89972a27c72c70d36ac408}{description}};}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00169}00169\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data_model_8cs_source_l00170}00170\ \}}
+
+\end{DoxyCode}

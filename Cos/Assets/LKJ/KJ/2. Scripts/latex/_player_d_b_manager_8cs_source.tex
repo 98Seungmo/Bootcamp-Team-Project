@@ -1,0 +1,100 @@
+\doxysection{Player\+DBManager.\+cs}
+\hypertarget{_player_d_b_manager_8cs_source}{}\label{_player_d_b_manager_8cs_source}\index{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/06. DatabaseScripts/PlayerDBManager.cs@{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/06. DatabaseScripts/PlayerDBManager.cs}}
+\mbox{\hyperlink{_player_d_b_manager_8cs}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_k_j}{KJ}};}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }System.Runtime.CompilerServices;}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }System.Security.Cryptography;}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00006}00006\ \textcolor{keyword}{using\ }System.Text;}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00007}00007\ \textcolor{keyword}{using\ }UnityEditor;}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00008}00008\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00009}00009\ \textcolor{keyword}{using\ }UnityEngine.Playables;}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00011}00011\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_k_j}{KJ}}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00012}00012\ \{}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00016}00016\ \ \ \ \ \textcolor{comment}{/*\ UID\ 를\ 해시함수를\ 이용해서\ ShortUID\ 로\ 변환.\ */}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00017}\mbox{\hyperlink{class_k_j_1_1_u_i_d_helper}{00017}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_u_i_d_helper}{UIDHelper}}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00018}00018\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00019}\mbox{\hyperlink{class_k_j_1_1_u_i_d_helper_a3ef91f886a34678596c3fdbc1ed2b2a9}{00019}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_u_i_d_helper_a3ef91f886a34678596c3fdbc1ed2b2a9}{GenerateShortUID}}(\textcolor{keywordtype}{string}\ longUID)}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{using}\ (SHA256\ sha256Hash\ =\ SHA256.Create())}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ SHA256\ 해시\ 값을\ 계산.\ */}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{byte}[]\ bytes\ =\ sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(longUID));}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 바이트\ 배열을\ String\ 으로\ 변환.\ */}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ StringBuilder\ builder\ =\ \textcolor{keyword}{new}\ StringBuilder();}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ bytes.Length;\ i++)}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ builder.Append(bytes[i].ToString(\textcolor{stringliteral}{"{}x2"{}}));}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 해시값의\ 앞부분만\ 사용하여\ ShortUID\ 생성.\ */}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ builder.ToString().Substring(0,\ 8);\ \ \textcolor{comment}{//\ 앞의\ 8자리만\ 사용}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00037}00037\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00042}\mbox{\hyperlink{class_k_j_1_1_player_d_b_manager}{00042}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_player_d_b_manager}{PlayerDBManager}}\ :\ \mbox{\hyperlink{class_k_j_1_1_singleton_lazy}{SingletonLazy}}<PlayerDBManager>}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00043}00043\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00045}\mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_a59791c4ea1e33bac1c0160508b6fad6c}{00045}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_a59791c4ea1e33bac1c0160508b6fad6c}{Start}}()}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00053}\mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_a089ac4f1a9d2580541faa6c070b1126d}{00053}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ IEnumerator\ \mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_a089ac4f1a9d2580541faa6c070b1126d}{LoadPlayerDB}}()}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ yield\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_k_j_1_1_net_data}{NetData}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}.LoadPlayerDB();}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00058}\mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_aede8e621c31ede12f985727fb1fe8e65}{00058}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_aede8e621c31ede12f985727fb1fe8e65}{CurrentShortUID}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{private}\ \textcolor{keyword}{set};\ \}\ }
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00065}\mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_af9809ac5de84255f6685fec950a80a1a}{00065}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_af9809ac5de84255f6685fec950a80a1a}{SaveOrUpdatePlayerData}}(\textcolor{keywordtype}{string}\ UID,\ \mbox{\hyperlink{class_k_j_1_1_player}{Player}}\ playerData)}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ shortUID\ =\ \mbox{\hyperlink{class_k_j_1_1_u_i_d_helper}{UIDHelper}}.\mbox{\hyperlink{class_k_j_1_1_u_i_d_helper_a3ef91f886a34678596c3fdbc1ed2b2a9}{GenerateShortUID}}(UID);}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_aede8e621c31ede12f985727fb1fe8e65}{CurrentShortUID}}\ =\ shortUID;}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ playerData.shortUID\ =\ shortUID;}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_game_data}{GameData}}\ \_gamedata\ =\ \mbox{\hyperlink{class_k_j_1_1_net_data}{NetData}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}.\_gameData;}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_gamedata.\mbox{\hyperlink{class_k_j_1_1_game_data_a5217f6bcdc8008030aaa16d07caba6db}{players}}.ContainsKey(shortUID))}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_gamedata.\mbox{\hyperlink{class_k_j_1_1_game_data_a5217f6bcdc8008030aaa16d07caba6db}{players}}[shortUID]\ =\ playerData;}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_gamedata.\mbox{\hyperlink{class_k_j_1_1_game_data_a5217f6bcdc8008030aaa16d07caba6db}{players}}.Add(shortUID,\ playerData);}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00081}00081\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00082}00082\ }
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00087}\mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_a16e5ec9ced71b37678c18cf0ef150a73}{00087}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_a16e5ec9ced71b37678c18cf0ef150a73}{CheckPlayerData}}(\textcolor{keywordtype}{string}\ shortUID)}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00088}00088\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keywordtype}{string}.IsNullOrEmpty(shortUID))\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00090}00090\ }
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_game_data}{GameData}}\ \_gamedata\ =\ \mbox{\hyperlink{class_k_j_1_1_net_data}{NetData}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}.\_gameData;}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_gamedata.\mbox{\hyperlink{class_k_j_1_1_game_data_a5217f6bcdc8008030aaa16d07caba6db}{players}}.ContainsKey(shortUID);}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00093}00093\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00099}\mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_a154ceb86d2419739db43cdcdebf014d4}{00099}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_k_j_1_1_player}{Player}}\ \mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_a154ceb86d2419739db43cdcdebf014d4}{LoadGameData}}(\textcolor{keywordtype}{string}\ shortUID)}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00100}00100\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00101}00101\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_game_data}{GameData}}\ \_gamedata\ =\ \mbox{\hyperlink{class_k_j_1_1_net_data}{NetData}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}.\_gameData;}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_gamedata.\mbox{\hyperlink{class_k_j_1_1_game_data_a5217f6bcdc8008030aaa16d07caba6db}{players}}.TryGetValue(shortUID,\ out\ \mbox{\hyperlink{class_k_j_1_1_player}{Player}}\ playerData))}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 플레이어\ 위치나\ 인벤토리\ 그리고\ 능력치\ 및\ 설정\ 저장.\ */}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00105}00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ playerData;}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00109}00109\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 새\ 플레이어\ 생성\ 로직\ 추가.\ */}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00110}00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00112}00112\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00113}00113\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00114}00114\ \}}
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00115}00115\ }
+\DoxyCodeLine{\Hypertarget{_player_d_b_manager_8cs_source_l00116}00116\ }
+
+\end{DoxyCode}

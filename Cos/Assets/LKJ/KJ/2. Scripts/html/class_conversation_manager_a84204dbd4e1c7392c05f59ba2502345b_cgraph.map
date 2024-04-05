@@ -1,0 +1,11 @@
+<map id="ConversationManager.StartDialogue" name="ConversationManager.StartDialogue">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,183,77"/>
+<area shape="rect" id="Node000002" href="$class_conversation_manager.html#a4f72a3928121af9b41b8634a8f16315c" title=" " alt="" coords="231,35,423,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,53,215,53,215,59,183,59"/>
+<area shape="rect" id="Node000003" href="$class_conversation_manager.html#a9d9159a3f0a5d8e1f1fec7f67b95603f" title=" " alt="" coords="471,13,693,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="423,42,455,39,456,44,424,48"/>
+<area shape="rect" id="Node000005" href="$class_conversation_manager.html#aa940ace45639cee27217b87796d5d63e" title=" " alt="" coords="494,64,671,107"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="424,64,478,71,478,76,423,70"/>
+<area shape="rect" id="Node000004" href="$class_conversation_manager.html#a65cb3f82b4b3deaab95e53d1a969c044" title=" " alt="" coords="741,5,925,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="694,24,726,24,726,29,694,29"/>
+</map>

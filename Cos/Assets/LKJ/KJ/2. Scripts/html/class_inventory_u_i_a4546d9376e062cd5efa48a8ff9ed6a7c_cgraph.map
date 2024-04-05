@@ -1,0 +1,7 @@
+<map id="InventoryUI.RemoveItem" name="InventoryUI.RemoveItem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,165,57"/>
+<area shape="rect" id="Node000002" href="$class_inventory_u_i.html#aa943337b5cd8f88a9b6e4600379c64f9" title=" " alt="" coords="213,5,380,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,32,197,28,197,33,166,37"/>
+<area shape="rect" id="Node000003" href="$class_inventory_u_i.html#a4dce53dc949fee5f89e459d71024c876" title=" " alt="" coords="218,56,375,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,51,202,55,202,61,165,56"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="KJ.InventoryUI.UpdateInventoryUI" name="KJ.InventoryUI.UpdateInventoryUI">
+<area shape="rect" id="Node000001" title="현재 인벤토리에서 해당 아이템 탐색 후 아이템 추가" alt="" coords="5,31,217,57"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_inventory_u_i.html#affb40b65afbe8132d1174daaa371d46d" title="인벤토리에 아이템 추가" alt="" coords="265,31,420,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,41,249,41,249,47,217,47"/>
+<area shape="rect" id="Node000003" href="$class_k_j_1_1_inventory_u_i.html#afd47337b80ad4f592c7d726c58c8a967" title="아이템 생성시 슬롯 생성" alt="" coords="477,5,645,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="420,32,461,28,462,33,421,38"/>
+<area shape="rect" id="Node000004" href="$class_k_j_1_1_inventory_u_i.html#aefe22e48614542676963d404c998c63d" title="아이템 DB 에서 주어진 ID 를 가진 아이템 찾음" alt="" coords="468,56,654,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="421,50,453,54,452,59,420,56"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="KJ.EnemyBarsManager" name="KJ.EnemyBarsManager">
+<area shape="rect" id="Node000001" title="보스 및 적들 체력바 설정" alt="" coords="5,80,164,107"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="30,5,139,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,48,87,80,82,80,82,48"/>
+</map>

@@ -1,0 +1,102 @@
+\doxysection{KJ.\+Resolution\+Manager 클래스 참조}
+\hypertarget{class_k_j_1_1_resolution_manager}{}\label{class_k_j_1_1_resolution_manager}\index{KJ.ResolutionManager@{KJ.ResolutionManager}}
+
+
+해상도 설정  
+
+
+
+
+KJ.\+Resolution\+Manager에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_k_j_1_1_resolution_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+KJ.\+Resolution\+Manager에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_k_j_1_1_resolution_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_k_j_1_1_resolution_manager_aab2e3ee4da580950e32c37a8ba2623a8}{Set\+Game\+FHD}} (int width, int height, bool is\+Full\+Screen)
+\begin{DoxyCompactList}\small\item\em FHD 해상도 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_k_j_1_1_resolution_manager_a8156fdd617682dc41bb55a4c1046310c}{Set\+Game\+QHD}} (int width, int height, bool is\+Full\+Screen)
+\begin{DoxyCompactList}\small\item\em QHD 해상도 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+해상도 설정 
+
+\mbox{\hyperlink{_resolution_manager_8cs_source}{Resolution\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_resolution_manager_8cs_source_l00010}{10}} 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\Hypertarget{class_k_j_1_1_resolution_manager_aab2e3ee4da580950e32c37a8ba2623a8}\label{class_k_j_1_1_resolution_manager_aab2e3ee4da580950e32c37a8ba2623a8} 
+\index{KJ.ResolutionManager@{KJ.ResolutionManager}!SetGameFHD@{SetGameFHD}}
+\index{SetGameFHD@{SetGameFHD}!KJ.ResolutionManager@{KJ.ResolutionManager}}
+\doxysubsubsection{\texorpdfstring{SetGameFHD()}{SetGameFHD()}}
+{\footnotesize\ttfamily void KJ.\+Resolution\+Manager.\+Set\+Game\+FHD (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{bool}]{is\+Full\+Screen }\end{DoxyParamCaption})}
+
+
+
+FHD 해상도 
+
+
+\begin{DoxyParams}[1]{매개변수}
+\mbox{\texttt{ in}}  & {\em width} & 넓이 \\
+\hline
+\mbox{\texttt{ in}}  & {\em height} & 높이 \\
+\hline
+\mbox{\texttt{ in}}  & {\em is\+Full\+Screen} & 전체화면 가능 여부 \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{_resolution_manager_8cs_source}{Resolution\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_resolution_manager_8cs_source_l00018}{18}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}FHD\ 해상도로\ 변경!"{}});}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 화면을\ 1920\ x\ 1080,\ 전체화면\ 가능하게\ 만듬\ */}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ Screen.SetResolution(1920,\ 1080,\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_k_j_1_1_resolution_manager_a8156fdd617682dc41bb55a4c1046310c}\label{class_k_j_1_1_resolution_manager_a8156fdd617682dc41bb55a4c1046310c} 
+\index{KJ.ResolutionManager@{KJ.ResolutionManager}!SetGameQHD@{SetGameQHD}}
+\index{SetGameQHD@{SetGameQHD}!KJ.ResolutionManager@{KJ.ResolutionManager}}
+\doxysubsubsection{\texorpdfstring{SetGameQHD()}{SetGameQHD()}}
+{\footnotesize\ttfamily void KJ.\+Resolution\+Manager.\+Set\+Game\+QHD (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{bool}]{is\+Full\+Screen }\end{DoxyParamCaption})}
+
+
+
+QHD 해상도 
+
+
+
+\mbox{\hyperlink{_resolution_manager_8cs_source}{Resolution\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_resolution_manager_8cs_source_l00028}{28}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}QHD\ 해상도로\ 변경!"{}});}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 화면을\ 2560\ x\ 1440,\ 전체화면\ 가능하게\ 만듬\ */}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ Screen.SetResolution(2560,\ 1440,\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+LKJ/\+Documents/\+Git\+Hub/\+Bootcamp-\/\+Team-\/\+Project/\+Cos/\+Assets/\+LKJ/\+KJ/2. Scripts/01. Etc/\+Settings/\mbox{\hyperlink{_resolution_manager_8cs}{Resolution\+Manager.\+cs}}\end{DoxyCompactItemize}

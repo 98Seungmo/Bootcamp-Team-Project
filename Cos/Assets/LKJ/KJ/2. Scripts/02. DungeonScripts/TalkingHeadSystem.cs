@@ -3,58 +3,72 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class TalkingHeadSystem : MonoBehaviour
+namespace KJ
 {
-    [Header("talking head")]
-    /* talking head ui */
-    public GameObject talkingHead;
-    /* talking head text */
-    public TMP_Text talkingHeadText;
-    [Header("sectionid")]
-    public int sectionID;
-
-    void Start()
+    public class TalkingHeadSystem : MonoBehaviour
     {
-        talkingHead.SetActive(false);
-    }
+        [Header("talking head")]
+        public GameObject talkingHead; ///< Talking Head UI
+        public TMP_Text talkingHeadText; ///< Talking Head 텍스트
+        [Header("sectionid")]
+        public int sectionID; ///< Talking Head 나타날 구역 ID
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
+        /**
+         * @brief 처음 토킹헤드 비활성화
+         */
+        void Start()
         {
-            Debug.Log("충돌?");
-            switch (sectionID)
-            {
-                case 1:
-                    talkingHeadText.text = "첫 번째 방";
-                    break;
-                case 2:
-                    talkingHeadText.text = "두 번째 방";
-                    break;
-            }
-            Debug.Log("코루틴 불러옴");
-            ShowTalkingHeadUI();
+            talkingHead.SetActive(false);
         }
-    }
-    
-    /* TalkingHead 보여줌 */
-    public void ShowTalkingHeadUI()
-    {
-        Debug.Log("UI 시작");
-        talkingHead.SetActive(true);
-        StartCoroutine(TalkingHeadTimer(3));
-    }
 
-    /* x 초 뒤에 TalkingHeadUI 사라짐 */
-    IEnumerator TalkingHeadTimer(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        HideTalkingHeadUI();
-    }
+        /**
+         * @brief switch 문으로 구역 진입시 토킹헤드 나타나기 위한 구역들 나열
+         * @param[in] other 구역 충돌 지점
+         */
+        void OnTriggerEnter(Collider other)
+        {
+            if (other.tag == "Player")
+            {
+                Debug.Log("충돌?");
+                switch (sectionID)
+                {
+                    case 1:
+                        talkingHeadText.text = "첫 번째 방";
+                        break;
+                    case 2:
+                        talkingHeadText.text = "두 번째 방";
+                        break;
+                }
+                Debug.Log("코루틴 불러옴");
+                ShowTalkingHeadUI();
+            }
+        }
 
-    /* TalkingHead 사라짐. */
-    public void HideTalkingHeadUI()
-    {
-        talkingHead.SetActive(false);
+        /**
+         * @brief UI 활성화
+         */
+        public void ShowTalkingHeadUI()
+        {
+            Debug.Log("UI 시작");
+            talkingHead.SetActive(true);
+            StartCoroutine(TalkingHeadTimer(3));
+        }
+
+        /**
+         * @brief x 초뒤에 UI 사라짐
+         */
+        IEnumerator TalkingHeadTimer(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            HideTalkingHeadUI();
+        }
+
+        /**
+         * @brief UI 비활성화
+         */
+        public void HideTalkingHeadUI()
+        {
+            talkingHead.SetActive(false);
+        }
     }
 }

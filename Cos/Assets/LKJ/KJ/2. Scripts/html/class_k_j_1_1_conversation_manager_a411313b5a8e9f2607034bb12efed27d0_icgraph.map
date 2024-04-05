@@ -1,0 +1,8 @@
+<map id="KJ.ConversationManager.InteractionWithNPC" name="KJ.ConversationManager.InteractionWithNPC">
+<area shape="rect" id="Node000001" title="상호작용 NPC" alt="" coords="507,35,735,77"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_conversation_manager.html#abb6f0a36823f275bb6eb1392fd36b805" title="대화 상태" alt="" coords="263,5,459,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="491,44,459,40,460,35,492,39"/>
+<area shape="rect" id="Node000003" href="$class_k_j_1_1_conversation_manager.html#a6ee18dd0bc0249b705b390d7ac97bcb7" title="Raycast 를 이용하여 해당 키(F)를 누르면 상호작용 활성화" alt="" coords="5,43,215,69"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="492,62,459,63,263,63,215,62,215,56,263,57,459,57,491,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="247,43,215,46,215,41,247,37"/>
+</map>

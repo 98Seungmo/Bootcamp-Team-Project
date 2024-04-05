@@ -1,0 +1,5 @@
+<map id="KJ.CameraZoomManager.AdjustZoom" name="KJ.CameraZoomManager.AdjustZoom">
+<area shape="rect" id="Node000001" title="Orthographic Size 값 조절" alt="" coords="253,5,493,32"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_camera_zoom_manager.html#ac1ad1eff3f371e48196dcd264c46307b" title="슬라이더 조절에 따라 카메라 줌 인 아웃 설정" alt="" coords="5,5,205,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,21,205,21,205,16,237,16"/>
+</map>

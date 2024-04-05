@@ -1,0 +1,11 @@
+<map id="InventoryUI.GetItItemById" name="InventoryUI.GetItItemById">
+<area shape="rect" id="Node000001" title=" " alt="" coords="453,56,620,83"/>
+<area shape="rect" id="Node000002" href="$class_inventory_u_i.html#a208fe0f0dae6def3bd2a114bfc4a2e6f" title=" " alt="" coords="257,31,394,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="438,60,393,55,394,50,438,55"/>
+<area shape="rect" id="Node000005" href="$class_inventory_u_i.html#a4546d9376e062cd5efa48a8ff9ed6a7c" title=" " alt="" coords="246,81,405,108"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="438,84,406,88,405,82,437,79"/>
+<area shape="rect" id="Node000003" href="$class_inventory_u_i.html#a3860766b4516c00d581323d0bb55bb63" title=" " alt="" coords="43,5,160,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="242,37,160,28,161,23,242,32"/>
+<area shape="rect" id="Node000004" href="$class_inventory_u_i.html#a99b38b50627d6827a4a2ec36310c93be" title=" " alt="" coords="5,56,198,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="242,56,198,61,198,56,242,51"/>
+</map>

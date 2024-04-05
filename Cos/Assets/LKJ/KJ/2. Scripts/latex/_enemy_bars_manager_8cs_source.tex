@@ -1,0 +1,61 @@
+\doxysection{Enemy\+Bars\+Manager.\+cs}
+\hypertarget{_enemy_bars_manager_8cs_source}{}\label{_enemy_bars_manager_8cs_source}\index{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/02. DungeonScripts/EnemyBarsManager.cs@{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/02. DungeonScripts/EnemyBarsManager.cs}}
+\mbox{\hyperlink{_enemy_bars_manager_8cs}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }TMPro;}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }UnityEngine.UI;}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00007}00007\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_k_j}{KJ}}}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00008}00008\ \{}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00012}\mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager}{00012}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager}{EnemyBarsManager}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00013}00013\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00014}00014\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}Boss"{}})]}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00015}\mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a7a41a3b5d0407dabcb985b3e9ff82fff}{00015}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Slider\ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a7a41a3b5d0407dabcb985b3e9ff82fff}{bossHpSlider}};\ }
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00016}00016\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}Enemy"{}})]}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00017}\mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a9055e29cafdc14040d067187ad795314}{00017}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Slider\ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a9055e29cafdc14040d067187ad795314}{enemyHpSlider}};\ }
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}Cur\ /\ Max"{}})]}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00019}\mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_afb00dc67cd3a6dc86a2a1e12815551b2}{00019}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ TMP\_Text\ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_afb00dc67cd3a6dc86a2a1e12815551b2}{bossHpCur}};\ }
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00020}\mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a4b8fe55e3dc3380736d36988000b2170}{00020}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ TMP\_Text\ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a4b8fe55e3dc3380736d36988000b2170}{bossHpMax}};\ }
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00021}\mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_afc9131edc3143b44cc0d246e76490f7d}{00021}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ TMP\_Text\ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_afc9131edc3143b44cc0d246e76490f7d}{enemyHpCur}};\ }
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00022}\mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a9a20d65f7444399d240f4ce63e399e85}{00022}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ TMP\_Text\ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a9a20d65f7444399d240f4ce63e399e85}{enemyHpMax}};\ }
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}MaxHp"{}})]}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00024}\mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a65817375514a7d06fb76916faf830286}{00024}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a65817375514a7d06fb76916faf830286}{maxBossHp}}\ =\ 500f;\ }
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00025}\mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_af18b84c0fc475418b836eecafba7366a}{00025}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_af18b84c0fc475418b836eecafba7366a}{maxEnemyHp}}\ =\ 80f;\ }
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00027}\mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a540fc26c2701876019c3ca2a936f1099}{00027}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a540fc26c2701876019c3ca2a936f1099}{\_currentBossHp}};\ }
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00028}\mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a4ac7a46a255a7f7d499faf028b558ab3}{00028}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a4ac7a46a255a7f7d499faf028b558ab3}{\_currentEnemyHp}};\ }
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00033}\mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a946832f78216faa3af4fe8c0c8c4d7c4}{00033}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a946832f78216faa3af4fe8c0c8c4d7c4}{Start}}()}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 초기\ 체력\ 설정.\ */}}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a540fc26c2701876019c3ca2a936f1099}{\_currentBossHp}}\ =\ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a65817375514a7d06fb76916faf830286}{maxBossHp}};}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a4ac7a46a255a7f7d499faf028b558ab3}{\_currentEnemyHp}}\ =\ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_af18b84c0fc475418b836eecafba7366a}{maxEnemyHp}};}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 슬라이더\ 최대값\ 최대\ 체력으로\ 설정.\ */}}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ bossHpSlider.maxValue\ =\ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a65817375514a7d06fb76916faf830286}{maxBossHp}};}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ enemyHpSlider.maxValue\ =\ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_af18b84c0fc475418b836eecafba7366a}{maxEnemyHp}};}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a77cab24cd616e1111b061dfd44edc099}{UpdateTargetUI}}();}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00047}\mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a41d96bf0d26be629779e19d4f7fab133}{00047}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a41d96bf0d26be629779e19d4f7fab133}{Update}}()}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a77cab24cd616e1111b061dfd44edc099}{UpdateTargetUI}}();}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00055}\mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a77cab24cd616e1111b061dfd44edc099}{00055}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a77cab24cd616e1111b061dfd44edc099}{UpdateTargetUI}}()}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Slider,\ 텍스트\ 업데이트\ */}}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ bossHpSlider.value\ =\ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a540fc26c2701876019c3ca2a936f1099}{\_currentBossHp}};}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ bossHpCur.text\ =\ \$\textcolor{stringliteral}{"{}\{\_currentBossHp\}"{}};}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ bossHpMax.text\ =\ \$\textcolor{stringliteral}{"{}\{maxBossHp\}"{}};}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ enemyHpSlider.value\ =\ \mbox{\hyperlink{class_k_j_1_1_enemy_bars_manager_a4ac7a46a255a7f7d499faf028b558ab3}{\_currentEnemyHp}};}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ enemyHpCur.text\ =\ \$\textcolor{stringliteral}{"{}\{\_currentEnemyHp\}"{}};}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ enemyHpMax.text\ =\ \$\textcolor{stringliteral}{"{}\{maxEnemyHp\}"{}};}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00066}00066\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_enemy_bars_manager_8cs_source_l00067}00067\ \}}
+
+\end{DoxyCode}

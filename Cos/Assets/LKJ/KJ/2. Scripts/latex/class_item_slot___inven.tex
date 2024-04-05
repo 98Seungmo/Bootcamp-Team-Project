@@ -1,0 +1,119 @@
+\doxysection{Item\+Slot\+\_\+\+Inven 클래스 참조}
+\hypertarget{class_item_slot___inven}{}\label{class_item_slot___inven}\index{ItemSlot\_Inven@{ItemSlot\_Inven}}
+
+
+Item\+Slot\+\_\+\+Inven에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{class_item_slot___inven__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Item\+Slot\+\_\+\+Inven에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{class_item_slot___inven__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_item_slot___inven_a20e1b0eea10288109d457c8e05fe44db}{On\+Button\+Click}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_item_slot___inven_ac4bbef2974d11d89903fe523a589825c}{\+\_\+itemidx}} = string.\+Empty
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_item_slot___inven_aec1d6ab1f11c1c8aa219861c327e71d6}{Start}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+\mbox{\hyperlink{_item_slot___inven_8cs_source}{Item\+Slot\+\_\+\+Inven.\+cs}} 파일의 \mbox{\hyperlink{_item_slot___inven_8cs_source_l00007}{7}} 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\Hypertarget{class_item_slot___inven_a20e1b0eea10288109d457c8e05fe44db}\label{class_item_slot___inven_a20e1b0eea10288109d457c8e05fe44db} 
+\index{ItemSlot\_Inven@{ItemSlot\_Inven}!OnButtonClick@{OnButtonClick}}
+\index{OnButtonClick@{OnButtonClick}!ItemSlot\_Inven@{ItemSlot\_Inven}}
+\doxysubsubsection{\texorpdfstring{OnButtonClick()}{OnButtonClick()}}
+{\footnotesize\ttfamily void Item\+Slot\+\_\+\+Inven.\+On\+Button\+Click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{_item_slot___inven_8cs_source}{Item\+Slot\+\_\+\+Inven.\+cs}} 파일의 \mbox{\hyperlink{_item_slot___inven_8cs_source_l00017}{17}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00018\ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_menu_u_i_manager}{MenuUIManager}}\ mag\ \ =\ \mbox{\hyperlink{class_menu_u_i_manager}{MenuUIManager}}.\mbox{\hyperlink{class_menu_u_i_manager_adbdb04b0fbd1d145cd22afcd4794644e}{Instance}};}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inventory_u_i}{InventoryUI}}\ invUI\ =\ mag.GetComponent<\mbox{\hyperlink{class_inventory_u_i}{InventoryUI}}>();}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_item}{KJ.Item}}\ item\ =\ invUI.\mbox{\hyperlink{class_inventory_u_i_a06b12583a324d25d1db38f021078a228}{\_inventory}}.\mbox{\hyperlink{class_k_j_1_1_inventory_aa4587d78d535425a8ddc6006f289699e}{items}}.Find(item\ =>\ item.id\ ==\ \mbox{\hyperlink{class_item_slot___inven_ac4bbef2974d11d89903fe523a589825c}{\_itemidx}});}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}OnButtonClick:\ "{}}+\ item.imagePath);}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}OnButtonClick:\ "{}}\ +\ item.type);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ Sprite\ s\ =\ \mbox{\hyperlink{class_k_j_1_1_item_d_b_manager}{ItemDBManager}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}.LoadItemSprite(item.imagePath);}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (item.type)}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}weapon"{}}:}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ mag.\_img\_weapon.sprite\ =\ s;}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}armor"{}}:}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ mag.\_img\_armor.sprite\ =\ s;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}accessory"{}}:}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ mag.\_img\_accessory.sprite\ =\ s;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_item_slot___inven_aec1d6ab1f11c1c8aa219861c327e71d6}\label{class_item_slot___inven_aec1d6ab1f11c1c8aa219861c327e71d6} 
+\index{ItemSlot\_Inven@{ItemSlot\_Inven}!Start@{Start}}
+\index{Start@{Start}!ItemSlot\_Inven@{ItemSlot\_Inven}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Item\+Slot\+\_\+\+Inven.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{_item_slot___inven_8cs_source}{Item\+Slot\+\_\+\+Inven.\+cs}} 파일의 \mbox{\hyperlink{_item_slot___inven_8cs_source_l00011}{11}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00012\ \ \ \ \ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\Hypertarget{class_item_slot___inven_ac4bbef2974d11d89903fe523a589825c}\label{class_item_slot___inven_ac4bbef2974d11d89903fe523a589825c} 
+\index{ItemSlot\_Inven@{ItemSlot\_Inven}!\_itemidx@{\_itemidx}}
+\index{\_itemidx@{\_itemidx}!ItemSlot\_Inven@{ItemSlot\_Inven}}
+\doxysubsubsection{\texorpdfstring{\_itemidx}{\_itemidx}}
+{\footnotesize\ttfamily string Item\+Slot\+\_\+\+Inven.\+\_\+itemidx = string.\+Empty}
+
+
+
+\mbox{\hyperlink{_item_slot___inven_8cs_source}{Item\+Slot\+\_\+\+Inven.\+cs}} 파일의 \mbox{\hyperlink{_item_slot___inven_8cs_source_l00009}{9}} 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+LKJ/\+Documents/\+Git\+Hub/\+Bootcamp-\/\+Team-\/\+Project/\+Cos/\+Assets/\+LKJ/\+KJ/2. Scripts/05. Village\+Scripts/\mbox{\hyperlink{_item_slot___inven_8cs}{Item\+Slot\+\_\+\+Inven.\+cs}}\end{DoxyCompactItemize}

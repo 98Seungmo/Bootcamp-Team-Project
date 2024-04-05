@@ -10,17 +10,26 @@ using UnityEngine.UI;
 
 namespace KJ
 {
+    /**
+     * @brief 로그인 시 필요한 UI 및 기능 구현
+     */
     public class LoginManager : MonoBehaviour
     {
         #region 설정창 열고 닫기
         [Header("SettingUI On/Off")]
-        [SerializeField] private GameObject _settingUI;
+        [SerializeField] private GameObject _settingUI; ///< 옵션창 
 
+        /**
+         * @brief 옵션창 활성화
+         */
         public void OpenSettingUI()
         {
             _settingUI.SetActive(true);
         }
 
+        /**
+         * @brief 옵션창 비활성화
+         */
         public void CloseSettingUI()
         {
             _settingUI.SetActive(false);
@@ -28,19 +37,28 @@ namespace KJ
         #endregion
         #region 게임 시작시 로그인 창 열기, X 누르면 닫기
         [Header("Login On/Off")]
-        [SerializeField] private GameObject _logInUI;
+        [SerializeField] private GameObject _logInUI; ///< 로그인창
 
+        /**
+         * @brief 로그인창 활성화
+         */
         public void OpenLogIn()
         {
             _logInUI.SetActive(true);
         }
 
+        /**
+         * @brief 로그인창 비활성화
+         */
         public void CloseLogIn()
         {
             _logInUI.SetActive(false);
         }
         #endregion
         #region 게임 종료 (현재는 테스트씬으로 이동)
+        /**
+         * @brief 게임 종료
+         */
         public void Quit()
         {
 #if UNITY_EDITOR
@@ -52,6 +70,9 @@ namespace KJ
         #endregion
         #region 로그인 하면 로딩창으로 이동
 
+        /**
+         * @brief 로그인 시도 후 성공하면 로딩창으로 이동, 실패하면 로그인 실패
+         */
         public void AttemptLogin()
         {
             FirebaseAuthManager.Instance.LoginButton(Result =>
@@ -70,67 +91,76 @@ namespace KJ
         #endregion
         #region 회원가입창 열고 닫기
         [Header("RegisterUI On/Off")]
-        [SerializeField] private GameObject _registerUI;
+        [SerializeField] private GameObject _registerUI; ///< 회원가입창
 
+        /**
+         * @brief 회원가입창 활성화
+         */
         public void OpenRegister()
         {
             _registerUI.SetActive(true);
         }
 
+        /**
+         * @brief 회원가입창 비활성화
+         */
         public void CloseRegister()
         {
             _registerUI.SetActive(false);
         }
         #endregion
         #region InputField 이미지 숨기기
-        // InputField 와 Image 를 1대1 매칭하기 위한 Dictionary.
+        /// InputField 와 Image 를 1대1 매칭하기 위한 Dictionary
         private Dictionary<TMP_InputField, GameObject> _inputFieldImageMap = new Dictionary<TMP_InputField, GameObject>();
 
         [Header("ImageToHide")]
         /* Login */
-        public TMP_InputField emailLogin;
-        public TMP_InputField passwordLogin;
+        public TMP_InputField emailLogin; ///< 이메일 로그인
+        public TMP_InputField passwordLogin; ///< 비밀번호 로그인
         /* Register */
-        public TMP_InputField usernameRegister;
-        public TMP_InputField emailRegister;
-        public TMP_InputField passwordRegister;
-        public TMP_InputField passwordCheckRegister;
+        public TMP_InputField usernameRegister; ///< 유저 이름
+        public TMP_InputField emailRegister; ///< 이메일
+        public TMP_InputField passwordRegister; ///< 비밀번호
+        public TMP_InputField passwordCheckRegister; ///< 비밀번호 확인
 
         [Header("Image")]
         /* Login */
-        public GameObject emailLoginImage;
-        public GameObject passwordLoginImage;
+        public GameObject emailLoginImage; ///< 이메일 로그인 이미지
+        public GameObject passwordLoginImage; ///< 비밀번호 로그인 이미지
         /* Register */
-        public GameObject usernameRegisterImage;
-        public GameObject emailRegisterImage;
-        public GameObject passwordRegisterImage;
-        public GameObject passwordCheckImage;
+        public GameObject usernameRegisterImage; ///< 유저 이름 이미지
+        public GameObject emailRegisterImage; ///< 이메일 이미지
+        public GameObject passwordRegisterImage; ///< 비밀번호 이미지
+        public GameObject passwordCheckImage; ///< 비밀번호 확인 이미지
         #endregion
         #region Tab 키로 InputField 포커스 이동
-        // 현재 활성화 된 패널 식별하는 enum.    
-        public enum ActivePanel { Login, Register }
+        // 현재 활성화 된 패널 식별하는 enum */    
+        public enum ActivePanel { Login, Register } ///< 활성화 된 패널 식별
         [Header("InputField Focus")]
-        public ActivePanel activePanel;
+        public ActivePanel activePanel; ///< 활성화 패널
 
 
         // 로그인 InputFields
-        public List<TMP_InputField> inputFieldsLogin;
+        public List<TMP_InputField> inputFieldsLogin; ///< 로그인 인풋 필드
         // 회원가입 InputFields
-        public List<TMP_InputField> inputFieldsRegister;
+        public List<TMP_InputField> inputFieldsRegister; ///< 회원가입 인풋 필드
         #endregion
         #region 이메일 저장
         [Header("SaveEmail")]
         // 이메일 InputField.
-        public TMP_InputField emailInputField;
+        public TMP_InputField emailInputField; ///< 이메일 인풋필드
         // 이메일 저장 토글
-        public Toggle saveEmailToggle;
+        public Toggle saveEmailToggle; ///< 이메일 저장 토글
 
         // PlayerPrefs 에서 이메일 저장할때 사용할 키
-        private const string EmailKey = "UserEmail";
+        private const string EmailKey = "UserEmail"; ///< PlayerPrefs 에서 이메일 저장할 때 사용할 키
 
 
         #endregion
 
+        /**
+         * @brief 인풋 필드 이미지 숨기기 및 이메일 저장
+         */
         void Start()
         {
             #region InputField 이미지 숨기기
@@ -144,29 +174,32 @@ namespace KJ
             _inputFieldImageMap.Add(passwordRegister, passwordRegisterImage);
             _inputFieldImageMap.Add(passwordCheckRegister, passwordCheckImage);
 
-            // 모든 InputField 에 Listener 추가.
+            // 모든 InputField 에 Listener 추가 */
             foreach (var pair in _inputFieldImageMap)
             {
                 pair.Key.onValueChanged.AddListener((value) => ToggleImage(pair.Key, value));
             }
             #endregion
             #region 이메일 저장
-            // 앱 시작시 저장된 이메일 불러오기.
+            /* 앱 시작시 저장된 이메일 불러오기 */
             LoadEmail();
 
-            // 토글 버튼에 따라 이메일 저장 여부 결정.
+            /* 토글 버튼에 따라 이메일 저장 여부 결정 */
             saveEmailToggle.onValueChanged.AddListener(OnToggleChanged);
 
             #endregion
         }
 
+        /**
+         * @brief Tab 키 누를 때 인풋필드끼리 이동
+         */
         void Update()
         {
             #region Tab 키로 InputField 포커스 이동
-            // tab 키를 누르면 NavigateThroughInputField 메서드 실행.
+            /* tab 키를 누르면 NavigateThroughInputField 메서드 실행 */
             if (Input.GetKeyDown(KeyCode.Tab))
             {
-                // 탭별로 활성화
+                /* 탭별로 활성화 */
                 switch (activePanel)
                 {
                     case ActivePanel.Login:
@@ -183,36 +216,46 @@ namespace KJ
 
         #region Tab 키로 InputField 포커스 이동
 
-        /* InputField 포커스 설정 */
+        /**
+         * @biref 인풋필드끼리 이동할 수 있게 방향 제시
+         * @param[in] inputFields 인풋 필드
+         */
         public void NavigateThroughInputField(List<TMP_InputField> inputFields)
         {
             for (int i = 0; i < inputFields.Count; i++)
             {
                 if (inputFields[i].isFocused)
                 {
-                    // 다음 InputField 계산.
+                    /* 다음 InputField 계산 */
                     int nextIndex = (i + 1) % inputFields.Count;
-                    // 다음 InputField 에 포커스 설정.
+                    /* 다음 InputField 에 포커스 설정 */
                     inputFields[nextIndex].Select();
-                    // 다음 InputField 활성화.
+                    /* 다음 InputField 활성화 */
                     inputFields[nextIndex].ActivateInputField();
                     break;
                 }
             }
         }
 
-        // InputField 포커스 활성화 패널
+        /**
+         * @brief 인풋 필드 이동 활성화 패널
+         * @param[in] panel 활성화 패널
+         */
         public void SetActivePanel(ActivePanel panel)
         {
             activePanel = panel;
         }
 
-        // InputField Login 창에서 포커스 활성화.
+        /**
+         * @brief 인풋 필드 로그인창에서 포커스 활성화
+         */
         public void SetActivePanelToLogin()
         {
             SetActivePanel(LoginManager.ActivePanel.Login);
         }
-        // InputField Register 창에서 포커스 활성화.
+        /**
+         * @brief 인풋 필드 회원가입창에서 포커스 활성화
+         */
         public void SetActivePanelToRegister()
         {
             SetActivePanel(LoginManager.ActivePanel.Register);
@@ -220,10 +263,14 @@ namespace KJ
         #endregion
 
         #region InputField 이미지 숨기기
-        // 이미지 활성화 / 비활성화 하는 메서드
+        /**
+         * @brief 인풋 필드에 입력시 이미지 숨기기
+         * @param[in] inputField 인풋 필드
+         * @param[in] inputValue 인풋 값
+         */
         void ToggleImage(TMP_InputField inputField, string inputValue)
         {
-            // 해당 InputField 에 연결된 이미지 활성화 / 비활성화.
+            /* 해당 InputField 에 연결된 이미지 활성화 / 비활성화 */
             if (_inputFieldImageMap.TryGetValue(inputField, out GameObject Image))
             {
                 Image.SetActive(string.IsNullOrEmpty(inputValue));
@@ -232,38 +279,48 @@ namespace KJ
         #endregion
 
         #region 이메일 저장
+        /**
+         * @brief 이메일 저장
+         * @param[in] isOn bool 형식 들어올 경우 이메일 저장
+         */
         public void OnToggleChanged(bool isOn)
         {
             if (isOn)
             {
-                // 토글이 On 일때 현재 InputField 의 이메일 주소 저장.
+                /* 토글이 On 일때 현재 InputField 의 이메일 주소 저장 */
                 SaveEmail();
             }
             else
             {
-                // 토글이 Off 일때 저장된 이메일 주소 삭제.
+                /* 토글이 Off 일때 저장된 이메일 주소 삭제 */
                 PlayerPrefs.DeleteKey(EmailKey);
             }
         }
 
+        /**
+         * @brief 이메일 저장
+         */
         public void SaveEmail()
         {
             PlayerPrefs.SetString(EmailKey, emailInputField.text);
             PlayerPrefs.Save();
         }
 
+        /**
+         * @brief 저장된 이메일 불러오기
+         */
         public void LoadEmail()
         {
             if (PlayerPrefs.HasKey(EmailKey))
             {
                 string saveEmail = PlayerPrefs.GetString(EmailKey);
                 emailInputField.text = saveEmail;
-                // 저장된 이메일이 있으면 토글이 true 인 상태로 설정.
+                /* 저장된 이메일이 있으면 토글이 true 인 상태로 설정 */
                 saveEmailToggle.isOn = true;
             }
             else
             {
-                // 저장된 이메일이 없으면 토글이 false 인 상태로 설정.
+                /* 저장된 이메일이 없으면 토글이 false 인 상태로 설정 */
                 saveEmailToggle.isOn = false;
             }
 
@@ -272,8 +329,9 @@ namespace KJ
 
         #region 플레이어 정보
 #if UNITY_EDITOR
-        /* 직렬화된 플레이어 정보 */
-        //private void OnGUI()
+        /**
+         * @brief 직렬화된 플레이어 정보 
+         */
         private void OnGUI()
         {
             if (GUI.Button(new Rect(0, 0, 100, 50), "Create file"))

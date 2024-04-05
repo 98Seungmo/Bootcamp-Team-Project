@@ -1,0 +1,343 @@
+\doxysection{Buff\+On\+Off 클래스 참조}
+\hypertarget{class_buff_on_off}{}\label{class_buff_on_off}\index{BuffOnOff@{BuffOnOff}}
+
+
+Buff\+On\+Off에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{class_buff_on_off__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Buff\+On\+Off에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{class_buff_on_off__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_buff_on_off_a56f8178837749be73065df6d9da6c910}{Power\+Buff}} ()
+\item 
+void \mbox{\hyperlink{class_buff_on_off_ab89d9976d8a65a75d9480da6c8f5398f}{Health\+Buff}} ()
+\item 
+void \mbox{\hyperlink{class_buff_on_off_a14165878e64b2d4f3a34bc339a7d2226}{Special\+Buff}} ()
+\item 
+void \mbox{\hyperlink{class_buff_on_off_ab3692dfb9f5cf3472f0341c9a6f899ab}{Power\+On}} ()
+\item 
+void \mbox{\hyperlink{class_buff_on_off_a670177956639aace58a91457ccd90bb9}{Health\+On}} ()
+\item 
+void \mbox{\hyperlink{class_buff_on_off_a9e3c3ac19cf1fd8dbcc0b68b3a8a29fb}{Special\+On}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Image \mbox{\hyperlink{class_buff_on_off_aed635b4c5dcf6eeeb860abd84cf524d8}{power\+Buff\+Image}}
+\item 
+Image \mbox{\hyperlink{class_buff_on_off_a689ba7b11f81492277a877dad54e5279}{health\+Buff\+Image}}
+\item 
+Image \mbox{\hyperlink{class_buff_on_off_aab5b557e72b67e822afccad2ccffb4d2}{special\+Buff\+Image}}
+\item 
+bool \mbox{\hyperlink{class_buff_on_off_a113d88c712086e7a7644854143b59b06}{\+\_\+power\+Buff}} = false
+\item 
+bool \mbox{\hyperlink{class_buff_on_off_af3418aac2fc4be1d6f0cc4bbc1e2da78}{\+\_\+health\+Buff}} = false
+\item 
+bool \mbox{\hyperlink{class_buff_on_off_ac6ecb4fd467460ef582f18045e10aee9}{\+\_\+special\+Buff}} = false
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_buff_on_off_a36a185ec75fb1bfa869450d577998c50}{Start}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Player\+Controller \mbox{\hyperlink{class_buff_on_off_a3b144c7ef2b593832ba4ecf612b44554}{player\+Controller}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+\mbox{\hyperlink{_buff_on_off_8cs_source}{Buff\+On\+Off.\+cs}} 파일의 \mbox{\hyperlink{_buff_on_off_8cs_source_l00007}{7}} 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\Hypertarget{class_buff_on_off_ab89d9976d8a65a75d9480da6c8f5398f}\label{class_buff_on_off_ab89d9976d8a65a75d9480da6c8f5398f} 
+\index{BuffOnOff@{BuffOnOff}!HealthBuff@{HealthBuff}}
+\index{HealthBuff@{HealthBuff}!BuffOnOff@{BuffOnOff}}
+\doxysubsubsection{\texorpdfstring{HealthBuff()}{HealthBuff()}}
+{\footnotesize\ttfamily void Buff\+On\+Off.\+Health\+Buff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{_buff_on_off_8cs_source}{Buff\+On\+Off.\+cs}} 파일의 \mbox{\hyperlink{_buff_on_off_8cs_source_l00044}{44}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00045\ \ \ \ \ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_buff_on_off_af3418aac2fc4be1d6f0cc4bbc1e2da78}{\_healthBuff}}\ ==\ \textcolor{keyword}{true})}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ healthBuffImage.color\ =\ \textcolor{keyword}{new}\ Color(1f,\ 0f,\ 0f,\ 1f);}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ playerController.armorFood\ =\ 0.2f;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ healthBuffImage.color\ =\ Color.gray;}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ playerController.armorFood\ =\ 0;}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{class_buff_on_off_ab89d9976d8a65a75d9480da6c8f5398f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_buff_on_off_a670177956639aace58a91457ccd90bb9}\label{class_buff_on_off_a670177956639aace58a91457ccd90bb9} 
+\index{BuffOnOff@{BuffOnOff}!HealthOn@{HealthOn}}
+\index{HealthOn@{HealthOn}!BuffOnOff@{BuffOnOff}}
+\doxysubsubsection{\texorpdfstring{HealthOn()}{HealthOn()}}
+{\footnotesize\ttfamily void Buff\+On\+Off.\+Health\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{_buff_on_off_8cs_source}{Buff\+On\+Off.\+cs}} 파일의 \mbox{\hyperlink{_buff_on_off_8cs_source_l00080}{80}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00081\ \ \ \ \ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_buff_on_off_af3418aac2fc4be1d6f0cc4bbc1e2da78}{\_healthBuff}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_buff_on_off_ab89d9976d8a65a75d9480da6c8f5398f}{HealthBuff}}();}
+\DoxyCodeLine{00084\ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{class_buff_on_off_a670177956639aace58a91457ccd90bb9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_buff_on_off_a56f8178837749be73065df6d9da6c910}\label{class_buff_on_off_a56f8178837749be73065df6d9da6c910} 
+\index{BuffOnOff@{BuffOnOff}!PowerBuff@{PowerBuff}}
+\index{PowerBuff@{PowerBuff}!BuffOnOff@{BuffOnOff}}
+\doxysubsubsection{\texorpdfstring{PowerBuff()}{PowerBuff()}}
+{\footnotesize\ttfamily void Buff\+On\+Off.\+Power\+Buff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{_buff_on_off_8cs_source}{Buff\+On\+Off.\+cs}} 파일의 \mbox{\hyperlink{_buff_on_off_8cs_source_l00029}{29}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00030\ \ \ \ \ \{}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_buff_on_off_a113d88c712086e7a7644854143b59b06}{\_powerBuff}}\ ==\ \textcolor{keyword}{true})}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ powerBuffImage.color\ =\ \textcolor{keyword}{new}\ Color(214\ /\ 255f,\ 150\ /\ 255f,\ 150\ /\ 255f,\ 1f);}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ playerController.attackFood\ =\ 0.2f;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ powerBuffImage.color\ =\ Color.gray;}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ playerController.attackFood\ =\ 0;}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00042\ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_buff_on_off_a56f8178837749be73065df6d9da6c910_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_buff_on_off_ab3692dfb9f5cf3472f0341c9a6f899ab}\label{class_buff_on_off_ab3692dfb9f5cf3472f0341c9a6f899ab} 
+\index{BuffOnOff@{BuffOnOff}!PowerOn@{PowerOn}}
+\index{PowerOn@{PowerOn}!BuffOnOff@{BuffOnOff}}
+\doxysubsubsection{\texorpdfstring{PowerOn()}{PowerOn()}}
+{\footnotesize\ttfamily void Buff\+On\+Off.\+Power\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{_buff_on_off_8cs_source}{Buff\+On\+Off.\+cs}} 파일의 \mbox{\hyperlink{_buff_on_off_8cs_source_l00074}{74}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00075\ \ \ \ \ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_buff_on_off_a113d88c712086e7a7644854143b59b06}{\_powerBuff}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_buff_on_off_a56f8178837749be73065df6d9da6c910}{PowerBuff}}();}
+\DoxyCodeLine{00078\ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_buff_on_off_ab3692dfb9f5cf3472f0341c9a6f899ab_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_buff_on_off_a14165878e64b2d4f3a34bc339a7d2226}\label{class_buff_on_off_a14165878e64b2d4f3a34bc339a7d2226} 
+\index{BuffOnOff@{BuffOnOff}!SpecialBuff@{SpecialBuff}}
+\index{SpecialBuff@{SpecialBuff}!BuffOnOff@{BuffOnOff}}
+\doxysubsubsection{\texorpdfstring{SpecialBuff()}{SpecialBuff()}}
+{\footnotesize\ttfamily void Buff\+On\+Off.\+Special\+Buff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{_buff_on_off_8cs_source}{Buff\+On\+Off.\+cs}} 파일의 \mbox{\hyperlink{_buff_on_off_8cs_source_l00058}{58}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00059\ \ \ \ \ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_buff_on_off_ac6ecb4fd467460ef582f18045e10aee9}{\_specialBuff}}\ ==\ \textcolor{keyword}{true})}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ specialBuffImage.color\ =\ \textcolor{keyword}{new}\ Color(1f,\ 1f,\ 0f,\ 1f);}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ playerController.spRecoveryFood\ =\ 0.4f;}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ specialBuffImage.color\ =\ Color.gray;}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ playerController.spRecoveryFood\ =\ 0;}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00070\ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_buff_on_off_a14165878e64b2d4f3a34bc339a7d2226_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_buff_on_off_a9e3c3ac19cf1fd8dbcc0b68b3a8a29fb}\label{class_buff_on_off_a9e3c3ac19cf1fd8dbcc0b68b3a8a29fb} 
+\index{BuffOnOff@{BuffOnOff}!SpecialOn@{SpecialOn}}
+\index{SpecialOn@{SpecialOn}!BuffOnOff@{BuffOnOff}}
+\doxysubsubsection{\texorpdfstring{SpecialOn()}{SpecialOn()}}
+{\footnotesize\ttfamily void Buff\+On\+Off.\+Special\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{_buff_on_off_8cs_source}{Buff\+On\+Off.\+cs}} 파일의 \mbox{\hyperlink{_buff_on_off_8cs_source_l00086}{86}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00087\ \ \ \ \ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_buff_on_off_ac6ecb4fd467460ef582f18045e10aee9}{\_specialBuff}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_buff_on_off_a14165878e64b2d4f3a34bc339a7d2226}{SpecialBuff}}();}
+\DoxyCodeLine{00090\ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_buff_on_off_a9e3c3ac19cf1fd8dbcc0b68b3a8a29fb_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_buff_on_off_a36a185ec75fb1bfa869450d577998c50}\label{class_buff_on_off_a36a185ec75fb1bfa869450d577998c50} 
+\index{BuffOnOff@{BuffOnOff}!Start@{Start}}
+\index{Start@{Start}!BuffOnOff@{BuffOnOff}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Buff\+On\+Off.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{_buff_on_off_8cs_source}{Buff\+On\+Off.\+cs}} 파일의 \mbox{\hyperlink{_buff_on_off_8cs_source_l00021}{21}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022\ \ \ \ \ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ powerBuffImage.color\ =\ Color.gray;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ healthBuffImage.color\ =\ Color.gray;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ specialBuffImage.color\ =\ Color.gray;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_buff_on_off_a3b144c7ef2b593832ba4ecf612b44554}{playerController}}\ =\ GameObject.FindWithTag(\textcolor{stringliteral}{"{}Player"{}}).GetComponent<PlayerController>();}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\Hypertarget{class_buff_on_off_af3418aac2fc4be1d6f0cc4bbc1e2da78}\label{class_buff_on_off_af3418aac2fc4be1d6f0cc4bbc1e2da78} 
+\index{BuffOnOff@{BuffOnOff}!\_healthBuff@{\_healthBuff}}
+\index{\_healthBuff@{\_healthBuff}!BuffOnOff@{BuffOnOff}}
+\doxysubsubsection{\texorpdfstring{\_healthBuff}{\_healthBuff}}
+{\footnotesize\ttfamily bool Buff\+On\+Off.\+\_\+health\+Buff = false}
+
+
+
+\mbox{\hyperlink{_buff_on_off_8cs_source}{Buff\+On\+Off.\+cs}} 파일의 \mbox{\hyperlink{_buff_on_off_8cs_source_l00016}{16}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_buff_on_off_a113d88c712086e7a7644854143b59b06}\label{class_buff_on_off_a113d88c712086e7a7644854143b59b06} 
+\index{BuffOnOff@{BuffOnOff}!\_powerBuff@{\_powerBuff}}
+\index{\_powerBuff@{\_powerBuff}!BuffOnOff@{BuffOnOff}}
+\doxysubsubsection{\texorpdfstring{\_powerBuff}{\_powerBuff}}
+{\footnotesize\ttfamily bool Buff\+On\+Off.\+\_\+power\+Buff = false}
+
+
+
+\mbox{\hyperlink{_buff_on_off_8cs_source}{Buff\+On\+Off.\+cs}} 파일의 \mbox{\hyperlink{_buff_on_off_8cs_source_l00015}{15}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_buff_on_off_ac6ecb4fd467460ef582f18045e10aee9}\label{class_buff_on_off_ac6ecb4fd467460ef582f18045e10aee9} 
+\index{BuffOnOff@{BuffOnOff}!\_specialBuff@{\_specialBuff}}
+\index{\_specialBuff@{\_specialBuff}!BuffOnOff@{BuffOnOff}}
+\doxysubsubsection{\texorpdfstring{\_specialBuff}{\_specialBuff}}
+{\footnotesize\ttfamily bool Buff\+On\+Off.\+\_\+special\+Buff = false}
+
+
+
+\mbox{\hyperlink{_buff_on_off_8cs_source}{Buff\+On\+Off.\+cs}} 파일의 \mbox{\hyperlink{_buff_on_off_8cs_source_l00017}{17}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_buff_on_off_a689ba7b11f81492277a877dad54e5279}\label{class_buff_on_off_a689ba7b11f81492277a877dad54e5279} 
+\index{BuffOnOff@{BuffOnOff}!healthBuffImage@{healthBuffImage}}
+\index{healthBuffImage@{healthBuffImage}!BuffOnOff@{BuffOnOff}}
+\doxysubsubsection{\texorpdfstring{healthBuffImage}{healthBuffImage}}
+{\footnotesize\ttfamily Image Buff\+On\+Off.\+health\+Buff\+Image}
+
+
+
+\mbox{\hyperlink{_buff_on_off_8cs_source}{Buff\+On\+Off.\+cs}} 파일의 \mbox{\hyperlink{_buff_on_off_8cs_source_l00011}{11}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_buff_on_off_a3b144c7ef2b593832ba4ecf612b44554}\label{class_buff_on_off_a3b144c7ef2b593832ba4ecf612b44554} 
+\index{BuffOnOff@{BuffOnOff}!playerController@{playerController}}
+\index{playerController@{playerController}!BuffOnOff@{BuffOnOff}}
+\doxysubsubsection{\texorpdfstring{playerController}{playerController}}
+{\footnotesize\ttfamily Player\+Controller Buff\+On\+Off.\+player\+Controller\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{_buff_on_off_8cs_source}{Buff\+On\+Off.\+cs}} 파일의 \mbox{\hyperlink{_buff_on_off_8cs_source_l00019}{19}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_buff_on_off_aed635b4c5dcf6eeeb860abd84cf524d8}\label{class_buff_on_off_aed635b4c5dcf6eeeb860abd84cf524d8} 
+\index{BuffOnOff@{BuffOnOff}!powerBuffImage@{powerBuffImage}}
+\index{powerBuffImage@{powerBuffImage}!BuffOnOff@{BuffOnOff}}
+\doxysubsubsection{\texorpdfstring{powerBuffImage}{powerBuffImage}}
+{\footnotesize\ttfamily Image Buff\+On\+Off.\+power\+Buff\+Image}
+
+
+
+\mbox{\hyperlink{_buff_on_off_8cs_source}{Buff\+On\+Off.\+cs}} 파일의 \mbox{\hyperlink{_buff_on_off_8cs_source_l00010}{10}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_buff_on_off_aab5b557e72b67e822afccad2ccffb4d2}\label{class_buff_on_off_aab5b557e72b67e822afccad2ccffb4d2} 
+\index{BuffOnOff@{BuffOnOff}!specialBuffImage@{specialBuffImage}}
+\index{specialBuffImage@{specialBuffImage}!BuffOnOff@{BuffOnOff}}
+\doxysubsubsection{\texorpdfstring{specialBuffImage}{specialBuffImage}}
+{\footnotesize\ttfamily Image Buff\+On\+Off.\+special\+Buff\+Image}
+
+
+
+\mbox{\hyperlink{_buff_on_off_8cs_source}{Buff\+On\+Off.\+cs}} 파일의 \mbox{\hyperlink{_buff_on_off_8cs_source_l00012}{12}} 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+LKJ/\+Documents/\+Git\+Hub/\+Bootcamp-\/\+Team-\/\+Project/\+Cos/\+Assets/\+LKJ/\+KJ/2. Scripts/05. Village\+Scripts/\mbox{\hyperlink{_buff_on_off_8cs}{Buff\+On\+Off.\+cs}}\end{DoxyCompactItemize}

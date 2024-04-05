@@ -1,0 +1,352 @@
+\doxysection{KJ.\+Loading\+Scene\+Manager 클래스 참조}
+\hypertarget{class_k_j_1_1_loading_scene_manager}{}\label{class_k_j_1_1_loading_scene_manager}\index{KJ.LoadingSceneManager@{KJ.LoadingSceneManager}}
+
+
+KJ.\+Loading\+Scene\+Manager에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{class_k_j_1_1_loading_scene_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+KJ.\+Loading\+Scene\+Manager에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{class_k_j_1_1_loading_scene_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Slider \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a37753446e0512fc00f9bc24f2e297df3}{slider}}
+\begin{DoxyCompactList}\small\item\em 슬라이더 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_aeff62662aaf309e4efde1247a3a35437}{scene\+Name}}
+\begin{DoxyCompactList}\small\item\em 씬 이름 \end{DoxyCompactList}\item 
+TMP\+\_\+\+Text \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a8a892fdb390cb0e1a38048b6eec188cd}{random\+Story}}
+\begin{DoxyCompactList}\small\item\em 랜덤으로 스토리 출력 \end{DoxyCompactList}\item 
+TMP\+\_\+\+Text \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a7bc10bcb25e305d0b7257a149a4c0183}{game\+Story}}
+\begin{DoxyCompactList}\small\item\em 스토리 내용 1 \end{DoxyCompactList}\item 
+TMP\+\_\+\+Text \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_abaa2f7f3387f89a2226fac742a1c103e}{game\+Story2}}
+\begin{DoxyCompactList}\small\item\em 스토리 내용 2 \end{DoxyCompactList}\item 
+TMP\+\_\+\+Text \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a3ccc63cf42667cdf111e2bf048622bfb}{game\+Story3}}
+\begin{DoxyCompactList}\small\item\em 스토리 내용 3 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a48f7c4ef689965f71f0ad3e9d6041d88}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_ab803e504e0c8f25c91128d68e3dc00d4}{Update}} ()
+\begin{DoxyCompactList}\small\item\em 로딩 동안 하단의 슬라이더 바 채워짐 \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a65c6b1ce750492bbb2f66b0d6833a142}{Load\+Async\+Scene\+Coroutine}} ()
+\begin{DoxyCompactList}\small\item\em 플레이어 및 아이템 데이터 로드 후 해당 씬으로 이동 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a8d06ecb50db249e3f8c13916d646bef2}{current\+Progress}} = 0f
+\begin{DoxyCompactList}\small\item\em 현재 진행 상태 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a2c2f0f21ef40df20ea03a4bee87f9681}{target\+Progress}} = 0f
+\begin{DoxyCompactList}\small\item\em 목표 진행 상태 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_ac18dbec152aaba87e8f72d29a74b0292}{\+\_\+random\+Num}}
+\begin{DoxyCompactList}\small\item\em 랜덤 범위 \end{DoxyCompactList}\item 
+List$<$ TMP\+\_\+\+Text $>$ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a21db05cb141e23055def8ef0f5fef6b5}{game\+Story\+List}} = new List$<$TMP\+\_\+\+Text$>$()
+\begin{DoxyCompactList}\small\item\em 게임스토리 리스트 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+로딩 씬에서 데이터 로드 및 다음 씬으로 이동 
+
+\mbox{\hyperlink{_loading_scene_manager_8cs_source}{Loading\+Scene\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_loading_scene_manager_8cs_source_l00014}{14}} 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\Hypertarget{class_k_j_1_1_loading_scene_manager_a65c6b1ce750492bbb2f66b0d6833a142}\label{class_k_j_1_1_loading_scene_manager_a65c6b1ce750492bbb2f66b0d6833a142} 
+\index{KJ.LoadingSceneManager@{KJ.LoadingSceneManager}!LoadAsyncSceneCoroutine@{LoadAsyncSceneCoroutine}}
+\index{LoadAsyncSceneCoroutine@{LoadAsyncSceneCoroutine}!KJ.LoadingSceneManager@{KJ.LoadingSceneManager}}
+\doxysubsubsection{\texorpdfstring{LoadAsyncSceneCoroutine()}{LoadAsyncSceneCoroutine()}}
+{\footnotesize\ttfamily IEnumerator KJ.\+Loading\+Scene\+Manager.\+Load\+Async\+Scene\+Coroutine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+플레이어 및 아이템 데이터 로드 후 해당 씬으로 이동 
+
+
+
+\mbox{\hyperlink{_loading_scene_manager_8cs_source}{Loading\+Scene\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_loading_scene_manager_8cs_source_l00067}{67}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 플레이어\ 데이터\ 로드\ */}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ yield\ \textcolor{keywordflow}{return}\ \ PlayerDBManager.Instance.LoadPlayerDB();}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a2c2f0f21ef40df20ea03a4bee87f9681}{targetProgress}}\ +=\ 0.5f;}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 아이템\ 데이터\ 로드\ */}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ yield\ \textcolor{keywordflow}{return}\ ItemDBManager.Instance.LoadItemDB();}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a2c2f0f21ef40df20ea03a4bee87f9681}{targetProgress}}\ +=\ 0.5f;}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 저장된\ 데이터\ 확인\ */}}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ hasSavedData\ =\ PlayerDBManager.Instance.CheckPlayerData(PlayerDBManager.Instance.CurrentShortUID);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (hasSavedData)}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 저장된\ 데이터가\ 있으면\ 로딩씬을\ 통해\ 게임\ 진행.\ */}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PlayerDBManager.Instance.LoadGameData(PlayerDBManager.Instance.CurrentShortUID);}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_aeff62662aaf309e4efde1247a3a35437}{sceneName}}\ =\ \textcolor{stringliteral}{"{}VillageScene"{}};}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 없으면\ 캐릭터\ 선택창으로\ 이동.\ */}}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_aeff62662aaf309e4efde1247a3a35437}{sceneName}}\ =\ \textcolor{stringliteral}{"{}CharacterSelectScene"{}};}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 목표\ 진행\ 완료\ */}}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a2c2f0f21ef40df20ea03a4bee87f9681}{targetProgress}}\ =\ 1f;}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ sceneName\ 으로\ 비동기\ 형식으로\ 넘어가게\ 하는\ operation\ 생성.}}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ AsyncOperation\ operation\ =\ SceneManager.LoadSceneAsync(\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_aeff62662aaf309e4efde1247a3a35437}{sceneName}});}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ operation\ 이\ 완료되어도\ 다음\ 씬으로\ 넘어가는걸\ 막음.}}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ operation.allowSceneActivation\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ operation.isDone\ 이\ false\ 일\ 동안\ 반복.}}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!operation.isDone)}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a2c2f0f21ef40df20ea03a4bee87f9681}{targetProgress}}\ >=\ 1f)}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ operation.allowSceneActivation\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//다음\ 프레임까지\ 대기.}}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ yield\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_j_1_1_loading_scene_manager_a65c6b1ce750492bbb2f66b0d6833a142_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_k_j_1_1_loading_scene_manager_a48f7c4ef689965f71f0ad3e9d6041d88}\label{class_k_j_1_1_loading_scene_manager_a48f7c4ef689965f71f0ad3e9d6041d88} 
+\index{KJ.LoadingSceneManager@{KJ.LoadingSceneManager}!Start@{Start}}
+\index{Start@{Start}!KJ.LoadingSceneManager@{KJ.LoadingSceneManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void KJ.\+Loading\+Scene\+Manager.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+@biref short\+UID 체크 후 상황에 따라 씬 변경, 로딩 동안 나올 텍스트 랜덤 생성. 
+
+\mbox{\hyperlink{_loading_scene_manager_8cs_source}{Loading\+Scene\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_loading_scene_manager_8cs_source_l00019}{19}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#region\ 로딩\ 씬\ 데이터\ 로드\ 및\ shortUID\ 체크\ 후\ 상황에\ 따라\ 씬\ 변경.\ (슬라이더)\  }}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ LoadAsyncSceneCoroutine()\ 을\ 코루틴으로\ 시작\ */}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ StartCoroutine(\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a65c6b1ce750492bbb2f66b0d6833a142}{LoadAsyncSceneCoroutine}}());}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#endregion }}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#region\ 로딩\ 동안\ 게임\ 스토리\ 텍스트\ 랜덤으로\ 생성 }}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 리스트에\ gameStory\ 컴포넌트\ 추가\ */}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a21db05cb141e23055def8ef0f5fef6b5}{gameStoryList}}.Add(\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a7bc10bcb25e305d0b7257a149a4c0183}{gameStory}});}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a21db05cb141e23055def8ef0f5fef6b5}{gameStoryList}}.Add(\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_abaa2f7f3387f89a2226fac742a1c103e}{gameStory2}});}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a21db05cb141e23055def8ef0f5fef6b5}{gameStoryList}}.Add(\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a3ccc63cf42667cdf111e2bf048622bfb}{gameStory3}});}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 랜덤\ 범위는\ 리스트\ 길이\ */}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_ac18dbec152aaba87e8f72d29a74b0292}{\_randomNum}}\ =\ Random.Range(0,\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a21db05cb141e23055def8ef0f5fef6b5}{gameStoryList}}.Count);}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a8a892fdb390cb0e1a38048b6eec188cd}{randomStory}}\ =\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a21db05cb141e23055def8ef0f5fef6b5}{gameStoryList}}[\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_ac18dbec152aaba87e8f72d29a74b0292}{\_randomNum}}];}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 랜덤으로\ 선택된\ 텍스트만\ 활성화\ 나머지는\ 비활성화\ */}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (var\ story\ \textcolor{keywordflow}{in}\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a21db05cb141e23055def8ef0f5fef6b5}{gameStoryList}})}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 모든\ 스토리를\ 비활성화\ */}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ story.gameObject.SetActive(\textcolor{keyword}{false});}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 랜덤으로\ 선택된\ 스토리\ 활성화\ */}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a8a892fdb390cb0e1a38048b6eec188cd}{randomStory}}.gameObject.SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#endregion }}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_j_1_1_loading_scene_manager_a48f7c4ef689965f71f0ad3e9d6041d88_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_k_j_1_1_loading_scene_manager_ab803e504e0c8f25c91128d68e3dc00d4}\label{class_k_j_1_1_loading_scene_manager_ab803e504e0c8f25c91128d68e3dc00d4} 
+\index{KJ.LoadingSceneManager@{KJ.LoadingSceneManager}!Update@{Update}}
+\index{Update@{Update}!KJ.LoadingSceneManager@{KJ.LoadingSceneManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void KJ.\+Loading\+Scene\+Manager.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+로딩 동안 하단의 슬라이더 바 채워짐 
+
+
+
+\mbox{\hyperlink{_loading_scene_manager_8cs_source}{Loading\+Scene\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_loading_scene_manager_8cs_source_l00049}{49}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a8d06ecb50db249e3f8c13916d646bef2}{currentProgress}}\ =\ Mathf.Lerp(\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a8d06ecb50db249e3f8c13916d646bef2}{currentProgress}},\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a2c2f0f21ef40df20ea03a4bee87f9681}{targetProgress}},\ Time.deltaTime\ *\ 10);}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 슬라이더\ 값\ 업데이트\ */}}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ slider.value\ =\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a8d06ecb50db249e3f8c13916d646bef2}{currentProgress}};}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\Hypertarget{class_k_j_1_1_loading_scene_manager_ac18dbec152aaba87e8f72d29a74b0292}\label{class_k_j_1_1_loading_scene_manager_ac18dbec152aaba87e8f72d29a74b0292} 
+\index{KJ.LoadingSceneManager@{KJ.LoadingSceneManager}!\_randomNum@{\_randomNum}}
+\index{\_randomNum@{\_randomNum}!KJ.LoadingSceneManager@{KJ.LoadingSceneManager}}
+\doxysubsubsection{\texorpdfstring{\_randomNum}{\_randomNum}}
+{\footnotesize\ttfamily int KJ.\+Loading\+Scene\+Manager.\+\_\+random\+Num\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+랜덤 범위 
+
+
+
+\mbox{\hyperlink{_loading_scene_manager_8cs_source}{Loading\+Scene\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_loading_scene_manager_8cs_source_l00119}{119}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_loading_scene_manager_a8d06ecb50db249e3f8c13916d646bef2}\label{class_k_j_1_1_loading_scene_manager_a8d06ecb50db249e3f8c13916d646bef2} 
+\index{KJ.LoadingSceneManager@{KJ.LoadingSceneManager}!currentProgress@{currentProgress}}
+\index{currentProgress@{currentProgress}!KJ.LoadingSceneManager@{KJ.LoadingSceneManager}}
+\doxysubsubsection{\texorpdfstring{currentProgress}{currentProgress}}
+{\footnotesize\ttfamily float KJ.\+Loading\+Scene\+Manager.\+current\+Progress = 0f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+현재 진행 상태 
+
+
+
+\mbox{\hyperlink{_loading_scene_manager_8cs_source}{Loading\+Scene\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_loading_scene_manager_8cs_source_l00061}{61}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_loading_scene_manager_a7bc10bcb25e305d0b7257a149a4c0183}\label{class_k_j_1_1_loading_scene_manager_a7bc10bcb25e305d0b7257a149a4c0183} 
+\index{KJ.LoadingSceneManager@{KJ.LoadingSceneManager}!gameStory@{gameStory}}
+\index{gameStory@{gameStory}!KJ.LoadingSceneManager@{KJ.LoadingSceneManager}}
+\doxysubsubsection{\texorpdfstring{gameStory}{gameStory}}
+{\footnotesize\ttfamily TMP\+\_\+\+Text KJ.\+Loading\+Scene\+Manager.\+game\+Story}
+
+
+
+스토리 내용 1 
+
+
+
+\mbox{\hyperlink{_loading_scene_manager_8cs_source}{Loading\+Scene\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_loading_scene_manager_8cs_source_l00115}{115}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_loading_scene_manager_abaa2f7f3387f89a2226fac742a1c103e}\label{class_k_j_1_1_loading_scene_manager_abaa2f7f3387f89a2226fac742a1c103e} 
+\index{KJ.LoadingSceneManager@{KJ.LoadingSceneManager}!gameStory2@{gameStory2}}
+\index{gameStory2@{gameStory2}!KJ.LoadingSceneManager@{KJ.LoadingSceneManager}}
+\doxysubsubsection{\texorpdfstring{gameStory2}{gameStory2}}
+{\footnotesize\ttfamily TMP\+\_\+\+Text KJ.\+Loading\+Scene\+Manager.\+game\+Story2}
+
+
+
+스토리 내용 2 
+
+
+
+\mbox{\hyperlink{_loading_scene_manager_8cs_source}{Loading\+Scene\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_loading_scene_manager_8cs_source_l00116}{116}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_loading_scene_manager_a3ccc63cf42667cdf111e2bf048622bfb}\label{class_k_j_1_1_loading_scene_manager_a3ccc63cf42667cdf111e2bf048622bfb} 
+\index{KJ.LoadingSceneManager@{KJ.LoadingSceneManager}!gameStory3@{gameStory3}}
+\index{gameStory3@{gameStory3}!KJ.LoadingSceneManager@{KJ.LoadingSceneManager}}
+\doxysubsubsection{\texorpdfstring{gameStory3}{gameStory3}}
+{\footnotesize\ttfamily TMP\+\_\+\+Text KJ.\+Loading\+Scene\+Manager.\+game\+Story3}
+
+
+
+스토리 내용 3 
+
+
+
+\mbox{\hyperlink{_loading_scene_manager_8cs_source}{Loading\+Scene\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_loading_scene_manager_8cs_source_l00117}{117}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_loading_scene_manager_a21db05cb141e23055def8ef0f5fef6b5}\label{class_k_j_1_1_loading_scene_manager_a21db05cb141e23055def8ef0f5fef6b5} 
+\index{KJ.LoadingSceneManager@{KJ.LoadingSceneManager}!gameStoryList@{gameStoryList}}
+\index{gameStoryList@{gameStoryList}!KJ.LoadingSceneManager@{KJ.LoadingSceneManager}}
+\doxysubsubsection{\texorpdfstring{gameStoryList}{gameStoryList}}
+{\footnotesize\ttfamily List$<$TMP\+\_\+\+Text$>$ KJ.\+Loading\+Scene\+Manager.\+game\+Story\+List = new List$<$TMP\+\_\+\+Text$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+게임스토리 리스트 
+
+
+
+\mbox{\hyperlink{_loading_scene_manager_8cs_source}{Loading\+Scene\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_loading_scene_manager_8cs_source_l00121}{121}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_loading_scene_manager_a8a892fdb390cb0e1a38048b6eec188cd}\label{class_k_j_1_1_loading_scene_manager_a8a892fdb390cb0e1a38048b6eec188cd} 
+\index{KJ.LoadingSceneManager@{KJ.LoadingSceneManager}!randomStory@{randomStory}}
+\index{randomStory@{randomStory}!KJ.LoadingSceneManager@{KJ.LoadingSceneManager}}
+\doxysubsubsection{\texorpdfstring{randomStory}{randomStory}}
+{\footnotesize\ttfamily TMP\+\_\+\+Text KJ.\+Loading\+Scene\+Manager.\+random\+Story}
+
+
+
+랜덤으로 스토리 출력 
+
+
+
+\mbox{\hyperlink{_loading_scene_manager_8cs_source}{Loading\+Scene\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_loading_scene_manager_8cs_source_l00114}{114}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_loading_scene_manager_aeff62662aaf309e4efde1247a3a35437}\label{class_k_j_1_1_loading_scene_manager_aeff62662aaf309e4efde1247a3a35437} 
+\index{KJ.LoadingSceneManager@{KJ.LoadingSceneManager}!sceneName@{sceneName}}
+\index{sceneName@{sceneName}!KJ.LoadingSceneManager@{KJ.LoadingSceneManager}}
+\doxysubsubsection{\texorpdfstring{sceneName}{sceneName}}
+{\footnotesize\ttfamily string KJ.\+Loading\+Scene\+Manager.\+scene\+Name}
+
+
+
+씬 이름 
+
+
+
+\mbox{\hyperlink{_loading_scene_manager_8cs_source}{Loading\+Scene\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_loading_scene_manager_8cs_source_l00059}{59}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_loading_scene_manager_a37753446e0512fc00f9bc24f2e297df3}\label{class_k_j_1_1_loading_scene_manager_a37753446e0512fc00f9bc24f2e297df3} 
+\index{KJ.LoadingSceneManager@{KJ.LoadingSceneManager}!slider@{slider}}
+\index{slider@{slider}!KJ.LoadingSceneManager@{KJ.LoadingSceneManager}}
+\doxysubsubsection{\texorpdfstring{slider}{slider}}
+{\footnotesize\ttfamily Slider KJ.\+Loading\+Scene\+Manager.\+slider}
+
+
+
+슬라이더 
+
+
+
+\mbox{\hyperlink{_loading_scene_manager_8cs_source}{Loading\+Scene\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_loading_scene_manager_8cs_source_l00058}{58}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_loading_scene_manager_a2c2f0f21ef40df20ea03a4bee87f9681}\label{class_k_j_1_1_loading_scene_manager_a2c2f0f21ef40df20ea03a4bee87f9681} 
+\index{KJ.LoadingSceneManager@{KJ.LoadingSceneManager}!targetProgress@{targetProgress}}
+\index{targetProgress@{targetProgress}!KJ.LoadingSceneManager@{KJ.LoadingSceneManager}}
+\doxysubsubsection{\texorpdfstring{targetProgress}{targetProgress}}
+{\footnotesize\ttfamily float KJ.\+Loading\+Scene\+Manager.\+target\+Progress = 0f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+목표 진행 상태 
+
+
+
+\mbox{\hyperlink{_loading_scene_manager_8cs_source}{Loading\+Scene\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_loading_scene_manager_8cs_source_l00062}{62}} 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+LKJ/\+Documents/\+Git\+Hub/\+Bootcamp-\/\+Team-\/\+Project/\+Cos/\+Assets/\+LKJ/\+KJ/2. Scripts/03. Loading\+Scripts/\mbox{\hyperlink{_loading_scene_manager_8cs}{Loading\+Scene\+Manager.\+cs}}\end{DoxyCompactItemize}

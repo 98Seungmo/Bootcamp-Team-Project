@@ -1,0 +1,7 @@
+<map id="TalkingHeadSystem.ShowTalkingHeadUI" name="TalkingHeadSystem.ShowTalkingHeadUI">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,220,48"/>
+<area shape="rect" id="Node000002" href="$class_talking_head_system.html#adaa44719ca4c7b487fe977cf627fa93f" title=" " alt="" coords="268,5,450,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,24,252,24,252,29,220,29"/>
+<area shape="rect" id="Node000003" href="$class_talking_head_system.html#af1af8a7e43f3d456b02274a1e72447c1" title=" " alt="" coords="498,5,706,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="450,24,482,24,482,29,450,29"/>
+</map>

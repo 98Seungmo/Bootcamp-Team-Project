@@ -1,0 +1,5 @@
+<map id="KJ.LoadingSceneGotoVillage.Start" name="KJ.LoadingSceneGotoVillage.Start">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,199,48"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_loading_scene_goto_village.html#ab455e7896d90215d70decb2b07f9e76c" title="아이템 데이터 로드 후 해당 씬으로 이동" alt="" coords="247,5,440,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,24,231,24,231,29,199,29"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="KJ.ConversationManager.InteractionWithNPC" name="KJ.ConversationManager.InteractionWithNPC">
+<area shape="rect" id="Node000001" title="상호작용 NPC" alt="" coords="5,39,234,81"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_conversation_manager.html#a40c3cbc8aba8591a574f5142f0c800aa" title="대화 내용을 화면에 표시" alt="" coords="282,39,478,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,57,266,57,266,63,234,63"/>
+<area shape="rect" id="Node000003" href="$class_k_j_1_1_conversation_manager.html#af16e6f8696fb03bb13f1fbe96fddf4ff" title="다음 대화 표시" alt="" coords="526,39,737,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="479,57,511,57,511,63,479,63"/>
+<area shape="rect" id="Node000004" href="$class_k_j_1_1_conversation_manager.html#ad70ecda96949b36754b3cffcd2cc9062" title="대화 종료" alt="" coords="788,5,979,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="738,43,772,39,773,44,738,49"/>
+<area shape="rect" id="Node000006" href="$class_k_j_1_1_conversation_manager.html#a4131f02a1490215af036584b6368981f" title="타이핑 상태 결정" alt="" coords="785,72,982,115"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="738,71,770,76,770,81,738,77"/>
+<area shape="rect" id="Node000005" href="$class_k_j_1_1_conversation_manager.html#a069c6b56c3efe3a087afe6f4d48a592b" title="NPC Tag 에 따라 버튼을 다르게 활성화" alt="" coords="1030,5,1232,48"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="980,24,1014,24,1014,29,980,29"/>
+</map>

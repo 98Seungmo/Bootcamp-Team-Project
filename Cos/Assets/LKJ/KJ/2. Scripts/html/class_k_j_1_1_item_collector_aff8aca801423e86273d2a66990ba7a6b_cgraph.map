@@ -1,0 +1,5 @@
+<map id="KJ.ItemCollector.CollectItem" name="KJ.ItemCollector.CollectItem">
+<area shape="rect" id="Node000001" title="아이템 얻을 시 알림 메시지 표시" alt="" coords="5,5,191,32"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_item_collector.html#a08ff0bdfc625943a59371e5b7269fa84" title="알림 메시지 자동 숨김" alt="" coords="239,5,449,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,16,223,16,223,21,191,21"/>
+</map>

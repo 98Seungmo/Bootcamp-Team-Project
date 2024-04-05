@@ -1,0 +1,9 @@
+<map id="KJ.TalkingHeadSystem.HideTalkingHeadUI" name="KJ.TalkingHeadSystem.HideTalkingHeadUI">
+<area shape="rect" id="Node000001" title="UI 비활성화" alt="" coords="759,5,946,48"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_talking_head_system.html#afa4acb37f2ce3d8f0132a11cf70b8015" title="x 초뒤에 UI 사라짐" alt="" coords="510,5,711,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="743,29,712,29,712,24,743,24"/>
+<area shape="rect" id="Node000003" href="$class_k_j_1_1_talking_head_system.html#ae8539f3d7a2d3336d6d7873c8bc8386d" title="UI 활성화" alt="" coords="270,5,462,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="494,29,463,29,463,24,494,24"/>
+<area shape="rect" id="Node000004" href="$class_k_j_1_1_talking_head_system.html#a9e734657ec1360129e3159071d409486" title="switch 문으로 구역 진입시 토킹헤드 나타나기 위한 구역들 나열" alt="" coords="5,5,222,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="254,29,222,29,222,24,254,24"/>
+</map>

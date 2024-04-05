@@ -3,32 +3,41 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class LoadingTextAnimation : MonoBehaviour
+namespace KJ
 {
-    [Header("LoadingText")]
-    // text ÄÄÆ÷³ÍÆ®
-    public TextMeshProUGUI loadingText;
-    // '.' ÅØ½ºÆ® ¼Óµµ
-    public float dotSpeed = 0.5f;
-    // ±âº» ¹®Àå
-    public string baseText = "·Îµù Áß";
-    // ÇöÀç '.' ÅØ½ºÆ® °³¼ö
-    public int dotCount = 0;
-    void Start()
+    /**
+     * @brief ë¡œë”©ì‹œ ë‚˜ì˜¤ëŠ” í…ìŠ¤íŠ¸
+     */
+    public class LoadingTextAnimation : MonoBehaviour
     {
-        StartCoroutine(AnimateDots());
-    }
+        [Header("LoadingText")]
+        public TextMeshProUGUI loadingText; ///< ë¡œë”© text
+        public float dotSpeed = 0.5f; ///< '.' í…ìŠ¤íŠ¸ ì†ë„
+        public string baseText = "ë¡œë”© ì¤‘"; ///< ê¸°ë³¸ ë¬¸ì¥
+        public int dotCount = 0; ///< í˜„ì¬ '.' í…ìŠ¤íŠ¸ ê°œìˆ˜
 
-    IEnumerator AnimateDots()
-    {
-        while (true)
+        /**
+         * @brief AnimateDots ì‹¤í–‰
+         */
+        void Start()
         {
-            // '.' ÀÇ °³¼ö¸¦ 0 ~ 4±îÁö ¹İº¹
-            dotCount = (dotCount + 1) % 5;
-            // ±âº» ÅØ½ºÆ®¿¡ '.' Ãß°¡
-            loadingText.text = baseText + new string('.', dotCount);
-            // ÁöÁ¤µÈ ½Ã°£ µ¿¾È ´ë±â
-            yield return new WaitForSeconds(dotSpeed);
+            StartCoroutine(AnimateDots());
+        }
+
+        /**
+         * @brief AnimateDots, ë¡œë”©ì—ì„œ í…ìŠ¤íŠ¸ ë’¤ì— ... ê°œìˆ˜ ì„¤ì • ë° ë°˜ë³µ
+         */
+        IEnumerator AnimateDots()
+        {
+            while (true)
+            {
+                /* '.' ì˜ ê°œìˆ˜ë¥¼ 0 ~ 4ê¹Œì§€ ë°˜ë³µ */
+                dotCount = (dotCount + 1) % 5;
+                /* ê¸°ë³¸ í…ìŠ¤íŠ¸ì— '.' ì¶”ê°€ */
+                loadingText.text = baseText + new string('.', dotCount);
+                /* ì§€ì •ëœ ì‹œê°„ ë™ì•ˆ ëŒ€ê¸° */
+                yield return new WaitForSeconds(dotSpeed);
+            }
         }
     }
 }

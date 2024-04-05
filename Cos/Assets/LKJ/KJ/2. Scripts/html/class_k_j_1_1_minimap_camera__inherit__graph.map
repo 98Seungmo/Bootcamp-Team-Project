@@ -1,0 +1,5 @@
+<map id="KJ.MinimapCamera" name="KJ.MinimapCamera">
+<area shape="rect" id="Node000001" title="미니맵용 카메라, 카메라가 target(player)이 스폰될 때 target의 위치 추적" alt="" coords="5,80,140,107"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="18,5,127,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,48,75,80,70,80,70,48"/>
+</map>

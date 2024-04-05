@@ -1,0 +1,376 @@
+\doxysection{KJ.\+Bars\+Manager 클래스 참조}
+\hypertarget{class_k_j_1_1_bars_manager}{}\label{class_k_j_1_1_bars_manager}\index{KJ.BarsManager@{KJ.BarsManager}}
+
+
+플레이어 체력바 관리  
+
+
+
+
+KJ.\+Bars\+Manager에 대한 상속 다이어그램 \+: \nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{class_k_j_1_1_bars_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+KJ.\+Bars\+Manager에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{class_k_j_1_1_bars_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Slider \mbox{\hyperlink{class_k_j_1_1_bars_manager_a734972ce1bb81a9d6a02f0f8500e3b9f}{health\+Slider}}
+\begin{DoxyCompactList}\small\item\em 체력 \end{DoxyCompactList}\item 
+Slider \mbox{\hyperlink{class_k_j_1_1_bars_manager_adfb5225a67cd4032a02d8223c1298303}{stamina\+Slider}}
+\begin{DoxyCompactList}\small\item\em 스테미나 \end{DoxyCompactList}\item 
+TMP\+\_\+\+Text \mbox{\hyperlink{class_k_j_1_1_bars_manager_a843e7a452537a06978798926c6bcfb7a}{health\+Cur}}
+\begin{DoxyCompactList}\small\item\em 현재 체력 텍스트 \end{DoxyCompactList}\item 
+TMP\+\_\+\+Text \mbox{\hyperlink{class_k_j_1_1_bars_manager_aa1b32ff0f9426202ef6ee9ff52b97b69}{health\+Max}}
+\begin{DoxyCompactList}\small\item\em 최대 체력 텍스트 \end{DoxyCompactList}\item 
+TMP\+\_\+\+Text \mbox{\hyperlink{class_k_j_1_1_bars_manager_a54070156d98a72870ec55b909f819687}{stamina\+Cur}}
+\begin{DoxyCompactList}\small\item\em 현재 스테미나 텍스트 \end{DoxyCompactList}\item 
+TMP\+\_\+\+Text \mbox{\hyperlink{class_k_j_1_1_bars_manager_a0c3179d8af594fc6817613df881e44f1}{stamina\+Max}}
+\begin{DoxyCompactList}\small\item\em 최대 스테미나 텍스트 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_k_j_1_1_bars_manager_ac5cafde9eaa8d6753f1b6afe286d9ec3}{max\+Health}} = 100f
+\begin{DoxyCompactList}\small\item\em 최대 체력 = 100f \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_k_j_1_1_bars_manager_aba215a263d44b0b1b10d38e82d121b3b}{max\+Stamina}} = 100f
+\begin{DoxyCompactList}\small\item\em 최대 스테미나 = 100f \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_k_j_1_1_bars_manager_ac7af6009a515f09570f64b13d6d0edd7}{stamina\+Recovery\+Rate}} = 5f
+\begin{DoxyCompactList}\small\item\em 스테미나 회복 값 = 5f \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_k_j_1_1_bars_manager_a4138a03d5ac00cb43c5ed424416f9962}{Start}} ()
+\begin{DoxyCompactList}\small\item\em 체력 및 스테미나 UI 설정 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_k_j_1_1_bars_manager_a586f66d7bfc11179256a77433d9c0592}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Update\+Stamina\+UI 호출 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_k_j_1_1_bars_manager_a77a8fe888569225ef0d6d24bff0d2e9b}{Update\+Health\+UI}} ()
+\begin{DoxyCompactList}\small\item\em 체력바, 텍스트 UI 업데이트 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_k_j_1_1_bars_manager_a6cf7446ff9134fcfa7734972a1e042f2}{Update\+Stamina\+UI}} ()
+\begin{DoxyCompactList}\small\item\em 스테미나 UI 업데이트 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_k_j_1_1_bars_manager_a9d45709e3ea115752d958cd6f48b95ef}{\+\_\+current\+Health}}
+\begin{DoxyCompactList}\small\item\em 현재 체력 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}{\+\_\+current\+Stamina}}
+\begin{DoxyCompactList}\small\item\em 현재 스테미나 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+플레이어 체력바 관리 
+
+\mbox{\hyperlink{_bars_manager_8cs_source}{Bars\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_bars_manager_8cs_source_l00012}{12}} 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\Hypertarget{class_k_j_1_1_bars_manager_a4138a03d5ac00cb43c5ed424416f9962}\label{class_k_j_1_1_bars_manager_a4138a03d5ac00cb43c5ed424416f9962} 
+\index{KJ.BarsManager@{KJ.BarsManager}!Start@{Start}}
+\index{Start@{Start}!KJ.BarsManager@{KJ.BarsManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void KJ.\+Bars\+Manager.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+체력 및 스테미나 UI 설정 
+
+
+
+\mbox{\hyperlink{_bars_manager_8cs_source}{Bars\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_bars_manager_8cs_source_l00035}{35}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 초기\ 체력\ 설정\ */}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a9d45709e3ea115752d958cd6f48b95ef}{\_currentHealth}}\ =\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_ac5cafde9eaa8d6753f1b6afe286d9ec3}{maxHealth}};}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 슬라이더의\ 최대값을\ 최대\ 체력으로\ 설정\ */}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ healthSlider.maxValue\ =\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_ac5cafde9eaa8d6753f1b6afe286d9ec3}{maxHealth}};}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a77a8fe888569225ef0d6d24bff0d2e9b}{UpdateHealthUI}}();}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 초기\ 스테미나\ 설정\ */}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}{\_currentStamina}}\ =\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_aba215a263d44b0b1b10d38e82d121b3b}{maxStamina}};}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 슬라이더의\ 최대값을\ 최대\ 스테미너로\ 설정\ */}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ staminaSlider.maxValue\ =\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_aba215a263d44b0b1b10d38e82d121b3b}{maxStamina}};}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 슬라이더의\ 값\ 초기화\ */}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ staminaSlider.value\ =\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}{\_currentStamina}};}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_j_1_1_bars_manager_a4138a03d5ac00cb43c5ed424416f9962_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_k_j_1_1_bars_manager_a586f66d7bfc11179256a77433d9c0592}\label{class_k_j_1_1_bars_manager_a586f66d7bfc11179256a77433d9c0592} 
+\index{KJ.BarsManager@{KJ.BarsManager}!Update@{Update}}
+\index{Update@{Update}!KJ.BarsManager@{KJ.BarsManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void KJ.\+Bars\+Manager.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Update\+Stamina\+UI 호출 
+
+
+
+\mbox{\hyperlink{_bars_manager_8cs_source}{Bars\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_bars_manager_8cs_source_l00053}{53}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a6cf7446ff9134fcfa7734972a1e042f2}{UpdateStaminaUI}}();}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_j_1_1_bars_manager_a586f66d7bfc11179256a77433d9c0592_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_k_j_1_1_bars_manager_a77a8fe888569225ef0d6d24bff0d2e9b}\label{class_k_j_1_1_bars_manager_a77a8fe888569225ef0d6d24bff0d2e9b} 
+\index{KJ.BarsManager@{KJ.BarsManager}!UpdateHealthUI@{UpdateHealthUI}}
+\index{UpdateHealthUI@{UpdateHealthUI}!KJ.BarsManager@{KJ.BarsManager}}
+\doxysubsubsection{\texorpdfstring{UpdateHealthUI()}{UpdateHealthUI()}}
+{\footnotesize\ttfamily void KJ.\+Bars\+Manager.\+Update\+Health\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+체력바, 텍스트 UI 업데이트 
+
+
+
+\mbox{\hyperlink{_bars_manager_8cs_source}{Bars\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_bars_manager_8cs_source_l00061}{61}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Debug.Log(\$"{}Current\ Health:\ \{\_currentHealth\},\ Max\ Health:\ \{maxHealth\},\ Slider\ Value:\ \{healthSlider.value\}"{});}}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Slider,\ 텍스트\ 업데이트\ */}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ healthSlider.value\ =\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a9d45709e3ea115752d958cd6f48b95ef}{\_currentHealth}};}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ healthCur.text\ =\ \$\textcolor{stringliteral}{"{}\{\_currentHealth\}"{}};}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ healthMax.text\ =\ \$\textcolor{stringliteral}{"{}\{maxHealth\}"{}};}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_j_1_1_bars_manager_a77a8fe888569225ef0d6d24bff0d2e9b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_k_j_1_1_bars_manager_a6cf7446ff9134fcfa7734972a1e042f2}\label{class_k_j_1_1_bars_manager_a6cf7446ff9134fcfa7734972a1e042f2} 
+\index{KJ.BarsManager@{KJ.BarsManager}!UpdateStaminaUI@{UpdateStaminaUI}}
+\index{UpdateStaminaUI@{UpdateStaminaUI}!KJ.BarsManager@{KJ.BarsManager}}
+\doxysubsubsection{\texorpdfstring{UpdateStaminaUI()}{UpdateStaminaUI()}}
+{\footnotesize\ttfamily void KJ.\+Bars\+Manager.\+Update\+Stamina\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+스테미나 UI 업데이트 
+
+
+
+\mbox{\hyperlink{_bars_manager_8cs_source}{Bars\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_bars_manager_8cs_source_l00073}{73}} 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 스테미나\ 업데이트\ */}}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}{\_currentStamina}}\ <\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_aba215a263d44b0b1b10d38e82d121b3b}{maxStamina}})}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\$\textcolor{stringliteral}{"{}Current\ SP\ :\ \{\_currentStamina\},\ Max\ SP\ :\ \{maxStamina\},\ Slider\ Value\ :\ \{staminaSlider.value\}"{}});}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 스테미나가\ 시간에\ 따라\ 자동으로\ 채워짐.\ */}}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}{\_currentStamina}}\ +=\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_ac7af6009a515f09570f64b13d6d0edd7}{staminaRecoveryRate}}\ *\ Time.deltaTime;}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 최대\ 스테미너\ 넘지\ 않음.\ */}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}{\_currentStamina}}\ =\ Mathf.Min(\mbox{\hyperlink{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}{\_currentStamina}},\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_aba215a263d44b0b1b10d38e82d121b3b}{maxStamina}});}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 슬라이더\ 업데이트\ */}}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ staminaSlider.value\ =\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}{\_currentStamina}};}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 텍스트\ 업데이트\ */}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 정수로\ 변환하여\ 소수점\ 안나오게\ 함.\ */}}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ staminaCur.text\ =\ Mathf.RoundToInt(\mbox{\hyperlink{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}{\_currentStamina}}).ToString();}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ staminaMax.text\ =\ \$\textcolor{stringliteral}{"{}\{maxStamina\}"{}};}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_j_1_1_bars_manager_a6cf7446ff9134fcfa7734972a1e042f2_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\Hypertarget{class_k_j_1_1_bars_manager_a9d45709e3ea115752d958cd6f48b95ef}\label{class_k_j_1_1_bars_manager_a9d45709e3ea115752d958cd6f48b95ef} 
+\index{KJ.BarsManager@{KJ.BarsManager}!\_currentHealth@{\_currentHealth}}
+\index{\_currentHealth@{\_currentHealth}!KJ.BarsManager@{KJ.BarsManager}}
+\doxysubsubsection{\texorpdfstring{\_currentHealth}{\_currentHealth}}
+{\footnotesize\ttfamily float KJ.\+Bars\+Manager.\+\_\+current\+Health\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+현재 체력 
+
+
+
+\mbox{\hyperlink{_bars_manager_8cs_source}{Bars\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_bars_manager_8cs_source_l00029}{29}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}\label{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff} 
+\index{KJ.BarsManager@{KJ.BarsManager}!\_currentStamina@{\_currentStamina}}
+\index{\_currentStamina@{\_currentStamina}!KJ.BarsManager@{KJ.BarsManager}}
+\doxysubsubsection{\texorpdfstring{\_currentStamina}{\_currentStamina}}
+{\footnotesize\ttfamily float KJ.\+Bars\+Manager.\+\_\+current\+Stamina\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+현재 스테미나 
+
+
+
+\mbox{\hyperlink{_bars_manager_8cs_source}{Bars\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_bars_manager_8cs_source_l00030}{30}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_bars_manager_a843e7a452537a06978798926c6bcfb7a}\label{class_k_j_1_1_bars_manager_a843e7a452537a06978798926c6bcfb7a} 
+\index{KJ.BarsManager@{KJ.BarsManager}!healthCur@{healthCur}}
+\index{healthCur@{healthCur}!KJ.BarsManager@{KJ.BarsManager}}
+\doxysubsubsection{\texorpdfstring{healthCur}{healthCur}}
+{\footnotesize\ttfamily TMP\+\_\+\+Text KJ.\+Bars\+Manager.\+health\+Cur}
+
+
+
+현재 체력 텍스트 
+
+
+
+\mbox{\hyperlink{_bars_manager_8cs_source}{Bars\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_bars_manager_8cs_source_l00018}{18}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_bars_manager_aa1b32ff0f9426202ef6ee9ff52b97b69}\label{class_k_j_1_1_bars_manager_aa1b32ff0f9426202ef6ee9ff52b97b69} 
+\index{KJ.BarsManager@{KJ.BarsManager}!healthMax@{healthMax}}
+\index{healthMax@{healthMax}!KJ.BarsManager@{KJ.BarsManager}}
+\doxysubsubsection{\texorpdfstring{healthMax}{healthMax}}
+{\footnotesize\ttfamily TMP\+\_\+\+Text KJ.\+Bars\+Manager.\+health\+Max}
+
+
+
+최대 체력 텍스트 
+
+
+
+\mbox{\hyperlink{_bars_manager_8cs_source}{Bars\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_bars_manager_8cs_source_l00019}{19}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_bars_manager_a734972ce1bb81a9d6a02f0f8500e3b9f}\label{class_k_j_1_1_bars_manager_a734972ce1bb81a9d6a02f0f8500e3b9f} 
+\index{KJ.BarsManager@{KJ.BarsManager}!healthSlider@{healthSlider}}
+\index{healthSlider@{healthSlider}!KJ.BarsManager@{KJ.BarsManager}}
+\doxysubsubsection{\texorpdfstring{healthSlider}{healthSlider}}
+{\footnotesize\ttfamily Slider KJ.\+Bars\+Manager.\+health\+Slider}
+
+
+
+체력 
+
+
+
+\mbox{\hyperlink{_bars_manager_8cs_source}{Bars\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_bars_manager_8cs_source_l00015}{15}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_bars_manager_ac5cafde9eaa8d6753f1b6afe286d9ec3}\label{class_k_j_1_1_bars_manager_ac5cafde9eaa8d6753f1b6afe286d9ec3} 
+\index{KJ.BarsManager@{KJ.BarsManager}!maxHealth@{maxHealth}}
+\index{maxHealth@{maxHealth}!KJ.BarsManager@{KJ.BarsManager}}
+\doxysubsubsection{\texorpdfstring{maxHealth}{maxHealth}}
+{\footnotesize\ttfamily float KJ.\+Bars\+Manager.\+max\+Health = 100f}
+
+
+
+최대 체력 = 100f 
+
+
+
+\mbox{\hyperlink{_bars_manager_8cs_source}{Bars\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_bars_manager_8cs_source_l00023}{23}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_bars_manager_aba215a263d44b0b1b10d38e82d121b3b}\label{class_k_j_1_1_bars_manager_aba215a263d44b0b1b10d38e82d121b3b} 
+\index{KJ.BarsManager@{KJ.BarsManager}!maxStamina@{maxStamina}}
+\index{maxStamina@{maxStamina}!KJ.BarsManager@{KJ.BarsManager}}
+\doxysubsubsection{\texorpdfstring{maxStamina}{maxStamina}}
+{\footnotesize\ttfamily float KJ.\+Bars\+Manager.\+max\+Stamina = 100f}
+
+
+
+최대 스테미나 = 100f 
+
+
+
+\mbox{\hyperlink{_bars_manager_8cs_source}{Bars\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_bars_manager_8cs_source_l00025}{25}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_bars_manager_a54070156d98a72870ec55b909f819687}\label{class_k_j_1_1_bars_manager_a54070156d98a72870ec55b909f819687} 
+\index{KJ.BarsManager@{KJ.BarsManager}!staminaCur@{staminaCur}}
+\index{staminaCur@{staminaCur}!KJ.BarsManager@{KJ.BarsManager}}
+\doxysubsubsection{\texorpdfstring{staminaCur}{staminaCur}}
+{\footnotesize\ttfamily TMP\+\_\+\+Text KJ.\+Bars\+Manager.\+stamina\+Cur}
+
+
+
+현재 스테미나 텍스트 
+
+
+
+\mbox{\hyperlink{_bars_manager_8cs_source}{Bars\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_bars_manager_8cs_source_l00020}{20}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_bars_manager_a0c3179d8af594fc6817613df881e44f1}\label{class_k_j_1_1_bars_manager_a0c3179d8af594fc6817613df881e44f1} 
+\index{KJ.BarsManager@{KJ.BarsManager}!staminaMax@{staminaMax}}
+\index{staminaMax@{staminaMax}!KJ.BarsManager@{KJ.BarsManager}}
+\doxysubsubsection{\texorpdfstring{staminaMax}{staminaMax}}
+{\footnotesize\ttfamily TMP\+\_\+\+Text KJ.\+Bars\+Manager.\+stamina\+Max}
+
+
+
+최대 스테미나 텍스트 
+
+
+
+\mbox{\hyperlink{_bars_manager_8cs_source}{Bars\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_bars_manager_8cs_source_l00021}{21}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_bars_manager_ac7af6009a515f09570f64b13d6d0edd7}\label{class_k_j_1_1_bars_manager_ac7af6009a515f09570f64b13d6d0edd7} 
+\index{KJ.BarsManager@{KJ.BarsManager}!staminaRecoveryRate@{staminaRecoveryRate}}
+\index{staminaRecoveryRate@{staminaRecoveryRate}!KJ.BarsManager@{KJ.BarsManager}}
+\doxysubsubsection{\texorpdfstring{staminaRecoveryRate}{staminaRecoveryRate}}
+{\footnotesize\ttfamily float KJ.\+Bars\+Manager.\+stamina\+Recovery\+Rate = 5f}
+
+
+
+스테미나 회복 값 = 5f 
+
+
+
+\mbox{\hyperlink{_bars_manager_8cs_source}{Bars\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_bars_manager_8cs_source_l00027}{27}} 번째 라인에서 정의되었습니다.
+
+\Hypertarget{class_k_j_1_1_bars_manager_adfb5225a67cd4032a02d8223c1298303}\label{class_k_j_1_1_bars_manager_adfb5225a67cd4032a02d8223c1298303} 
+\index{KJ.BarsManager@{KJ.BarsManager}!staminaSlider@{staminaSlider}}
+\index{staminaSlider@{staminaSlider}!KJ.BarsManager@{KJ.BarsManager}}
+\doxysubsubsection{\texorpdfstring{staminaSlider}{staminaSlider}}
+{\footnotesize\ttfamily Slider KJ.\+Bars\+Manager.\+stamina\+Slider}
+
+
+
+스테미나 
+
+
+
+\mbox{\hyperlink{_bars_manager_8cs_source}{Bars\+Manager.\+cs}} 파일의 \mbox{\hyperlink{_bars_manager_8cs_source_l00016}{16}} 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+LKJ/\+Documents/\+Git\+Hub/\+Bootcamp-\/\+Team-\/\+Project/\+Cos/\+Assets/\+LKJ/\+KJ/2. Scripts/02. Dungeon\+Scripts/\mbox{\hyperlink{_bars_manager_8cs}{Bars\+Manager.\+cs}}\end{DoxyCompactItemize}

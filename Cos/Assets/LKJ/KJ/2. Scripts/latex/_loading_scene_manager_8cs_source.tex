@@ -1,0 +1,119 @@
+\doxysection{Loading\+Scene\+Manager.\+cs}
+\hypertarget{_loading_scene_manager_8cs_source}{}\label{_loading_scene_manager_8cs_source}\index{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/03. LoadingScripts/LoadingSceneManager.cs@{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/03. LoadingScripts/LoadingSceneManager.cs}}
+\mbox{\hyperlink{_loading_scene_manager_8cs}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }TMPro;}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }Unity.VisualScripting;}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00006}00006\ \textcolor{keyword}{using\ }UnityEngine.SceneManagement;}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00007}00007\ \textcolor{keyword}{using\ }UnityEngine.UI;}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00009}00009\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_k_j}{KJ}}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00010}00010\ \{}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00014}\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager}{00014}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager}{LoadingSceneManager}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00015}00015\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00019}\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a48f7c4ef689965f71f0ad3e9d6041d88}{00019}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a48f7c4ef689965f71f0ad3e9d6041d88}{Start}}()}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00021}00021\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#region\ 로딩\ 씬\ 데이터\ 로드\ 및\ shortUID\ 체크\ 후\ 상황에\ 따라\ 씬\ 변경.\ (슬라이더)\ }}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ LoadAsyncSceneCoroutine()\ 을\ 코루틴으로\ 시작\ */}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ StartCoroutine(\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a65c6b1ce750492bbb2f66b0d6833a142}{LoadAsyncSceneCoroutine}}());}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00024}00024\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00025}00025\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#region\ 로딩\ 동안\ 게임\ 스토리\ 텍스트\ 랜덤으로\ 생성}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 리스트에\ gameStory\ 컴포넌트\ 추가\ */}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a21db05cb141e23055def8ef0f5fef6b5}{gameStoryList}}.Add(\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a7bc10bcb25e305d0b7257a149a4c0183}{gameStory}});}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a21db05cb141e23055def8ef0f5fef6b5}{gameStoryList}}.Add(\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_abaa2f7f3387f89a2226fac742a1c103e}{gameStory2}});}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a21db05cb141e23055def8ef0f5fef6b5}{gameStoryList}}.Add(\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a3ccc63cf42667cdf111e2bf048622bfb}{gameStory3}});}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 랜덤\ 범위는\ 리스트\ 길이\ */}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_ac18dbec152aaba87e8f72d29a74b0292}{\_randomNum}}\ =\ Random.Range(0,\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a21db05cb141e23055def8ef0f5fef6b5}{gameStoryList}}.Count);}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a8a892fdb390cb0e1a38048b6eec188cd}{randomStory}}\ =\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a21db05cb141e23055def8ef0f5fef6b5}{gameStoryList}}[\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_ac18dbec152aaba87e8f72d29a74b0292}{\_randomNum}}];}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 랜덤으로\ 선택된\ 텍스트만\ 활성화\ 나머지는\ 비활성화\ */}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (var\ story\ \textcolor{keywordflow}{in}\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a21db05cb141e23055def8ef0f5fef6b5}{gameStoryList}})}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 모든\ 스토리를\ 비활성화\ */}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ story.gameObject.SetActive(\textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 랜덤으로\ 선택된\ 스토리\ 활성화\ */}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a8a892fdb390cb0e1a38048b6eec188cd}{randomStory}}.gameObject.SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00043}00043\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00049}\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_ab803e504e0c8f25c91128d68e3dc00d4}{00049}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_ab803e504e0c8f25c91128d68e3dc00d4}{Update}}()}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a8d06ecb50db249e3f8c13916d646bef2}{currentProgress}}\ =\ Mathf.Lerp(\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a8d06ecb50db249e3f8c13916d646bef2}{currentProgress}},\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a2c2f0f21ef40df20ea03a4bee87f9681}{targetProgress}},\ Time.deltaTime\ *\ 10);}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 슬라이더\ 값\ 업데이트\ */}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ slider.value\ =\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a8d06ecb50db249e3f8c13916d646bef2}{currentProgress}};}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00056}00056\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ 로딩\ 씬\ 데이터\ 로드\ 및\ shortUID\ 체크\ 후\ 상황에\ 따라\ 씬\ 변경.\ (슬라이더)\ }}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}Slider"{}})]}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00058}\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a37753446e0512fc00f9bc24f2e297df3}{00058}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Slider\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a37753446e0512fc00f9bc24f2e297df3}{slider}};\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00059}\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_aeff62662aaf309e4efde1247a3a35437}{00059}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_aeff62662aaf309e4efde1247a3a35437}{sceneName}};\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00061}\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a8d06ecb50db249e3f8c13916d646bef2}{00061}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a8d06ecb50db249e3f8c13916d646bef2}{currentProgress}}\ =\ 0f;\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00062}\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a2c2f0f21ef40df20ea03a4bee87f9681}{00062}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a2c2f0f21ef40df20ea03a4bee87f9681}{targetProgress}}\ =\ 0f;\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00067}\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a65c6b1ce750492bbb2f66b0d6833a142}{00067}}\ \ \ \ \ \ \ \ \ IEnumerator\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a65c6b1ce750492bbb2f66b0d6833a142}{LoadAsyncSceneCoroutine}}()}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 플레이어\ 데이터\ 로드\ */}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ yield\ \textcolor{keywordflow}{return}\ \ \mbox{\hyperlink{class_k_j_1_1_player_d_b_manager}{PlayerDBManager}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}.LoadPlayerDB();}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a2c2f0f21ef40df20ea03a4bee87f9681}{targetProgress}}\ +=\ 0.5f;}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 아이템\ 데이터\ 로드\ */}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ yield\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_k_j_1_1_item_d_b_manager}{ItemDBManager}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}.LoadItemDB();}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a2c2f0f21ef40df20ea03a4bee87f9681}{targetProgress}}\ +=\ 0.5f;}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 저장된\ 데이터\ 확인\ */}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ hasSavedData\ =\ \mbox{\hyperlink{class_k_j_1_1_player_d_b_manager}{PlayerDBManager}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}.CheckPlayerData(\mbox{\hyperlink{class_k_j_1_1_player_d_b_manager}{PlayerDBManager}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}.CurrentShortUID);}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (hasSavedData)}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 저장된\ 데이터가\ 있으면\ 로딩씬을\ 통해\ 게임\ 진행.\ */}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_player_d_b_manager}{PlayerDBManager}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}.LoadGameData(\mbox{\hyperlink{class_k_j_1_1_player_d_b_manager}{PlayerDBManager}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}.CurrentShortUID);}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_aeff62662aaf309e4efde1247a3a35437}{sceneName}}\ =\ \textcolor{stringliteral}{"{}VillageScene"{}};}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 없으면\ 캐릭터\ 선택창으로\ 이동.\ */}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_aeff62662aaf309e4efde1247a3a35437}{sceneName}}\ =\ \textcolor{stringliteral}{"{}CharacterSelectScene"{}};}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00090}00090\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 목표\ 진행\ 완료\ */}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a2c2f0f21ef40df20ea03a4bee87f9681}{targetProgress}}\ =\ 1f;}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ sceneName\ 으로\ 비동기\ 형식으로\ 넘어가게\ 하는\ operation\ 생성.}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ AsyncOperation\ operation\ =\ SceneManager.LoadSceneAsync(\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_aeff62662aaf309e4efde1247a3a35437}{sceneName}});}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ operation\ 이\ 완료되어도\ 다음\ 씬으로\ 넘어가는걸\ 막음.}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ operation.allowSceneActivation\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00099}00099\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ operation.isDone\ 이\ false\ 일\ 동안\ 반복.}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00100}00100\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!operation.isDone)}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00101}00101\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a2c2f0f21ef40df20ea03a4bee87f9681}{targetProgress}}\ >=\ 1f)}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ operation.allowSceneActivation\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00105}00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//다음\ 프레임까지\ 대기.}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ yield\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00109}00109\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00110}00110\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00111}00111\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00112}00112\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ 로딩\ 동안\ 게임\ 스토리\ 텍스트\ 랜덤으로\ 생성}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00113}00113\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}RandomText"{}})]}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00114}\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a8a892fdb390cb0e1a38048b6eec188cd}{00114}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ TMP\_Text\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a8a892fdb390cb0e1a38048b6eec188cd}{randomStory}};\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00115}\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a7bc10bcb25e305d0b7257a149a4c0183}{00115}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ TMP\_Text\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a7bc10bcb25e305d0b7257a149a4c0183}{gameStory}};\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00116}\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_abaa2f7f3387f89a2226fac742a1c103e}{00116}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ TMP\_Text\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_abaa2f7f3387f89a2226fac742a1c103e}{gameStory2}};\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00117}\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a3ccc63cf42667cdf111e2bf048622bfb}{00117}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ TMP\_Text\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a3ccc63cf42667cdf111e2bf048622bfb}{gameStory3}};\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00119}\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_ac18dbec152aaba87e8f72d29a74b0292}{00119}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_ac18dbec152aaba87e8f72d29a74b0292}{\_randomNum}};\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00120}00120\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00121}\mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a21db05cb141e23055def8ef0f5fef6b5}{00121}}\ \ \ \ \ \ \ \ \ List<TMP\_Text>\ \mbox{\hyperlink{class_k_j_1_1_loading_scene_manager_a21db05cb141e23055def8ef0f5fef6b5}{gameStoryList}}\ =\ \textcolor{keyword}{new}\ List<TMP\_Text>();\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00122}00122\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00123}00123\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00124}00124\ }
+\DoxyCodeLine{\Hypertarget{_loading_scene_manager_8cs_source_l00125}00125\ \}}
+
+\end{DoxyCode}

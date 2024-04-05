@@ -1,0 +1,5 @@
+<map id="KJ.InventoryUI.RemoveSlot" name="KJ.InventoryUI.RemoveSlot">
+<area shape="rect" id="Node000001" title="아이템 제거시 슬롯 삭제" alt="" coords="232,5,408,32"/>
+<area shape="rect" id="Node000002" href="$class_k_j_1_1_inventory_u_i.html#aa9e2cf089ddf85e8612ae3177ec379dc" title="인벤토리에 아이템 제거" alt="" coords="5,5,184,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,21,184,21,184,16,216,16"/>
+</map>

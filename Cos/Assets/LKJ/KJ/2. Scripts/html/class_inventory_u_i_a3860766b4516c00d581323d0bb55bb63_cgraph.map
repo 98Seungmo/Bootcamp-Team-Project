@@ -1,0 +1,9 @@
+<map id="InventoryUI.Start" name="InventoryUI.Start">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,122,57"/>
+<area shape="rect" id="Node000002" href="$class_inventory_u_i.html#a208fe0f0dae6def3bd2a114bfc4a2e6f" title=" " alt="" coords="170,31,306,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,41,154,41,154,47,122,47"/>
+<area shape="rect" id="Node000003" href="$class_inventory_u_i.html#acbdd4a5c09941a5be046934b6ecbd839" title=" " alt="" coords="363,5,512,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="306,33,347,27,348,33,307,38"/>
+<area shape="rect" id="Node000004" href="$class_inventory_u_i.html#aa943337b5cd8f88a9b6e4600379c64f9" title=" " alt="" coords="354,56,521,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="307,50,339,54,338,59,306,55"/>
+</map>

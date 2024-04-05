@@ -1,0 +1,148 @@
+\doxysection{Menu\+UIManager.\+cs}
+\hypertarget{_menu_u_i_manager_8cs_source}{}\label{_menu_u_i_manager_8cs_source}\index{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/05. VillageScripts/MenuUIManager.cs@{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/05. VillageScripts/MenuUIManager.cs}}
+\mbox{\hyperlink{_menu_u_i_manager_8cs}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_k_j}{KJ}};}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }Ricimi;}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }Scene\_Teleportation\_Kit.Scripts.player;}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00006}00006\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00007}00007\ \textcolor{keyword}{using\ }TMPro;}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00008}00008\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00009}00009\ \textcolor{keyword}{using\ }UnityEngine.SceneManagement;}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00010}00010\ \textcolor{keyword}{using\ }UnityEngine.UI;}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00012}00012\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_k_j}{KJ}}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00013}00013\ \{}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00017}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager}{00017}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager}{MenuUIManager}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00018}00018\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00019}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a1807aae1d9e77033854b43041a613cc2}{00019}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_player_d_b_manager}{PlayerDBManager}}\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a1807aae1d9e77033854b43041a613cc2}{playerDBManager}}\ =\ \mbox{\hyperlink{class_k_j_1_1_player_d_b_manager}{PlayerDBManager}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}};\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00020}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_abb91eabe400f19f0f4aaa1b2d2bf5cf7}{00020}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager}{MenuUIManager}}\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_abb91eabe400f19f0f4aaa1b2d2bf5cf7}{Instance}}\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 메뉴\ UI\ */}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}Menu\ UI"{}})]}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00024}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a1e5a760294b8c91c3832d59c25787198}{00024}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ GameObject\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a1e5a760294b8c91c3832d59c25787198}{menuUI}};\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 장비\ 팝업창\ UI\ */}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}Equip\ UI"{}})]}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00027}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_ad5a7ec4eeb186dd147761c45d66d91fb}{00027}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ GameObject\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_ad5a7ec4eeb186dd147761c45d66d91fb}{weaponUI}};\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00028}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a8b7126de6fedf0ca3c893b58f3d002bd}{00028}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ GameObject\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a8b7126de6fedf0ca3c893b58f3d002bd}{armorUI}};\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00029}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_ab6fcfbec34fdbc6203c3e1fb07924627}{00029}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ GameObject\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_ab6fcfbec34fdbc6203c3e1fb07924627}{accUI}};\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 인벤토리\ UI\ */}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}Inventory\ UI"{}})]}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00032}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_ab19d09fa81a388ad2574df02788e57c2}{00032}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ GameObject\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_ab19d09fa81a388ad2574df02788e57c2}{inventoryUI}};\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 확인창\ UI\ */}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}Check\ UI"{}})]}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00035}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_aef9d8ec0e6b947a03c005de1578b2fbb}{00035}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ GameObject\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_aef9d8ec0e6b947a03c005de1578b2fbb}{checkQuit}};\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}Class"{}})]}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00037}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a70f24f816ffe028d9a24f1dfce62f2e3}{00037}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ TMP\_Text\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a70f24f816ffe028d9a24f1dfce62f2e3}{classType}};\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}ClassImage"{}})]}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00040}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a0703fb4220cd6ce5cf409e083420a9b3}{00040}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Image\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a0703fb4220cd6ce5cf409e083420a9b3}{knghtImage}};\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00041}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a769fe6b5eb5093d463da47c35565f6d1}{00041}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Image\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a769fe6b5eb5093d463da47c35565f6d1}{babarianImage}};\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00042}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a85e292e3e5c12b0c707857a7704f8079}{00042}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Image\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a85e292e3e5c12b0c707857a7704f8079}{rogueImage}};\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00043}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_ab59d5ff1f460612b73db088d4599701d}{00043}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Image\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_ab59d5ff1f460612b73db088d4599701d}{mageImage}};\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00046}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_aa9ea7cb0dfb564589c6beb5dcc7e23cb}{00046}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Image\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_aa9ea7cb0dfb564589c6beb5dcc7e23cb}{\_img\_weapon}};\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00047}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a3f9993708e0c752ba97e3e62ead7143b}{00047}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Image\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a3f9993708e0c752ba97e3e62ead7143b}{\_img\_armor}};\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00048}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_afe994184a27a9572c26fed377374834d}{00048}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Image\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_afe994184a27a9572c26fed377374834d}{\_img\_accessory}};\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00051}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a2bbb33f6e125e76bfc4541f0dc438f3c}{00051}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a2bbb33f6e125e76bfc4541f0dc438f3c}{Awake}}()}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_abb91eabe400f19f0f4aaa1b2d2bf5cf7}{Instance}}\ =\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00061}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a2154e6a62ccb4d219441f39f9df86c58}{00061}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a2154e6a62ccb4d219441f39f9df86c58}{Update}}()}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ esc\ 누르면\ 메뉴\ 호출\ */}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (Input.GetKeyDown(KeyCode.Escape))}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}ESC!!"{}});}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a1e5a760294b8c91c3832d59c25787198}{menuUI}}.SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ classType.text\ =\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a1807aae1d9e77033854b43041a613cc2}{playerDBManager}}.\mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_a154ceb86d2419739db43cdcdebf014d4}{LoadGameData}}(\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a1807aae1d9e77033854b43041a613cc2}{playerDBManager}}.\mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_aede8e621c31ede12f985727fb1fe8e65}{CurrentShortUID}}).\mbox{\hyperlink{class_k_j_1_1_player_aca9ccbb5ebe0c9faa306b29856808ca9}{classType}};}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a1807aae1d9e77033854b43041a613cc2}{playerDBManager}}.\mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_a154ceb86d2419739db43cdcdebf014d4}{LoadGameData}}(\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a1807aae1d9e77033854b43041a613cc2}{playerDBManager}}.\mbox{\hyperlink{class_k_j_1_1_player_d_b_manager_aede8e621c31ede12f985727fb1fe8e65}{CurrentShortUID}}).\mbox{\hyperlink{class_k_j_1_1_player_aca9ccbb5ebe0c9faa306b29856808ca9}{classType}})}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}Knight"{}}:}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a0703fb4220cd6ce5cf409e083420a9b3}{knghtImage}}.gameObject.SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}Babarian"{}}:}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a769fe6b5eb5093d463da47c35565f6d1}{babarianImage}}.gameObject.SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}Rogue"{}}:}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a85e292e3e5c12b0c707857a7704f8079}{rogueImage}}.gameObject.SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}Mage"{}}:}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_ab59d5ff1f460612b73db088d4599701d}{mageImage}}.gameObject.SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Cursor.visible\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 메뉴\ 호출시\ 인게임\ 멈춤\ */}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a811866fc76240f57d832a64325838457}{PauseGame}}();}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00089}00089\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00090}00090\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ 메뉴\ 팝업}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00094}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_abecc24119045a5d1c3c5ca8c7e93c754}{00094}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_abecc24119045a5d1c3c5ca8c7e93c754}{CloseMenuUI}}()}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00095}00095\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a1e5a760294b8c91c3832d59c25787198}{menuUI}}.SetActive(\textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00098}00098\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Cursor.visible\ =\ false;}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00100}00100\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a60f1b24682c99180fb5d13cb61332626}{ResumeGame}}();}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00101}00101\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00102}00102\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00103}00103\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ 메뉴\ 팝업시\ 일시정지}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00108}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a811866fc76240f57d832a64325838457}{00108}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a811866fc76240f57d832a64325838457}{PauseGame}}()}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00109}00109\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00110}00110\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}멈춤"{}});}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ Time.timeScale\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00112}00112\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00116}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a60f1b24682c99180fb5d13cb61332626}{00116}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a60f1b24682c99180fb5d13cb61332626}{ResumeGame}}()}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00117}00117\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}재생"{}});}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00119}00119\ \ \ \ \ \ \ \ \ \ \ \ \ Time.timeScale\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00120}00120\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00121}00121\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00122}00122\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ 인벤토리\ 팝업}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00126}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_ae15dc130577819a1a3ea3e4848f3d6ee}{00126}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_ae15dc130577819a1a3ea3e4848f3d6ee}{OpenInventoryUI}}()}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00127}00127\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00128}00128\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_ab19d09fa81a388ad2574df02788e57c2}{inventoryUI}}.SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00129}00129\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00130}00130\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00134}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_ab091da84cf65a3252918947aa334ef0c}{00134}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_ab091da84cf65a3252918947aa334ef0c}{CloseInventoryUI}}()}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00135}00135\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00136}00136\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_ab19d09fa81a388ad2574df02788e57c2}{inventoryUI}}.SetActive(\textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00137}00137\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00138}00138\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00139}00139\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ 확인창\ 팝업}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00140}00140\ }
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00141}00141\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 게임\ 종료\ 하는\ 확인창\ */}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00145}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_ad163670d4eb3d4a58a45cae645c866cf}{00145}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_ad163670d4eb3d4a58a45cae645c866cf}{OpenCheckQuit}}()}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00146}00146\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00147}00147\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_aef9d8ec0e6b947a03c005de1578b2fbb}{checkQuit}}.SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00148}00148\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00152}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a5ae0b2b8cec68b168caa901cd831b662}{00152}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_a5ae0b2b8cec68b168caa901cd831b662}{CloseCheckQuit}}()}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00153}00153\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00154}00154\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_aef9d8ec0e6b947a03c005de1578b2fbb}{checkQuit}}.SetActive(\textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00155}00155\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00156}00156\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00157}00157\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Scene\ 이동}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00158}00158\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 게임\ 종료\ */}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00162}\mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_af44a7b8f3555b8ab13fd2a2b10b05580}{00162}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_menu_u_i_manager_af44a7b8f3555b8ab13fd2a2b10b05580}{Quit}}()}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00163}00163\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00164}00164\ \textcolor{preprocessor}{\#if\ UNITY\_EDITOR}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00165}00165\ \ \ \ \ \ \ \ \ \ \ \ \ UnityEditor.EditorApplication.isPlaying\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00166}00166\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00167}00167\ \ \ \ \ \ \ \ \ Application.Quit();}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00168}00168\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00169}00169\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00170}00170\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00171}00171\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_menu_u_i_manager_8cs_source_l00172}00172\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,64 @@
+\doxysection{Talking\+Head\+System.\+cs}
+\hypertarget{_talking_head_system_8cs_source}{}\label{_talking_head_system_8cs_source}\index{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/02. DungeonScripts/TalkingHeadSystem.cs@{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/02. DungeonScripts/TalkingHeadSystem.cs}}
+\mbox{\hyperlink{_talking_head_system_8cs}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }TMPro;}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00006}00006\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_k_j}{KJ}}}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00008}\mbox{\hyperlink{class_k_j_1_1_talking_head_system}{00008}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_talking_head_system}{TalkingHeadSystem}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00009}00009\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00010}00010\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}talking\ head"{}})]}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00011}\mbox{\hyperlink{class_k_j_1_1_talking_head_system_a7c97856deb5ff1b188647be3896d2e61}{00011}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ GameObject\ \mbox{\hyperlink{class_k_j_1_1_talking_head_system_a7c97856deb5ff1b188647be3896d2e61}{talkingHead}};\ }
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00012}\mbox{\hyperlink{class_k_j_1_1_talking_head_system_aa5a8e72c79a651c833373309f52b3310}{00012}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ TMP\_Text\ \mbox{\hyperlink{class_k_j_1_1_talking_head_system_aa5a8e72c79a651c833373309f52b3310}{talkingHeadText}};\ }
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00013}00013\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}sectionid"{}})]}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00014}\mbox{\hyperlink{class_k_j_1_1_talking_head_system_afa13d99bd843b891478ba020bac20c10}{00014}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_k_j_1_1_talking_head_system_afa13d99bd843b891478ba020bac20c10}{sectionID}};\ }
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00019}\mbox{\hyperlink{class_k_j_1_1_talking_head_system_ab826650ac80a380b9b18077f635f3b89}{00019}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_talking_head_system_ab826650ac80a380b9b18077f635f3b89}{Start}}()}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_talking_head_system_a7c97856deb5ff1b188647be3896d2e61}{talkingHead}}.SetActive(\textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00028}\mbox{\hyperlink{class_k_j_1_1_talking_head_system_a9e734657ec1360129e3159071d409486}{00028}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_talking_head_system_a9e734657ec1360129e3159071d409486}{OnTriggerEnter}}(Collider\ other)}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (other.tag\ ==\ \textcolor{stringliteral}{"{}Player"{}})}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}충돌?"{}});}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{class_k_j_1_1_talking_head_system_afa13d99bd843b891478ba020bac20c10}{sectionID}})}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 1:}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ talkingHeadText.text\ =\ \textcolor{stringliteral}{"{}첫\ 번째\ 방"{}};}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 2:}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ talkingHeadText.text\ =\ \textcolor{stringliteral}{"{}두\ 번째\ 방"{}};}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}코루틴\ 불러옴"{}});}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_talking_head_system_ae8539f3d7a2d3336d6d7873c8bc8386d}{ShowTalkingHeadUI}}();}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00050}\mbox{\hyperlink{class_k_j_1_1_talking_head_system_ae8539f3d7a2d3336d6d7873c8bc8386d}{00050}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_talking_head_system_ae8539f3d7a2d3336d6d7873c8bc8386d}{ShowTalkingHeadUI}}()}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00051}00051\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}UI\ 시작"{}});}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_talking_head_system_a7c97856deb5ff1b188647be3896d2e61}{talkingHead}}.SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ StartCoroutine(\mbox{\hyperlink{class_k_j_1_1_talking_head_system_afa4acb37f2ce3d8f0132a11cf70b8015}{TalkingHeadTimer}}(3));}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00060}\mbox{\hyperlink{class_k_j_1_1_talking_head_system_afa4acb37f2ce3d8f0132a11cf70b8015}{00060}}\ \ \ \ \ \ \ \ \ IEnumerator\ \mbox{\hyperlink{class_k_j_1_1_talking_head_system_afa4acb37f2ce3d8f0132a11cf70b8015}{TalkingHeadTimer}}(\textcolor{keywordtype}{float}\ delay)}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ yield\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ WaitForSeconds(delay);}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_talking_head_system_a6fbcce3820f5d4f65100cf3cdacc9639}{HideTalkingHeadUI}}();}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00069}\mbox{\hyperlink{class_k_j_1_1_talking_head_system_a6fbcce3820f5d4f65100cf3cdacc9639}{00069}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_talking_head_system_a6fbcce3820f5d4f65100cf3cdacc9639}{HideTalkingHeadUI}}()}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_talking_head_system_a7c97856deb5ff1b188647be3896d2e61}{talkingHead}}.SetActive(\textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00073}00073\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_talking_head_system_8cs_source_l00074}00074\ \}}
+
+\end{DoxyCode}

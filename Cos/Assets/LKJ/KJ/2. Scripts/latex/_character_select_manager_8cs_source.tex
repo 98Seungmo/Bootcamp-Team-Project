@@ -1,0 +1,164 @@
+\doxysection{Character\+Select\+Manager.\+cs}
+\hypertarget{_character_select_manager_8cs_source}{}\label{_character_select_manager_8cs_source}\index{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/07. CharacterScripts/CharacterSelectManager.cs@{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/07. CharacterScripts/CharacterSelectManager.cs}}
+\mbox{\hyperlink{_character_select_manager_8cs}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }JetBrains.Annotations;}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }System.Linq;}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00006}00006\ \textcolor{keyword}{using\ }TMPro;}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00007}00007\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00008}00008\ \textcolor{keyword}{using\ }UnityEngine.SceneManagement;}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00009}00009\ \textcolor{keyword}{using\ }UnityEngine.UI;}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00012}00012\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_k_j}{KJ}}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00013}00013\ \{}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00017}\mbox{\hyperlink{class_k_j_1_1_character_select_manager}{00017}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_character_select_manager}{CharacterSelectManager}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00018}00018\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}DynamicButton"{}})]}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 팝업\ 창\ 버튼\ (동적)\ */}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00021}\mbox{\hyperlink{class_k_j_1_1_character_select_manager_ad2efcd3e9fa2e62f6cc57c7068d42c69}{00021}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Button\ \mbox{\hyperlink{class_k_j_1_1_character_select_manager_ad2efcd3e9fa2e62f6cc57c7068d42c69}{yesButton}};\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}Popup"{}})]}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 팝업\ 창\ 활성화\ */}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ [SerializeField]}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00025}\mbox{\hyperlink{class_k_j_1_1_character_select_manager_a65b0fcd72c410e64d99f9054f7857949}{00025}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ GameObject\ \mbox{\hyperlink{class_k_j_1_1_character_select_manager_a65b0fcd72c410e64d99f9054f7857949}{\_checkPopupUI}};\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00026}\mbox{\hyperlink{class_k_j_1_1_character_select_manager_accfbf0aaf34ae5c62d15485468f2e8dd}{00026}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ TMP\_Text\ \mbox{\hyperlink{class_k_j_1_1_character_select_manager_accfbf0aaf34ae5c62d15485468f2e8dd}{selectText}};\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}Loading"{}})]}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00028}\mbox{\hyperlink{class_k_j_1_1_character_select_manager_aaf08eda0ecb2ad9a40147041df8b9742}{00028}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ GameObject\ \mbox{\hyperlink{class_k_j_1_1_character_select_manager_aaf08eda0ecb2ad9a40147041df8b9742}{loadingUI}};\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00031}\mbox{\hyperlink{class_k_j_1_1_character_select_manager_ac2b7a16ce403a63a8942b9dd5684b17e}{00031}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_k_j_1_1_character_select_manager_ac2b7a16ce403a63a8942b9dd5684b17e}{\_class}};}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00033}\mbox{\hyperlink{class_k_j_1_1_character_select_manager_a512f5e6b34157c9a76fe5c7f67a46b19}{00033}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ GameObject\ \mbox{\hyperlink{class_k_j_1_1_character_select_manager_a512f5e6b34157c9a76fe5c7f67a46b19}{characterInstance}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{private}\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00039}\mbox{\hyperlink{class_k_j_1_1_character_select_manager_a3bbb316d265f1499de9d9c542685e6d3}{00039}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_character_select_manager_a3bbb316d265f1499de9d9c542685e6d3}{CreateCharacter}}(\textcolor{keywordtype}{string}\ className)}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}호출1"{}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ shortUID\ =\ \mbox{\hyperlink{class_k_j_1_1_player_d_b_manager}{PlayerDBManager}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}.CurrentShortUID;}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_k_j_ad645fce3d83ece74624080e6f4aeae9e}{ClassType}}\ classType;}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (Enum.TryParse(className,\ \textcolor{keyword}{true},\ out\ classType))}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}호출2"{}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_class}{Class}}\ classData;}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Classes\ 에서\ 선택된\ class\ 데이터\ 찾기\ */}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_game_data}{GameData}}\ gameData\ =\ \mbox{\hyperlink{class_k_j_1_1_net_data}{NetData}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}.gameData;}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\$\textcolor{stringliteral}{"{}변환\ 성공:\ \{classType\}"{}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ classData\ =\ gameData.\mbox{\hyperlink{class_k_j_1_1_game_data_ac45b670bcaa5891853158e8276f8ba83}{classes}}[classType];}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (classData\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}호출3"{}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_player}{Player}}\ playerData;}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_game_data}{GameData}}\ \_gameData\ =\ \mbox{\hyperlink{class_k_j_1_1_net_data}{NetData}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}.\_gameData;}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_player}{Player}}\ p\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_k_j_1_1_player}{Player}}();}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ p.uid\ =\ \mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager}{FirebaseAuthManager}}.\mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_aa7b3a0e9165c6e72cf3e8cec2a426471}{Instance}}.\mbox{\hyperlink{class_k_j_1_1_firebase_auth_manager_a00134248ee21283c0208e9080f2b655b}{\_user}}.UserId;}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_player_d_b_manager}{PlayerDBManager}}.\mbox{\hyperlink{class_k_j_1_1_singleton_lazy_a327123e39a51072e962d8b4129661d93}{Instance}}.SaveOrUpdatePlayerData(p.\mbox{\hyperlink{class_k_j_1_1_player_a326125a5b90aefb6e1c7f9cd4d277e59}{uid}},\ p);}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_gameData.\mbox{\hyperlink{class_k_j_1_1_game_data_a5217f6bcdc8008030aaa16d07caba6db}{players}}.TryGetValue(p.\mbox{\hyperlink{class_k_j_1_1_player_a5a260a29163abce7eabb79b6e4fb4469}{shortUID}},\ out\ playerData))}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}호출4"{}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Player\ 객체에\ Class\ 데이터\ 적용.\ */}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ playerData.classType\ =\ className;}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ playerData.\mbox{\hyperlink{class_k_j_1_1_player_a259aef1d1a966a55f4c5e8d510f7ef56}{inventory}}.\mbox{\hyperlink{class_k_j_1_1_inventory_aa4587d78d535425a8ddc6006f289699e}{items}}.Clear();}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (var\ item\ \textcolor{keywordflow}{in}\ classData.\mbox{\hyperlink{class_k_j_1_1_class_afd1615f11074b4cbce546322c13a4a2f}{inventory}}.\mbox{\hyperlink{class_k_j_1_1_inventory_aa4587d78d535425a8ddc6006f289699e}{items}})}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\$\textcolor{stringliteral}{"{}아이템\ id\ :\ \{item.id\}"{}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ playerData.\mbox{\hyperlink{class_k_j_1_1_player_a259aef1d1a966a55f4c5e8d510f7ef56}{inventory}}.\mbox{\hyperlink{class_k_j_1_1_inventory_aa4587d78d535425a8ddc6006f289699e}{items}}.Add(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_k_j_1_1_item}{Item}}\ \{\ \textcolor{keywordtype}{id}\ =\ item.\mbox{\hyperlink{class_k_j_1_1_item_ae26ecd4b28a4dcda60313a4fd54a4ff8}{id}},\ quantity\ =\ item.quantity\ \});\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ playerData.gold\ =\ classData.\mbox{\hyperlink{class_k_j_1_1_class_a1460e74acf715ef8495ac1945e1369b9}{gold}};}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\$\textcolor{stringliteral}{"{}클래스\ 타입\ :\ \{playerData.classType\}"{}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}캐릭터\ 프리팹"{}}\ +\ className);}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 프리팹\ 로드\ 및\ 인스턴스화.\ */}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GameObject\ characterPrefab\ =\ Resources.Load<GameObject>(\$\textcolor{stringliteral}{"{}Prefabs/\{className\}"{}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ spawn\ 위치\ Vector3\ 값\ 설정.\ */}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Vector3\ spawnPosition\ =\ \textcolor{keyword}{new}\ Vector3(-\/45,\ 3,\ 0);}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (characterPrefab\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}호출5"{}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_character_select_manager_a512f5e6b34157c9a76fe5c7f67a46b19}{characterInstance}}\ =\ Instantiate(characterPrefab,\ spawnPosition,\ Quaternion.identity);}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 씬\ 전환시\ 파괴\ 방지\ */}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00090}00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DontDestroyOnLoad(\mbox{\hyperlink{class_k_j_1_1_character_select_manager_a512f5e6b34157c9a76fe5c7f67a46b19}{characterInstance}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\$\textcolor{stringliteral}{"{}캐릭터\ 프리팹\ 로드\ 실패\ \{className\}"{}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00098}00098\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_character_select_manager_aaf08eda0ecb2ad9a40147041df8b9742}{loadingUI}}.SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00099}00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Invoke(\textcolor{stringliteral}{"{}LoadToVillage"{}},\ 5);}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00100}00100\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00101}00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 클래스\ 데이터\ 로딩\ 성공\ 시}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\$\textcolor{stringliteral}{"{}Creating\ character\ of\ class:\ \{className\}"{}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00103}00103\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\$\textcolor{stringliteral}{"{}PlayerShorUID:\ \{playerData.shortUID\}"{}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00105}00105\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\$\textcolor{stringliteral}{"{}생성된\ 캐릭터\ 적용\ 여부:\ \{classData.baseHp\}"{}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00107}00107\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 인벤토리\ 아이템\ 적용\ 후}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00109}00109\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\$\textcolor{stringliteral}{"{}Applied\ inventory\ items\ to\ character.\ Item\ count:\ \{playerData.inventory.items.Count\}"{}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 캐릭터의\ 초기\ 골드\ 설정\ 후}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\$\textcolor{stringliteral}{"{}Character\ starting\ gold:\ \{playerData.gold\}"{}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00113}00113\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00114}00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 프리팹\ 로드\ 및\ 인스턴스화\ 후\ (예시\ 위치를\ Vector3.zero로\ 가정)}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00115}00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\$\textcolor{stringliteral}{"{}Character\ spawned\ at\ position:\ \{spawnPosition\}"{}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00116}00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 스킬\ 개수가\ 온전히\ 다\ 있는지\ 확인.\ */}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00117}00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\$\textcolor{stringliteral}{"{}\ 스킬\ \{classData.skills.Count\}"{}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00119}00119\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00120}00120\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00121}00121\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00122}00122\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00126}\mbox{\hyperlink{class_k_j_1_1_character_select_manager_a58829329b0418c145281a5b99f3cf218}{00126}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_character_select_manager_a58829329b0418c145281a5b99f3cf218}{LoadToVillage}}()}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00127}00127\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00128}00128\ \ \ \ \ \ \ \ \ \ \ \ \ SceneManager.LoadScene(\textcolor{stringliteral}{"{}VillageScene"{}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00129}00129\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00130}00130\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00131}00131\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ 팝업\ UI}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00132}00132\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 동적\ 할당\ */}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00137}\mbox{\hyperlink{class_k_j_1_1_character_select_manager_a0935b960cf24c7ce5c66a787394ea1d9}{00137}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_character_select_manager_a0935b960cf24c7ce5c66a787394ea1d9}{OpenCheckPopupText}}(\textcolor{keywordtype}{string}\ className)}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00138}00138\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00139}00139\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_character_select_manager_ac2b7a16ce403a63a8942b9dd5684b17e}{\_class}}\ =\ className;}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00140}00140\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00141}00141\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (className)}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00142}00142\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00143}00143\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}Knight"{}}:}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00144}00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ selectText.text\ =\ \textcolor{stringliteral}{"{}기사로\ 캐릭터를\ 생성하시겠습니까?"{}};}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00145}00145\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00146}00146\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}Barbarian"{}}:}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00147}00147\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ selectText.text\ =\ \textcolor{stringliteral}{"{}바바리안으로\ 캐릭터를\ 생성하시겠습니까?"{}};}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00148}00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00149}00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}Rogue"{}}:}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00150}00150\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ selectText.text\ =\ \textcolor{stringliteral}{"{}로그로\ 캐릭터를\ 생성하시겠습니까?"{}};}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00151}00151\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00152}00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{"{}Mage"{}}:}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00153}00153\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ selectText.text\ =\ \textcolor{stringliteral}{"{}메이지로\ 캐릭터를\ 생성하시겠습니까?"{}};}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00154}00154\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00155}00155\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00156}00156\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_character_select_manager_a65b0fcd72c410e64d99f9054f7857949}{\_checkPopupUI}}.SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00157}00157\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00158}00158\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00162}\mbox{\hyperlink{class_k_j_1_1_character_select_manager_a3a15d213d1fee6a2185cccb7721457cd}{00162}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_character_select_manager_a3a15d213d1fee6a2185cccb7721457cd}{ConfigureYesButton}}()}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00163}00163\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00164}00164\ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\textcolor{stringliteral}{"{}새로운\ 리스너\ 할당됨."{}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00165}00165\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_character_select_manager_a3bbb316d265f1499de9d9c542685e6d3}{CreateCharacter}}(\mbox{\hyperlink{class_k_j_1_1_character_select_manager_ac2b7a16ce403a63a8942b9dd5684b17e}{\_class}});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00166}00166\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00167}00167\ }
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00171}\mbox{\hyperlink{class_k_j_1_1_character_select_manager_a28f12a72e6f4e3f30b66d2022161f7f7}{00171}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_character_select_manager_a28f12a72e6f4e3f30b66d2022161f7f7}{CloseCheckPopup}}()}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00172}00172\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00173}00173\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_character_select_manager_a65b0fcd72c410e64d99f9054f7857949}{\_checkPopupUI}}.SetActive(\textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00174}00174\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00175}00175\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00176}00176\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00177}00177\ \}}
+\DoxyCodeLine{\Hypertarget{_character_select_manager_8cs_source_l00178}00178\ }
+
+\end{DoxyCode}

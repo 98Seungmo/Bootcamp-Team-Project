@@ -1,0 +1,83 @@
+\doxysection{Bars\+Manager.\+cs}
+\hypertarget{_bars_manager_8cs_source}{}\label{_bars_manager_8cs_source}\index{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/02. DungeonScripts/BarsManager.cs@{C:/Users/LKJ/Documents/GitHub/Bootcamp-\/Team-\/Project/Cos/Assets/LKJ/KJ/2. Scripts/02. DungeonScripts/BarsManager.cs}}
+\mbox{\hyperlink{_bars_manager_8cs}{이 파일의 문서화 페이지로 가기}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }TMPro;}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }UnityEngine.UI;}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00007}00007\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_k_j}{KJ}}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00008}00008\ \{}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00012}\mbox{\hyperlink{class_k_j_1_1_bars_manager}{00012}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_k_j_1_1_bars_manager}{BarsManager}}\ :\ MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00013}00013\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00014}00014\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}Slider"{}})]}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00015}\mbox{\hyperlink{class_k_j_1_1_bars_manager_a734972ce1bb81a9d6a02f0f8500e3b9f}{00015}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Slider\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a734972ce1bb81a9d6a02f0f8500e3b9f}{healthSlider}};\ }
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00016}\mbox{\hyperlink{class_k_j_1_1_bars_manager_adfb5225a67cd4032a02d8223c1298303}{00016}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Slider\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_adfb5225a67cd4032a02d8223c1298303}{staminaSlider}};\ }
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00017}00017\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}Cur\ /\ Max"{}})]}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00018}\mbox{\hyperlink{class_k_j_1_1_bars_manager_a843e7a452537a06978798926c6bcfb7a}{00018}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ TMP\_Text\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a843e7a452537a06978798926c6bcfb7a}{healthCur}};\ }
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00019}\mbox{\hyperlink{class_k_j_1_1_bars_manager_aa1b32ff0f9426202ef6ee9ff52b97b69}{00019}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ TMP\_Text\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_aa1b32ff0f9426202ef6ee9ff52b97b69}{healthMax}};\ }
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00020}\mbox{\hyperlink{class_k_j_1_1_bars_manager_a54070156d98a72870ec55b909f819687}{00020}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ TMP\_Text\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a54070156d98a72870ec55b909f819687}{staminaCur}};\ }
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00021}\mbox{\hyperlink{class_k_j_1_1_bars_manager_a0c3179d8af594fc6817613df881e44f1}{00021}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ TMP\_Text\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a0c3179d8af594fc6817613df881e44f1}{staminaMax}};\ }
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}MaxHp"{}})]}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00023}\mbox{\hyperlink{class_k_j_1_1_bars_manager_ac5cafde9eaa8d6753f1b6afe286d9ec3}{00023}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_ac5cafde9eaa8d6753f1b6afe286d9ec3}{maxHealth}}\ =\ 100f;\ }
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}MaxSp"{}})]}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00025}\mbox{\hyperlink{class_k_j_1_1_bars_manager_aba215a263d44b0b1b10d38e82d121b3b}{00025}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_aba215a263d44b0b1b10d38e82d121b3b}{maxStamina}}\ =\ 100f;\ }
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ [Header(\textcolor{stringliteral}{"{}StaminaRecovery"{}})]}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00027}\mbox{\hyperlink{class_k_j_1_1_bars_manager_ac7af6009a515f09570f64b13d6d0edd7}{00027}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_ac7af6009a515f09570f64b13d6d0edd7}{staminaRecoveryRate}}\ =\ 5f;\ }
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00029}\mbox{\hyperlink{class_k_j_1_1_bars_manager_a9d45709e3ea115752d958cd6f48b95ef}{00029}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a9d45709e3ea115752d958cd6f48b95ef}{\_currentHealth}};\ }
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00030}\mbox{\hyperlink{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}{00030}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}{\_currentStamina}};\ }
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00035}\mbox{\hyperlink{class_k_j_1_1_bars_manager_a4138a03d5ac00cb43c5ed424416f9962}{00035}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a4138a03d5ac00cb43c5ed424416f9962}{Start}}()}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 초기\ 체력\ 설정\ */}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a9d45709e3ea115752d958cd6f48b95ef}{\_currentHealth}}\ =\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_ac5cafde9eaa8d6753f1b6afe286d9ec3}{maxHealth}};}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 슬라이더의\ 최대값을\ 최대\ 체력으로\ 설정\ */}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ healthSlider.maxValue\ =\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_ac5cafde9eaa8d6753f1b6afe286d9ec3}{maxHealth}};}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a77a8fe888569225ef0d6d24bff0d2e9b}{UpdateHealthUI}}();}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 초기\ 스테미나\ 설정\ */}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}{\_currentStamina}}\ =\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_aba215a263d44b0b1b10d38e82d121b3b}{maxStamina}};}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 슬라이더의\ 최대값을\ 최대\ 스테미너로\ 설정\ */}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ staminaSlider.maxValue\ =\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_aba215a263d44b0b1b10d38e82d121b3b}{maxStamina}};}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 슬라이더의\ 값\ 초기화\ */}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ staminaSlider.value\ =\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}{\_currentStamina}};}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00053}\mbox{\hyperlink{class_k_j_1_1_bars_manager_a586f66d7bfc11179256a77433d9c0592}{00053}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a586f66d7bfc11179256a77433d9c0592}{Update}}()}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a6cf7446ff9134fcfa7734972a1e042f2}{UpdateStaminaUI}}();}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00061}\mbox{\hyperlink{class_k_j_1_1_bars_manager_a77a8fe888569225ef0d6d24bff0d2e9b}{00061}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a77a8fe888569225ef0d6d24bff0d2e9b}{UpdateHealthUI}}()}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Debug.Log(\$"{}Current\ Health:\ \{\_currentHealth\},\ Max\ Health:\ \{maxHealth\},\ Slider\ Value:\ \{healthSlider.value\}"{});}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Slider,\ 텍스트\ 업데이트\ */}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ healthSlider.value\ =\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a9d45709e3ea115752d958cd6f48b95ef}{\_currentHealth}};}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ healthCur.text\ =\ \$\textcolor{stringliteral}{"{}\{\_currentHealth\}"{}};}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ healthMax.text\ =\ \$\textcolor{stringliteral}{"{}\{maxHealth\}"{}};}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00073}\mbox{\hyperlink{class_k_j_1_1_bars_manager_a6cf7446ff9134fcfa7734972a1e042f2}{00073}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a6cf7446ff9134fcfa7734972a1e042f2}{UpdateStaminaUI}}()}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 스테미나\ 업데이트\ */}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}{\_currentStamina}}\ <\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_aba215a263d44b0b1b10d38e82d121b3b}{maxStamina}})}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Debug.Log(\$\textcolor{stringliteral}{"{}Current\ SP\ :\ \{\_currentStamina\},\ Max\ SP\ :\ \{maxStamina\},\ Slider\ Value\ :\ \{staminaSlider.value\}"{}});}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 스테미나가\ 시간에\ 따라\ 자동으로\ 채워짐.\ */}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}{\_currentStamina}}\ +=\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_ac7af6009a515f09570f64b13d6d0edd7}{staminaRecoveryRate}}\ *\ Time.deltaTime;}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 최대\ 스테미너\ 넘지\ 않음.\ */}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}{\_currentStamina}}\ =\ Mathf.Min(\mbox{\hyperlink{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}{\_currentStamina}},\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_aba215a263d44b0b1b10d38e82d121b3b}{maxStamina}});}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 슬라이더\ 업데이트\ */}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ staminaSlider.value\ =\ \mbox{\hyperlink{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}{\_currentStamina}};}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 텍스트\ 업데이트\ */}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 정수로\ 변환하여\ 소수점\ 안나오게\ 함.\ */}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ staminaCur.text\ =\ Mathf.RoundToInt(\mbox{\hyperlink{class_k_j_1_1_bars_manager_a4d6b5ad4df1bb84fa19925239bc448ff}{\_currentStamina}}).ToString();}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ staminaMax.text\ =\ \$\textcolor{stringliteral}{"{}\{maxStamina\}"{}};}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00090}00090\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00091}00091\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_bars_manager_8cs_source_l00092}00092\ \}}
+
+\end{DoxyCode}
