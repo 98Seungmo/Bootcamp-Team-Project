@@ -5,6 +5,9 @@ using UnityEngine;
 
 namespace HJ
 {
+    /// <summary>
+    /// IHp 인터페이스를 테스트하기 위한 클래스.
+    /// </summary>
     public class Sandbag : MonoBehaviour, IHp
     {
         // IHp -------------------------------------------------------------------------------------------------------
@@ -77,19 +80,6 @@ namespace HJ
                 _hitBLight.SetActive(true);
                 Invoke("HitBOff", 0.1f);
             }
-        }
-        // ----------------------------------------------------------------------------------------------------
-
-        // Start is called before the first frame update
-        void Start()
-        {
-            _hp = _hpMax;
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
         }
 
         private void HitAOff()

@@ -68,6 +68,13 @@ namespace HJ
             StartCoroutine(Effect(_mageSpell3effect, _mageSpell3SoundNum, _mageSpell3Delay));
         }
 
+        /// <summary>
+        /// 비주얼 이펙트를 생성하고 delay 초 이후 파괴한다. 사운드 이펙트를 재생하도록 호출한다.
+        /// </summary>
+        /// <param name="effect">생성할 비주얼 이펙트</param>
+        /// <param name="soundNum">재생할 사운드 이펙트</param>
+        /// <param name="delay">비주얼 이펙트 파괴 시점</param>
+        /// <returns></returns>
         IEnumerator Effect(GameObject effect, int soundNum, float delay)
         {
             GameObject effectInstanse = Instantiate(effect, transform.position, transform.rotation);
@@ -76,13 +83,5 @@ namespace HJ
             yield return new WaitForSeconds(delay);
             Destroy(effectInstanse);
         }
-        /*
-        Dash: "Dash" 10
-        Potion: "Potion" 48
-
-        Spell1: "magicmissile" 36
-        Spell2: "lightcharge" 33
-        Spell3: "explosion" 18
-        */
     }
 }

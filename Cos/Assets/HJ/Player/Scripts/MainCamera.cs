@@ -4,21 +4,18 @@ using UnityEngine;
 
 namespace HJ
 {
+    /// <summary>
+    /// 메인 카메라를 제어하기 위한 클래스.
+    /// </summary>
     public class MainCamera : MonoBehaviour
     {
-        private Transform _transform;
         [SerializeField] Transform _playerTransform;
         [SerializeField] Vector3 _cameraOffset;
 
-        void Start()
-        {
-            _transform = GetComponent<Transform>();
-        }
-
-        // Update is called once per frame
+        // 카메라의 위치를 캐릭터의 위치 + _cameraOffset으로 설정한다.
         void Update()
         {
-            _transform.position = _playerTransform.position + _cameraOffset;
+            transform.position = _playerTransform.position + _cameraOffset;
         }
     }
 }

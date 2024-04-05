@@ -1,22 +1,27 @@
-using HJ;
 using UnityEngine;
 
-public class InteractableDummy : MonoBehaviour, IInteractable
+namespace HJ
 {
-    [SerializeField] GameObject GreenLight;
-
-    public void InteractableOn()
+    /// <summary>
+    /// IInteractable 인터페이스를 테스트하기 위해 만든 클래스
+    /// </summary>
+    public class InteractableDummy : MonoBehaviour, IInteractable
     {
-        GreenLight.SetActive(true);
-    }
+        [SerializeField] GameObject GreenLight;
 
-    public void InteractableOff()
-    {
-        GreenLight.SetActive(false);
-    }
+        public void InteractableOn()
+        {
+            GreenLight.SetActive(true);
+        }
 
-    public void Interaction(GameObject interactor)
-    {
-        Debug.Log("꺼져");
+        public void InteractableOff()
+        {
+            GreenLight.SetActive(false);
+        }
+
+        public void Interaction(GameObject interactor)
+        {
+            Debug.Log("꺼져");
+        }
     }
 }

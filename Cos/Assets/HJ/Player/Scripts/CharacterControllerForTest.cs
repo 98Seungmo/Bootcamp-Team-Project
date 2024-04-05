@@ -1,10 +1,11 @@
-using KJ;
-using Scene_Teleportation_Kit.Scripts.player;
 using System;
 using UnityEngine;
 
 namespace HJ
 {
+    /// <summary>
+    /// 데이터베이스 연동이 완성되기 전 테스트를 위해 생성한 클래스. CharacterController와 거의 동일하다.
+    /// </summary>
     public abstract class CharacterControllerForTest : MonoBehaviour, IHp
     {
         private void Awake()

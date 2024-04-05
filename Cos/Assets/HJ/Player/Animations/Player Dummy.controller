@@ -927,7 +927,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61ef9ff6903754b4c827ced86c805456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _characterController: {fileID: 0}
+  _playerController: {fileID: 0}
+  _transform: {fileID: 0}
+  _stateLength: 0
   _useStamina: 0
+  _staminaEnough: 0
   _staminaRequired: 0
   _isStaminaDelayEnd: 0
   _isStaminaDelayTime: 0
@@ -943,11 +948,11 @@ MonoBehaviour:
   _canTurn: 0
   _advanceSpeed: 0
   _advanceSpeedReduce: 0
+  _advanceSpeedLeft: 0
   _attackDamageRate: 0
   _attackRange: 0
   _attackAngle: 0
   _attackLayerMask:
-    serializedVersion: 2
     m_Bits: 0
   _isAttack: 0
   _isPowerAttack: 0
@@ -1809,7 +1814,7 @@ AnimatorState:
   m_Transitions:
   - {fileID: 1295796632432101528}
   m_StateMachineBehaviours:
-  - {fileID: -5996404268155649932}
+  - {fileID: 7968179413376350524}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -4487,6 +4492,55 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!114 &7968179413376350524
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c7a744564383c74fa2077c963bbe0ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _useStamina: 0
+  _staminaRequired: 0
+  _isStaminaDelayEnd: 0
+  _isStaminaDelayTime: 0
+  _StaminaDelayTime: 0
+  _resetStart: 1
+  _resetEnd: 0
+  _resetDelayed: 0
+  _stateResetTime: 0
+  _canMove: 1
+  _canRotate: 1
+  _moveSpeed: 0.5
+  _isAdvance: 0
+  _canTurn: 0
+  _advanceSpeed: 0
+  _advanceSpeedReduce: 0
+  _attackDamageRate: 0
+  _attackRange: 0
+  _attackAngle: 0
+  _attackLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  _isAttack: 0
+  _isPowerAttack: 0
+  _isRangedAttack: 0
+  _missile: {fileID: 0}
+  _attackDelayTime: 0
+  _isDoubleAttack: 0
+  _doubleAttackDelayTime: 0
+  _isRepeatingAttack: 0
+  _attackRepeatingTime: 0
+  _isInvincible: 0
+  _invincibleTime: 0
+  _weapon1: 0
+  _weapon2: 1
+  _weapon3: 0
+  _potion: 1
 --- !u!1102 &8012537153668733947
 AnimatorState:
   serializedVersion: 6

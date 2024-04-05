@@ -3,8 +3,17 @@ using CharacterController = HJ.CharacterController;
 
 namespace HJ
 {
+    /// <summary>
+    /// State들의 공통적인 기능을 부여하기 위해 만든 스크립트.
+    /// </summary>
     public class UniversialStateScript : StateMachineBehaviour
     {
+        /// <summary>
+        /// 해당 State로 Transition시 실행되는 함수들.
+        /// </summary>
+        /// <param name="animator"></param>
+        /// <param name="stateInfo"></param>
+        /// <param name="layerIndex"></param>
         override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             GetComponents(animator, stateInfo);
@@ -16,12 +25,24 @@ namespace HJ
             ItemEnter();
         }
 
+        /// <summary>
+        /// State 실행중일시 실행되는 함수들. FixedUpdate에 실행.
+        /// </summary>
+        /// <param name="animator"></param>
+        /// <param name="stateInfo"></param>
+        /// <param name="layerIndex"></param>
         override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             MoveUpdate();
             AdvanceUpdate();
         }
 
+        /// <summary>
+        /// 다른 State로 Transition시 실행되는 함수들. 
+        /// </summary>
+        /// <param name="animator"></param>
+        /// <param name="stateInfo"></param>
+        /// <param name="layerIndex"></param>
         override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             ResetExit();
@@ -35,6 +56,12 @@ namespace HJ
         protected PlayerController _playerController;
         protected Transform _transform;
         protected float _stateLength;
+
+        /// <summary>
+        /// 필요한 컴포넌트들을 불러온다. OnStateEnter시 실행.
+        /// </summary>
+        /// <param name="animator"></param>
+        /// <param name="stateInfo"></param>
         private void GetComponents(Animator animator, AnimatorStateInfo stateInfo)
         {
             _characterController = animator.GetComponent<CharacterController>();
@@ -45,37 +72,46 @@ namespace HJ
         }
 
         [Header("Stamina")] //========================================================================================================================
+        // 동작의 기력 사용 여부
         [SerializeField] bool _useStamina;
+        // 기력이 충분한지 여부
         private bool _staminaEnough;
+        // 기력 요구량
         [SerializeField] float _staminaRequired;
-        [SerializeField] bool _isStaminaDelayEnd;
+        // 기력 회복 시작 시점이 따로 설정되어 있는지 여부
         [SerializeField] bool _isStaminaDelayTime;
+        // 그렇다면 기력 회복 시작 시점 설정
         [Range(0, 2f)]
         [SerializeField] float _StaminaDelayTime;
+
+        /// <summary>
+        /// OnStateEnter시 실행.
+        /// 이 동작이 기력을 소모할 경우, 기력이 충분하다면 기력을 소모하고 기력 회복을 중지시킨다.
+        /// 지속 공격이 아닐 경우 기력 회복 시점이 따로 설정되어 있다면 해당 시점에 기력 회복을 시작한다.
+        /// 지속 공격일 경우 매 간격마다 기력을 소모한다.
+        /// </summary>
+        /// <param name="stateInfo"></param>
         private void StaminaEnter(AnimatorStateInfo stateInfo)
         {
             if (_useStamina)
             {
                 _playerController.staminaRequired = _staminaRequired;
-
-                if (_isRepeatingAttack == false)
+                _staminaEnough = _playerController.StaminaUse();
+                if (_staminaEnough)
                 {
-                    _staminaEnough = _playerController.StaminaUse();
+                    _playerController.StaminaRecoverStop();
 
-                    if (_staminaEnough)
+                    if (_isRepeatingAttack == false)
                     {
-                        _playerController.StaminaRecoverStop();
-
                         if (_isStaminaDelayTime)
                         {
                             _playerController.Invoke("StaminaRecoverStart", _StaminaDelayTime * _stateLength);
                         }
                     }
-                }
-                else // (_isRepeatingAttack == true)
-                {
-                    _playerController.StaminaRecoverStop();
-                    _playerController.InvokeRepeating("StaminaUse", 0, _attackRepeatingTime * _stateLength);
+                    else // (_isRepeatingAttack == true)
+                    {
+                        _playerController.InvokeRepeating("StaminaUse", 0, _attackRepeatingTime * _stateLength);
+                    }
                 }
             }
             else
@@ -84,26 +120,30 @@ namespace HJ
             }
         }
 
+        /// <summary>
+        /// OnStateExit시 실행. 기력 회복을 재개하고 지속 공격이라면 기력 소모를 중단시킨다.
+        /// </summary>
         private void StaminaExit()
         {
+            _playerController.StaminaRecoverStart();
+
             if (_isRepeatingAttack)
             {
-                _playerController.StaminaRecoverStart();
                 _playerController.CancelInvoke("StaminaUse");
-            }
-
-            if (_isStaminaDelayEnd)
-            {
-                _playerController.StaminaRecoverStart();
             }
         }
 
-
         [Header("Reset Timing")] //========================================================================================================================================================
+        // "state"를 기본값으로 재설정하는 시점
         [SerializeField] bool _resetStart;
         [SerializeField] bool _resetEnd;
         [SerializeField] bool _resetDelayed;
         [SerializeField] float _stateResetTime;
+
+        /// <summary>
+        /// OnStateEnter시 실행.
+        /// 설정에 따라 State 진입시 재설정하거나, 특정 시점에 재설정하도록 한다.
+        /// </summary>
         private void ResetEnter()
         {
             if (_resetStart)
@@ -112,6 +152,10 @@ namespace HJ
             if (_resetDelayed)
                 _characterController.Invoke("StateReset", _stateResetTime * _stateLength);
         }
+
+        /// <summary>
+        /// OnStateExit시 실행. 설정에 따라 "state"값을 재설정한다.
+        /// </summary>
         private void ResetExit()
         {
             if (_resetEnd)
@@ -119,9 +163,16 @@ namespace HJ
         }
 
         [Header("Move")] //================================================================================================================================================================
+        // 이동 가능 여부
         [SerializeField] bool _canMove;
+        // 회전 가능 여부
         [SerializeField] bool _canRotate;
+        // 이동 속도
         [SerializeField] float _moveSpeed;
+
+        /// <summary>
+        /// OnStateUpdate시 실행. 이동할 수 있다면 이동하고, 회전할 수 있다면 회전한다.
+        /// </summary>
         private void MoveUpdate()
         {
             if (_canMove)
@@ -135,13 +186,19 @@ namespace HJ
         }
 
         [Header("Advance")] //=============================================================================================================================================================
-        // 닷지나 HitB 보고 쓰기
+        // 전진 및 후진 여부
         [SerializeField] bool _isAdvance;
+        // 회전 가능 여부
         [SerializeField] bool _canTurn;
+        // 속도
         [SerializeField] float _advanceSpeed;
+        // 감속
         [SerializeField] float _advanceSpeedReduce;
         private float _advanceSpeedLeft;
 
+        /// <summary>
+        /// 
+        /// </summary>
         private void AdvanceEnter()
         {
             if (_isAdvance)
