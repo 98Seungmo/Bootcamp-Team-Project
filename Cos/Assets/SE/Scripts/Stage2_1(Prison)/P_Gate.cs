@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public class P_Gate : MonoBehaviour  
 {
-    //애니메이터 변수
+    /**전역변수_애니메이터 변수*/
     Animator animator;
 
     /// <summary>
@@ -15,7 +15,7 @@ public class P_Gate : MonoBehaviour
     /// </summary>
     void Start()
     {
-        //애니메이터 가져오기
+        /**애니메이터 가져오기*/
         animator = GetComponent<Animator>();
     }
 
@@ -24,7 +24,7 @@ public class P_Gate : MonoBehaviour
     /// </summary>
     public void PlayAnimation()
     {
-        //"P_Gate"라는 애니메이션 재생
+        /**"P_Gate"라는 애니메이션 재생*/
         animator.Play("P_Gate");
     }
 }
