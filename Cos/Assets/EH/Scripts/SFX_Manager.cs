@@ -6,30 +6,38 @@ using UnityEngine;
 
 public class SingletonLazy<T> : MonoBehaviour where T : class
 {
+    // Lazy 인스턴스를 사용해 지연 초기화된 단일 인스턴스를 제공
     private static readonly Lazy<T> _instance =
         new Lazy<T>(() =>
         {
+            // 해당 타입의 인스턴스를 찾고
             T instance = FindObjectOfType(typeof(T)) as T;
 
+            // 인스턴스가 없는 경우
             if (instance == null)
             {
+                // 새로운 게임 오브젝트를 만들고 해당 타입의 컴포넌트를 추가하여 인스턴스를 만듭니다.
                 GameObject obj = new GameObject("SingletonLazy");
                 instance = obj.AddComponent(typeof(T)) as T;
 
+                // 씬 변경 시에도 유지되도록 설정합니다.
                 DontDestroyOnLoad(obj);
             }
             else
             {
+                // 이미 존재하는 인스턴스가 있으면 해당 인스턴스를 제거합니다.
                 Destroy(instance as GameObject);
             }
 
             return instance;
         });
 
+    // 외부에서 인스턴스에 접근할 수 있는 속성을 제공합니다.
     public static T Instance
     {
         get
         {
+            // Lazy로 초기화된 인스턴스를 반환합니다.
             return _instance.Value;
         }
     }
@@ -88,13 +96,13 @@ public class SFX_Manager : SingletonLazy<SFX_Manager>
             Debug.LogError("Can't play SFX");
             return;
         }
-
+        // audiosource 선언, destroysfx 선언
         AudioClip clip = _audioClips_sfx[sfx];
 
         //go 가 sfx 쓰는 게임오브젝트임
         GameObject go = new GameObject(sfx.ToString());
 
-        // audiosource 선언, destroysfx 선언
+     
         // 위에서 선언한 audiosource에 go 게임오브젝트(오디오소스 인스펙터창을 추가한)넣음
         AudioSource audiosource = go.AddComponent<AudioSource>();
         //위에서 선언한 destrosfx에 go 게임오브젝트(DestroySFX 다른 스크립트 인스펙터창)를 넣음

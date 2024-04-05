@@ -13,7 +13,7 @@ public class CameraMove : MonoBehaviour
     public float CameraSpeed = 10.0f;       // 카메라의 속도
     Vector3 TargetPos;                      // 타겟의 위치
 
-    // Update is called once per frame
+    //카메라를 결국 똥으로 만듬
     void FixedUpdate()
     {
         // 타겟의 x, y, z 좌표에 카메라의 좌표를 더하여 카메라의 위치를 결정

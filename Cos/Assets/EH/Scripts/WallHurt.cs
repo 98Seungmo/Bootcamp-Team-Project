@@ -3,6 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <summary>
+///미완성이라 그런것인지 미사용된 기믹 오브젝트
+/// </summary>
 public class WallHurt : MonoBehaviour
 {
     public int Wall_Hp = 20;

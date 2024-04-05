@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class CharacterMove : MonoBehaviour
 {
+    //ê±·ëŠ” ìŠ¤í”¼ë“œì™€ ë¦¬ì§€ë“œ ë°”ë”” ë³€ìˆ˜ ì„ ì–¸
     [SerializeField]
     private float walkSpeed;
 
     private Rigidbody myRigid;
 
+    //í”¼ ë§ˆë‚˜ ì´í™ ë²ˆí˜¸ ì§€ì •
     public int Hp = 100;
     public int Mp = 100;
     int HealEffect = 0;
 
+    //ìê¸°ìì‹ ì„ íŒŒê´´
     public void Died()
     {
         if (Hp <= 0)
@@ -58,7 +61,7 @@ public class CharacterMove : MonoBehaviour
         Move();
     }
 
-    //ÇÃ·¹ÀÌ¾î ±âº»ÀûÀÎ ¿òÁ÷ÀÎ È£¸®Á¸Å»°ú ¹öÆ¼Ä® 
+    //í”Œë ˆì´ì–´ ê¸°ë³¸ì ì¸ ì›€ì§ì¸ í˜¸ë¦¬ì¡´íƒˆê³¼ ë²„í‹°ì¹¼ 
     private void Move()
     {
         float _moveDirX = Input.GetAxisRaw("Horizontal");
@@ -69,7 +72,7 @@ public class CharacterMove : MonoBehaviour
 
         Vector3 _velocity = (_moveHoizontal + _moveVertial).normalized * walkSpeed;
 
-        //Å¸ÀÓ*µ¨Å¸Å¸ÀÓÀ» ÀÌ¿ëÇØ À¯´ÏÆ¼¿¡¼­ ¼Óµµ Á¶Àı °¡´É
+        //íƒ€ì„*ë¸íƒ€íƒ€ì„ì„ ì´ìš©í•´ ìœ ë‹ˆí‹°ì—ì„œ ì†ë„ ì¡°ì ˆ ê°€ëŠ¥
         myRigid.MovePosition(transform.position + _velocity * Time.deltaTime);
     }
 

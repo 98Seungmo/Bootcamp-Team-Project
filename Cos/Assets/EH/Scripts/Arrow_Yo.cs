@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Arrow_Yo : MonoBehaviour
 {
-    public Transform transform;
-    
-    // Start is called before the first frame update
+   
+   
     void Start()
     {
     }
@@ -14,11 +13,8 @@ public class Arrow_Yo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        //transform.Translate(new Vector3(1, 0, 0) * Time.deltaTime);
-
-        //transform.forward
-        //transform.up
+        //만들다 중간에 세은이에게 넘겨서 미완
+        // 포워드 방향으로 5초마다 위치를 옮김
         transform.position += transform.forward * Time.deltaTime * 5;
          
     }

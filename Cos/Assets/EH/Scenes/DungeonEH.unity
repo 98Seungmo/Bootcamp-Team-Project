@@ -1028,7 +1028,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 417f866b72f20424cb66c75935e4150d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 664793566}
   interactUI: {fileID: 777912906619057117, guid: 3155480ab9e2c3847a46b9d10d70c4f6,
     type: 3}
   moveUI: 5
