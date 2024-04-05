@@ -582,7 +582,6 @@ GameObject:
   - component: {fileID: 2783963467525473822}
   - component: {fileID: 7136884844966164469}
   - component: {fileID: 1068782756794185329}
-  - component: {fileID: 3767740344501790873}
   m_Layer: 0
   m_Name: wall_doorway_door
   m_TagString: Untagged
@@ -676,19 +675,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3767740344501790873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2655592481583660578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 030106de7312667479453f77518dd121, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1068782756794185329}
 --- !u!1 &3222872519467401476
 GameObject:
   m_ObjectHideFlags: 0
@@ -3278,7 +3264,6 @@ GameObject:
   - component: {fileID: 7790929725037316953}
   - component: {fileID: 2659738665757632222}
   - component: {fileID: 882193758601008579}
-  - component: {fileID: 7999482600631181640}
   m_Layer: 0
   m_Name: wall_doorway_door
   m_TagString: Untagged
@@ -3372,19 +3357,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7999482600631181640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6941167918623927914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 030106de7312667479453f77518dd121, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 882193758601008579}
 --- !u!1 &7471266005290832439
 GameObject:
   m_ObjectHideFlags: 0
